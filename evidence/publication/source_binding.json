@@ -16,5 +16,11 @@
     "exclude .git from manifest payload scan"
   ],
   "video": "Submitted separately by the team; no video files in this repository",
-  "new_board_operation": false
+  "new_board_operation": false,
+  "skill_restoration": {
+    "native_skills": 3,
+    "original_files": 57,
+    "source_inventory": "skill/source_inventory.json",
+    "functional_hardware_changed": false
+  }
 }

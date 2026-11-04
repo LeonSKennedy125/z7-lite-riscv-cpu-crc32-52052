@@ -1,0 +1,106 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Thu Oct 15 16:29:06 2026
+# Process ID         : 7624
+# Current directory  : D:/Vivado/RISCV_160Mhz_csr_0.92/RISCV_160Mhz_csr_0.92/cpu_repair_work_2026_1/repair_records/phase10/rework_R1/inherited_runs/hazards_d0_20261015_162853_341743_8ddd205e
+# Command line       : xsim.exe -log simulation.log -mode tcl -source {xsim.dir/phase07_snapshot/xsim_script.tcl}
+# Log file           : D:/Vivado/RISCV_160Mhz_csr_0.92/RISCV_160Mhz_csr_0.92/cpu_repair_work_2026_1/repair_records/phase10/rework_R1/inherited_runs/hazards_d0_20261015_162853_341743_8ddd205e/simulation.log
+# Journal file       : D:/Vivado/RISCV_160Mhz_csr_0.92/RISCV_160Mhz_csr_0.92/cpu_repair_work_2026_1/repair_records/phase10/rework_R1/inherited_runs/hazards_d0_20261015_162853_341743_8ddd205e\xsim.jou
+# Running On         : LeonS
+# Platform           : Windows 11
+# Operating System   : 26300
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i9-13980HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 16937 MB
+# Swap memory        : 22812 MB
+# Total Virtual      : 39750 MB
+# Available Virtual  : 3493 MB
+#-----------------------------------------------------------
+source xsim.dir/phase07_snapshot/xsim_script.tcl
+# xsim {phase07_snapshot} -testplusarg DELAY=0 -testplusarg RESTART=0 -autoloadwcfg -tclbatch {D:/Vivado/RISCV_160Mhz_csr_0.92/RISCV_160Mhz_csr_0.92/cpu_repair_work_2026_1/repair_records/phase10/rework_R1/inherited_runs/hazards_d0_20261015_162853_341743_8ddd205e/waves.tcl}
+Time resolution is 1 ps
+source D:/Vivado/RISCV_160Mhz_csr_0.92/RISCV_160Mhz_csr_0.92/cpu_repair_work_2026_1/repair_records/phase10/rework_R1/inherited_runs/hazards_d0_20261015_162853_341743_8ddd205e/waves.tcl
+## open_vcd key.vcd
+## log_vcd /phase07_phase06_hazards_tb/dut/design_1_i/Store_Load_0/inst/* /phase07_phase06_hazards_tb/dut/design_1_i/MEM_DTCM_0/inst/* /phase07_phase06_hazards_tb/dut/design_1_i/EX_pipe_0/inst/pc_O /phase07_phase06_hazards_tb/dut/design_1_i/MEM_WB_0/inst/*
+## run all
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module phase07_phase06_hazards_tb.dut.design_1_i.IBROM_0.inst.u_I_ROM.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module phase07_phase06_hazards_tb.dut.design_1_i.MEM_DTCM_0.inst.u_DTCM.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+WRITE | PC=80000000 x1=80100000
+WRITE | PC=80000004 x2=00000011
+WRITE | PC=80000008 x3=0000001d
+STORE | PC=80000010 addr=80100000 value=00000011
+WRITE | PC=8000000c x4=fffffff9
+STORE | PC=80000014 addr=80100004 value=0000001d
+STORE | PC=80000018 addr=80100008 value=fffffff9
+WRITE | PC=80000034 x5=00000011
+WRITE | PC=80000038 x6=00000014
+WRITE | PC=8000003c x7=0000001d
+WRITE | PC=80000040 x8=0000002e
+WRITE | PC=80000044 x9=fffffff9
+WRITE | PC=80000048 x10=fffffff2
+WRITE | PC=8000004c x11=00000029
+WRITE | PC=80000050 x12=00000011
+WRITE | PC=80000054 x13=0000003a
+WRITE | PC=80000058 x14=0000002b
+WRITE | PC=8000005c x15=0000001d
+WRITE | PC=80000060 x16=00000048
+WRITE | PC=80000064 x17=0000002f
+WRITE | PC=80000068 x18=00000035
+WRITE | PC=8000006c x19=00000064
+WRITE | PC=80000070 x20=0000003b
+WRITE | PC=80000078 x21=0000003d
+WRITE | PC=8000007c x22=00000078
+WRITE | PC=80000080 x23=00000005
+WRITE | PC=80000084 x23=0000000b
+WRITE | PC=80000088 x23=00000012
+WRITE | PC=8000008c x24=00000024
+WRITE | PC=80000090 x5=00000011
+WRITE | PC=80000094 x6=0000001d
+WRITE | PC=80000098 x7=0000002e
+WRITE | PC=8000009c x8=fffffff9
+WRITE | PC=800000a0 x9=00000027
+WRITE | PC=800000a4 x10=00000011
+STORE | PC=800000a8 addr=8010000c value=00000011
+WRITE | PC=800000ac x11=00000011
+WRITE | PC=800000b0 x12=00000047
+WRITE | PC=800000b4 x13=0000001d
+STORE | PC=800000bc addr=80100010 value=00000064
+WRITE | PC=800000b8 x14=00000064
+WRITE | PC=800000c0 x15=00000064
+STORE | PC=800000c8 addr=80100018 value=80100014
+WRITE | PC=800000c4 x16=80100014
+WRITE | PC=800000cc x17=80100014
+STORE | PC=800000d0 addr=80100014 value=0000001d
+WRITE | PC=800000d4 x18=0000001d
+WRITE | PC=800000d8 x19=00000011
+WRITE | PC=800000e4 x20=0000001d
+WRITE | PC=800000f0 x21=00000011
+WRITE | PC=800000f4 x22=00000011
+WRITE | PC=80000104 x23=fffffff9
+WRITE | PC=8000010c x24=0000004f
+STORE | PC=80000118 addr=8010001c value=00000000
+WRITE | PC=80000114 x25=00000000
+WRITE | PC=8000011c x26=0000004f
+STORE | PC=80000124 addr=80100020 value=00000053
+WRITE | PC=80000120 x27=00000053
+WRITE | PC=80000128 x28=000000a2
+WRITE | PC=8000012c x29=00000011
+WRITE | PC=80000130 x29=00000012
+WRITE | PC=80000134 x29=0000001d
+WRITE | PC=80000138 x29=0000001f
+WRITE | PC=8000013c x30=0000003e
+WRITE | PC=80000140 x31=0000007b
+PHASE04_MAIN=PASS writes=56 stores=9 loads=20 completions=20 save_cycles=16 dual_sources=26 loaduse_cycles=32 cycles=232 tail=100
+$finish called at time : 3485200 ps : File "D:/Vivado/RISCV_160Mhz_csr_0.92/RISCV_160Mhz_csr_0.92/cpu_repair_work_2026_1/verification/phase07_phase06_hazards_tb.sv" Line 85
+## close_vcd
+## quit
+INFO: [Common 17-206] Exiting xsim at Thu Oct 15 16:29:08 2026...

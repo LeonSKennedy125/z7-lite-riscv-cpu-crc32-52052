@@ -1,0 +1,10 @@
+{
+  "source": "verification/phase06_hazards_program/expected.trace",
+  "sha256": "cb15d17e95826e58cf6088b821c8ccf6099a8cba22282e8c48c429f723441ea0",
+  "scope": "project-authored hazard expected register writes; not official golden",
+  "actual_log": {
+    "source": "repair_records/phase10/rework_R1/inherited_runs/hazards_d0_20261015_162853_341743_8ddd205e/simulation.log",
+    "sha256": "52aef44fabb411625ebfeae8d4e3a759e7f1be2b27c91f9b0f94f14cd493c89e",
+    "scope": "historical XSim hazard capture; not a fresh simulation"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "timestamp": "2026-11-03T22:12:57.863877+08:00",
+  "stage": "implement",
+  "execute_requested": false,
+  "source_project": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV",
+  "clone": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\skill\\artifacts\\build_plan_01\\project",
+  "tool_bin": "E:\\Vivado2026.1\\2026.1\\Vivado\\bin",
+  "required_vivado": "2026.1",
+  "commands": [
+    {
+      "argv": [
+        "E:\\Vivado2026.1\\2026.1\\Vivado\\bin\\vivado.bat",
+        "-mode",
+        "batch",
+        "-notrace",
+        "-source",
+        "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\skill\\artifacts\\build_plan_01\\project\\verification\\implement_phase10_r1.tcl",
+        "-log",
+        "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\skill\\artifacts\\build_plan_01\\reports\\synth.log",
+        "-journal",
+        "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\skill\\artifacts\\build_plan_01\\reports\\synth.jou",
+        "-tclargs",
+        "synth",
+        "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\skill\\artifacts\\build_plan_01\\reports"
+      ],
+      "required_marker": "PHASE10_SYNTH=PASS",
+      "cwd": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\skill\\artifacts\\build_plan_01\\process"
+    },
+    {
+      "argv": [
+        "E:\\Vivado2026.1\\2026.1\\Vivado\\bin\\vivado.bat",
+        "-mode",
+        "batch",
+        "-notrace",
+        "-source",
+        "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\skill\\artifacts\\build_plan_01\\project\\verification\\implement_phase10_r1.tcl",
+        "-log",
+        "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\skill\\artifacts\\build_plan_01\\reports\\route.log",
+        "-journal",
+        "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\skill\\artifacts\\build_plan_01\\reports\\route.jou",
+        "-tclargs",
+        "route",
+        "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\skill\\artifacts\\build_plan_01\\reports"
+      ],
+      "required_marker": "PHASE10_ROUTE=PASS",
+      "cwd": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\skill\\artifacts\\build_plan_01\\process"
+    }
+  ],
+  "copy_changes": [
+    "仅在副本更新 XPR 自身位置",
+    "仅在副本去除 utils_1 历史 DCP/RQS 引用",
+    "仅在副本更新 toolchain.json 工具和工程位置"
+  ],
+  "scope": "isolated_project_build",
+  "board_verified": false
+}

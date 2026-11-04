@@ -1,0 +1,254 @@
+{
+  "timestamp": "2026-11-03T22:30:19.293668+08:00",
+  "scope": "module_simulation",
+  "backend": "xsim",
+  "board_verified": false,
+  "tools": {
+    "xvlog": "E:\\Vivado2026.1\\2026.1\\Vivado\\bin\\xvlog.bat",
+    "xelab": "E:\\Vivado2026.1\\2026.1\\Vivado\\bin\\xelab.bat",
+    "xsim": "E:\\Vivado2026.1\\2026.1\\Vivado\\bin\\xsim.bat"
+  },
+  "tests": [
+    {
+      "case": "contract",
+      "top": "skill_contract_tb",
+      "pass": true,
+      "commands": [
+        {
+          "argv": [
+            "E:\\Vivado2026.1\\2026.1\\Vivado\\bin\\xvlog.bat",
+            "--sv",
+            "-i",
+            ".",
+            "ALU.v",
+            "Comp.v",
+            "Ctrl.v",
+            "Decoder.v",
+            "Regfile.v",
+            "Branch_Ctrl.v",
+            "instr_minidecoder.v",
+            "Store.v",
+            "skill_contract_tb.sv"
+          ],
+          "cwd": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\skill\\artifacts\\units_xsim_final\\contract",
+          "exit_code": 0
+        },
+        {
+          "argv": [
+            "E:\\Vivado2026.1\\2026.1\\Vivado\\bin\\xelab.bat",
+            "skill_contract_tb",
+            "-s",
+            "skill_contract",
+            "--debug",
+            "typical"
+          ],
+          "cwd": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\skill\\artifacts\\units_xsim_final\\contract",
+          "exit_code": 0
+        },
+        {
+          "argv": [
+            "E:\\Vivado2026.1\\2026.1\\Vivado\\bin\\xsim.bat",
+            "skill_contract",
+            "-tclbatch",
+            "run.tcl",
+            "-log",
+            "simulation.log"
+          ],
+          "cwd": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\skill\\artifacts\\units_xsim_final\\contract",
+          "exit_code": 0
+        }
+      ],
+      "checks": 175,
+      "input_sha256": {
+        "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\ALU.v": "b0103e091f4dd5fbafc74026a907c6009f021877e44611e00eeb7f0c44138b67",
+        "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\Comp.v": "2f35231e71010b75ef0389cd60beb9513d25071fd39e32f2598cc3cef57b13a4",
+        "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\Ctrl.v": "4fb906c609622f5a8108de025aacb391b1262d6854ae8871820e215db53679f5",
+        "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\Decoder.v": "2ef23cf07910070f4ed3ff3568e29651675326914faa48b49fb14cb50be0964e",
+        "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\Regfile.v": "637d5b991f1705b484ce1bf4bb962aad788415db619439f6c1bcc60fae76cc07",
+        "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\Branch_Ctrl.v": "0f54420ebeb8168c27cccf7b36502285d94fbde0833cf814cb184066107d1915",
+        "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\instr_minidecoder.v": "47cc8e40eaf1d5a76f161c487ecc89e09c7eb250fde0a03df206932e0f2adfb6",
+        "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\Store.v": "82c73ee9b6e59687bbb63c0de94ba03c28c73c2732cce28c59ddaf76007a6ad9",
+        "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\skill\\riscv-verification\\examples\\skill_contract_tb.sv": "437008fef97173c2d8db5b7120745894190833562ade3158e87ce56bdcb55939",
+        "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\RISCV_DEFINE.vh": "747032861864e7461449b9a3adbd9632803755296a7123da7f697050f6e9642f",
+        "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\CPU_MEMORY_MAP.vh": "c7e45a318fe71ad233cd1219e6fe02a9b833abdd2a5ba1585b6008613e1fd405"
+      },
+      "inputs_unchanged": true
+    },
+    {
+      "case": "forward",
+      "top": "phase04_unit_tb",
+      "pass": true,
+      "commands": [
+        {
+          "argv": [
+            "E:\\Vivado2026.1\\2026.1\\Vivado\\bin\\xvlog.bat",
+            "--sv",
+            "-i",
+            ".",
+            "MEM_WB.v",
+            "EX_MEM.v",
+            "Forward.v",
+            "MEM_Forward.v",
+            "WB_Forward.v",
+            "Forward_Ctrl.v",
+            "save_Load_use.v",
+            "phase04_unit_tb.sv"
+          ],
+          "cwd": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\skill\\artifacts\\units_xsim_final\\forward",
+          "exit_code": 0
+        },
+        {
+          "argv": [
+            "E:\\Vivado2026.1\\2026.1\\Vivado\\bin\\xelab.bat",
+            "phase04_unit_tb",
+            "-s",
+            "skill_forward",
+            "--debug",
+            "typical"
+          ],
+          "cwd": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\skill\\artifacts\\units_xsim_final\\forward",
+          "exit_code": 0
+        },
+        {
+          "argv": [
+            "E:\\Vivado2026.1\\2026.1\\Vivado\\bin\\xsim.bat",
+            "skill_forward",
+            "-tclbatch",
+            "run.tcl",
+            "-log",
+            "simulation.log"
+          ],
+          "cwd": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\skill\\artifacts\\units_xsim_final\\forward",
+          "exit_code": 0
+        }
+      ],
+      "checks": 85,
+      "input_sha256": {
+        "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\MEM_WB.v": "08e4b5554f6ebab6f18583cf5d5944ab47d6e355e218b2c054b0da0cc571412c",
+        "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\EX_MEM.v": "d367bf7d9435212e4194dfc9e699e1eecb0bb5b2cece9af3e228be1d728e28b9",
+        "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\Forward.v": "d4f3d9fe49ae6cde6f15d986685c83772a21cf223f8519c5ebc052a542e5817b",
+        "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\MEM_Forward.v": "de7f203fb2dbf4cbfcd0c09523c1b44f02b1cc0bdd428853d91213dae0eef6e0",
+        "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\WB_Forward.v": "4de902ffa8c618b0e3d0ae1cd4c78a575d5a80b6bc4ca160c3924602113e9380",
+        "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\Forward_Ctrl.v": "c9d020ca67fc120cdedcdd3a19fa0d37f6e527c52c0b7e9b15b975ef0ccbabe3",
+        "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\save_Load_use.v": "ecc9ceebcf4f72eb8f5c56ab12d4fa733ecbe6b14f0e9b5649185ba323d2564d",
+        "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\verification\\phase04_unit_tb.sv": "cadcfd2ae31cda75b0d4f48016475863355c6e96f4a435631cb8e5e6bc1cadca",
+        "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\RISCV_DEFINE.vh": "747032861864e7461449b9a3adbd9632803755296a7123da7f697050f6e9642f",
+        "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\CPU_MEMORY_MAP.vh": "c7e45a318fe71ad233cd1219e6fe02a9b833abdd2a5ba1585b6008613e1fd405"
+      },
+      "inputs_unchanged": true
+    },
+    {
+      "case": "csr",
+      "top": "phase05_unit_tb",
+      "pass": true,
+      "commands": [
+        {
+          "argv": [
+            "E:\\Vivado2026.1\\2026.1\\Vivado\\bin\\xvlog.bat",
+            "--sv",
+            "-i",
+            ".",
+            "csr_pkg.sv",
+            "csr_decode.sv",
+            "csr_regfile.sv",
+            "csr_top.v",
+            "Decoder.v",
+            "phase05_unit_tb.sv"
+          ],
+          "cwd": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\skill\\artifacts\\units_xsim_final\\csr",
+          "exit_code": 0
+        },
+        {
+          "argv": [
+            "E:\\Vivado2026.1\\2026.1\\Vivado\\bin\\xelab.bat",
+            "phase05_unit_tb",
+            "-s",
+            "skill_csr",
+            "--debug",
+            "typical"
+          ],
+          "cwd": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\skill\\artifacts\\units_xsim_final\\csr",
+          "exit_code": 0
+        },
+        {
+          "argv": [
+            "E:\\Vivado2026.1\\2026.1\\Vivado\\bin\\xsim.bat",
+            "skill_csr",
+            "-tclbatch",
+            "run.tcl",
+            "-log",
+            "simulation.log"
+          ],
+          "cwd": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\skill\\artifacts\\units_xsim_final\\csr",
+          "exit_code": 0
+        }
+      ],
+      "checks": 230,
+      "input_sha256": {
+        "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\imports\\vivado-file\\csr_pkg.sv": "f67d94647927e9df4c9215688e7904fb6347ca6d22e3cc1ab1d40bd7dce64fb7",
+        "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\imports\\vivado-file\\csr_decode.sv": "b29c64e2f956c4a6c40284c83c9adf05496017d1d90f6beb2fa2a6addd1a5876",
+        "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\imports\\vivado-file\\csr_regfile.sv": "848feb9d12b4a5dd03806da04f92b8900a69fbc38a07080eee98315170d66ad9",
+        "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\imports\\vivado-file\\csr_top.v": "0a1db8d7468ef616acaa235212dd7c794d2e6434f018f9171fa52b641d352448",
+        "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\Decoder.v": "2ef23cf07910070f4ed3ff3568e29651675326914faa48b49fb14cb50be0964e",
+        "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\verification\\phase05_unit_tb.sv": "9625ea74be18f168cf7752e92f479a3a039ca79b573c79e7a939ed993c0cd2e1",
+        "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\RISCV_DEFINE.vh": "747032861864e7461449b9a3adbd9632803755296a7123da7f697050f6e9642f",
+        "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\CPU_MEMORY_MAP.vh": "c7e45a318fe71ad233cd1219e6fe02a9b833abdd2a5ba1585b6008613e1fd405"
+      },
+      "inputs_unchanged": true
+    },
+    {
+      "case": "reset",
+      "top": "phase10_r1_reset_sources_tb",
+      "pass": true,
+      "commands": [
+        {
+          "argv": [
+            "E:\\Vivado2026.1\\2026.1\\Vivado\\bin\\xvlog.bat",
+            "--sv",
+            "-i",
+            ".",
+            "cpu_reset_sync.v",
+            "cpu_reset_control.v",
+            "phase10_r1_reset_sources_tb.sv"
+          ],
+          "cwd": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\skill\\artifacts\\units_xsim_final\\reset",
+          "exit_code": 0
+        },
+        {
+          "argv": [
+            "E:\\Vivado2026.1\\2026.1\\Vivado\\bin\\xelab.bat",
+            "phase10_r1_reset_sources_tb",
+            "-s",
+            "skill_reset",
+            "--debug",
+            "typical"
+          ],
+          "cwd": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\skill\\artifacts\\units_xsim_final\\reset",
+          "exit_code": 0
+        },
+        {
+          "argv": [
+            "E:\\Vivado2026.1\\2026.1\\Vivado\\bin\\xsim.bat",
+            "skill_reset",
+            "-tclbatch",
+            "run.tcl",
+            "-log",
+            "simulation.log"
+          ],
+          "cwd": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\skill\\artifacts\\units_xsim_final\\reset",
+          "exit_code": 0
+        }
+      ],
+      "checks": null,
+      "input_sha256": {
+        "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\cpu_reset_sync.v": "a759cfd099c4cede4c500f573ed2f31b116c1f97901878a637cbfa17ca46fc2c",
+        "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\cpu_reset_control.v": "65512d822fc7c600798be612e9f67488c2f061f5c5e943ba78d2b95837ad3406",
+        "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\verification\\phase10_r1_reset_sources_tb.sv": "45963a81a1a7857caf0f5b60592a4dd51f0f4667dfe469c472c30d86625efd71",
+        "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\RISCV_DEFINE.vh": "747032861864e7461449b9a3adbd9632803755296a7123da7f697050f6e9642f",
+        "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\CPU_MEMORY_MAP.vh": "c7e45a318fe71ad233cd1219e6fe02a9b833abdd2a5ba1585b6008613e1fd405"
+      },
+      "inputs_unchanged": true
+    }
+  ],
+  "pass": true
+}

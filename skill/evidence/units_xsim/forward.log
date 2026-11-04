@@ -1,0 +1,103 @@
+
+****** xsim v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Tue Nov  3 22:30:27 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/skill_forward/xsim_script.tcl
+# xsim {skill_forward} -autoloadwcfg -tclbatch {run.tcl}
+Time resolution is 1 ps
+source run.tcl
+## run all
+PASS | EX_MEM rs2 enable captures INPUT
+PASS | EX_MEM independent operand enables switch
+PASS | rs1 priority mask=0 sel=0
+PASS | rs2 priority mask=0 sel=0
+PASS | rs1 priority mask=0 sel=1
+PASS | rs2 priority mask=0 sel=1
+PASS | rs1 priority mask=0 sel=2
+PASS | rs2 priority mask=0 sel=2
+PASS | rs1 priority mask=0 sel=3
+PASS | rs2 priority mask=0 sel=3
+PASS | rs1 priority mask=1 sel=0
+PASS | rs2 priority mask=1 sel=0
+PASS | rs1 priority mask=1 sel=1
+PASS | rs2 priority mask=1 sel=1
+PASS | rs1 priority mask=1 sel=2
+PASS | rs2 priority mask=1 sel=2
+PASS | rs1 priority mask=1 sel=3
+PASS | rs2 priority mask=1 sel=3
+PASS | rs1 priority mask=2 sel=0
+PASS | rs2 priority mask=2 sel=0
+PASS | rs1 priority mask=2 sel=1
+PASS | rs2 priority mask=2 sel=1
+PASS | rs1 priority mask=2 sel=2
+PASS | rs2 priority mask=2 sel=2
+PASS | rs1 priority mask=2 sel=3
+PASS | rs2 priority mask=2 sel=3
+PASS | rs1 priority mask=3 sel=0
+PASS | rs2 priority mask=3 sel=0
+PASS | rs1 priority mask=3 sel=1
+PASS | rs2 priority mask=3 sel=1
+PASS | rs1 priority mask=3 sel=2
+PASS | rs2 priority mask=3 sel=2
+PASS | rs1 priority mask=3 sel=3
+PASS | rs2 priority mask=3 sel=3
+PASS | rs1 priority mask=4 sel=0
+PASS | rs2 priority mask=4 sel=0
+PASS | rs1 priority mask=4 sel=1
+PASS | rs2 priority mask=4 sel=1
+PASS | rs1 priority mask=4 sel=2
+PASS | rs2 priority mask=4 sel=2
+PASS | rs1 priority mask=4 sel=3
+PASS | rs2 priority mask=4 sel=3
+PASS | rs1 priority mask=5 sel=0
+PASS | rs2 priority mask=5 sel=0
+PASS | rs1 priority mask=5 sel=1
+PASS | rs2 priority mask=5 sel=1
+PASS | rs1 priority mask=5 sel=2
+PASS | rs2 priority mask=5 sel=2
+PASS | rs1 priority mask=5 sel=3
+PASS | rs2 priority mask=5 sel=3
+PASS | rs1 priority mask=6 sel=0
+PASS | rs2 priority mask=6 sel=0
+PASS | rs1 priority mask=6 sel=1
+PASS | rs2 priority mask=6 sel=1
+PASS | rs1 priority mask=6 sel=2
+PASS | rs2 priority mask=6 sel=2
+PASS | rs1 priority mask=6 sel=3
+PASS | rs2 priority mask=6 sel=3
+PASS | rs1 priority mask=7 sel=0
+PASS | rs2 priority mask=7 sel=0
+PASS | rs1 priority mask=7 sel=1
+PASS | rs2 priority mask=7 sel=1
+PASS | rs1 priority mask=7 sel=2
+PASS | rs2 priority mask=7 sel=2
+PASS | rs1 priority mask=7 sel=3
+PASS | rs2 priority mask=7 sel=3
+PASS | Younger EX beats captured load metadata
+PASS | Younger EX rs2 beats captured load metadata
+PASS | Both operands receive MEM load
+PASS | Producer write-valid gate=0
+PASS | Producer write-valid gate=1
+PASS | x0 never forwards or stalls
+PASS | Nonmatching registers do not forward
+PASS | Save holds WB payload and forwarding validity
+PASS | Save postpones architectural write
+PASS | Extended save cannot repeat commit
+PASS | Stall overlaps save and preserves pending WB
+PASS | Release commits exactly once and advances bubble
+PASS | No repeated commit after release
+PASS | Flush cancels commit commit_before edge
+PASS | Flush dominates save and stall
+PASS | Load stall overlap generates save next cycle
+PASS | Save releases when load-over clears first stall
+PASS | Consecutive overlap re-arms save
+PASS | Reset cancels save and WB asynchronously
+PHASE04_UNIT_SUMMARY checks=85 failures=0
+$finish called at time : 207200 ps : File "C:/Users/liyua/Downloads/160MHZ CPURISCV/skill/artifacts/units_xsim_final/forward/phase04_unit_tb.sv" Line 116
+## quit
+INFO: [Common 17-206] Exiting xsim at Tue Nov  3 22:30:29 2026...

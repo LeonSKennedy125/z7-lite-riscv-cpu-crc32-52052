@@ -1,0 +1,2 @@
+SKILL_CONTRACT_SUMMARY checks=175 failures=0
+skill_contract_tb.sv:129: $finish called at 795000 (1ps)

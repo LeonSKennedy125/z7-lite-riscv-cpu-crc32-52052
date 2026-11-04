@@ -1,0 +1,163 @@
+{
+  "schema": 1,
+  "timestamp": "2026-11-03T22:35:22.633827+08:00",
+  "delivery_validation_pass": true,
+  "skill_count": 3,
+  "executable_python_scripts": 8,
+  "skill_function_scripts": 7,
+  "package_validator_scripts": 1,
+  "runtime": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "module_simulation": [
+    {
+      "backend": "iverilog",
+      "pass": true,
+      "test_count": 4,
+      "contract_checks": 175,
+      "forward_checks": 85,
+      "csr_checks": 230,
+      "reset_cases": 56,
+      "inputs_unchanged": true,
+      "evidence": "units_iverilog/summary.json"
+    },
+    {
+      "backend": "xsim",
+      "pass": true,
+      "test_count": 4,
+      "contract_checks": 175,
+      "forward_checks": 85,
+      "csr_checks": 230,
+      "reset_cases": 56,
+      "inputs_unchanged": true,
+      "evidence": "units_xsim/summary.json"
+    }
+  ],
+  "historical_cycle_rechecks": [
+    {
+      "case": "isa",
+      "pass": true,
+      "fresh_simulation": false,
+      "measured_cycles": 725,
+      "reference_completed_instructions": 528,
+      "register_writes": 459,
+      "original_inputs_unchanged": true,
+      "evidence": "historical_isa_recheck.json"
+    },
+    {
+      "case": "mixed",
+      "pass": true,
+      "fresh_simulation": false,
+      "measured_cycles": 950,
+      "reference_completed_instructions": 684,
+      "register_writes": 585,
+      "original_inputs_unchanged": true,
+      "evidence": "historical_mixed_recheck.json"
+    },
+    {
+      "case": "irq",
+      "pass": true,
+      "fresh_simulation": false,
+      "measured_cycles": 651,
+      "reference_completed_instructions": 425,
+      "register_writes": 367,
+      "original_inputs_unchanged": true,
+      "evidence": "historical_irq_recheck.json"
+    }
+  ],
+  "historical_hazard_write_comparison": {
+    "trace_equal": true,
+    "matched": 56,
+    "scope": "register_writes_only"
+  },
+  "historical_report_analysis": {
+    "pass": true,
+    "source_binding": "MATCHED",
+    "source_entries": 617,
+    "resources": {
+      "lut": 6300.0,
+      "ff": 7865.0,
+      "bram_tile": 88.0,
+      "ramb36": 87.0,
+      "ramb18": 2.0,
+      "dsp": 0.0
+    },
+    "timing": {
+      "wns_ns": 0.132,
+      "tns_ns": 0.0,
+      "setup_failing": 0.0,
+      "setup_total": 19251.0,
+      "whs_ns": 0.05,
+      "ths_ns": 0.0,
+      "hold_failing": 0.0,
+      "hold_total": 19235.0,
+      "wpws_ns": 2.357,
+      "tpws_ns": 0.0,
+      "pulse_failing": 0.0,
+      "pulse_total": 9628.0
+    },
+    "system_pending": {
+      "missing_input_delays": 35,
+      "missing_output_delays": 71,
+      "board_pins_electrical_bridge_hardware": "not evaluated by this parser"
+    },
+    "fresh_build": false,
+    "evidence": "report_analysis.json"
+  },
+  "live_mcp_query_pass": true,
+  "static_inventory_pass": true,
+  "build_wrapper": {
+    "plan_branch_verified": true,
+    "simulation_execute_verified": false,
+    "synthesis_execute_verified": false,
+    "implementation_execute_verified": false,
+    "evidence": "build_plan.json",
+    "reason": "Only the plan branch was verified. Heavy build execution requires prior user agreement; no new full-core/synthesis/implementation success is claimed."
+  },
+  "package_quality": {
+    "pass": true,
+    "checker_and_cli_controls_passed": 35,
+    "evidence": "quality_controls.json",
+    "synthetic_controls_are_not_cpu_tests": true,
+    "files_checked": 57
+  },
+  "format_validator": {
+    "pass": true,
+    "evidence": "format_validation.json"
+  },
+  "same_machine_relocation": {
+    "pass": true,
+    "other_machine_verified": false,
+    "other_board_verified": false,
+    "evidence": "relocation_validation.json"
+  },
+  "source_protection": {
+    "protected_files": 676,
+    "changed_files": [],
+    "pass": true,
+    "scope": "original XPR, source and verification inputs, selected timing evidence",
+    "checked_at": "2026-11-03T22:35:22.598489+08:00"
+  },
+  "manual_review": {
+    "rtl_xdc_xpr_original_tests_reports_modified": false,
+    "all_new_product_files_within_skill": true,
+    "empty_placeholder_files": false,
+    "architecture_claims_bound_to_rtl_and_bd": true,
+    "test_results_separated_from_board_evidence": true,
+    "reproduction_steps_and_script_arguments_documented": true
+  },
+  "submission_alignment": {
+    "basis": "user-supplied TRACK_GUIDE_2026(1).md section 3.3.5.2",
+    "skill_structure_and_scope_usage_failure_conditions_provided": true,
+    "official_latest_rules_independently_confirmed": false,
+    "whole_project_submission_completed": false
+  },
+  "not_verified": [
+    "Fresh whole-core simulation in this machine",
+    "Fresh synthesis/place/route and isolated rebuild execution branch",
+    "Main Kintex-7 CPU board, bridge, physical IRQ, pins/electrical/IO timing",
+    "Official compliance tests and original IPC benchmark",
+    "Different-machine or different-board reuse",
+    "Whole-project open-source license and actual Gitee publication",
+    "Full original AI interaction export and latest official scoring rules"
+  ],
+  "files_in_delivery_excluding_artifacts": 57
+}

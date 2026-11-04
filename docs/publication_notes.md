@@ -11,3 +11,7 @@
 历史阶段文档和 AI 引用中的旧 Word、旧目录、当时 PENDING 状态保留原时点。当前使用入口是根 README，当前最终报告是所收录 PDF，精确文件集合由 `release_manifest.json` 固定。
 
 用户已通过官网独立窗口提交演示视频；按用户选择，仓库不包含视频。旧工作区、完整工具安装、缓存、厂商原资料和备份未纳入公开目录。
+
+## 2026-11-04 完整主工程 Skill 补齐
+
+首次公开版本只收录 CRC 子工程技能包，遗漏了主工程根目录的三个原生 Skill。本次从原 `skill/` 按原字节补入源码、工作流、案例和验证记录；原总说明保留为 `skill/cpu_skill_guide.md`，CRC 总说明保留为 `skill/crc_mmio_guide.md`，新的 `skill/README.md` 提供统一入口。原包自行忽略的 artifacts 缓存目录保持不进入源码仓库。CPU、固件、约束、PDF 及实测原始数据不变。

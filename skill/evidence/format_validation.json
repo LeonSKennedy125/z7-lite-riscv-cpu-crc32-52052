@@ -1,0 +1,11 @@
+{
+  "validator": "skill-creator/scripts/quick_validate.py",
+  "dependency": "PyYAML 6.0.3 installed only under ignored artifacts/validator_dependencies",
+  "skills": {
+    "riscv-verification": "valid",
+    "vivado-automation": "valid",
+    "riscv-debug": "valid"
+  },
+  "stdout": "Skill is valid!\nSkill is valid!\nSkill is valid!",
+  "exit_code": 0
+}

@@ -1,0 +1,69 @@
+{
+  "date": "2026-11-04T16:07:12.075416+08:00",
+  "pass": true,
+  "restored_original_files": 57,
+  "original_source_bytes_unchanged": true,
+  "preserved_crc_skill_files": 7,
+  "native_skills": [
+    {
+      "name": "riscv-debug",
+      "pass": true
+    },
+    {
+      "name": "riscv-verification",
+      "pass": true
+    },
+    {
+      "name": "vivado-automation",
+      "pass": true
+    }
+  ],
+  "original_python_scripts": 8,
+  "total_python_scripts_in_skill": 10,
+  "skill_files": 67,
+  "package_checks": {
+    "files_checked": 67,
+    "checker_controls_passed": 37,
+    "pass": true
+  },
+  "real_trace_recomparison": {
+    "trace_equal": true,
+    "matched": 56,
+    "scope": "register_writes_only"
+  },
+  "existing_report_reanalysis": {
+    "resources": {
+      "lut": 6560.0,
+      "ff": 7892.0,
+      "bram_tile": 20.0,
+      "ramb36": 20.0,
+      "ramb18": 0.0,
+      "dsp": 0.0
+    },
+    "timing": {
+      "wns_ns": 2.824,
+      "tns_ns": 0.0,
+      "setup_failing": 0.0,
+      "setup_total": 18395.0,
+      "whs_ns": 0.044,
+      "ths_ns": 0.0,
+      "hold_failing": 0.0,
+      "hold_total": 18379.0,
+      "wpws_ns": 7.0,
+      "tpws_ns": 0.0,
+      "pulse_failing": 0.0,
+      "pulse_total": 7988.0
+    },
+    "source_binding": "UNVERIFIED",
+    "fresh_build": false
+  },
+  "unchanged_hardware_data_pdf_files": 79,
+  "new_hardware_test": false,
+  "new_cpu_simulation": false,
+  "original_ignored_outputs_not_shipped": [
+    "artifacts/**",
+    "__pycache__/**",
+    "*.pyc"
+  ],
+  "native_format_filename_exception": "Preserve the three original SKILL.md filenames for Agent discovery"
+}

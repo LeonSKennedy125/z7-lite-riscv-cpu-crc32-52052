@@ -1,0 +1,22 @@
+{
+  "command": [
+    "C:\\Users\\liyua\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\skill\\riscv-verification\\scripts\\compare_trace.py",
+    "--expected",
+    "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\skill\\riscv-verification\\examples\\expected.trace",
+    "--actual",
+    "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\skill\\riscv-verification\\examples\\hazards_simulation.log",
+    "--actual-format",
+    "wb-log"
+  ],
+  "exit_code": 0,
+  "result": {
+    "trace_equal": true,
+    "matched": 56,
+    "scope": "register_writes_only"
+  },
+  "scope": "historical hazard register writes only; not fresh simulation"
+}

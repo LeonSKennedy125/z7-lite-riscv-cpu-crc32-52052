@@ -1,0 +1,248 @@
+
+****** xsim v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Tue Nov  3 22:30:32 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/skill_csr/xsim_script.tcl
+# xsim {skill_csr} -autoloadwcfg -tclbatch {run.tcl}
+Time resolution is 1 ps
+source run.tcl
+## run all
+PASS | mstatus packed width is RV32
+PASS | misa RV32 I only; Zicsr has no letter bit
+PASS | constant CSR ignores write
+PASS | constant CSR ignores write
+PASS | constant CSR ignores write
+PASS | constant CSR ignores write
+PASS | constant CSR ignores write
+PASS | constant CSR ignores write
+PASS | constant CSR ignores write
+PASS | minstreth constant only, no retirement claim
+PASS | F CSR outside document scope
+PASS | fflags outside document scope
+PASS | adjacent CSR write isolation
+PASS | adjacent CSR write isolation
+PASS | adjacent CSR write isolation
+PASS | adjacent CSR write isolation
+PASS | adjacent CSR write isolation
+PASS | adjacent CSR write isolation
+PASS | adjacent CSR write isolation
+PASS | adjacent CSR write isolation
+PASS | adjacent CSR write isolation
+PASS | adjacent CSR write isolation
+PASS | adjacent CSR write isolation
+PASS | adjacent CSR write isolation
+PASS | adjacent CSR write isolation
+PASS | adjacent CSR write isolation
+PASS | adjacent CSR write isolation
+PASS | adjacent CSR write isolation
+PASS | adjacent CSR write isolation
+PASS | adjacent CSR write isolation
+PASS | adjacent CSR write isolation
+PASS | adjacent CSR write isolation
+PASS | adjacent CSR write isolation
+PASS | adjacent CSR write isolation
+PASS | adjacent CSR write isolation
+PASS | adjacent CSR write isolation
+PASS | adjacent CSR write isolation
+PASS | CSR returns old value before write edge
+PASS | six CSR operations update state
+PASS | CSR returns old value before write edge
+PASS | six CSR operations update state
+PASS | CSR returns old value before write edge
+PASS | six CSR operations update state
+PASS | CSR returns old value before write edge
+PASS | six CSR operations update state
+PASS | CSR returns old value before write edge
+PASS | six CSR operations update state
+PASS | CSR returns old value before write edge
+PASS | six CSR operations update state
+PASS | zero selector write suppression (RW always writes)
+PASS | nonzero register containing zero still writes
+PASS | zero selector write suppression (RW always writes)
+PASS | nonzero register containing zero still writes
+PASS | zero selector write suppression (RW always writes)
+PASS | nonzero register containing zero still writes
+PASS | zero selector write suppression (RW always writes)
+PASS | nonzero register containing zero still writes
+PASS | zero selector write suppression (RW always writes)
+PASS | nonzero register containing zero still writes
+PASS | zero selector write suppression (RW always writes)
+PASS | nonzero register containing zero still writes
+PASS | uimm zero extension and independent of register data
+PASS | immediate CSR does not read x[uimm]
+PASS | register CSR reads register number
+PASS | uimm zero extension and independent of register data
+PASS | immediate CSR does not read x[uimm]
+PASS | register CSR reads register number
+PASS | uimm zero extension and independent of register data
+PASS | immediate CSR does not read x[uimm]
+PASS | register CSR reads register number
+PASS | uimm zero extension and independent of register data
+PASS | immediate CSR does not read x[uimm]
+PASS | register CSR reads register number
+PASS | uimm zero extension and independent of register data
+PASS | immediate CSR does not read x[uimm]
+PASS | register CSR reads register number
+PASS | uimm zero extension and independent of register data
+PASS | immediate CSR does not read x[uimm]
+PASS | register CSR reads register number
+PASS | uimm zero extension and independent of register data
+PASS | immediate CSR does not read x[uimm]
+PASS | register CSR reads register number
+PASS | uimm zero extension and independent of register data
+PASS | immediate CSR does not read x[uimm]
+PASS | register CSR reads register number
+PASS | uimm zero extension and independent of register data
+PASS | immediate CSR does not read x[uimm]
+PASS | register CSR reads register number
+PASS | uimm zero extension and independent of register data
+PASS | immediate CSR does not read x[uimm]
+PASS | register CSR reads register number
+PASS | uimm zero extension and independent of register data
+PASS | immediate CSR does not read x[uimm]
+PASS | register CSR reads register number
+PASS | uimm zero extension and independent of register data
+PASS | immediate CSR does not read x[uimm]
+PASS | register CSR reads register number
+PASS | uimm zero extension and independent of register data
+PASS | immediate CSR does not read x[uimm]
+PASS | register CSR reads register number
+PASS | uimm zero extension and independent of register data
+PASS | immediate CSR does not read x[uimm]
+PASS | register CSR reads register number
+PASS | uimm zero extension and independent of register data
+PASS | immediate CSR does not read x[uimm]
+PASS | register CSR reads register number
+PASS | uimm zero extension and independent of register data
+PASS | immediate CSR does not read x[uimm]
+PASS | register CSR reads register number
+PASS | uimm zero extension and independent of register data
+PASS | immediate CSR does not read x[uimm]
+PASS | register CSR reads register number
+PASS | uimm zero extension and independent of register data
+PASS | immediate CSR does not read x[uimm]
+PASS | register CSR reads register number
+PASS | uimm zero extension and independent of register data
+PASS | immediate CSR does not read x[uimm]
+PASS | register CSR reads register number
+PASS | uimm zero extension and independent of register data
+PASS | immediate CSR does not read x[uimm]
+PASS | register CSR reads register number
+PASS | uimm zero extension and independent of register data
+PASS | immediate CSR does not read x[uimm]
+PASS | register CSR reads register number
+PASS | uimm zero extension and independent of register data
+PASS | immediate CSR does not read x[uimm]
+PASS | register CSR reads register number
+PASS | uimm zero extension and independent of register data
+PASS | immediate CSR does not read x[uimm]
+PASS | register CSR reads register number
+PASS | uimm zero extension and independent of register data
+PASS | immediate CSR does not read x[uimm]
+PASS | register CSR reads register number
+PASS | uimm zero extension and independent of register data
+PASS | immediate CSR does not read x[uimm]
+PASS | register CSR reads register number
+PASS | uimm zero extension and independent of register data
+PASS | immediate CSR does not read x[uimm]
+PASS | register CSR reads register number
+PASS | uimm zero extension and independent of register data
+PASS | immediate CSR does not read x[uimm]
+PASS | register CSR reads register number
+PASS | uimm zero extension and independent of register data
+PASS | immediate CSR does not read x[uimm]
+PASS | register CSR reads register number
+PASS | uimm zero extension and independent of register data
+PASS | immediate CSR does not read x[uimm]
+PASS | register CSR reads register number
+PASS | uimm zero extension and independent of register data
+PASS | immediate CSR does not read x[uimm]
+PASS | register CSR reads register number
+PASS | uimm zero extension and independent of register data
+PASS | immediate CSR does not read x[uimm]
+PASS | register CSR reads register number
+PASS | uimm zero extension and independent of register data
+PASS | immediate CSR does not read x[uimm]
+PASS | register CSR reads register number
+PASS | stalled CSR write has no side effect
+PASS | stalled CSR write has no side effect
+PASS | stalled CSR write has no side effect
+PASS | write accepted once on stall release
+PASS | stalled system instruction does not redirect
+PASS | stalled system instruction does not redirect
+PASS | synchronous exception uses BASE in both mtvec modes
+PASS | ECALL/EBREAK save faulting PC
+PASS | ECALL/EBREAK synchronous mcause
+PASS | trap saves MIE to MPIE and enters M-only state
+PASS | stalled MRET no redirect
+PASS | MRET uses mepc
+PASS | MRET restores MIE, MPIE one, MPP M
+PASS | stalled system instruction does not redirect
+PASS | stalled system instruction does not redirect
+PASS | synchronous exception uses BASE in both mtvec modes
+PASS | ECALL/EBREAK save faulting PC
+PASS | ECALL/EBREAK synchronous mcause
+PASS | trap saves MIE to MPIE and enters M-only state
+PASS | stalled MRET no redirect
+PASS | MRET uses mepc
+PASS | MRET restores MIE, MPIE one, MPP M
+PASS | stalled system instruction does not redirect
+PASS | stalled system instruction does not redirect
+PASS | synchronous exception uses BASE in both mtvec modes
+PASS | ECALL/EBREAK save faulting PC
+PASS | ECALL/EBREAK synchronous mcause
+PASS | trap saves MIE to MPIE and enters M-only state
+PASS | stalled MRET no redirect
+PASS | MRET uses mepc
+PASS | MRET restores MIE, MPIE one, MPP M
+PASS | stalled system instruction does not redirect
+PASS | stalled system instruction does not redirect
+PASS | synchronous exception uses BASE in both mtvec modes
+PASS | ECALL/EBREAK save faulting PC
+PASS | ECALL/EBREAK synchronous mcause
+PASS | trap saves MIE to MPIE and enters M-only state
+PASS | stalled MRET no redirect
+PASS | MRET uses mepc
+PASS | MRET restores MIE, MPIE one, MPP M
+PASS | invalid system instruction no redirect
+PASS | invalid CSR no write
+PASS | noncancellable instruction defers IRQ
+PASS | noncancellable instruction defers IRQ
+PASS | pending IRQ cannot take cleared pipeline bubble
+PASS | synchronous exception precedes pending IRQ
+PASS | synchronous cause wins pending IRQ
+PASS | IRQ latched during instruction stall
+PASS | pending interrupt waits for stall release
+PASS | external IRQ priority and vector
+PASS | interrupt saves interrupted instruction PC
+PASS | external IRQ cause
+PASS | disabled external/software pending cannot steal timer cause
+PASS | timer cause matches enabled vector
+PASS | software IRQ vector
+PASS | software IRQ cause
+PASS | software clears pending IRQ
+PASS | mie has only three implemented machine IRQ bits
+PASS | mstatus unsupported privilege/F fields remain zero
+PASS | reserved mtvec mode coerced direct (assumption)
+PASS | mepc aligned to RV32I instruction (assumption)
+PASS | mcycle truly increments
+PASS | mcycle counts stalled CPU cycles
+PASS | mcountinhibit CY stops real counter
+PASS | mcountinhibit implemented CY bit
+PASS | CY release resumes counter
+PASS | mcycle low-to-high carry in real state
+PASS | mcycleh retains entry read-only contract
+PASS | mcycle write ignored, real counter still advances
+PASS | synchronous CSR reset clears status
+PASS | reset clears scratch
+PASS | reset clears cycle counter
+PASS | reset suppresses redirects
+PHASE05_UNIT_SUMMARY checks=230 failures=0
+$finish called at time : 1639 ns : File "C:/Users/liyua/Downloads/160MHZ CPURISCV/skill/artifacts/units_xsim_final/csr/phase05_unit_tb.sv" Line 133
+## quit
+INFO: [Common 17-206] Exiting xsim at Tue Nov  3 22:30:34 2026...

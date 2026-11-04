@@ -1,0 +1,4401 @@
+{
+  "project": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.xpr",
+  "saved_project_path": "D:/vivado2026.1_project/160MHZ CPURISCV/RISCV_5pipeline.xpr",
+  "filesets": {
+    "sources_1": {
+      "options": {
+        "DesignMode": "RTL",
+        "TopModule": "design_1_wrapper"
+      },
+      "files": [
+        {
+          "reference": "$PSRCDIR/sources_1/new/EX_pipe.v",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\EX_pipe.v",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sources_1/new/LED_CTRL.v",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\LED_CTRL.v",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sources_1/new/Stall.v",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\Stall.v",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sources_1/imports/vivado-file/csr_decode.sv",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\imports\\vivado-file\\csr_decode.sv",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "ImportPath",
+              "Val": "$PPRDIR/../csr_decode.sv"
+            },
+            {
+              "Name": "ImportTime",
+              "Val": "1773908037"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sources_1/imports/vivado-file/csr_pkg.sv",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\imports\\vivado-file\\csr_pkg.sv",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "ImportPath",
+              "Val": "$PPRDIR/../csr_pkg.sv"
+            },
+            {
+              "Name": "ImportTime",
+              "Val": "1773908088"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sources_1/imports/vivado-file/csr_regfile.sv",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\imports\\vivado-file\\csr_regfile.sv",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "ImportPath",
+              "Val": "$PPRDIR/../csr_regfile.sv"
+            },
+            {
+              "Name": "ImportTime",
+              "Val": "1773908099"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sources_1/imports/vivado-file/csr_top.v",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\imports\\vivado-file\\csr_top.v",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "ImportPath",
+              "Val": "$PPRDIR/../csr_top.v"
+            },
+            {
+              "Name": "ImportTime",
+              "Val": "1773908104"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sources_1/new/save_Load_use.v",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\save_Load_use.v",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sources_1/new/RISCV_DEFINE.vh",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\RISCV_DEFINE.vh",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            },
+            {
+              "Name": "IsVisible",
+              "Val": "1"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sources_1/new/Branch_Ctrl.v",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\Branch_Ctrl.v",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sources_1/new/Comp.v",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\Comp.v",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sources_1/new/Ctrl.v",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\Ctrl.v",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sources_1/new/Decoder.v",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\Decoder.v",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sources_1/new/Forward.v",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\Forward.v",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sources_1/new/EX_MEM.v",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\EX_MEM.v",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sources_1/new/EX_MUX.v",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\EX_MUX.v",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sources_1/new/Forward_Ctrl.v",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\Forward_Ctrl.v",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sources_1/new/ID_EX.v",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\ID_EX.v",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sources_1/new/IF_ID.v",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\IF_ID.v",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sources_1/new/MEM_Forward.v",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\MEM_Forward.v",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sources_1/new/MEM_WB.v",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\MEM_WB.v",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sources_1/new/Regfile.v",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\Regfile.v",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sources_1/new/CPU_MEMORY_MAP.vh",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\CPU_MEMORY_MAP.vh",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            },
+            {
+              "Name": "IsVisible",
+              "Val": "1"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sources_1/new/Store.v",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\Store.v",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sources_1/new/WB_Forward.v",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\WB_Forward.v",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sources_1/new/WB_MUX.v",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\WB_MUX.v",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sources_1/new/imm_gen.v",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\imm_gen.v",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sources_1/new/ALU.v",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\ALU.v",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sources_1/ip/DTCM/DTCM.xci",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\ip\\DTCM\\DTCM.xci",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sources_1/new/MEM_DTCM.v",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\MEM_DTCM.v",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sources_1/new/npc.v",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\npc.v",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sources_1/new/instr_minidecoder.v",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\instr_minidecoder.v",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sources_1/ip/I_ROM/I_ROM.xci",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\ip\\I_ROM\\I_ROM.xci",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sources_1/new/IBROM.v",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\IBROM.v",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sources_1/new/pc_judge.v",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\pc_judge.v",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sources_1/new/cpu_reset_sync.v",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\cpu_reset_sync.v",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sources_1/new/cpu_reset_control.v",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\cpu_reset_control.v",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sources_1/bd/design_1/design_1.bd",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\bd\\design_1\\design_1.bd",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PGENDIR/sources_1/bd/design_1/hdl/design_1_wrapper.v",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.gen\\sources_1\\bd\\design_1\\hdl\\design_1_wrapper.v",
+          "exists": true,
+          "generated": true,
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sources_1/ip/irom/irom.xci",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\ip\\irom\\irom.xci",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "AutoDisabled",
+              "Val": "1"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sources_1/ip/ila/ila.xci",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\ip\\ila\\ila.xci",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "AutoDisabled",
+              "Val": "1"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sources_1/ip/CLOCK/CLOCK.xci",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\ip\\CLOCK\\CLOCK.xci",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "AutoDisabled",
+              "Val": "1"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sources_1/bd/rv32_m/rv32_m.bd",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\bd\\rv32_m\\rv32_m.bd",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "AutoDisabled",
+              "Val": "1"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sources_1/new/IROM.v",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\IROM.v",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "AutoDisabled",
+              "Val": "1"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sources_1/new/RV32M_MUX.v",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\RV32M_MUX.v",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "AutoDisabled",
+              "Val": "1"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sources_1/new/rv32M_outport.v",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\rv32M_outport.v",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "AutoDisabled",
+              "Val": "1"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sources_1/new/rv32M_inport.v",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\rv32M_inport.v",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "AutoDisabled",
+              "Val": "1"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sources_1/new/CLOCK_HIGHER.v",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\CLOCK_HIGHER.v",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "AutoDisabled",
+              "Val": "1"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PPRDIR/verification/historical_init/itcm.coe",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\verification\\historical_init\\itcm.coe",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PPRDIR/verification/historical_init/zero.coe",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\verification\\historical_init\\zero.coe",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PPRDIR/verification/historical_init/rv32ui-p-addi_itcm.coe",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\verification\\historical_init\\rv32ui-p-addi_itcm.coe",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PPRDIR/verification/historical_init/rv32ui-p-lw_itcm.coe",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\verification\\historical_init\\rv32ui-p-lw_itcm.coe",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PPRDIR/verification/historical_init/rv32ui-p-lw_dtcm.coe",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\verification\\historical_init\\rv32ui-p-lw_dtcm.coe",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sources_1/new/common_defines.svh",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\common_defines.svh",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "AutoDisabled",
+              "Val": "1"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            },
+            {
+              "Name": "IsVisible",
+              "Val": "1"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sources_1/new/tage_table.sv",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\tage_table.sv",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "AutoDisabled",
+              "Val": "1"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sources_1/new/fifo.sv",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\fifo.sv",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "AutoDisabled",
+              "Val": "1"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sources_1/new/tage_predictor.sv",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\tage_predictor.sv",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "AutoDisabled",
+              "Val": "1"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sources_1/new/bht.sv",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\bht.sv",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "AutoDisabled",
+              "Val": "1"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sources_1/new/top.sv",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\top.sv",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "AutoDisabled",
+              "Val": "1"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PPRDIR/verification/phase06_program/program.coe",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\verification\\phase06_program\\program.coe",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PPRDIR/verification/phase07_program/program.coe",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\verification\\phase07_program\\program.coe",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        }
+      ]
+    },
+    "constrs_1": {
+      "options": {
+        "TargetConstrsFile": "$PSRCDIR/constrs_1/new/pin.xdc",
+        "ConstrsType": "XDC"
+      },
+      "files": [
+        {
+          "reference": "$PSRCDIR/constrs_1/new/pin.xdc",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\constrs_1\\new\\pin.xdc",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/constrs_1/new/cpu_reset_sync.xdc",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\constrs_1\\new\\cpu_reset_sync.xdc",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "ProcessingOrder",
+              "Val": "LATE"
+            }
+          ]
+        }
+      ]
+    },
+    "sim_1": {
+      "options": {
+        "DesignMode": "RTL",
+        "TopModule": "assist_tb",
+        "TransportPathDelay": "0",
+        "TransportIntDelay": "0",
+        "SelectedSimModel": "rtl",
+        "PamDesignTestbench": "",
+        "PamDutBypassFile": "xil_dut_bypass",
+        "PamSignalDriverFile": "xil_bypass_driver",
+        "PamPseudoTop": "pseudo_tb",
+        "SrcSet": "sources_1",
+        "XSimWcfgFile": "$PPRDIR/assist_tb_behav.wcfg",
+        "CosimPdi": "",
+        "CosimPlatform": "",
+        "CosimElf": "",
+        "CosimRootfs": "",
+        "CosimSDfile": "",
+        "CosimSDDir": "",
+        "CosimOutDir": "",
+        "CosimXsa": "",
+        "CosimAIKernel": "",
+        "LogicalNoCTop": "",
+        "LogicalNoCTopLib": "",
+        "Dmv": "",
+        "xsim.simulate.runtime": "0ns",
+        "NLNetlistMode": "funcsim"
+      },
+      "files": [
+        {
+          "reference": "$PPRDIR/verification/write_trace_checker.sv",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\verification\\write_trace_checker.sv",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sim_1/imports/tests_rv/assist_tb.sv",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sim_1\\imports\\tests_rv\\assist_tb.sv",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "ImportPath",
+              "Val": "$PPRDIR/../../tests_rv/assist_tb.sv"
+            },
+            {
+              "Name": "ImportTime",
+              "Val": "1774248101"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PPRDIR/verification/reset_phase_tb.sv",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\verification\\reset_phase_tb.sv",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "AutoDisabled",
+              "Val": "1"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sim_1/imports/riscv_test/tb.v",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sim_1\\imports\\riscv_test\\tb.v",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "AutoDisabled",
+              "Val": "1"
+            },
+            {
+              "Name": "ImportPath",
+              "Val": "$PPRDIR/../../tests_rv/riscv_test/riscv_test/tb.v"
+            },
+            {
+              "Name": "ImportTime",
+              "Val": "1773464850"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sim_1/new/tb_top_RISCV.v",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sim_1\\new\\tb_top_RISCV.v",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "AutoDisabled",
+              "Val": "1"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sim_1/new/print.v",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sim_1\\new\\print.v",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "AutoDisabled",
+              "Val": "1"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/sources_1/new/RISCV_DEFINE.vh",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\new\\RISCV_DEFINE.vh",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "AutoDisabled",
+              "Val": "1"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            },
+            {
+              "Name": "IsVisible",
+              "Val": "1"
+            }
+          ]
+        },
+        {
+          "reference": "$PPRDIR/assist_tb_behav.wcfg",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\assist_tb_behav.wcfg",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        }
+      ]
+    },
+    "utils_1": {
+      "options": {
+        "TopAutoSet": "TRUE"
+      },
+      "files": [
+        {
+          "reference": "$PSRCDIR/utils_1/imports/synth_1/npc.dcp",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\utils_1\\imports\\synth_1\\npc.dcp",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedInSteps",
+              "Val": "synth_1"
+            },
+            {
+              "Name": "AutoDcp",
+              "Val": "1"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/utils_1/impl_1/rqs_report.rqs",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\utils_1\\impl_1\\rqs_report.rqs",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/utils_1/impl_1/rqs_report1.rqs",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\utils_1\\impl_1\\rqs_report1.rqs",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/utils_1/impl_1/rqs_report2.rqs",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\utils_1\\impl_1\\rqs_report2.rqs",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/utils_1/impl_1/rqs_report3.rqs",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\utils_1\\impl_1\\rqs_report3.rqs",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            }
+          ]
+        },
+        {
+          "reference": "$PSRCDIR/utils_1/impl_1/rqs_report4.rqs",
+          "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\utils_1\\impl_1\\rqs_report4.rqs",
+          "exists": true,
+          "generated": false,
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedInSteps",
+              "Val": "impl_1"
+            },
+            {
+              "Name": "UsedInSteps",
+              "Val": "synth_1"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "bd": {
+    "design_1": {
+      "info": {
+        "boundary_crc": "0xAB29EEA09900B127",
+        "device": "xc7k325tffg676-2",
+        "gen_directory": "../../../../RISCV_5pipeline.gen/sources_1/bd/design_1",
+        "name": "design_1",
+        "rev_ctrl_bd_flag": "RevCtrlBdOff",
+        "synth_flow_mode": "None",
+        "tool_version": "2026.1",
+        "validated": "true"
+      },
+      "ports": {
+        "clock": {
+          "type": "clk",
+          "direction": "I",
+          "parameters": {
+            "CLK_DOMAIN": {
+              "value": "design_1_clock",
+              "value_src": "default"
+            },
+            "FREQ_HZ": {
+              "value": "50000000"
+            },
+            "FREQ_TOLERANCE_HZ": {
+              "value": "0",
+              "value_src": "default"
+            },
+            "INSERT_VIP": {
+              "value": "0",
+              "value_src": "default"
+            },
+            "PHASE": {
+              "value": "0.0",
+              "value_src": "default"
+            }
+          }
+        },
+        "reset": {
+          "type": "rst",
+          "direction": "I",
+          "parameters": {
+            "INSERT_VIP": {
+              "value": "0",
+              "value_src": "default"
+            },
+            "POLARITY": {
+              "value": "ACTIVE_LOW"
+            }
+          }
+        },
+        "zero": {
+          "type": "data",
+          "direction": "I",
+          "parameters": {
+            "LAYERED_METADATA": {
+              "value": "undef",
+              "value_src": "default"
+            }
+          }
+        },
+        "LED": {
+          "type": "data",
+          "direction": "O",
+          "left": "4",
+          "right": "0",
+          "parameters": {
+            "LAYERED_METADATA": {
+              "value": "undef",
+              "value_src": "default"
+            }
+          }
+        },
+        "io_valid": {
+          "direction": "O"
+        },
+        "io_write": {
+          "direction": "O"
+        },
+        "io_addr": {
+          "direction": "O",
+          "left": "31",
+          "right": "0"
+        },
+        "io_wdata": {
+          "direction": "O",
+          "left": "31",
+          "right": "0"
+        },
+        "io_be": {
+          "direction": "O",
+          "left": "3",
+          "right": "0"
+        },
+        "io_ready": {
+          "direction": "I"
+        },
+        "io_rdata": {
+          "direction": "I",
+          "left": "31",
+          "right": "0"
+        },
+        "io_clk": {
+          "direction": "O",
+          "parameters": {
+            "CLK_DOMAIN": {
+              "value": "design_1_clock",
+              "value_src": "ip_prop"
+            },
+            "FREQ_HZ": {
+              "value": "160000000",
+              "value_src": "ip_prop"
+            },
+            "PHASE": {
+              "value": "0.0",
+              "value_src": "ip_prop"
+            }
+          }
+        },
+        "io_resetn": {
+          "direction": "O",
+          "left": "0",
+          "right": "0",
+          "parameters": {
+            "POLARITY": {
+              "value": "ACTIVE_LOW",
+              "value_src": "const_prop"
+            },
+            "PortType": {
+              "value": "rst",
+              "value_src": "ip_prop"
+            },
+            "PortType.PROP_SRC": {
+              "value": "false",
+              "value_src": "ip_prop"
+            }
+          }
+        }
+      },
+      "components": {
+        "EX_pipe_0": {
+          "vlnv": "xilinx.com:module_ref:EX_pipe:1.0",
+          "reference": {
+            "ref_type": "hdl",
+            "ref_name": "EX_pipe",
+            "boundary_crc": "0x0"
+          },
+          "parameters": null
+        },
+        "LED_CTRL_0": {
+          "vlnv": "xilinx.com:module_ref:LED_CTRL:1.0",
+          "reference": {
+            "ref_type": "hdl",
+            "ref_name": "LED_CTRL",
+            "boundary_crc": "0x0"
+          },
+          "parameters": null
+        },
+        "Stall_0": {
+          "vlnv": "xilinx.com:module_ref:Stall:1.0",
+          "reference": {
+            "ref_type": "hdl",
+            "ref_name": "Stall",
+            "boundary_crc": "0x0"
+          },
+          "parameters": null
+        },
+        "clk_wiz_0": {
+          "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+          "reference": null,
+          "parameters": {
+            "CLKIN1_JITTER_PS": {
+              "value": "200.0"
+            },
+            "CLKOUT1_JITTER": {
+              "value": "147.453"
+            },
+            "CLKOUT1_PHASE_ERROR": {
+              "value": "164.985"
+            },
+            "CLKOUT1_REQUESTED_OUT_FREQ": {
+              "value": "160.000"
+            },
+            "MMCM_CLKFBOUT_MULT_F": {
+              "value": "20.000"
+            },
+            "MMCM_CLKIN1_PERIOD": {
+              "value": "20.000"
+            },
+            "MMCM_CLKIN2_PERIOD": {
+              "value": "10.0"
+            },
+            "MMCM_CLKOUT0_DIVIDE_F": {
+              "value": "6.250"
+            },
+            "MMCM_DIVCLK_DIVIDE": {
+              "value": "1"
+            },
+            "PRIM_IN_FREQ": {
+              "value": "50.000"
+            },
+            "PRIM_SOURCE": {
+              "value": "No_buffer"
+            },
+            "RESET_PORT": {
+              "value": "resetn"
+            },
+            "RESET_TYPE": {
+              "value": "ACTIVE_LOW"
+            }
+          }
+        },
+        "csr_top_0": {
+          "vlnv": "xilinx.com:module_ref:csr_top:1.0",
+          "reference": {
+            "ref_type": "hdl",
+            "ref_name": "csr_top",
+            "boundary_crc": "0x0"
+          },
+          "parameters": null
+        },
+        "ila_0": {
+          "vlnv": "xilinx.com:ip:ila:6.2",
+          "reference": null,
+          "parameters": {
+            "C_DATA_DEPTH": {
+              "value": "1024"
+            },
+            "C_MONITOR_TYPE": {
+              "value": "Native"
+            },
+            "C_NUM_OF_PROBES": {
+              "value": "22"
+            },
+            "C_PROBE0_WIDTH": {
+              "value": "32"
+            },
+            "C_PROBE10_WIDTH": {
+              "value": "32"
+            },
+            "C_PROBE11_WIDTH": {
+              "value": "32"
+            },
+            "C_PROBE12_WIDTH": {
+              "value": "32"
+            },
+            "C_PROBE13_WIDTH": {
+              "value": "32"
+            },
+            "C_PROBE14_WIDTH": {
+              "value": "32"
+            },
+            "C_PROBE15_WIDTH": {
+              "value": "32"
+            },
+            "C_PROBE16_WIDTH": {
+              "value": "32"
+            },
+            "C_PROBE17_WIDTH": {
+              "value": "32"
+            },
+            "C_PROBE18_WIDTH": {
+              "value": "32"
+            },
+            "C_PROBE19_WIDTH": {
+              "value": "32"
+            },
+            "C_PROBE1_WIDTH": {
+              "value": "32"
+            },
+            "C_PROBE20_WIDTH": {
+              "value": "32"
+            },
+            "C_PROBE21_WIDTH": {
+              "value": "32"
+            },
+            "C_PROBE2_WIDTH": {
+              "value": "32"
+            },
+            "C_PROBE3_WIDTH": {
+              "value": "32"
+            },
+            "C_PROBE4_WIDTH": {
+              "value": "32"
+            },
+            "C_PROBE5_WIDTH": {
+              "value": "32"
+            },
+            "C_PROBE6_WIDTH": {
+              "value": "32"
+            },
+            "C_PROBE7_WIDTH": {
+              "value": "32"
+            },
+            "C_PROBE8_WIDTH": {
+              "value": "32"
+            },
+            "C_PROBE9_WIDTH": {
+              "value": "32"
+            }
+          }
+        },
+        "proc_sys_reset_0": {
+          "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
+          "reference": null,
+          "parameters": null
+        },
+        "save_Load_use_0": {
+          "vlnv": "xilinx.com:module_ref:save_Load_use:1.0",
+          "reference": {
+            "ref_type": "hdl",
+            "ref_name": "save_Load_use",
+            "boundary_crc": "0x0"
+          },
+          "parameters": null
+        },
+        "util_vector_logic_0": {
+          "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+          "reference": null,
+          "parameters": {
+            "C_OPERATION": {
+              "value": "not"
+            },
+            "C_SIZE": {
+              "value": "1"
+            }
+          }
+        },
+        "util_vector_logic_1": {
+          "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+          "reference": null,
+          "parameters": {
+            "C_OPERATION": {
+              "value": "or"
+            },
+            "C_SIZE": {
+              "value": "1"
+            }
+          }
+        },
+        "Branch_Ctrl_0": {
+          "vlnv": "xilinx.com:module_ref:Branch_Ctrl:1.0",
+          "reference": {
+            "ref_type": "hdl",
+            "ref_name": "Branch_Ctrl",
+            "boundary_crc": "0x0"
+          },
+          "parameters": null
+        },
+        "Comp_0": {
+          "vlnv": "xilinx.com:module_ref:Comp:1.0",
+          "reference": {
+            "ref_type": "hdl",
+            "ref_name": "Comp",
+            "boundary_crc": "0x0"
+          },
+          "parameters": null
+        },
+        "Ctrl_0": {
+          "vlnv": "xilinx.com:module_ref:Ctrl:1.0",
+          "reference": {
+            "ref_type": "hdl",
+            "ref_name": "Ctrl",
+            "boundary_crc": "0x0"
+          },
+          "parameters": null
+        },
+        "Decoder_0": {
+          "vlnv": "xilinx.com:module_ref:Decoder:1.0",
+          "reference": {
+            "ref_type": "hdl",
+            "ref_name": "Decoder",
+            "boundary_crc": "0x0"
+          },
+          "parameters": null
+        },
+        "EX_Forward_0": {
+          "vlnv": "xilinx.com:module_ref:EX_Forward:1.0",
+          "reference": {
+            "ref_type": "hdl",
+            "ref_name": "EX_Forward",
+            "boundary_crc": "0x0"
+          },
+          "parameters": null
+        },
+        "EX_MEM_0": {
+          "vlnv": "xilinx.com:module_ref:EX_MEM:1.0",
+          "reference": {
+            "ref_type": "hdl",
+            "ref_name": "EX_MEM",
+            "boundary_crc": "0x0"
+          },
+          "parameters": null
+        },
+        "EX_MUX_0": {
+          "vlnv": "xilinx.com:module_ref:EX_MUX:1.0",
+          "reference": {
+            "ref_type": "hdl",
+            "ref_name": "EX_MUX",
+            "boundary_crc": "0x0"
+          },
+          "parameters": null
+        },
+        "Forward_Ctrl_0": {
+          "vlnv": "xilinx.com:module_ref:Forward_Ctrl:1.0",
+          "reference": {
+            "ref_type": "hdl",
+            "ref_name": "Forward_Ctrl",
+            "boundary_crc": "0x0"
+          },
+          "parameters": null
+        },
+        "ID_EX_0": {
+          "vlnv": "xilinx.com:module_ref:ID_EX:1.0",
+          "reference": {
+            "ref_type": "hdl",
+            "ref_name": "ID_EX",
+            "boundary_crc": "0x0"
+          },
+          "parameters": null
+        },
+        "IF_ID_0": {
+          "vlnv": "xilinx.com:module_ref:IF_ID:1.0",
+          "reference": {
+            "ref_type": "hdl",
+            "ref_name": "IF_ID",
+            "boundary_crc": "0x0"
+          },
+          "parameters": null
+        },
+        "MEM_Forward_0": {
+          "vlnv": "xilinx.com:module_ref:MEM_Forward:1.0",
+          "reference": {
+            "ref_type": "hdl",
+            "ref_name": "MEM_Forward",
+            "boundary_crc": "0x0"
+          },
+          "parameters": null
+        },
+        "MEM_WB_0": {
+          "vlnv": "xilinx.com:module_ref:MEM_WB:1.0",
+          "reference": {
+            "ref_type": "hdl",
+            "ref_name": "MEM_WB",
+            "boundary_crc": "0x0"
+          },
+          "parameters": null
+        },
+        "Regfile_0": {
+          "vlnv": "xilinx.com:module_ref:Regfile:1.0",
+          "reference": {
+            "ref_type": "hdl",
+            "ref_name": "Regfile",
+            "boundary_crc": "0x0"
+          },
+          "parameters": null
+        },
+        "Store_Load_0": {
+          "vlnv": "xilinx.com:module_ref:Store_Load:1.0",
+          "reference": {
+            "ref_type": "hdl",
+            "ref_name": "Store_Load",
+            "boundary_crc": "0x0"
+          },
+          "parameters": null
+        },
+        "WB_Forward_0": {
+          "vlnv": "xilinx.com:module_ref:WB_Forward:1.0",
+          "reference": {
+            "ref_type": "hdl",
+            "ref_name": "WB_Forward",
+            "boundary_crc": "0x0"
+          },
+          "parameters": null
+        },
+        "WB_MUX_0": {
+          "vlnv": "xilinx.com:module_ref:WB_MUX:1.0",
+          "reference": {
+            "ref_type": "hdl",
+            "ref_name": "WB_MUX",
+            "boundary_crc": "0x0"
+          },
+          "parameters": null
+        },
+        "imm_gen_0": {
+          "vlnv": "xilinx.com:module_ref:imm_gen:1.0",
+          "reference": {
+            "ref_type": "hdl",
+            "ref_name": "imm_gen",
+            "boundary_crc": "0x0"
+          },
+          "parameters": null
+        },
+        "ALU_0": {
+          "vlnv": "xilinx.com:module_ref:ALU:1.0",
+          "reference": {
+            "ref_type": "hdl",
+            "ref_name": "ALU",
+            "boundary_crc": "0x0"
+          },
+          "parameters": null
+        },
+        "MEM_DTCM_0": {
+          "vlnv": "xilinx.com:module_ref:MEM_DTCM:1.0",
+          "reference": {
+            "ref_type": "hdl",
+            "ref_name": "MEM_DTCM",
+            "boundary_crc": "0x0"
+          },
+          "parameters": null
+        },
+        "npc_0": {
+          "vlnv": "xilinx.com:module_ref:npc:1.0",
+          "reference": {
+            "ref_type": "hdl",
+            "ref_name": "npc",
+            "boundary_crc": "0x0"
+          },
+          "parameters": null
+        },
+        "instr_minidecoder_0": {
+          "vlnv": "xilinx.com:module_ref:instr_minidecoder:1.0",
+          "reference": {
+            "ref_type": "hdl",
+            "ref_name": "instr_minidecoder",
+            "boundary_crc": "0x0"
+          },
+          "parameters": null
+        },
+        "IBROM_0": {
+          "vlnv": "xilinx.com:module_ref:IBROM:1.0",
+          "reference": {
+            "ref_type": "hdl",
+            "ref_name": "IBROM",
+            "boundary_crc": "0x0"
+          },
+          "parameters": null
+        },
+        "pc_judge_0": {
+          "vlnv": "xilinx.com:module_ref:pc_judge:1.0",
+          "reference": {
+            "ref_type": "hdl",
+            "ref_name": "pc_judge",
+            "boundary_crc": "0x0"
+          },
+          "parameters": null
+        },
+        "cpu_reset_sync_0": {
+          "vlnv": "xilinx.com:module_ref:cpu_reset_control:1.0",
+          "reference": {
+            "ref_type": "hdl",
+            "ref_name": "cpu_reset_control",
+            "boundary_crc": "0x0"
+          },
+          "parameters": null
+        }
+      },
+      "nets": {
+        "ALU_0_Alu_out": {
+          "ports": [
+            "ALU_0/Alu_out",
+            "EX_MEM_0/EX_ALUout",
+            "Forward_Ctrl_0/ex_aluout",
+            "csr_top_0/alu_result"
+          ]
+        },
+        "ALU_0_MEM_Addr": {
+          "ports": [
+            "ALU_0/MEM_Addr",
+            "EX_MEM_0/load_addr",
+            "Store_Load_0/MEM_Addr"
+          ]
+        },
+        "ALU_0_branch_pc": {
+          "ports": [
+            "ALU_0/branch_pc",
+            "Branch_Ctrl_0/Alu_out"
+          ]
+        },
+        "Branch_Ctrl_0_branch_target": {
+          "ports": [
+            "Branch_Ctrl_0/branch_target",
+            "pc_judge_0/pc_Jump_Branch"
+          ]
+        },
+        "Branch_Ctrl_0_flush": {
+          "ports": [
+            "Branch_Ctrl_0/flush",
+            "EX_pipe_0/flush",
+            "IBROM_0/flush",
+            "ID_EX_0/flush",
+            "IF_ID_0/flush",
+            "npc_0/flush",
+            "pc_judge_0/J_B"
+          ]
+        },
+        "Comp_0_Comp_out": {
+          "ports": [
+            "Comp_0/Comp_out",
+            "ALU_0/comp_out",
+            "Branch_Ctrl_0/comp_out",
+            "csr_top_0/branch_taken"
+          ]
+        },
+        "Ctrl_0_ALU_Ctrl": {
+          "ports": [
+            "Ctrl_0/ALU_Ctrl",
+            "ID_EX_0/ALU_Ctrl"
+          ]
+        },
+        "Ctrl_0_Comp_Ctrl": {
+          "ports": [
+            "Ctrl_0/Comp_Ctrl",
+            "ID_EX_0/Comp_Ctrl"
+          ]
+        },
+        "Ctrl_0_Comp_en": {
+          "ports": [
+            "Ctrl_0/Comp_en",
+            "ID_EX_0/comp_en"
+          ]
+        },
+        "Ctrl_0_Load_Ctrl": {
+          "ports": [
+            "Ctrl_0/Load_Ctrl",
+            "ID_EX_0/Load_Ctrl"
+          ]
+        },
+        "Ctrl_0_Load_en": {
+          "ports": [
+            "Ctrl_0/Load_en",
+            "ID_EX_0/Load_en"
+          ]
+        },
+        "Ctrl_0_Store_Ctrl": {
+          "ports": [
+            "Ctrl_0/Store_Ctrl",
+            "ID_EX_0/Store_Ctrl"
+          ]
+        },
+        "Ctrl_0_Store_en": {
+          "ports": [
+            "Ctrl_0/Store_en",
+            "ID_EX_0/Store_en"
+          ]
+        },
+        "Ctrl_0_WB_Ctrl": {
+          "ports": [
+            "Ctrl_0/WB_Ctrl",
+            "ID_EX_0/WB_Ctrl"
+          ]
+        },
+        "Ctrl_0_reuse": {
+          "ports": [
+            "Ctrl_0/reuse",
+            "ID_EX_0/reuse"
+          ]
+        },
+        "Ctrl_0_wb_en": {
+          "ports": [
+            "Ctrl_0/wb_en",
+            "ID_EX_0/wb_en"
+          ]
+        },
+        "Decoder_0_csr_addr": {
+          "ports": [
+            "Decoder_0/csr_addr",
+            "ID_EX_0/csr_addr"
+          ]
+        },
+        "Decoder_0_csr_imm": {
+          "ports": [
+            "Decoder_0/csr_imm",
+            "ID_EX_0/csr_imm"
+          ]
+        },
+        "Decoder_0_func3": {
+          "ports": [
+            "Decoder_0/func3",
+            "Ctrl_0/func3"
+          ]
+        },
+        "Decoder_0_func7": {
+          "ports": [
+            "Decoder_0/func7",
+            "Ctrl_0/func7"
+          ]
+        },
+        "Decoder_0_func12": {
+          "ports": [
+            "Decoder_0/func12",
+            "Ctrl_0/func12"
+          ]
+        },
+        "Decoder_0_instr_TYPE": {
+          "ports": [
+            "Decoder_0/instr_TYPE",
+            "ID_EX_0/Instr_TYPE",
+            "imm_gen_0/instr_TYPE"
+          ]
+        },
+        "Decoder_0_instr_valid": {
+          "ports": [
+            "Decoder_0/instr_valid",
+            "ID_EX_0/instr_valid"
+          ]
+        },
+        "Decoder_0_opcode": {
+          "ports": [
+            "Decoder_0/opcode",
+            "Ctrl_0/opcode"
+          ]
+        },
+        "Decoder_0_r1_addr": {
+          "ports": [
+            "Decoder_0/r1_addr",
+            "ID_EX_0/r1_addr",
+            "Regfile_0/r_addr1"
+          ]
+        },
+        "Decoder_0_r2_addr": {
+          "ports": [
+            "Decoder_0/r2_addr",
+            "ID_EX_0/r2_addr",
+            "Regfile_0/r_addr2"
+          ]
+        },
+        "Decoder_0_w_addr": {
+          "ports": [
+            "Decoder_0/w_addr",
+            "ID_EX_0/w_addr"
+          ]
+        },
+        "EX_Forward_0_ex_Forward_SEL1": {
+          "ports": [
+            "EX_Forward_0/ex_Forward_SEL1",
+            "EX_MEM_0/ex_Forward_SEL1",
+            "Forward_Ctrl_0/ex_Forward_SEL"
+          ]
+        },
+        "EX_Forward_0_flush3": {
+          "ports": [
+            "EX_Forward_0/flush3",
+            "EX_pipe_0/Flush3"
+          ]
+        },
+        "EX_Forward_0_stall": {
+          "ports": [
+            "EX_Forward_0/stall",
+            "util_vector_logic_1/Op1",
+            "Stall_0/Stall_Ctrl2",
+            "save_Load_use_0/stall2"
+          ]
+        },
+        "EX_MEM_0_CSR_DATA_o": {
+          "ports": [
+            "EX_MEM_0/CSR_DATA_o",
+            "Forward_Ctrl_0/mem_csr",
+            "MEM_WB_0/CSR_DATA"
+          ]
+        },
+        "EX_MEM_0_IO_data_o": {
+          "ports": [
+            "EX_MEM_0/IO_data_o",
+            "Forward_Ctrl_0/mem_io_data",
+            "MEM_WB_0/IO_data"
+          ]
+        },
+        "EX_MEM_0_IO_source_o": {
+          "ports": [
+            "EX_MEM_0/IO_source_o",
+            "Forward_Ctrl_0/mem_io_source",
+            "MEM_WB_0/IO_source"
+          ]
+        },
+        "EX_MEM_0_Instr_TYPE_out": {
+          "ports": [
+            "EX_MEM_0/Instr_TYPE_out",
+            "MEM_Forward_0/instr_type",
+            "MEM_WB_0/instr_TYPE"
+          ]
+        },
+        "EX_MEM_0_MEM_ALUout_out": {
+          "ports": [
+            "EX_MEM_0/MEM_ALUout_out",
+            "Forward_Ctrl_0/mem_aluout",
+            "MEM_WB_0/ALU_out"
+          ]
+        },
+        "EX_MEM_0_MEM_wb_addr_out": {
+          "ports": [
+            "EX_MEM_0/MEM_wb_addr_out",
+            "MEM_Forward_0/mem_wb_addr",
+            "MEM_WB_0/wb_addr"
+          ]
+        },
+        "EX_MEM_0_WB_Ctrl_out": {
+          "ports": [
+            "EX_MEM_0/WB_Ctrl_out",
+            "MEM_WB_0/WB_Ctrl"
+          ]
+        },
+        "EX_MEM_0_WB_en_out": {
+          "ports": [
+            "EX_MEM_0/WB_en_out",
+            "MEM_Forward_0/wb_en",
+            "MEM_WB_0/Wen"
+          ]
+        },
+        "EX_MEM_0_ex_Forward_SEL1_0": {
+          "ports": [
+            "EX_MEM_0/ex_Forward_SEL1_0",
+            "Forward_Ctrl_0/load_SEL"
+          ]
+        },
+        "EX_MEM_0_ex_Forward_en1_o": {
+          "ports": [
+            "EX_MEM_0/ex_Forward_en1_o",
+            "Forward_Ctrl_0/load_en1"
+          ]
+        },
+        "EX_MEM_0_ex_Forward_en1_out": {
+          "ports": [
+            "EX_Forward_0/ex_Forward_en1",
+            "EX_MEM_0/ex_Forward_en1",
+            "Forward_Ctrl_0/ex_Forward_en1"
+          ]
+        },
+        "EX_MEM_0_ex_Forward_en2_o": {
+          "ports": [
+            "EX_MEM_0/ex_Forward_en2_o",
+            "Forward_Ctrl_0/load_en2"
+          ]
+        },
+        "EX_MEM_0_ex_Forward_en2_out": {
+          "ports": [
+            "EX_Forward_0/ex_Forward_en2",
+            "EX_MEM_0/ex_Forward_en2",
+            "Forward_Ctrl_0/ex_Forward_en2"
+          ]
+        },
+        "EX_MEM_0_load_addr_o": {
+          "ports": [
+            "EX_MEM_0/load_addr_o",
+            "MEM_DTCM_0/mem_addr"
+          ]
+        },
+        "EX_MEM_0_load_ctrl_out": {
+          "ports": [
+            "EX_MEM_0/load_ctrl_out",
+            "MEM_DTCM_0/Load_Ctrl"
+          ]
+        },
+        "EX_MEM_0_loaden_out": {
+          "ports": [
+            "EX_MEM_0/loaden_out",
+            "MEM_DTCM_0/Load_en"
+          ]
+        },
+        "EX_MEM_0_mem_pc4_out": {
+          "ports": [
+            "EX_MEM_0/mem_pc4_out",
+            "Forward_Ctrl_0/mem_pc4",
+            "MEM_WB_0/mem_pc4"
+          ]
+        },
+        "EX_MUX_0_ALU_A": {
+          "ports": [
+            "EX_MUX_0/ALU_A",
+            "EX_pipe_0/ALU_A"
+          ]
+        },
+        "EX_MUX_0_ALU_B": {
+          "ports": [
+            "EX_MUX_0/ALU_B",
+            "EX_pipe_0/ALU_B"
+          ]
+        },
+        "EX_MUX_0_Comp_A": {
+          "ports": [
+            "EX_MUX_0/Comp_A",
+            "EX_pipe_0/Comp_A"
+          ]
+        },
+        "EX_MUX_0_Comp_B": {
+          "ports": [
+            "EX_MUX_0/Comp_B",
+            "EX_pipe_0/Comp_B"
+          ]
+        },
+        "EX_MUX_0_D2": {
+          "ports": [
+            "EX_MUX_0/D2",
+            "EX_pipe_0/D2"
+          ]
+        },
+        "EX_pipe_0_ALU_A_O": {
+          "ports": [
+            "EX_pipe_0/ALU_A_O",
+            "ALU_0/A",
+            "csr_top_0/rs1"
+          ]
+        },
+        "EX_pipe_0_ALU_B_O": {
+          "ports": [
+            "EX_pipe_0/ALU_B_O",
+            "ALU_0/B"
+          ]
+        },
+        "EX_pipe_0_ALU_Ctrl_O": {
+          "ports": [
+            "EX_pipe_0/ALU_Ctrl_O",
+            "ALU_0/ALU_Ctrl",
+            "csr_top_0/opcode"
+          ]
+        },
+        "EX_pipe_0_Comp_A_O": {
+          "ports": [
+            "EX_pipe_0/Comp_A_O",
+            "Comp_0/A"
+          ]
+        },
+        "EX_pipe_0_Comp_B_O": {
+          "ports": [
+            "EX_pipe_0/Comp_B_O",
+            "Comp_0/B"
+          ]
+        },
+        "EX_pipe_0_Comp_Ctrl_O": {
+          "ports": [
+            "EX_pipe_0/Comp_Ctrl_O",
+            "Comp_0/Comp_Ctrl"
+          ]
+        },
+        "EX_pipe_0_D2_O": {
+          "ports": [
+            "EX_pipe_0/D2_O",
+            "Store_Load_0/D2"
+          ]
+        },
+        "EX_pipe_0_Instr_TYPE_O": {
+          "ports": [
+            "EX_pipe_0/Instr_TYPE_O",
+            "ALU_0/Instr_type",
+            "Branch_Ctrl_0/instr_TYPE",
+            "EX_Forward_0/instr_type",
+            "EX_MEM_0/instr_TYPE",
+            "csr_top_0/instr_type"
+          ]
+        },
+        "EX_pipe_0_Load_Ctrl_O": {
+          "ports": [
+            "EX_pipe_0/Load_Ctrl_O",
+            "EX_MEM_0/load_ctrl",
+            "Store_Load_0/Load_Ctrl"
+          ]
+        },
+        "EX_pipe_0_Load_en_O": {
+          "ports": [
+            "EX_pipe_0/Load_en_O",
+            "EX_MEM_0/loaden",
+            "Store_Load_0/Load_en"
+          ]
+        },
+        "EX_pipe_0_Store_Ctrl_O": {
+          "ports": [
+            "EX_pipe_0/Store_Ctrl_O",
+            "Store_Load_0/Store_Ctrl"
+          ]
+        },
+        "EX_pipe_0_Store_en_O": {
+          "ports": [
+            "EX_pipe_0/Store_en_O",
+            "Store_Load_0/Store_en"
+          ]
+        },
+        "EX_pipe_0_WB_Addr_O": {
+          "ports": [
+            "EX_pipe_0/WB_Addr_O",
+            "EX_Forward_0/ex_wb_addr",
+            "EX_MEM_0/wb_addr"
+          ]
+        },
+        "EX_pipe_0_WB_Ctrl_O": {
+          "ports": [
+            "EX_pipe_0/WB_Ctrl_O",
+            "EX_MEM_0/wb_Ctrl"
+          ]
+        },
+        "EX_pipe_0_comp_en_O": {
+          "ports": [
+            "EX_pipe_0/comp_en_O",
+            "Comp_0/Comp_en"
+          ]
+        },
+        "EX_pipe_0_csr_addr_out": {
+          "ports": [
+            "EX_pipe_0/csr_addr_out",
+            "csr_top_0/csr_addr"
+          ]
+        },
+        "EX_pipe_0_csr_imm_out": {
+          "ports": [
+            "EX_pipe_0/csr_imm_out",
+            "csr_top_0/imm"
+          ]
+        },
+        "EX_pipe_0_csr_irq_safe": {
+          "ports": [
+            "EX_pipe_0/csr_irq_safe",
+            "csr_top_0/irq_safe"
+          ]
+        },
+        "EX_pipe_0_csr_valid": {
+          "ports": [
+            "EX_pipe_0/csr_valid",
+            "Store_Load_0/instr_valid",
+            "csr_top_0/instr_valid"
+          ]
+        },
+        "EX_pipe_0_load_over": {
+          "ports": [
+            "EX_pipe_0/load_over",
+            "Store_Load_0/load_over"
+          ]
+        },
+        "EX_pipe_0_pc4_O": {
+          "ports": [
+            "EX_pipe_0/pc4_O",
+            "Branch_Ctrl_0/ex_pc4",
+            "EX_MEM_0/ex_pc4",
+            "Forward_Ctrl_0/ex_pc4",
+            "csr_top_0/pc4"
+          ]
+        },
+        "EX_pipe_0_pc_O": {
+          "ports": [
+            "EX_pipe_0/pc_O",
+            "Branch_Ctrl_0/ex_pc",
+            "csr_top_0/pc"
+          ]
+        },
+        "EX_pipe_0_wb_en_O": {
+          "ports": [
+            "EX_pipe_0/wb_en_O",
+            "EX_Forward_0/wb_en",
+            "EX_MEM_0/wb_en"
+          ]
+        },
+        "Forward_Ctrl_0_Forward_Data1": {
+          "ports": [
+            "Forward_Ctrl_0/Forward_Data1",
+            "EX_MUX_0/Forward_Data1",
+            "ID_EX_0/retain_data1"
+          ]
+        },
+        "Forward_Ctrl_0_Forward_Data2": {
+          "ports": [
+            "Forward_Ctrl_0/Forward_Data2",
+            "EX_MUX_0/Forward_Data2",
+            "ID_EX_0/retain_data2"
+          ]
+        },
+        "Forward_Ctrl_0_Forward_en1": {
+          "ports": [
+            "Forward_Ctrl_0/Forward_en1",
+            "EX_MUX_0/Forward_en1"
+          ]
+        },
+        "Forward_Ctrl_0_Forward_en2": {
+          "ports": [
+            "Forward_Ctrl_0/Forward_en2",
+            "EX_MUX_0/Forward_en2"
+          ]
+        },
+        "Forward_Ctrl_0_retain_en1": {
+          "ports": [
+            "Forward_Ctrl_0/retain_en1",
+            "ID_EX_0/retain_en1"
+          ]
+        },
+        "Forward_Ctrl_0_retain_en2": {
+          "ports": [
+            "Forward_Ctrl_0/retain_en2",
+            "ID_EX_0/retain_en2"
+          ]
+        },
+        "IBROM_0_instr_o": {
+          "ports": [
+            "IBROM_0/instr_o",
+            "IF_ID_0/instr",
+            "instr_minidecoder_0/instr"
+          ]
+        },
+        "IBROM_0_pc_o": {
+          "ports": [
+            "IBROM_0/pc_o",
+            "IF_ID_0/pc",
+            "instr_minidecoder_0/pc"
+          ]
+        },
+        "ID_EX_0_ALU_Ctrl_out": {
+          "ports": [
+            "ID_EX_0/ALU_Ctrl_out",
+            "EX_pipe_0/ALU_Ctrl"
+          ]
+        },
+        "ID_EX_0_Comp_Ctrl_out": {
+          "ports": [
+            "ID_EX_0/Comp_Ctrl_out",
+            "EX_pipe_0/Comp_Ctrl"
+          ]
+        },
+        "ID_EX_0_Comp_en_out": {
+          "ports": [
+            "ID_EX_0/Comp_en_out",
+            "EX_pipe_0/comp_en"
+          ]
+        },
+        "ID_EX_0_D1_out": {
+          "ports": [
+            "ID_EX_0/D1_out",
+            "EX_MUX_0/DATA1"
+          ]
+        },
+        "ID_EX_0_D2_out": {
+          "ports": [
+            "ID_EX_0/D2_out",
+            "EX_MUX_0/DATA2"
+          ]
+        },
+        "ID_EX_0_IMM_out": {
+          "ports": [
+            "ID_EX_0/IMM_out",
+            "EX_MUX_0/Imm"
+          ]
+        },
+        "ID_EX_0_Load_Ctrl_out": {
+          "ports": [
+            "ID_EX_0/Load_Ctrl_out",
+            "EX_pipe_0/Load_Ctrl"
+          ]
+        },
+        "ID_EX_0_Load_en_out": {
+          "ports": [
+            "ID_EX_0/Load_en_out",
+            "EX_pipe_0/Load_en"
+          ]
+        },
+        "ID_EX_0_R1_addr_out": {
+          "ports": [
+            "ID_EX_0/R1_addr_out",
+            "EX_Forward_0/id_rs1",
+            "MEM_Forward_0/id_rs1",
+            "WB_Forward_0/id_rs1"
+          ]
+        },
+        "ID_EX_0_R2_addr_out": {
+          "ports": [
+            "ID_EX_0/R2_addr_out",
+            "EX_Forward_0/id_rs2",
+            "MEM_Forward_0/id_rs2",
+            "WB_Forward_0/id_rs2"
+          ]
+        },
+        "ID_EX_0_Store_Ctrl_out": {
+          "ports": [
+            "ID_EX_0/Store_Ctrl_out",
+            "EX_pipe_0/Store_Ctrl"
+          ]
+        },
+        "ID_EX_0_Store_en_out": {
+          "ports": [
+            "ID_EX_0/Store_en_out",
+            "EX_pipe_0/Store_en"
+          ]
+        },
+        "ID_EX_0_WB_Ctrl_out": {
+          "ports": [
+            "ID_EX_0/WB_Ctrl_out",
+            "EX_pipe_0/WB_Ctrl"
+          ]
+        },
+        "ID_EX_0_WB_addr_out": {
+          "ports": [
+            "ID_EX_0/WB_addr_out",
+            "EX_pipe_0/WB_Addr"
+          ]
+        },
+        "ID_EX_0_csr_addr_out": {
+          "ports": [
+            "ID_EX_0/csr_addr_out",
+            "EX_pipe_0/csr_addr"
+          ]
+        },
+        "ID_EX_0_csr_imm_out": {
+          "ports": [
+            "ID_EX_0/csr_imm_out",
+            "EX_pipe_0/csr_imm"
+          ]
+        },
+        "ID_EX_0_ex_pc4_out": {
+          "ports": [
+            "ID_EX_0/ex_pc4_out",
+            "EX_pipe_0/id_pc4"
+          ]
+        },
+        "ID_EX_0_ex_pc_out": {
+          "ports": [
+            "ID_EX_0/ex_pc_out",
+            "EX_MUX_0/pc",
+            "EX_pipe_0/id_pc"
+          ]
+        },
+        "ID_EX_0_instr_TYPE_out": {
+          "ports": [
+            "ID_EX_0/instr_TYPE_out",
+            "EX_MUX_0/instr_TYPE",
+            "EX_pipe_0/Instr_TYPE"
+          ]
+        },
+        "ID_EX_0_instr_valid_out": {
+          "ports": [
+            "ID_EX_0/instr_valid_out",
+            "EX_pipe_0/instr_valid"
+          ]
+        },
+        "ID_EX_0_reuse_out": {
+          "ports": [
+            "ID_EX_0/reuse_out",
+            "EX_MUX_0/reuse"
+          ]
+        },
+        "ID_EX_0_wb_en_out": {
+          "ports": [
+            "ID_EX_0/wb_en_out",
+            "EX_pipe_0/wb_en"
+          ]
+        },
+        "IF_ID_0_id_instr": {
+          "ports": [
+            "IF_ID_0/id_instr",
+            "Decoder_0/id_instr",
+            "imm_gen_0/id_instr"
+          ]
+        },
+        "IF_ID_0_id_pc": {
+          "ports": [
+            "IF_ID_0/id_pc",
+            "ID_EX_0/id_pc"
+          ]
+        },
+        "IF_ID_0_id_pc4": {
+          "ports": [
+            "IF_ID_0/id_pc4",
+            "ID_EX_0/id_pc4"
+          ]
+        },
+        "LED_CTRL_0_LED_CTRL_o": {
+          "ports": [
+            "LED_CTRL_0/LED_CTRL_o",
+            "LED"
+          ]
+        },
+        "MEM_DTCM_0_dout": {
+          "ports": [
+            "MEM_DTCM_0/dout",
+            "Forward_Ctrl_0/ex_loadout",
+            "Forward_Ctrl_0/mem_loadout",
+            "MEM_WB_0/Load_out"
+          ]
+        },
+        "MEM_Forward_0_mem_Forward_SEL": {
+          "ports": [
+            "MEM_Forward_0/mem_Forward_SEL",
+            "Forward_Ctrl_0/mem_Forward_SEL"
+          ]
+        },
+        "MEM_Forward_0_mem_Forward_en1": {
+          "ports": [
+            "MEM_Forward_0/mem_Forward_en1",
+            "Forward_Ctrl_0/mem_Forward_en1"
+          ]
+        },
+        "MEM_Forward_0_mem_Forward_en2": {
+          "ports": [
+            "MEM_Forward_0/mem_Forward_en2",
+            "Forward_Ctrl_0/mem_Forward_en2"
+          ]
+        },
+        "MEM_WB_0_ALU_Out_out": {
+          "ports": [
+            "MEM_WB_0/ALU_Out_out",
+            "Forward_Ctrl_0/wb_aluout",
+            "WB_MUX_0/ALU_Out"
+          ]
+        },
+        "MEM_WB_0_CSR_DATA_o": {
+          "ports": [
+            "MEM_WB_0/CSR_DATA_o",
+            "Forward_Ctrl_0/wb_csr",
+            "WB_MUX_0/WB_CSR"
+          ]
+        },
+        "MEM_WB_0_Forward_valid": {
+          "ports": [
+            "MEM_WB_0/Forward_valid",
+            "WB_Forward_0/wb_en"
+          ]
+        },
+        "MEM_WB_0_IO_data_o": {
+          "ports": [
+            "MEM_WB_0/IO_data_o",
+            "Forward_Ctrl_0/wb_io_data",
+            "WB_MUX_0/WB_IO"
+          ]
+        },
+        "MEM_WB_0_IO_source_o": {
+          "ports": [
+            "MEM_WB_0/IO_source_o",
+            "Forward_Ctrl_0/wb_io_source",
+            "WB_MUX_0/MEM_IO"
+          ]
+        },
+        "MEM_WB_0_Instr_TYPE_out": {
+          "ports": [
+            "MEM_WB_0/Instr_TYPE_out",
+            "WB_Forward_0/instr_type"
+          ]
+        },
+        "MEM_WB_0_Load_Out_out": {
+          "ports": [
+            "MEM_WB_0/Load_Out_out",
+            "Forward_Ctrl_0/wb_loadout",
+            "WB_MUX_0/Load_Out"
+          ]
+        },
+        "MEM_WB_0_WB_CTRL_out": {
+          "ports": [
+            "MEM_WB_0/WB_CTRL_out",
+            "WB_MUX_0/WB_CTRL"
+          ]
+        },
+        "MEM_WB_0_WB_addr_out": {
+          "ports": [
+            "MEM_WB_0/WB_addr_out",
+            "Regfile_0/w_addr",
+            "Regfile_0/wb_addr",
+            "WB_Forward_0/wb_wb_addr",
+            "WB_MUX_0/rd_addr"
+          ]
+        },
+        "MEM_WB_0_WB_pc4_out": {
+          "ports": [
+            "MEM_WB_0/WB_pc4_out",
+            "Forward_Ctrl_0/wb_pc4",
+            "WB_MUX_0/WB_pc4"
+          ]
+        },
+        "MEM_WB_0_Wen_out": {
+          "ports": [
+            "MEM_WB_0/Wen_out",
+            "Regfile_0/wen"
+          ]
+        },
+        "Regfile_0_data1": {
+          "ports": [
+            "Regfile_0/final_data1",
+            "ID_EX_0/Data1"
+          ]
+        },
+        "Regfile_0_data2": {
+          "ports": [
+            "Regfile_0/final_data2",
+            "ID_EX_0/Data2"
+          ]
+        },
+        "Regfile_0_x10": {
+          "ports": [
+            "Regfile_0/x10",
+            "ila_0/probe0"
+          ]
+        },
+        "Regfile_0_x11": {
+          "ports": [
+            "Regfile_0/x11",
+            "ila_0/probe1"
+          ]
+        },
+        "Regfile_0_x12": {
+          "ports": [
+            "Regfile_0/x12",
+            "ila_0/probe2"
+          ]
+        },
+        "Regfile_0_x13": {
+          "ports": [
+            "Regfile_0/x13",
+            "ila_0/probe3"
+          ]
+        },
+        "Regfile_0_x14": {
+          "ports": [
+            "Regfile_0/x14",
+            "ila_0/probe4"
+          ]
+        },
+        "Regfile_0_x15": {
+          "ports": [
+            "Regfile_0/x15",
+            "ila_0/probe5"
+          ]
+        },
+        "Regfile_0_x16": {
+          "ports": [
+            "Regfile_0/x16",
+            "ila_0/probe6"
+          ]
+        },
+        "Regfile_0_x17": {
+          "ports": [
+            "Regfile_0/x17",
+            "ila_0/probe7"
+          ]
+        },
+        "Regfile_0_x18": {
+          "ports": [
+            "Regfile_0/x18",
+            "ila_0/probe8"
+          ]
+        },
+        "Regfile_0_x19": {
+          "ports": [
+            "Regfile_0/x19",
+            "ila_0/probe9"
+          ]
+        },
+        "Regfile_0_x20": {
+          "ports": [
+            "Regfile_0/x20",
+            "ila_0/probe10"
+          ]
+        },
+        "Regfile_0_x21": {
+          "ports": [
+            "Regfile_0/x21",
+            "ila_0/probe11"
+          ]
+        },
+        "Regfile_0_x22": {
+          "ports": [
+            "Regfile_0/x22",
+            "ila_0/probe12"
+          ]
+        },
+        "Regfile_0_x23": {
+          "ports": [
+            "Regfile_0/x23",
+            "ila_0/probe13"
+          ]
+        },
+        "Regfile_0_x24": {
+          "ports": [
+            "Regfile_0/x24",
+            "ila_0/probe14"
+          ]
+        },
+        "Regfile_0_x25": {
+          "ports": [
+            "Regfile_0/x25",
+            "ila_0/probe15"
+          ]
+        },
+        "Regfile_0_x26": {
+          "ports": [
+            "Regfile_0/x26",
+            "ila_0/probe16"
+          ]
+        },
+        "Regfile_0_x27": {
+          "ports": [
+            "Regfile_0/x27",
+            "ila_0/probe17"
+          ]
+        },
+        "Regfile_0_x28": {
+          "ports": [
+            "Regfile_0/x28",
+            "ila_0/probe18"
+          ]
+        },
+        "Regfile_0_x29": {
+          "ports": [
+            "Regfile_0/x29",
+            "ila_0/probe19"
+          ]
+        },
+        "Regfile_0_x30": {
+          "ports": [
+            "Regfile_0/x30",
+            "ila_0/probe20"
+          ]
+        },
+        "Regfile_0_x31": {
+          "ports": [
+            "Regfile_0/x31",
+            "ila_0/probe21"
+          ]
+        },
+        "Stall_0_Stall2": {
+          "ports": [
+            "Stall_0/Stall2",
+            "ID_EX_0/stall2",
+            "IF_ID_0/stall",
+            "npc_0/stall"
+          ]
+        },
+        "Store_Load_0_IO_WB": {
+          "ports": [
+            "Store_Load_0/IO_WB",
+            "EX_MEM_0/IO_source",
+            "Forward_Ctrl_0/ex_io_source"
+          ]
+        },
+        "Store_Load_0_IO_Wen": {
+          "ports": [
+            "Store_Load_0/IO_Wen",
+            "io_valid"
+          ]
+        },
+        "Store_Load_0_IO_addr": {
+          "ports": [
+            "Store_Load_0/IO_addr",
+            "io_addr"
+          ]
+        },
+        "Store_Load_0_IO_be": {
+          "ports": [
+            "Store_Load_0/IO_be",
+            "io_be"
+          ]
+        },
+        "Store_Load_0_IO_data": {
+          "ports": [
+            "Store_Load_0/IO_data",
+            "EX_MEM_0/IO_data",
+            "Forward_Ctrl_0/ex_io_data"
+          ]
+        },
+        "Store_Load_0_IO_load_ready": {
+          "ports": [
+            "Store_Load_0/IO_load_ready",
+            "EX_pipe_0/io_load_ready"
+          ]
+        },
+        "Store_Load_0_IO_wdata": {
+          "ports": [
+            "Store_Load_0/IO_wdata",
+            "io_wdata"
+          ]
+        },
+        "Store_Load_0_IO_write": {
+          "ports": [
+            "Store_Load_0/IO_write",
+            "io_write"
+          ]
+        },
+        "Store_Load_0_dtcm_data": {
+          "ports": [
+            "Store_Load_0/dtcm_data",
+            "LED_CTRL_0/LED_Ctrl",
+            "MEM_DTCM_0/din"
+          ]
+        },
+        "Store_Load_0_dtcm_en": {
+          "ports": [
+            "Store_Load_0/dtcm_en",
+            "MEM_DTCM_0/dtcm_en"
+          ]
+        },
+        "Store_Load_0_ex_addr": {
+          "ports": [
+            "Store_Load_0/ex_addr",
+            "MEM_DTCM_0/ex_addr"
+          ]
+        },
+        "Store_Load_0_led": {
+          "ports": [
+            "Store_Load_0/led",
+            "LED_CTRL_0/led"
+          ]
+        },
+        "Store_Load_0_stall_Load": {
+          "ports": [
+            "Store_Load_0/stall_Load",
+            "util_vector_logic_1/Op2",
+            "EX_MEM_0/stall_Load",
+            "EX_pipe_0/stall_Load",
+            "ID_EX_0/stall_Load",
+            "IF_ID_0/stall_Load",
+            "csr_top_0/sys_stall",
+            "npc_0/stall_Load",
+            "save_Load_use_0/stall1"
+          ]
+        },
+        "Store_Load_0_wen": {
+          "ports": [
+            "Store_Load_0/wen",
+            "MEM_DTCM_0/wen"
+          ]
+        },
+        "WB_Forward_0_wb_Forward_SEL": {
+          "ports": [
+            "WB_Forward_0/wb_Forward_SEL",
+            "Forward_Ctrl_0/wb_Forward_SEL"
+          ]
+        },
+        "WB_Forward_0_wb_Forward_en1": {
+          "ports": [
+            "WB_Forward_0/wb_Forward_en1",
+            "Forward_Ctrl_0/wb_Forward_en1"
+          ]
+        },
+        "WB_Forward_0_wb_Forward_en2": {
+          "ports": [
+            "WB_Forward_0/wb_Forward_en2",
+            "Forward_Ctrl_0/wb_Forward_en2"
+          ]
+        },
+        "WB_MUX_0_Data": {
+          "ports": [
+            "WB_MUX_0/Data",
+            "Regfile_0/w_data",
+            "Regfile_0/wb_data"
+          ]
+        },
+        "clk_wiz_0_locked": {
+          "ports": [
+            "clk_wiz_0/locked",
+            "proc_sys_reset_0/dcm_locked",
+            "cpu_reset_sync_0/locked"
+          ]
+        },
+        "clock_1": {
+          "ports": [
+            "clk_wiz_0/clk_out1",
+            "ila_0/clk",
+            "proc_sys_reset_0/slowest_sync_clk",
+            "io_clk",
+            "EX_MEM_0/clk",
+            "EX_pipe_0/clk",
+            "IBROM_0/clk",
+            "ID_EX_0/clk",
+            "IF_ID_0/clk",
+            "LED_CTRL_0/clk",
+            "MEM_DTCM_0/clk",
+            "MEM_WB_0/clk",
+            "Regfile_0/clk",
+            "cpu_reset_sync_0/clk",
+            "csr_top_0/clk",
+            "npc_0/clk",
+            "save_Load_use_0/clk"
+          ]
+        },
+        "clock_2": {
+          "ports": [
+            "clock",
+            "clk_wiz_0/clk_in1"
+          ]
+        },
+        "cpu_reset_sync_0_io_resetn": {
+          "ports": [
+            "cpu_reset_sync_0/io_resetn",
+            "io_resetn"
+          ]
+        },
+        "cpu_reset_sync_0_reset": {
+          "ports": [
+            "cpu_reset_sync_0/reset",
+            "util_vector_logic_0/Op1"
+          ]
+        },
+        "csr_top_0_cancel_current": {
+          "ports": [
+            "csr_top_0/cancel_current",
+            "EX_MEM_0/csr_fluah",
+            "Store_Load_0/cancel"
+          ]
+        },
+        "csr_top_0_csr_rdata": {
+          "ports": [
+            "csr_top_0/csr_rdata",
+            "EX_MEM_0/CSR_DATA",
+            "Forward_Ctrl_0/ex_csr"
+          ]
+        },
+        "csr_top_0_pc_o": {
+          "ports": [
+            "csr_top_0/pc_o",
+            "pc_judge_0/pc_csr"
+          ]
+        },
+        "csr_top_0_pc_o_en": {
+          "ports": [
+            "csr_top_0/pc_o_en",
+            "Branch_Ctrl_0/Exception",
+            "EX_pipe_0/csr_flush",
+            "IBROM_0/csr_flush",
+            "ID_EX_0/csr_fluah",
+            "IF_ID_0/csr_fluah",
+            "npc_0/csr_pc_en",
+            "pc_judge_0/EM"
+          ]
+        },
+        "imm_gen_0_Imm": {
+          "ports": [
+            "imm_gen_0/Imm",
+            "ID_EX_0/Imm"
+          ]
+        },
+        "instr_minidecoder_0_Pre": {
+          "ports": [
+            "instr_minidecoder_0/Pre",
+            "npc_0/Pre",
+            "pc_judge_0/Pre"
+          ]
+        },
+        "instr_minidecoder_0_pc_o": {
+          "ports": [
+            "instr_minidecoder_0/pc_o",
+            "pc_judge_0/pc_Predict"
+          ]
+        },
+        "io_rdata_1": {
+          "ports": [
+            "io_rdata",
+            "Store_Load_0/IO_rdata"
+          ]
+        },
+        "io_ready_1": {
+          "ports": [
+            "io_ready",
+            "Store_Load_0/IO_ready"
+          ]
+        },
+        "npc_0_npc": {
+          "ports": [
+            "npc_0/npc",
+            "npc_0/current_pc",
+            "pc_judge_0/pc_npc"
+          ]
+        },
+        "npc_0_npc4": {
+          "ports": [
+            "IBROM_0/pc4_o",
+            "IF_ID_0/pc4"
+          ]
+        },
+        "npc_0_npc_flag": {
+          "ports": [
+            "npc_0/npc_flag",
+            "pc_judge_0/npc"
+          ]
+        },
+        "npc_0_replay_redirect": {
+          "ports": [
+            "npc_0/replay_redirect",
+            "pc_judge_0/replay_redirect"
+          ]
+        },
+        "pc_judge_0_pc4_o": {
+          "ports": [
+            "pc_judge_0/pc4_o",
+            "IBROM_0/pc4",
+            "npc_0/right_pc"
+          ]
+        },
+        "pc_judge_0_pc_o": {
+          "ports": [
+            "pc_judge_0/pc_o",
+            "IBROM_0/pc"
+          ]
+        },
+        "proc_sys_reset_0_mb_reset": {
+          "ports": [
+            "proc_sys_reset_0/mb_reset",
+            "cpu_reset_sync_0/controller_reset"
+          ]
+        },
+        "reset_1": {
+          "ports": [
+            "util_vector_logic_0/Res",
+            "EX_MEM_0/reset",
+            "EX_pipe_0/reset",
+            "IBROM_0/rst",
+            "ID_EX_0/reset",
+            "IF_ID_0/reset",
+            "LED_CTRL_0/reset",
+            "MEM_DTCM_0/reset",
+            "MEM_WB_0/reset",
+            "Regfile_0/reset",
+            "Store_Load_0/reset",
+            "csr_top_0/rst",
+            "npc_0/reset",
+            "save_Load_use_0/reset"
+          ]
+        },
+        "reset_2": {
+          "ports": [
+            "reset",
+            "clk_wiz_0/resetn",
+            "proc_sys_reset_0/ext_reset_in",
+            "cpu_reset_sync_0/ext_resetn"
+          ]
+        },
+        "save_Load_use_0_save": {
+          "ports": [
+            "save_Load_use_0/save",
+            "MEM_WB_0/save"
+          ]
+        },
+        "util_vector_logic_1_Res": {
+          "ports": [
+            "util_vector_logic_1/Res",
+            "IBROM_0/stall"
+          ]
+        },
+        "zero_1": {
+          "ports": [
+            "zero",
+            "EX_MEM_0/flush",
+            "EX_MEM_0/stall",
+            "EX_MUX_0/CTRL",
+            "EX_pipe_0/stall",
+            "ID_EX_0/stall",
+            "ID_EX_0/Ctrl",
+            "MEM_WB_0/flush",
+            "MEM_WB_0/stall",
+            "Stall_0/Stall_Ctrl3",
+            "Store_Load_0/stall"
+          ]
+        }
+      }
+    },
+    "rv32_m": {
+      "info": {
+        "boundary_crc": "0xA3581D0ED47B83E5",
+        "device": "xc7k325tffg676-2",
+        "gen_directory": "../../../../RISCV_5pipeline.gen/sources_1/bd/rv32_m",
+        "name": "rv32_m",
+        "rev_ctrl_bd_flag": "RevCtrlBdOff",
+        "synth_flow_mode": "Hierarchical",
+        "tool_version": "2026.1",
+        "validated": "true"
+      },
+      "ports": {
+        "rd_addr_o_0": {
+          "direction": "O",
+          "left": "4",
+          "right": "0"
+        },
+        "rd_o_0": {
+          "direction": "O",
+          "left": "31",
+          "right": "0"
+        },
+        "valid": {
+          "direction": "O",
+          "parameters": {
+            "PortType": {
+              "value": "undef",
+              "value_src": "ip_prop"
+            },
+            "PortType.PROP_SRC": {
+              "value": "false",
+              "value_src": "ip_prop"
+            }
+          }
+        },
+        "control": {
+          "direction": "O"
+        },
+        "rst": {
+          "type": "rst",
+          "direction": "I",
+          "parameters": {
+            "INSERT_VIP": {
+              "value": "0",
+              "value_src": "default"
+            },
+            "POLARITY": {
+              "value": "ACTIVE_LOW",
+              "value_src": "default"
+            }
+          }
+        },
+        "clk": {
+          "type": "clk",
+          "direction": "I",
+          "parameters": {
+            "ASSOCIATED_RESET": {
+              "value": "rst",
+              "value_src": "default"
+            },
+            "CLK_DOMAIN": {
+              "value": "rv32_m_clk",
+              "value_src": "default"
+            },
+            "FREQ_HZ": {
+              "value": "100000000"
+            },
+            "FREQ_TOLERANCE_HZ": {
+              "value": "0",
+              "value_src": "default"
+            },
+            "INSERT_VIP": {
+              "value": "0",
+              "value_src": "default"
+            },
+            "PHASE": {
+              "value": "0.0",
+              "value_src": "default"
+            }
+          }
+        },
+        "op_0": {
+          "direction": "I",
+          "left": "4",
+          "right": "0"
+        },
+        "rd_addr_0": {
+          "direction": "I",
+          "left": "4",
+          "right": "0"
+        },
+        "rs1_0": {
+          "direction": "I",
+          "left": "31",
+          "right": "0"
+        },
+        "rs2_0": {
+          "direction": "I",
+          "left": "31",
+          "right": "0"
+        },
+        "instr_TYPE_0": {
+          "direction": "I",
+          "left": "3",
+          "right": "0"
+        },
+        "instr_TYPE_o_0": {
+          "direction": "O",
+          "left": "3",
+          "right": "0"
+        },
+        "wb_Ctrl_0": {
+          "direction": "I",
+          "left": "1",
+          "right": "0"
+        },
+        "wb_Ctrl_o_0": {
+          "direction": "O",
+          "left": "1",
+          "right": "0"
+        },
+        "wb_en_0": {
+          "direction": "I"
+        },
+        "wb_en_o_0": {
+          "direction": "O"
+        }
+      },
+      "components": {
+        "div": {
+          "vlnv": "xilinx.com:ip:div_gen:5.1",
+          "reference": null,
+          "parameters": {
+            "ACLKEN": {
+              "value": "true"
+            },
+            "ARESETN": {
+              "value": "true"
+            },
+            "algorithm_type": {
+              "value": "Radix2"
+            },
+            "divide_by_zero_detect": {
+              "value": "false"
+            },
+            "dividend_and_quotient_width": {
+              "value": "32"
+            },
+            "divisor_width": {
+              "value": "32"
+            },
+            "fractional_width": {
+              "value": "32"
+            },
+            "latency": {
+              "value": "36"
+            },
+            "remainder_type": {
+              "value": "Remainder"
+            }
+          }
+        },
+        "div_u": {
+          "vlnv": "xilinx.com:ip:div_gen:5.1",
+          "reference": null,
+          "parameters": {
+            "ACLKEN": {
+              "value": "true"
+            },
+            "ARESETN": {
+              "value": "true"
+            },
+            "divide_by_zero_detect": {
+              "value": "false"
+            },
+            "dividend_and_quotient_width": {
+              "value": "32"
+            },
+            "divisor_width": {
+              "value": "32"
+            },
+            "fractional_width": {
+              "value": "32"
+            },
+            "latency": {
+              "value": "34"
+            },
+            "operand_sign": {
+              "value": "Unsigned"
+            }
+          }
+        },
+        "mulh_32": {
+          "vlnv": "xilinx.com:ip:mult_gen:12.0",
+          "reference": null,
+          "parameters": {
+            "ClockEnable": {
+              "value": "true"
+            },
+            "Multiplier_Construction": {
+              "value": "Use_Mults"
+            },
+            "OutputWidthHigh": {
+              "value": "63"
+            },
+            "OutputWidthLow": {
+              "value": "32"
+            },
+            "PipeStages": {
+              "value": "6"
+            },
+            "PortAWidth": {
+              "value": "32"
+            },
+            "PortBWidth": {
+              "value": "32"
+            },
+            "SyncClear": {
+              "value": "true"
+            },
+            "Use_Custom_Output_Width": {
+              "value": "true"
+            }
+          }
+        },
+        "mulsu_32": {
+          "vlnv": "xilinx.com:ip:mult_gen:12.0",
+          "reference": null,
+          "parameters": {
+            "ClockEnable": {
+              "value": "true"
+            },
+            "Multiplier_Construction": {
+              "value": "Use_Mults"
+            },
+            "OutputWidthHigh": {
+              "value": "63"
+            },
+            "OutputWidthLow": {
+              "value": "32"
+            },
+            "PipeStages": {
+              "value": "6"
+            },
+            "PortAWidth": {
+              "value": "32"
+            },
+            "PortBType": {
+              "value": "Unsigned"
+            },
+            "PortBWidth": {
+              "value": "32"
+            },
+            "SyncClear": {
+              "value": "true"
+            },
+            "Use_Custom_Output_Width": {
+              "value": "true"
+            }
+          }
+        },
+        "mulu_64": {
+          "vlnv": "xilinx.com:ip:mult_gen:12.0",
+          "reference": null,
+          "parameters": {
+            "ClockEnable": {
+              "value": "true"
+            },
+            "Multiplier_Construction": {
+              "value": "Use_Mults"
+            },
+            "PipeStages": {
+              "value": "6"
+            },
+            "PortAType": {
+              "value": "Unsigned"
+            },
+            "PortAWidth": {
+              "value": "32"
+            },
+            "PortBType": {
+              "value": "Unsigned"
+            },
+            "PortBWidth": {
+              "value": "32"
+            },
+            "SyncClear": {
+              "value": "true"
+            },
+            "Use_Custom_Output_Width": {
+              "value": "false"
+            }
+          }
+        },
+        "util_vector_logic_0": {
+          "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+          "reference": null,
+          "parameters": {
+            "C_OPERATION": {
+              "value": "or"
+            },
+            "C_SIZE": {
+              "value": "1"
+            }
+          }
+        },
+        "util_vector_logic_1": {
+          "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+          "reference": null,
+          "parameters": {
+            "C_OPERATION": {
+              "value": "not"
+            },
+            "C_SIZE": {
+              "value": "1"
+            }
+          }
+        },
+        "xlconstant_0": {
+          "vlnv": "xilinx.com:ip:xlconstant:1.1",
+          "reference": null,
+          "parameters": null
+        },
+        "xlslice_0": {
+          "vlnv": "xilinx.com:ip:xlslice:1.0",
+          "reference": null,
+          "parameters": {
+            "DIN_FROM": {
+              "value": "4"
+            },
+            "DIN_TO": {
+              "value": "4"
+            },
+            "DIN_WIDTH": {
+              "value": "5"
+            }
+          }
+        },
+        "xlslice_1": {
+          "vlnv": "xilinx.com:ip:xlslice:1.0",
+          "reference": null,
+          "parameters": {
+            "DIN_FROM": {
+              "value": "3"
+            },
+            "DIN_TO": {
+              "value": "3"
+            },
+            "DIN_WIDTH": {
+              "value": "5"
+            }
+          }
+        },
+        "rv32M_inport_0": {
+          "vlnv": "xilinx.com:module_ref:rv32M_inport:1.0",
+          "reference": {
+            "ref_type": "hdl",
+            "ref_name": "rv32M_inport",
+            "boundary_crc": "0x0"
+          },
+          "parameters": null
+        },
+        "rv32M_outport_0": {
+          "vlnv": "xilinx.com:module_ref:rv32M_outport:1.0",
+          "reference": {
+            "ref_type": "hdl",
+            "ref_name": "rv32M_outport",
+            "boundary_crc": "0x0"
+          },
+          "parameters": null
+        }
+      },
+      "nets": {
+        "clk_1": {
+          "ports": [
+            "clk",
+            "rv32M_inport_0/clk"
+          ]
+        },
+        "div_m_axis_dout_tdata": {
+          "ports": [
+            "div/m_axis_dout_tdata",
+            "rv32M_outport_0/rd_div"
+          ]
+        },
+        "div_m_axis_dout_tvalid": {
+          "ports": [
+            "div/m_axis_dout_tvalid",
+            "rv32M_outport_0/div_valid"
+          ]
+        },
+        "div_u_m_axis_dout_tdata": {
+          "ports": [
+            "div_u/m_axis_dout_tdata",
+            "rv32M_outport_0/rd_divu"
+          ]
+        },
+        "div_u_m_axis_dout_tvalid": {
+          "ports": [
+            "div_u/m_axis_dout_tvalid",
+            "rv32M_outport_0/divu_valid"
+          ]
+        },
+        "instr_TYPE_0_1": {
+          "ports": [
+            "instr_TYPE_0",
+            "rv32M_inport_0/instr_TYPE"
+          ]
+        },
+        "mulh_32_P": {
+          "ports": [
+            "mulh_32/P",
+            "rv32M_outport_0/rd_mulh"
+          ]
+        },
+        "mulsu_32_P": {
+          "ports": [
+            "mulsu_32/P",
+            "rv32M_outport_0/rd_mulsu"
+          ]
+        },
+        "mulu_64_P": {
+          "ports": [
+            "mulu_64/P",
+            "rv32M_outport_0/rd_mulu"
+          ]
+        },
+        "op_0_1": {
+          "ports": [
+            "op_0",
+            "rv32M_inport_0/op"
+          ]
+        },
+        "rd_addr_0_1": {
+          "ports": [
+            "rd_addr_0",
+            "rv32M_inport_0/rd_addr"
+          ]
+        },
+        "rs1_0_1": {
+          "ports": [
+            "rs1_0",
+            "rv32M_inport_0/rs1"
+          ]
+        },
+        "rs2_0_1": {
+          "ports": [
+            "rs2_0",
+            "rv32M_inport_0/rs2"
+          ]
+        },
+        "rst_1": {
+          "ports": [
+            "rst",
+            "rv32M_inport_0/rst"
+          ]
+        },
+        "rv32M_inport_0_ce": {
+          "ports": [
+            "rv32M_inport_0/ce",
+            "mulh_32/CE",
+            "mulsu_32/CE",
+            "mulu_64/CE"
+          ]
+        },
+        "rv32M_inport_0_clk_o": {
+          "ports": [
+            "rv32M_inport_0/clk_o",
+            "div/aclk",
+            "div_u/aclk",
+            "mulh_32/CLK",
+            "mulsu_32/CLK",
+            "mulu_64/CLK"
+          ]
+        },
+        "rv32M_inport_0_control": {
+          "ports": [
+            "rv32M_inport_0/control",
+            "control"
+          ]
+        },
+        "rv32M_inport_0_enable": {
+          "ports": [
+            "rv32M_inport_0/enable",
+            "xlslice_0/Din",
+            "xlslice_1/Din"
+          ]
+        },
+        "rv32M_inport_0_instr_TYPE_o": {
+          "ports": [
+            "rv32M_inport_0/instr_TYPE_o",
+            "instr_TYPE_o_0"
+          ]
+        },
+        "rv32M_inport_0_is_zero_o": {
+          "ports": [
+            "rv32M_inport_0/is_zero_o",
+            "rv32M_outport_0/is_zero"
+          ]
+        },
+        "rv32M_inport_0_mode": {
+          "ports": [
+            "rv32M_inport_0/mode",
+            "rv32M_outport_0/mode"
+          ]
+        },
+        "rv32M_inport_0_rd_addr_o": {
+          "ports": [
+            "rv32M_inport_0/rd_addr_o",
+            "rv32M_outport_0/rd_addr"
+          ]
+        },
+        "rv32M_inport_0_rs1_o": {
+          "ports": [
+            "rv32M_inport_0/rs1_o",
+            "div/s_axis_dividend_tdata",
+            "div_u/s_axis_dividend_tdata"
+          ]
+        },
+        "rv32M_inport_0_rs1_o_mulh": {
+          "ports": [
+            "rv32M_inport_0/rs1_o_mulh",
+            "mulh_32/A"
+          ]
+        },
+        "rv32M_inport_0_rs1_o_mulsu": {
+          "ports": [
+            "rv32M_inport_0/rs1_o_mulsu",
+            "mulsu_32/A"
+          ]
+        },
+        "rv32M_inport_0_rs1_o_mulu": {
+          "ports": [
+            "rv32M_inport_0/rs1_o_mulu",
+            "mulu_64/A"
+          ]
+        },
+        "rv32M_inport_0_rs2_o": {
+          "ports": [
+            "rv32M_inport_0/rs2_o",
+            "div/s_axis_divisor_tdata",
+            "div_u/s_axis_divisor_tdata"
+          ]
+        },
+        "rv32M_inport_0_rs2_o_mulh": {
+          "ports": [
+            "rv32M_inport_0/rs2_o_mulh",
+            "mulh_32/B"
+          ]
+        },
+        "rv32M_inport_0_rs2_o_mulsu": {
+          "ports": [
+            "rv32M_inport_0/rs2_o_mulsu",
+            "mulsu_32/B"
+          ]
+        },
+        "rv32M_inport_0_rs2_o_mulu": {
+          "ports": [
+            "rv32M_inport_0/rs2_o_mulu",
+            "mulu_64/B"
+          ]
+        },
+        "rv32M_inport_0_rst_o": {
+          "ports": [
+            "rv32M_inport_0/rst_o",
+            "div/aresetn",
+            "div_u/aresetn",
+            "util_vector_logic_1/Op1"
+          ]
+        },
+        "rv32M_inport_0_wb_Ctrl_o": {
+          "ports": [
+            "rv32M_inport_0/wb_Ctrl_o",
+            "wb_Ctrl_o_0"
+          ]
+        },
+        "rv32M_inport_0_wb_en_o": {
+          "ports": [
+            "rv32M_inport_0/wb_en_o",
+            "wb_en_o_0"
+          ]
+        },
+        "rv32M_outport_0_rd_addr_o": {
+          "ports": [
+            "rv32M_outport_0/rd_addr_o",
+            "rd_addr_o_0"
+          ]
+        },
+        "rv32M_outport_0_rd_o": {
+          "ports": [
+            "rv32M_outport_0/rd_o",
+            "rd_o_0"
+          ]
+        },
+        "rv32M_outport_0_release_control": {
+          "ports": [
+            "rv32M_outport_0/release_control",
+            "rv32M_inport_0/release_control"
+          ]
+        },
+        "rv32M_outport_0_valid": {
+          "ports": [
+            "rv32M_outport_0/valid",
+            "valid",
+            "util_vector_logic_0/Op2"
+          ]
+        },
+        "util_vector_logic_0_Res": {
+          "ports": [
+            "util_vector_logic_0/Res",
+            "mulh_32/SCLR",
+            "mulsu_32/SCLR",
+            "mulu_64/SCLR"
+          ]
+        },
+        "util_vector_logic_1_Res": {
+          "ports": [
+            "util_vector_logic_1/Res",
+            "util_vector_logic_0/Op1"
+          ]
+        },
+        "wb_Ctrl_0_1": {
+          "ports": [
+            "wb_Ctrl_0",
+            "rv32M_inport_0/wb_Ctrl"
+          ]
+        },
+        "wb_en_0_1": {
+          "ports": [
+            "wb_en_0",
+            "rv32M_inport_0/wb_en"
+          ]
+        },
+        "xlconstant_0_dout": {
+          "ports": [
+            "xlconstant_0/dout",
+            "div/aclken",
+            "div_u/aclken"
+          ]
+        },
+        "xlslice_0_Dout": {
+          "ports": [
+            "xlslice_0/Dout",
+            "div/s_axis_divisor_tvalid",
+            "div/s_axis_dividend_tvalid"
+          ]
+        },
+        "xlslice_1_Dout": {
+          "ports": [
+            "xlslice_1/Dout",
+            "div_u/s_axis_divisor_tvalid",
+            "div_u/s_axis_dividend_tvalid"
+          ]
+        }
+      }
+    }
+  },
+  "module_definitions": {
+    "design_1_wrapper": [
+      "RISCV_5pipeline.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v"
+    ],
+    "tb": [
+      "RISCV_5pipeline.srcs/sim_1/imports/riscv_test/tb.v"
+    ],
+    "assist_tb": [
+      "RISCV_5pipeline.srcs/sim_1/imports/tests_rv/assist_tb.sv"
+    ],
+    "print": [
+      "RISCV_5pipeline.srcs/sim_1/new/print.v"
+    ],
+    "tb_riscv_cpu_top": [
+      "RISCV_5pipeline.srcs/sim_1/new/tb_top_RISCV.v"
+    ],
+    "csr_decode": [
+      "RISCV_5pipeline.srcs/sources_1/imports/vivado-file/csr_decode.sv"
+    ],
+    "csr_regfile": [
+      "RISCV_5pipeline.srcs/sources_1/imports/vivado-file/csr_regfile.sv"
+    ],
+    "csr_top": [
+      "RISCV_5pipeline.srcs/sources_1/imports/vivado-file/csr_top.v"
+    ],
+    "ALU": [
+      "RISCV_5pipeline.srcs/sources_1/new/ALU.v"
+    ],
+    "bht": [
+      "RISCV_5pipeline.srcs/sources_1/new/bht.sv"
+    ],
+    "Branch_Ctrl": [
+      "RISCV_5pipeline.srcs/sources_1/new/Branch_Ctrl.v"
+    ],
+    "CLOCK_HIGHER": [
+      "RISCV_5pipeline.srcs/sources_1/new/CLOCK_HIGHER.v"
+    ],
+    "Comp": [
+      "RISCV_5pipeline.srcs/sources_1/new/Comp.v"
+    ],
+    "cpu_reset_control": [
+      "RISCV_5pipeline.srcs/sources_1/new/cpu_reset_control.v"
+    ],
+    "cpu_reset_sync": [
+      "RISCV_5pipeline.srcs/sources_1/new/cpu_reset_sync.v"
+    ],
+    "Ctrl": [
+      "RISCV_5pipeline.srcs/sources_1/new/Ctrl.v"
+    ],
+    "Decoder": [
+      "RISCV_5pipeline.srcs/sources_1/new/Decoder.v"
+    ],
+    "EX_MEM": [
+      "RISCV_5pipeline.srcs/sources_1/new/EX_MEM.v"
+    ],
+    "EX_MUX": [
+      "RISCV_5pipeline.srcs/sources_1/new/EX_MUX.v"
+    ],
+    "EX_pipe": [
+      "RISCV_5pipeline.srcs/sources_1/new/EX_pipe.v"
+    ],
+    "fifo": [
+      "RISCV_5pipeline.srcs/sources_1/new/fifo.sv"
+    ],
+    "EX_Forward": [
+      "RISCV_5pipeline.srcs/sources_1/new/Forward.v"
+    ],
+    "Forward_Ctrl": [
+      "RISCV_5pipeline.srcs/sources_1/new/Forward_Ctrl.v"
+    ],
+    "IBROM": [
+      "RISCV_5pipeline.srcs/sources_1/new/IBROM.v"
+    ],
+    "ID_EX": [
+      "RISCV_5pipeline.srcs/sources_1/new/ID_EX.v"
+    ],
+    "IF_ID": [
+      "RISCV_5pipeline.srcs/sources_1/new/IF_ID.v"
+    ],
+    "imm_gen": [
+      "RISCV_5pipeline.srcs/sources_1/new/imm_gen.v"
+    ],
+    "instr_minidecoder": [
+      "RISCV_5pipeline.srcs/sources_1/new/instr_minidecoder.v"
+    ],
+    "IROM": [
+      "RISCV_5pipeline.srcs/sources_1/new/IROM.v"
+    ],
+    "LED_CTRL": [
+      "RISCV_5pipeline.srcs/sources_1/new/LED_CTRL.v"
+    ],
+    "MEM_DTCM": [
+      "RISCV_5pipeline.srcs/sources_1/new/MEM_DTCM.v"
+    ],
+    "MEM_Forward": [
+      "RISCV_5pipeline.srcs/sources_1/new/MEM_Forward.v"
+    ],
+    "MEM_WB": [
+      "RISCV_5pipeline.srcs/sources_1/new/MEM_WB.v"
+    ],
+    "npc": [
+      "RISCV_5pipeline.srcs/sources_1/new/npc.v"
+    ],
+    "pc_judge": [
+      "RISCV_5pipeline.srcs/sources_1/new/pc_judge.v"
+    ],
+    "Regfile": [
+      "RISCV_5pipeline.srcs/sources_1/new/Regfile.v"
+    ],
+    "rv32M_inport": [
+      "RISCV_5pipeline.srcs/sources_1/new/rv32M_inport.v"
+    ],
+    "RV32M_MUX": [
+      "RISCV_5pipeline.srcs/sources_1/new/RV32M_MUX.v"
+    ],
+    "rv32M_outport": [
+      "RISCV_5pipeline.srcs/sources_1/new/rv32M_outport.v"
+    ],
+    "save_Load_use": [
+      "RISCV_5pipeline.srcs/sources_1/new/save_Load_use.v"
+    ],
+    "Stall": [
+      "RISCV_5pipeline.srcs/sources_1/new/Stall.v"
+    ],
+    "Store_Load": [
+      "RISCV_5pipeline.srcs/sources_1/new/Store.v"
+    ],
+    "tage_predictor": [
+      "RISCV_5pipeline.srcs/sources_1/new/tage_predictor.sv"
+    ],
+    "tage_table": [
+      "RISCV_5pipeline.srcs/sources_1/new/tage_table.sv"
+    ],
+    "top": [
+      "RISCV_5pipeline.srcs/sources_1/new/top.sv"
+    ],
+    "WB_Forward": [
+      "RISCV_5pipeline.srcs/sources_1/new/WB_Forward.v"
+    ],
+    "WB_MUX": [
+      "RISCV_5pipeline.srcs/sources_1/new/WB_MUX.v"
+    ],
+    "reset_phase_tb": [
+      "verification/reset_phase_tb.sv"
+    ],
+    "write_trace_checker": [
+      "verification/write_trace_checker.sv"
+    ]
+  },
+  "input_sha256": {
+    "RISCV_5pipeline.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v": "9bd5419dedd3af85b9774132bf57f02b56fc89934290b60b72b11674028d6d73",
+    "RISCV_5pipeline.srcs/constrs_1/new/cpu_reset_sync.xdc": "3399ab4058e3fe5ff2ba18503991b8d1b73f819bac6bd965fa14899592d7a937",
+    "RISCV_5pipeline.srcs/constrs_1/new/pin.xdc": "047e0836a2ad94c6c15c3100e738855aca7fb26981d9ad284210d8f9e7527609",
+    "RISCV_5pipeline.srcs/sim_1/imports/riscv_test/tb.v": "8aa58338ade72a216cbe7db751eb19781082ab55fd03b1cb686781789e2bedde",
+    "RISCV_5pipeline.srcs/sim_1/imports/tests_rv/assist_tb.sv": "f65a16ae67982b27d74e873bfa0dc917f40b5a05495ab283de068be4e300a2a6",
+    "RISCV_5pipeline.srcs/sim_1/new/print.v": "a76607ab08958a2e31f48c54d49ff6192f38ce7b4402b4c0a58a80af49284bd2",
+    "RISCV_5pipeline.srcs/sim_1/new/tb_top_RISCV.v": "5787270cf18d2fd7a447798545026386de082178eb599152ab3c01ee445a3fd7",
+    "RISCV_5pipeline.srcs/sources_1/bd/design_1/design_1.bd": "8f4b47c8cb4e7608d1ad8f974937dfefc6f7fc3dc67ff136d1f96b134498bd13",
+    "RISCV_5pipeline.srcs/sources_1/bd/rv32_m/rv32_m.bd": "709f1d259d75ac32e262b81a8dfa05962db6d60b9d20cfe8d866280e8a4e5ab0",
+    "RISCV_5pipeline.srcs/sources_1/imports/vivado-file/csr_decode.sv": "b29c64e2f956c4a6c40284c83c9adf05496017d1d90f6beb2fa2a6addd1a5876",
+    "RISCV_5pipeline.srcs/sources_1/imports/vivado-file/csr_pkg.sv": "f67d94647927e9df4c9215688e7904fb6347ca6d22e3cc1ab1d40bd7dce64fb7",
+    "RISCV_5pipeline.srcs/sources_1/imports/vivado-file/csr_regfile.sv": "848feb9d12b4a5dd03806da04f92b8900a69fbc38a07080eee98315170d66ad9",
+    "RISCV_5pipeline.srcs/sources_1/imports/vivado-file/csr_top.v": "0a1db8d7468ef616acaa235212dd7c794d2e6434f018f9171fa52b641d352448",
+    "RISCV_5pipeline.srcs/sources_1/ip/CLOCK/CLOCK.xci": "9302c5a126b16ae26061f70b5a205f6484ed1362085c657b1c4c775dfcbe1966",
+    "RISCV_5pipeline.srcs/sources_1/ip/DTCM/DTCM.xci": "9d7a24c26442e5744046ad4848f2471973f6a053263112e1072729cea96c25d1",
+    "RISCV_5pipeline.srcs/sources_1/ip/I_ROM/I_ROM.xci": "0beddb84d70d6b726fbdc43c61e468855acb978b451689206a500f80d856057e",
+    "RISCV_5pipeline.srcs/sources_1/ip/ila/ila.xci": "1caae18b1a96a8cf1e6ea3ac15493fee351d6fbf5bd2d3b9f5b9b51d9c397af8",
+    "RISCV_5pipeline.srcs/sources_1/ip/irom/irom.xci": "5ac4c50602d3565eb7e31041437655f7cdb037f6edd18b702bb6b30be8cbbfca",
+    "RISCV_5pipeline.srcs/sources_1/new/ALU.v": "b0103e091f4dd5fbafc74026a907c6009f021877e44611e00eeb7f0c44138b67",
+    "RISCV_5pipeline.srcs/sources_1/new/bht.sv": "77b3fcaf7a5e5533f96f3dbd87e0c9d2b593a2624018f30574b14e23fb4e91e0",
+    "RISCV_5pipeline.srcs/sources_1/new/Branch_Ctrl.v": "0f54420ebeb8168c27cccf7b36502285d94fbde0833cf814cb184066107d1915",
+    "RISCV_5pipeline.srcs/sources_1/new/CLOCK_HIGHER.v": "c70c5065ae19768f0fed0b9bda3f1072cf95b3c7149bf66a1773b16c701d1208",
+    "RISCV_5pipeline.srcs/sources_1/new/common_defines.svh": "79a4fa721d54858fcbb7dc260152cdef21ba66cdb35026c95170785ecbc7557b",
+    "RISCV_5pipeline.srcs/sources_1/new/Comp.v": "2f35231e71010b75ef0389cd60beb9513d25071fd39e32f2598cc3cef57b13a4",
+    "RISCV_5pipeline.srcs/sources_1/new/CPU_MEMORY_MAP.vh": "c7e45a318fe71ad233cd1219e6fe02a9b833abdd2a5ba1585b6008613e1fd405",
+    "RISCV_5pipeline.srcs/sources_1/new/cpu_reset_control.v": "65512d822fc7c600798be612e9f67488c2f061f5c5e943ba78d2b95837ad3406",
+    "RISCV_5pipeline.srcs/sources_1/new/cpu_reset_sync.v": "a759cfd099c4cede4c500f573ed2f31b116c1f97901878a637cbfa17ca46fc2c",
+    "RISCV_5pipeline.srcs/sources_1/new/Ctrl.v": "4fb906c609622f5a8108de025aacb391b1262d6854ae8871820e215db53679f5",
+    "RISCV_5pipeline.srcs/sources_1/new/Decoder.v": "2ef23cf07910070f4ed3ff3568e29651675326914faa48b49fb14cb50be0964e",
+    "RISCV_5pipeline.srcs/sources_1/new/EX_MEM.v": "d367bf7d9435212e4194dfc9e699e1eecb0bb5b2cece9af3e228be1d728e28b9",
+    "RISCV_5pipeline.srcs/sources_1/new/EX_MUX.v": "ba8cf066419a619c534ba1abbed872aad744a82b470126acbb701653b0298835",
+    "RISCV_5pipeline.srcs/sources_1/new/EX_pipe.v": "be2235860684ea75e100246176fcadb94c6781011dc080ab487c11d48e783ccc",
+    "RISCV_5pipeline.srcs/sources_1/new/fifo.sv": "7b66711cf26a054162376b4492ceddd58f5bb10f406d8aebcb39e0f0b5b77cd0",
+    "RISCV_5pipeline.srcs/sources_1/new/Forward.v": "d4f3d9fe49ae6cde6f15d986685c83772a21cf223f8519c5ebc052a542e5817b",
+    "RISCV_5pipeline.srcs/sources_1/new/Forward_Ctrl.v": "c9d020ca67fc120cdedcdd3a19fa0d37f6e527c52c0b7e9b15b975ef0ccbabe3",
+    "RISCV_5pipeline.srcs/sources_1/new/IBROM.v": "0c54e0c70d016a97309b142fbebbaa58b46ecb69751fa57f00262075baac853b",
+    "RISCV_5pipeline.srcs/sources_1/new/ID_EX.v": "0ad9e108a0299911c910279ccf7712a51b776f981322763816fd5742b13afc18",
+    "RISCV_5pipeline.srcs/sources_1/new/IF_ID.v": "baf919ed2ca09ee93853aec0b1bbeb88c10b9b0807d3953ed63c5295a8b0c17b",
+    "RISCV_5pipeline.srcs/sources_1/new/imm_gen.v": "8b5a209f81170e5165b533df99d0e528635fada937f3e9e1c7690503392fde55",
+    "RISCV_5pipeline.srcs/sources_1/new/instr_minidecoder.v": "47cc8e40eaf1d5a76f161c487ecc89e09c7eb250fde0a03df206932e0f2adfb6",
+    "RISCV_5pipeline.srcs/sources_1/new/IROM.v": "ccbf92385d2a6a569d726da3519c044774c52f777960743003e6a48f1bb5308a",
+    "RISCV_5pipeline.srcs/sources_1/new/LED_CTRL.v": "d2c0a14f17e6438a3eb8999fba5147c21ac6598bb40768022a1013bf464a82f7",
+    "RISCV_5pipeline.srcs/sources_1/new/MEM_DTCM.v": "e1daf26c922ffb3cbefbdaa3892279c492fac21ef8789d8c5f0262bd3d7bde6b",
+    "RISCV_5pipeline.srcs/sources_1/new/MEM_Forward.v": "de7f203fb2dbf4cbfcd0c09523c1b44f02b1cc0bdd428853d91213dae0eef6e0",
+    "RISCV_5pipeline.srcs/sources_1/new/MEM_WB.v": "08e4b5554f6ebab6f18583cf5d5944ab47d6e355e218b2c054b0da0cc571412c",
+    "RISCV_5pipeline.srcs/sources_1/new/npc.v": "0bb9addd21779837f9b3467d39351ae4d0ceeaa49a07572f55d7958c7d84c48e",
+    "RISCV_5pipeline.srcs/sources_1/new/pc_judge.v": "f9058427deb1ad77c496f5e40eed21be4655be7d2814d29143d89b1089ff4eae",
+    "RISCV_5pipeline.srcs/sources_1/new/Regfile.v": "637d5b991f1705b484ce1bf4bb962aad788415db619439f6c1bcc60fae76cc07",
+    "RISCV_5pipeline.srcs/sources_1/new/RISCV_DEFINE.vh": "747032861864e7461449b9a3adbd9632803755296a7123da7f697050f6e9642f",
+    "RISCV_5pipeline.srcs/sources_1/new/rv32M_inport.v": "41a6fae632fa76b05923dcdb220fab3cac31eac32d5f5e616763f104a2b1925a",
+    "RISCV_5pipeline.srcs/sources_1/new/RV32M_MUX.v": "21d245ae65dd664aa32fcb8c9e519ed3c0e746b2dcbb0f0b0eb23b004145c852",
+    "RISCV_5pipeline.srcs/sources_1/new/rv32M_outport.v": "463b2149155f6a4faa993911d13fdfb5f18dcc8cfc29b44e58ade02787f02fd5",
+    "RISCV_5pipeline.srcs/sources_1/new/save_Load_use.v": "ecc9ceebcf4f72eb8f5c56ab12d4fa733ecbe6b14f0e9b5649185ba323d2564d",
+    "RISCV_5pipeline.srcs/sources_1/new/Stall.v": "d0b3563c525e140ec41b441c6c80cce6034f19ca97f2b564a6854f8e2ad4d0f5",
+    "RISCV_5pipeline.srcs/sources_1/new/Store.v": "82c73ee9b6e59687bbb63c0de94ba03c28c73c2732cce28c59ddaf76007a6ad9",
+    "RISCV_5pipeline.srcs/sources_1/new/tage_predictor.sv": "34e44a874ce25920ee7fb6b90cfeaac481c398534a7f5f3b338585e6fff182df",
+    "RISCV_5pipeline.srcs/sources_1/new/tage_table.sv": "be07e1a83202cb66bcbc8c6d422875905a1490492c2ebac0d957760cd7a311ea",
+    "RISCV_5pipeline.srcs/sources_1/new/top.sv": "4aebf600d17c9fa1091833be19c7f7d249612c8cbe86062d1d3303524b22fa20",
+    "RISCV_5pipeline.srcs/sources_1/new/WB_Forward.v": "4de902ffa8c618b0e3d0ae1cd4c78a575d5a80b6bc4ca160c3924602113e9380",
+    "RISCV_5pipeline.srcs/sources_1/new/WB_MUX.v": "49ffc4bb25c7a1511c7e0fbe507fa4e8d79a78e8232e3d13dc1177b9e7ec2a61",
+    "RISCV_5pipeline.xpr": "1caeb61279a026a34e5783898d1b90d5f09a0acc2788aa74fb367f3f89c1641a",
+    "verification/reset_phase_tb.sv": "f22522788c4aed36258c90604d32a414a77aa72d97e842fff64c7ad1e7035214",
+    "verification/write_trace_checker.sv": "ddaed916f61b83287bd52bfb1dc264ed762bf836c57409ac035fb14f5ff01707"
+  },
+  "scope": "static_inventory_not_elaboration",
+  "project_options": {
+    "Part": "xc7k325tffg676-2",
+    "BoardPart": ""
+  },
+  "timestamp": "2026-11-03T22:12:57.662322+08:00"
+}

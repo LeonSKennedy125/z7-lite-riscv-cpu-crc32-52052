@@ -1,0 +1,87 @@
+PASS | EX_MEM rs2 enable captures INPUT
+PASS | EX_MEM independent operand enables switch
+PASS | rs1 priority mask=0 sel=0
+PASS | rs2 priority mask=0 sel=0
+PASS | rs1 priority mask=0 sel=1
+PASS | rs2 priority mask=0 sel=1
+PASS | rs1 priority mask=0 sel=2
+PASS | rs2 priority mask=0 sel=2
+PASS | rs1 priority mask=0 sel=3
+PASS | rs2 priority mask=0 sel=3
+PASS | rs1 priority mask=1 sel=0
+PASS | rs2 priority mask=1 sel=0
+PASS | rs1 priority mask=1 sel=1
+PASS | rs2 priority mask=1 sel=1
+PASS | rs1 priority mask=1 sel=2
+PASS | rs2 priority mask=1 sel=2
+PASS | rs1 priority mask=1 sel=3
+PASS | rs2 priority mask=1 sel=3
+PASS | rs1 priority mask=2 sel=0
+PASS | rs2 priority mask=2 sel=0
+PASS | rs1 priority mask=2 sel=1
+PASS | rs2 priority mask=2 sel=1
+PASS | rs1 priority mask=2 sel=2
+PASS | rs2 priority mask=2 sel=2
+PASS | rs1 priority mask=2 sel=3
+PASS | rs2 priority mask=2 sel=3
+PASS | rs1 priority mask=3 sel=0
+PASS | rs2 priority mask=3 sel=0
+PASS | rs1 priority mask=3 sel=1
+PASS | rs2 priority mask=3 sel=1
+PASS | rs1 priority mask=3 sel=2
+PASS | rs2 priority mask=3 sel=2
+PASS | rs1 priority mask=3 sel=3
+PASS | rs2 priority mask=3 sel=3
+PASS | rs1 priority mask=4 sel=0
+PASS | rs2 priority mask=4 sel=0
+PASS | rs1 priority mask=4 sel=1
+PASS | rs2 priority mask=4 sel=1
+PASS | rs1 priority mask=4 sel=2
+PASS | rs2 priority mask=4 sel=2
+PASS | rs1 priority mask=4 sel=3
+PASS | rs2 priority mask=4 sel=3
+PASS | rs1 priority mask=5 sel=0
+PASS | rs2 priority mask=5 sel=0
+PASS | rs1 priority mask=5 sel=1
+PASS | rs2 priority mask=5 sel=1
+PASS | rs1 priority mask=5 sel=2
+PASS | rs2 priority mask=5 sel=2
+PASS | rs1 priority mask=5 sel=3
+PASS | rs2 priority mask=5 sel=3
+PASS | rs1 priority mask=6 sel=0
+PASS | rs2 priority mask=6 sel=0
+PASS | rs1 priority mask=6 sel=1
+PASS | rs2 priority mask=6 sel=1
+PASS | rs1 priority mask=6 sel=2
+PASS | rs2 priority mask=6 sel=2
+PASS | rs1 priority mask=6 sel=3
+PASS | rs2 priority mask=6 sel=3
+PASS | rs1 priority mask=7 sel=0
+PASS | rs2 priority mask=7 sel=0
+PASS | rs1 priority mask=7 sel=1
+PASS | rs2 priority mask=7 sel=1
+PASS | rs1 priority mask=7 sel=2
+PASS | rs2 priority mask=7 sel=2
+PASS | rs1 priority mask=7 sel=3
+PASS | rs2 priority mask=7 sel=3
+PASS | Younger EX beats captured load metadata
+PASS | Younger EX rs2 beats captured load metadata
+PASS | Both operands receive MEM load
+PASS | Producer write-valid gate=0
+PASS | Producer write-valid gate=1
+PASS | x0 never forwards or stalls
+PASS | Nonmatching registers do not forward
+PASS | Save holds WB payload and forwarding validity
+PASS | Save postpones architectural write
+PASS | Extended save cannot repeat commit
+PASS | Stall overlaps save and preserves pending WB
+PASS | Release commits exactly once and advances bubble
+PASS | No repeated commit after release
+PASS | Flush cancels commit commit_before edge
+PASS | Flush dominates save and stall
+PASS | Load stall overlap generates save next cycle
+PASS | Save releases when load-over clears first stall
+PASS | Consecutive overlap re-arms save
+PASS | Reset cancels save and WB asynchronously
+PHASE04_UNIT_SUMMARY checks=85 failures=0
+phase04_unit_tb.sv:116: $finish called at 207200 (1ps)

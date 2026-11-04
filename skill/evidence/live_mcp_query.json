@@ -1,0 +1,23 @@
+{
+  "pass": true,
+  "scope": "live_readonly_mcp_query",
+  "timestamp": "2026-11-03T22:13:39.758060+08:00",
+  "sessions": {
+    "jsonrpc": "2.0",
+    "id": 3,
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"non_recoverable_sessions\": null,\n  \"sessions\": {\n    \"vivado-20261103-215323-6ce13c59\": {\n      \"session_id\": \"vivado-20261103-215323-6ce13c59\",\n      \"process_id\": 0,\n      \"process_running\": true,\n      \"webserver_healthy\": true,\n      \"working_dir\": \"C:/Users/liyua/Downloads/160MHZ CPURISCV\",\n      \"webserver_url\": \"http://127.0.0.1:8088\",\n      \"log_file\": \"C:\\\\Users\\\\liyua\\\\AppData\\\\Roaming\\\\Xilinx\\\\Vivado\\\\vivado.log\",\n      \"hostname\": \"Leonardo\",\n      \"deployment_type\": \"local\",\n      \"is_gui_mode\": true,\n      \"vivado_version\": \"2026.1\",\n      \"gui_surface\": \"on-screen\",\n      \"uptime_seconds\": 1214\n    }\n  }\n}"
+        }
+      ]
+    }
+  },
+  "query": [
+    {
+      "exit_code": 0,
+      "output": "version 2026.1 project RISCV_5pipeline directory {C:/Users/liyua/Downloads/160MHZ CPURISCV} part xc7k325tffg676-2 top design_1_wrapper simulation_top assist_tb synthesis_files 117 synth_status {Not started} impl_status {Not started}"
+    }
+  ]
+}

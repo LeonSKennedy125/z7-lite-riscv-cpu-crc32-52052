@@ -1,0 +1,307 @@
+{
+  "pass": true,
+  "skill_count": 3,
+  "files_checked": 57,
+  "structure_checks": [
+    {
+      "path": "riscv-debug\\SKILL.md",
+      "pass": true
+    },
+    {
+      "path": "riscv-verification\\SKILL.md",
+      "pass": true
+    },
+    {
+      "path": "vivado-automation\\SKILL.md",
+      "pass": true
+    },
+    {
+      "check": "three_unique_skills",
+      "pass": true
+    },
+    {
+      "from": "competition_mapping.md",
+      "link": "references/track_requirements_excerpt.md",
+      "pass": true
+    },
+    {
+      "from": "competition_mapping.md",
+      "link": "references/source.json",
+      "pass": true
+    },
+    {
+      "from": "project_analysis.md",
+      "link": "evidence/validation.json",
+      "pass": true
+    },
+    {
+      "from": "README.md",
+      "link": "project_analysis.md",
+      "pass": true
+    },
+    {
+      "from": "README.md",
+      "link": "evidence/validation.json",
+      "pass": true
+    },
+    {
+      "from": "README.md",
+      "link": "competition_mapping.md",
+      "pass": true
+    },
+    {
+      "from": "README.md",
+      "link": "report_excerpt.md",
+      "pass": true
+    },
+    {
+      "from": "README.md",
+      "link": "riscv-verification/SKILL.md",
+      "pass": true
+    },
+    {
+      "from": "README.md",
+      "link": "vivado-automation/SKILL.md",
+      "pass": true
+    },
+    {
+      "from": "README.md",
+      "link": "riscv-debug/SKILL.md",
+      "pass": true
+    },
+    {
+      "from": "riscv-debug\\SKILL.md",
+      "link": "architecture_analysis.md",
+      "pass": true
+    },
+    {
+      "from": "riscv-debug\\SKILL.md",
+      "link": "hazard_debugging.md",
+      "pass": true
+    },
+    {
+      "from": "riscv-debug\\SKILL.md",
+      "link": "prompt_templates.md",
+      "pass": true
+    },
+    {
+      "from": "riscv-verification\\SKILL.md",
+      "link": "workflow.md",
+      "pass": true
+    },
+    {
+      "from": "riscv-verification\\SKILL.md",
+      "link": "troubleshooting.md",
+      "pass": true
+    },
+    {
+      "from": "riscv-verification\\SKILL.md",
+      "link": "prompt_templates.md",
+      "pass": true
+    },
+    {
+      "from": "riscv-verification\\SKILL.md",
+      "link": "examples/README.md",
+      "pass": true
+    },
+    {
+      "from": "vivado-automation\\SKILL.md",
+      "link": "workflow.md",
+      "pass": true
+    },
+    {
+      "from": "vivado-automation\\SKILL.md",
+      "link": "resource_timing.md",
+      "pass": true
+    },
+    {
+      "from": "vivado-automation\\SKILL.md",
+      "link": "troubleshooting.md",
+      "pass": true
+    },
+    {
+      "from": "vivado-automation\\workflow.md",
+      "link": "resource_timing.md",
+      "pass": true
+    }
+  ],
+  "checker_controls": [
+    {
+      "case": "trace_equal",
+      "pass": true,
+      "scope": "synthetic_checker_control_only"
+    },
+    {
+      "case": "trace_reject_wrong_value",
+      "pass": true,
+      "scope": "synthetic_checker_control_only"
+    },
+    {
+      "case": "trace_reject_wrong_pc",
+      "pass": true,
+      "scope": "synthetic_checker_control_only"
+    },
+    {
+      "case": "trace_reject_wrong_rd",
+      "pass": true,
+      "scope": "synthetic_checker_control_only"
+    },
+    {
+      "case": "trace_reject_missing_write",
+      "pass": true,
+      "scope": "synthetic_checker_control_only"
+    },
+    {
+      "case": "trace_reject_extra_write",
+      "pass": true,
+      "scope": "synthetic_checker_control_only"
+    },
+    {
+      "case": "trace_input_empty",
+      "pass": true,
+      "scope": "synthetic_checker_control_only"
+    },
+    {
+      "case": "trace_input_xz",
+      "pass": true,
+      "scope": "synthetic_checker_control_only"
+    },
+    {
+      "case": "trace_input_truncated_count",
+      "pass": true,
+      "scope": "synthetic_checker_control_only"
+    },
+    {
+      "case": "trace_input_invalid_rd",
+      "pass": true,
+      "scope": "synthetic_checker_control_only"
+    },
+    {
+      "case": "trace_input_malformed",
+      "pass": true,
+      "scope": "synthetic_checker_control_only"
+    },
+    {
+      "case": "log_valid",
+      "pass": true,
+      "scope": "synthetic_checker_control_only"
+    },
+    {
+      "case": "log_reject_bare_pass",
+      "pass": true,
+      "scope": "synthetic_checker_control_only"
+    },
+    {
+      "case": "log_reject_zero_checks",
+      "pass": true,
+      "scope": "synthetic_checker_control_only"
+    },
+    {
+      "case": "log_reject_nonzero_failures",
+      "pass": true,
+      "scope": "synthetic_checker_control_only"
+    },
+    {
+      "case": "log_reject_duplicate_summary",
+      "pass": true,
+      "scope": "synthetic_checker_control_only"
+    },
+    {
+      "case": "log_reject_hidden_fail",
+      "pass": true,
+      "scope": "synthetic_checker_control_only"
+    },
+    {
+      "case": "log_reject_fatal_then_summary",
+      "pass": true,
+      "scope": "synthetic_checker_control_only"
+    },
+    {
+      "case": "reset_duplicate_marker",
+      "pass": true,
+      "scope": "synthetic_checker_control_only"
+    },
+    {
+      "case": "report_valid_fixture",
+      "pass": true,
+      "scope": "synthetic_checker_control_only"
+    },
+    {
+      "case": "report_missing",
+      "pass": true,
+      "scope": "synthetic_checker_control_only"
+    },
+    {
+      "case": "report_negative_wns",
+      "pass": true,
+      "scope": "synthetic_checker_control_only"
+    },
+    {
+      "case": "report_unconstrained",
+      "pass": true,
+      "scope": "synthetic_checker_control_only"
+    },
+    {
+      "case": "report_not_routed",
+      "pass": true,
+      "scope": "synthetic_checker_control_only"
+    },
+    {
+      "case": "cli_trace_mismatch",
+      "pass": true,
+      "scope": "synthetic_checker_control_only"
+    },
+    {
+      "case": "cli_trace_unknown",
+      "pass": true,
+      "scope": "synthetic_checker_control_only"
+    },
+    {
+      "case": "cli_missing_reports",
+      "pass": true,
+      "scope": "synthetic_checker_control_only"
+    },
+    {
+      "case": "cli_refuse_existing_output",
+      "pass": true,
+      "scope": "synthetic_checker_control_only"
+    },
+    {
+      "case": "help_riscv-debug\\scripts\\inspect_project.py",
+      "pass": true,
+      "scope": "synthetic_checker_control_only"
+    },
+    {
+      "case": "help_riscv-verification\\scripts\\compare_trace.py",
+      "pass": true,
+      "scope": "synthetic_checker_control_only"
+    },
+    {
+      "case": "help_riscv-verification\\scripts\\recheck_existing.py",
+      "pass": true,
+      "scope": "synthetic_checker_control_only"
+    },
+    {
+      "case": "help_riscv-verification\\scripts\\run_units.py",
+      "pass": true,
+      "scope": "synthetic_checker_control_only"
+    },
+    {
+      "case": "help_vivado-automation\\scripts\\analyze_reports.py",
+      "pass": true,
+      "scope": "synthetic_checker_control_only"
+    },
+    {
+      "case": "help_vivado-automation\\scripts\\build.py",
+      "pass": true,
+      "scope": "synthetic_checker_control_only"
+    },
+    {
+      "case": "help_vivado-automation\\scripts\\mcp_inspect.py",
+      "pass": true,
+      "scope": "synthetic_checker_control_only"
+    }
+  ],
+  "checker_controls_passed": 35,
+  "scope": "package_and_synthetic_checker_controls_not_cpu_functional_tests"
+}

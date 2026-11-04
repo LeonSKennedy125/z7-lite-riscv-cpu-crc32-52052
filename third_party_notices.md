@@ -12,3 +12,5 @@
 AMD 官方 [Design Tools EULA](https://www.xilinx.com/content/dam/xilinx/licenses/ip/end-user-license-agreement.pdf) 第 3(a)(3) 节区分可修改组件、设计元素及分发形式；源码形式组件的接收者应具有适用的软件许可，机器可执行形式适用其对应条件。工具内 Included IP 的许可说明参见 [UG896](https://docs.amd.com/r/en-US/ug896-vivado-ip/Using-Fee-Based-Licensed-IP)。本项目保留供应商声明，AMD 部分按其适用条款使用；团队 MIT 不替代这些条款。
 
 Vivado、GCC、Python 安装包，以及厂商原理图、客服硬件包、赛事指南原文和原始 CPU 设计文档不随仓库分发。硬件资料只保留事实摘要和来源哈希；所用第三方软件由使用者从各自官方渠道安装。
+
+补充 Skill 的 `skill/references/track_requirements_excerpt.md` 为用户提供的赛事指南第 3.3 节原文节选，原来源和 SHA-256 保留；该引用原文的权利归原发布者，不作为团队 MIT 原创重新授权。

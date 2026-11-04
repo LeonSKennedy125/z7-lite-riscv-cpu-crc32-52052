@@ -1,0 +1,2 @@
+R1_RESET_SOURCES=PASS overlap_cases=49 stopped_clock_cases=7 total=56
+phase10_r1_reset_sources_tb.sv:55: $finish called at 7381260 (1ps)

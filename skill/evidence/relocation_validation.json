@@ -1,0 +1,58 @@
+{
+  "pass": true,
+  "scope": "same-machine skill-folder relocation; generic tools use bundled trace/copied reports, static inspector reads explicit project-root",
+  "other_machine_verified": false,
+  "other_board_verified": false,
+  "results": [
+    {
+      "command": [
+        "C:\\Users\\liyua\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\skill\\artifacts\\relocated_skills\\riscv-verification\\scripts\\compare_trace.py",
+        "--expected",
+        "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\skill\\artifacts\\relocated_skills\\riscv-verification\\examples\\expected.trace",
+        "--actual",
+        "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\skill\\artifacts\\relocated_skills\\riscv-verification\\examples\\hazards_simulation.log",
+        "--actual-format",
+        "wb-log"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"trace_equal\": true, \"matched\": 56, \"scope\": \"register_writes_only\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\liyua\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\skill\\artifacts\\relocated_skills\\vivado-automation\\scripts\\analyze_reports.py",
+        "--report-dir",
+        "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\skill\\artifacts\\relocated_skills\\input_reports",
+        "--out",
+        "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\skill\\artifacts\\relocated_skills\\parsed"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"status\": \"ON_CHIP_TIMING_PASS\", \"check_pass\": true, \"resources\": {\"lut\": 6300.0, \"ff\": 7865.0, \"bram_tile\": 88.0, \"ramb36\": 87.0, \"ramb18\": 2.0, \"dsp\": 0.0}, \"timing\": {\"wns_ns\": 0.132, \"tns_ns\": 0.0, \"setup_failing\": 0.0, \"setup_total\": 19251.0, \"whs_ns\": 0.05, \"ths_ns\": 0.0, \"hold_failing\": 0.0, \"hold_total\": 19235.0, \"wpws_ns\": 2.357, \"tpws_ns\": 0.0, \"pulse_failing\": 0.0, \"pulse_total\": 9628.0}, \"source_binding\": \"UNVERIFIED\", \"system_pending\": {\"missing_input_delays\": 35, \"missing_output_delays\": 71, \"board_pins_electrical_bridge_hardware\": \"not evaluated by this parser\"}}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\liyua\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\skill\\artifacts\\relocated_skills\\riscv-debug\\scripts\\inspect_project.py",
+        "--project-root",
+        "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV",
+        "--out",
+        "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\skill\\artifacts\\relocated_skills\\inventory"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"part\": \"xc7k325tffg676-2\", \"bd\": [\"design_1\", \"rv32_m\"], \"module_definitions\": 49, \"missing_references\": []}\n",
+      "stderr": ""
+    }
+  ]
+}

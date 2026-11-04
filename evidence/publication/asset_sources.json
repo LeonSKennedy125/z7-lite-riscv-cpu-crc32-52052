@@ -11,7 +11,7 @@
       "source": "release/crc50_s08_20261103_review2/github_gitee/README.md",
       "published": "README.md",
       "source_sha256": "4156e18ababc6b3ada02006441c2d668d11ded96ea6d400266dee2c0742996b2",
-      "published_sha256": "c9bf635b194a822ba0b763c2a1d42b3254e3582e4187b87b917c4263e4694bc3",
+      "published_sha256": "9ae691670bf7a81da06a7e4fb372fa1817dc1af8897711199589d5869e76f795",
       "adapted_for_publication": true
     },
     {
@@ -39,7 +39,7 @@
       "source": "release/crc50_s08_20261103_review2/github_gitee/third_party_notices.md",
       "published": "third_party_notices.md",
       "source_sha256": "002a2bf077b6fe82933714c8dcb1ef81ece058d9cbb7b62d751cf00cfe639c75",
-      "published_sha256": "51759906e9cd3faf5e4fbb1ea7fdeca6380302aed68af6110b0749ef7eaec3c4",
+      "published_sha256": "2d4eef24bd26e37cd5bd213c2f4106bd86de85fde72aff6667347c47202d0c1d",
       "adapted_for_publication": true
     },
     {
@@ -277,14 +277,14 @@
       "source": "release/crc50_s08_20261103_review2/github_gitee/scripts/release.py",
       "published": "scripts/release.py",
       "source_sha256": "e5cc52b711b0c3999e427d13e10ce4f95a04ad2ee1d8476304ecf5cda9cf6fb9",
-      "published_sha256": "e5cc52b711b0c3999e427d13e10ce4f95a04ad2ee1d8476304ecf5cda9cf6fb9",
-      "adapted_for_publication": false
+      "published_sha256": "989132e427047208518b2f13db2927bb70050b03b25fcb71b92426a1d3d1db1f",
+      "adapted_for_publication": true
     },
     {
       "source": "release/crc50_s08_20261103_review2/github_gitee/scripts/release_files.txt",
       "published": "scripts/release_files.txt",
       "source_sha256": "5ea3725a02bdb19294076379ab4ff212e5ba5666957c188e56d913cec8c8e3e2",
-      "published_sha256": "c11a7ea9225df4acbdd51f8009348a938f73902540f75a73ac954487e4c3c90a",
+      "published_sha256": "61c1fa9627ec70dc348daa84dfe8d3972ebcaf05798d0b1fcb479580c987d4e6",
       "adapted_for_publication": true
     },
     {
@@ -368,8 +368,8 @@
       "source": "release/crc50_s08_20261103_review2/github_gitee/skill/README.md",
       "published": "skill/README.md",
       "source_sha256": "598f9eea037168c412dd34562472c06c5323f6abdcbd6fa271a9f896e67ee76b",
-      "published_sha256": "598f9eea037168c412dd34562472c06c5323f6abdcbd6fa271a9f896e67ee76b",
-      "adapted_for_publication": false
+      "published_sha256": "5179b19bc875dfc57da1942746d1835cd2388c2140c8803f0af4f356325f39a6",
+      "adapted_for_publication": true
     },
     {
       "source": "release/crc50_s08_20261103_review2/github_gitee/src/crc_mmio.sv",
@@ -2203,6 +2203,470 @@
       "published": "sim/results/mailbox_sim_run_2.hex",
       "source_sha256": "c5d1ec8fb84080a3f95abf2b90a76b0e31dae791343fb7e0827ee4a4adabd988",
       "published_sha256": "c5d1ec8fb84080a3f95abf2b90a76b0e31dae791343fb7e0827ee4a4adabd988",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/.gitignore",
+      "source_scope": "main_project_root",
+      "source_sha256": "51c91ef3167129c06f8136c90379166622261cac922b5d8f4e5f2ea5e80759ed",
+      "published": "skill/.gitignore",
+      "published_sha256": "51c91ef3167129c06f8136c90379166622261cac922b5d8f4e5f2ea5e80759ed",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/collaboration_record.md",
+      "source_scope": "main_project_root",
+      "source_sha256": "70043ae03e129e66f3afd3db139974d488241eed1c082aaf2b598b8abb56dfed",
+      "published": "skill/collaboration_record.md",
+      "published_sha256": "70043ae03e129e66f3afd3db139974d488241eed1c082aaf2b598b8abb56dfed",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/competition_mapping.md",
+      "source_scope": "main_project_root",
+      "source_sha256": "75243b8bbc836aff2c173eb6f0b90f20748aa8a396df68f5af759e0a45b8dfb3",
+      "published": "skill/competition_mapping.md",
+      "published_sha256": "75243b8bbc836aff2c173eb6f0b90f20748aa8a396df68f5af759e0a45b8dfb3",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/evidence/build_plan.json",
+      "source_scope": "main_project_root",
+      "source_sha256": "33f7daca17d25c4a55e2640f3cb22897496df92c9214d97e952f7a9cc22a436c",
+      "published": "skill/evidence/build_plan.json",
+      "published_sha256": "33f7daca17d25c4a55e2640f3cb22897496df92c9214d97e952f7a9cc22a436c",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/evidence/format_validation.json",
+      "source_scope": "main_project_root",
+      "source_sha256": "9137c5dfcb20fb65ee799da7a1eea476e2f537db35e8c693f477c924e9c45a9a",
+      "published": "skill/evidence/format_validation.json",
+      "published_sha256": "9137c5dfcb20fb65ee799da7a1eea476e2f537db35e8c693f477c924e9c45a9a",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/evidence/historical_irq_recheck.json",
+      "source_scope": "main_project_root",
+      "source_sha256": "055842b464e512f703307481bff05dbfeb2db1b340f4b908d8c2f3c681b68277",
+      "published": "skill/evidence/historical_irq_recheck.json",
+      "published_sha256": "055842b464e512f703307481bff05dbfeb2db1b340f4b908d8c2f3c681b68277",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/evidence/historical_isa_recheck.json",
+      "source_scope": "main_project_root",
+      "source_sha256": "7e26fbdec4eb3f144a51cde96e98e3adaf930b43072bf61794c31001915efaf6",
+      "published": "skill/evidence/historical_isa_recheck.json",
+      "published_sha256": "7e26fbdec4eb3f144a51cde96e98e3adaf930b43072bf61794c31001915efaf6",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/evidence/historical_mixed_recheck.json",
+      "source_scope": "main_project_root",
+      "source_sha256": "f7040eeb21449179f24909f4e3235f1c7f2e4875b55d8db60ccfd84bf5fe89b1",
+      "published": "skill/evidence/historical_mixed_recheck.json",
+      "published_sha256": "f7040eeb21449179f24909f4e3235f1c7f2e4875b55d8db60ccfd84bf5fe89b1",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/evidence/inventory.json",
+      "source_scope": "main_project_root",
+      "source_sha256": "b22e63654c42a86e5d92af73e94900fd236d32993a11b8aecbda4f1a9708a889",
+      "published": "skill/evidence/inventory.json",
+      "published_sha256": "b22e63654c42a86e5d92af73e94900fd236d32993a11b8aecbda4f1a9708a889",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/evidence/live_mcp_query.json",
+      "source_scope": "main_project_root",
+      "source_sha256": "f3ae459ae32b3591fe5260a8690dffde9c2aa7b13443072c24d565aea1997eff",
+      "published": "skill/evidence/live_mcp_query.json",
+      "published_sha256": "f3ae459ae32b3591fe5260a8690dffde9c2aa7b13443072c24d565aea1997eff",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/evidence/quality_controls.json",
+      "source_scope": "main_project_root",
+      "source_sha256": "4fac3f130897661fa95b05d940a3e169cc7a49bb8584f89761802d19b0705236",
+      "published": "skill/evidence/quality_controls.json",
+      "published_sha256": "4fac3f130897661fa95b05d940a3e169cc7a49bb8584f89761802d19b0705236",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/evidence/relocation_validation.json",
+      "source_scope": "main_project_root",
+      "source_sha256": "ab59f958ab4a47fe56dc551daaaf3cfef8bc85a4af7ef0e30d4588f4a50a0e5a",
+      "published": "skill/evidence/relocation_validation.json",
+      "published_sha256": "ab59f958ab4a47fe56dc551daaaf3cfef8bc85a4af7ef0e30d4588f4a50a0e5a",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/evidence/report_analysis.json",
+      "source_scope": "main_project_root",
+      "source_sha256": "98235e6de3bf9c30849d7154bffeac08496ee92a11de92052aed63b12ae965ed",
+      "published": "skill/evidence/report_analysis.json",
+      "published_sha256": "98235e6de3bf9c30849d7154bffeac08496ee92a11de92052aed63b12ae965ed",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/evidence/source_inputs_before.json",
+      "source_scope": "main_project_root",
+      "source_sha256": "baf864ca21bbb0fd0dabe8d7cf32d146d2a89dcd62f38352b193d8df8947de1a",
+      "published": "skill/evidence/source_inputs_before.json",
+      "published_sha256": "baf864ca21bbb0fd0dabe8d7cf32d146d2a89dcd62f38352b193d8df8947de1a",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/evidence/source_protection.json",
+      "source_scope": "main_project_root",
+      "source_sha256": "fa8fb5422b23e479d99a7dc273ad158188747a592cd019d0db374d3d9eb321ae",
+      "published": "skill/evidence/source_protection.json",
+      "published_sha256": "fa8fb5422b23e479d99a7dc273ad158188747a592cd019d0db374d3d9eb321ae",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/evidence/trace_comparison.json",
+      "source_scope": "main_project_root",
+      "source_sha256": "ec002017ca70323431d588108f131332dfdf7743864f7b5cd2e6e4a5e806a0d3",
+      "published": "skill/evidence/trace_comparison.json",
+      "published_sha256": "ec002017ca70323431d588108f131332dfdf7743864f7b5cd2e6e4a5e806a0d3",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/evidence/units_iverilog/contract.log",
+      "source_scope": "main_project_root",
+      "source_sha256": "bd4ae79ccde3727f0a94a5cdbec58d05c18c60bdc81e19f21477e7c274c3d288",
+      "published": "skill/evidence/units_iverilog/contract.log",
+      "published_sha256": "bd4ae79ccde3727f0a94a5cdbec58d05c18c60bdc81e19f21477e7c274c3d288",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/evidence/units_iverilog/csr.log",
+      "source_scope": "main_project_root",
+      "source_sha256": "379186dcdf87d43bd684e9fbedec7337b8d0dce5f706bb7d81c9b27317939a13",
+      "published": "skill/evidence/units_iverilog/csr.log",
+      "published_sha256": "379186dcdf87d43bd684e9fbedec7337b8d0dce5f706bb7d81c9b27317939a13",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/evidence/units_iverilog/forward.log",
+      "source_scope": "main_project_root",
+      "source_sha256": "b7632e85b5637695a586d008b81dce9a1e23f5d16d98c5b2dcce35a8c1ab655c",
+      "published": "skill/evidence/units_iverilog/forward.log",
+      "published_sha256": "b7632e85b5637695a586d008b81dce9a1e23f5d16d98c5b2dcce35a8c1ab655c",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/evidence/units_iverilog/reset.log",
+      "source_scope": "main_project_root",
+      "source_sha256": "98f9e99dfd3a02f956380a1f01f55fa39672ff6d39f186bd023d154b8773d82f",
+      "published": "skill/evidence/units_iverilog/reset.log",
+      "published_sha256": "98f9e99dfd3a02f956380a1f01f55fa39672ff6d39f186bd023d154b8773d82f",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/evidence/units_iverilog/summary.json",
+      "source_scope": "main_project_root",
+      "source_sha256": "cffdd778c924fa4ed55866930a4d31339805aac583a73263f4a15513e365e481",
+      "published": "skill/evidence/units_iverilog/summary.json",
+      "published_sha256": "cffdd778c924fa4ed55866930a4d31339805aac583a73263f4a15513e365e481",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/evidence/units_xsim/contract.log",
+      "source_scope": "main_project_root",
+      "source_sha256": "c5e7fd4bdcd45e1e330a148c571cc9fd43852f3a659b7a70e8a39d3481db4dfe",
+      "published": "skill/evidence/units_xsim/contract.log",
+      "published_sha256": "c5e7fd4bdcd45e1e330a148c571cc9fd43852f3a659b7a70e8a39d3481db4dfe",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/evidence/units_xsim/csr.log",
+      "source_scope": "main_project_root",
+      "source_sha256": "c814830823e6535eaa9c2a4c838e82bff8bc4f69905a41bc4a8eab71539c2682",
+      "published": "skill/evidence/units_xsim/csr.log",
+      "published_sha256": "c814830823e6535eaa9c2a4c838e82bff8bc4f69905a41bc4a8eab71539c2682",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/evidence/units_xsim/forward.log",
+      "source_scope": "main_project_root",
+      "source_sha256": "33c786410ed4942e6a0c0384e4a6d64eba281955a8f7e981e37e7b0f77c220a7",
+      "published": "skill/evidence/units_xsim/forward.log",
+      "published_sha256": "33c786410ed4942e6a0c0384e4a6d64eba281955a8f7e981e37e7b0f77c220a7",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/evidence/units_xsim/reset.log",
+      "source_scope": "main_project_root",
+      "source_sha256": "7717facf746c5603ca21d7433c16e2355671e4fb0b41eab2382e3daa808db74d",
+      "published": "skill/evidence/units_xsim/reset.log",
+      "published_sha256": "7717facf746c5603ca21d7433c16e2355671e4fb0b41eab2382e3daa808db74d",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/evidence/units_xsim/summary.json",
+      "source_scope": "main_project_root",
+      "source_sha256": "f4efd300322f38614a09b625f3c41f427e75c7d691c37d3ea4d4158135d7ab88",
+      "published": "skill/evidence/units_xsim/summary.json",
+      "published_sha256": "f4efd300322f38614a09b625f3c41f427e75c7d691c37d3ea4d4158135d7ab88",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/evidence/validation.json",
+      "source_scope": "main_project_root",
+      "source_sha256": "f4015532bf3dd7f66e4dd910dfcff64328bc9cfec99367e1fdd1a0ecb7e4b40c",
+      "published": "skill/evidence/validation.json",
+      "published_sha256": "f4015532bf3dd7f66e4dd910dfcff64328bc9cfec99367e1fdd1a0ecb7e4b40c",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/project_analysis.md",
+      "source_scope": "main_project_root",
+      "source_sha256": "db508b51e9e91b781aad6d27f28caf3588e31ffdb756fe0ea8841d1a575ca324",
+      "published": "skill/project_analysis.md",
+      "published_sha256": "db508b51e9e91b781aad6d27f28caf3588e31ffdb756fe0ea8841d1a575ca324",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/README.md",
+      "source_scope": "main_project_root",
+      "source_sha256": "a6c2b8729d9444f1a06e0ecdf400298c1b3470b3e5224fd1c55927a1fa9c8ee8",
+      "published": "skill/cpu_skill_guide.md",
+      "published_sha256": "a6c2b8729d9444f1a06e0ecdf400298c1b3470b3e5224fd1c55927a1fa9c8ee8",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/references/source.json",
+      "source_scope": "main_project_root",
+      "source_sha256": "c4a759e3fe33bd5528e8cf8f059d5c81ea8e906e210919e2efb0692876a76962",
+      "published": "skill/references/source.json",
+      "published_sha256": "c4a759e3fe33bd5528e8cf8f059d5c81ea8e906e210919e2efb0692876a76962",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/references/track_requirements_excerpt.md",
+      "source_scope": "main_project_root",
+      "source_sha256": "52b4d3e2864b3f90290d1c515fbdf1ab64b41d5e490a3f35cb70bf4b90e84a73",
+      "published": "skill/references/track_requirements_excerpt.md",
+      "published_sha256": "52b4d3e2864b3f90290d1c515fbdf1ab64b41d5e490a3f35cb70bf4b90e84a73",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/report_excerpt.md",
+      "source_scope": "main_project_root",
+      "source_sha256": "d4996fae6dadd7e2a0dab0a9e405f8f385a3f74f128fbe65a8c079d6872406d3",
+      "published": "skill/report_excerpt.md",
+      "published_sha256": "d4996fae6dadd7e2a0dab0a9e405f8f385a3f74f128fbe65a8c079d6872406d3",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/riscv-debug/architecture_analysis.md",
+      "source_scope": "main_project_root",
+      "source_sha256": "f45dcc0c79333ec368e9621471f100c7ea99822306eab9bc4bae468ce3e44d8d",
+      "published": "skill/riscv-debug/architecture_analysis.md",
+      "published_sha256": "f45dcc0c79333ec368e9621471f100c7ea99822306eab9bc4bae468ce3e44d8d",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/riscv-debug/hazard_debugging.md",
+      "source_scope": "main_project_root",
+      "source_sha256": "dd33f5b0ca7dc4ef426c0054d3103568f1c9465b0f8f226e0b5ffc403b5ba5fb",
+      "published": "skill/riscv-debug/hazard_debugging.md",
+      "published_sha256": "dd33f5b0ca7dc4ef426c0054d3103568f1c9465b0f8f226e0b5ffc403b5ba5fb",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/riscv-debug/prompt_templates.md",
+      "source_scope": "main_project_root",
+      "source_sha256": "8c825d8f117c48c9e906b8bf371a3aa90c6b7fb237dd80423045c0538eae942d",
+      "published": "skill/riscv-debug/prompt_templates.md",
+      "published_sha256": "8c825d8f117c48c9e906b8bf371a3aa90c6b7fb237dd80423045c0538eae942d",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/riscv-debug/scripts/inspect_project.py",
+      "source_scope": "main_project_root",
+      "source_sha256": "eb761f9a203c81353ee393c74457c0f987f128b1a2c04ada703301dd2062f557",
+      "published": "skill/riscv-debug/scripts/inspect_project.py",
+      "published_sha256": "eb761f9a203c81353ee393c74457c0f987f128b1a2c04ada703301dd2062f557",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/riscv-debug/SKILL.md",
+      "source_scope": "main_project_root",
+      "source_sha256": "ce3c435e12198f12c1e1cbd5a9e2be6779d0289ae82dca6ac4e33b40f68cab14",
+      "published": "skill/riscv-debug/SKILL.md",
+      "published_sha256": "ce3c435e12198f12c1e1cbd5a9e2be6779d0289ae82dca6ac4e33b40f68cab14",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/riscv-verification/examples/expected.trace",
+      "source_scope": "main_project_root",
+      "source_sha256": "cb15d17e95826e58cf6088b821c8ccf6099a8cba22282e8c48c429f723441ea0",
+      "published": "skill/riscv-verification/examples/expected.trace",
+      "published_sha256": "cb15d17e95826e58cf6088b821c8ccf6099a8cba22282e8c48c429f723441ea0",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/riscv-verification/examples/hazards_simulation.log",
+      "source_scope": "main_project_root",
+      "source_sha256": "52aef44fabb411625ebfeae8d4e3a759e7f1be2b27c91f9b0f94f14cd493c89e",
+      "published": "skill/riscv-verification/examples/hazards_simulation.log",
+      "published_sha256": "52aef44fabb411625ebfeae8d4e3a759e7f1be2b27c91f9b0f94f14cd493c89e",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/riscv-verification/examples/provenance.json",
+      "source_scope": "main_project_root",
+      "source_sha256": "e268eca9e3301cfa34c576c462ca69d69f63b77f384d0fa1112faed969f2b99a",
+      "published": "skill/riscv-verification/examples/provenance.json",
+      "published_sha256": "e268eca9e3301cfa34c576c462ca69d69f63b77f384d0fa1112faed969f2b99a",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/riscv-verification/examples/README.md",
+      "source_scope": "main_project_root",
+      "source_sha256": "5f0ca05cc17f78adac176098aeca7f2a5c3fa40b83b240c8f455d2ec717176d4",
+      "published": "skill/riscv-verification/examples/README.md",
+      "published_sha256": "5f0ca05cc17f78adac176098aeca7f2a5c3fa40b83b240c8f455d2ec717176d4",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/riscv-verification/examples/skill_contract_tb.sv",
+      "source_scope": "main_project_root",
+      "source_sha256": "437008fef97173c2d8db5b7120745894190833562ade3158e87ce56bdcb55939",
+      "published": "skill/riscv-verification/examples/skill_contract_tb.sv",
+      "published_sha256": "437008fef97173c2d8db5b7120745894190833562ade3158e87ce56bdcb55939",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/riscv-verification/prompt_templates.md",
+      "source_scope": "main_project_root",
+      "source_sha256": "ef5e0c06dffee41e9f2cd277338baa02473b8a2a4fb4d4daf5ebbc197e9dab75",
+      "published": "skill/riscv-verification/prompt_templates.md",
+      "published_sha256": "ef5e0c06dffee41e9f2cd277338baa02473b8a2a4fb4d4daf5ebbc197e9dab75",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/riscv-verification/scripts/compare_trace.py",
+      "source_scope": "main_project_root",
+      "source_sha256": "ef18156459a5276440bd68e9a6d297455f182c82290746d7c43ef89905da85e1",
+      "published": "skill/riscv-verification/scripts/compare_trace.py",
+      "published_sha256": "ef18156459a5276440bd68e9a6d297455f182c82290746d7c43ef89905da85e1",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/riscv-verification/scripts/recheck_existing.py",
+      "source_scope": "main_project_root",
+      "source_sha256": "dd43ab0647ba89e085cde6e23603eb3226dc736373693cc21262f87838eee166",
+      "published": "skill/riscv-verification/scripts/recheck_existing.py",
+      "published_sha256": "dd43ab0647ba89e085cde6e23603eb3226dc736373693cc21262f87838eee166",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/riscv-verification/scripts/run_units.py",
+      "source_scope": "main_project_root",
+      "source_sha256": "3646156d6d4e1acfb9c14a2fdc2151ff82d935d0a4bead70c74ded74725c94fe",
+      "published": "skill/riscv-verification/scripts/run_units.py",
+      "published_sha256": "3646156d6d4e1acfb9c14a2fdc2151ff82d935d0a4bead70c74ded74725c94fe",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/riscv-verification/SKILL.md",
+      "source_scope": "main_project_root",
+      "source_sha256": "f51fc173fa013b48f0a7db3e479f73127d8f04af33c0a991b9aefa38e054991f",
+      "published": "skill/riscv-verification/SKILL.md",
+      "published_sha256": "f51fc173fa013b48f0a7db3e479f73127d8f04af33c0a991b9aefa38e054991f",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/riscv-verification/troubleshooting.md",
+      "source_scope": "main_project_root",
+      "source_sha256": "751b657a1091c8457fe362bae5cfbdac29134ae06b8ac5f9e8c4e7b03642f251",
+      "published": "skill/riscv-verification/troubleshooting.md",
+      "published_sha256": "751b657a1091c8457fe362bae5cfbdac29134ae06b8ac5f9e8c4e7b03642f251",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/riscv-verification/workflow.md",
+      "source_scope": "main_project_root",
+      "source_sha256": "31429f79db6d58b4b8f7bd0742af7d98a093d1faf0d1295980aa1ede8d70327f",
+      "published": "skill/riscv-verification/workflow.md",
+      "published_sha256": "31429f79db6d58b4b8f7bd0742af7d98a093d1faf0d1295980aa1ede8d70327f",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/scripts/validate_package.py",
+      "source_scope": "main_project_root",
+      "source_sha256": "a9098bae801dbb28bff42116e8e8b61ac76c33ce1043d4849cb753c17958aeef",
+      "published": "skill/scripts/validate_package.py",
+      "published_sha256": "a9098bae801dbb28bff42116e8e8b61ac76c33ce1043d4849cb753c17958aeef",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/vivado-automation/resource_timing.md",
+      "source_scope": "main_project_root",
+      "source_sha256": "c335f7bb720148215eac061c821f46bf4a4e3fce9357be68e26fa6bbf87b2e5d",
+      "published": "skill/vivado-automation/resource_timing.md",
+      "published_sha256": "c335f7bb720148215eac061c821f46bf4a4e3fce9357be68e26fa6bbf87b2e5d",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/vivado-automation/scripts/analyze_reports.py",
+      "source_scope": "main_project_root",
+      "source_sha256": "8d540acd867559c5ef5d6549079ff82b2b8cf14e651d79723f3e08201ee3ead6",
+      "published": "skill/vivado-automation/scripts/analyze_reports.py",
+      "published_sha256": "8d540acd867559c5ef5d6549079ff82b2b8cf14e651d79723f3e08201ee3ead6",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/vivado-automation/scripts/build.py",
+      "source_scope": "main_project_root",
+      "source_sha256": "01309401a285ddfd299b3dcfe6208d8966bb73b4b50758c9ac0db30a5be5aa02",
+      "published": "skill/vivado-automation/scripts/build.py",
+      "published_sha256": "01309401a285ddfd299b3dcfe6208d8966bb73b4b50758c9ac0db30a5be5aa02",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/vivado-automation/scripts/mcp_inspect.py",
+      "source_scope": "main_project_root",
+      "source_sha256": "cef1f959caee6290ab7b9ea949912dfd50c2a0976523cc63869c0d1b7841bf82",
+      "published": "skill/vivado-automation/scripts/mcp_inspect.py",
+      "published_sha256": "cef1f959caee6290ab7b9ea949912dfd50c2a0976523cc63869c0d1b7841bf82",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/vivado-automation/SKILL.md",
+      "source_scope": "main_project_root",
+      "source_sha256": "d49fd132de822bb1f185cf2e66a6d0946f1d44a870032f3363490d084ab8ba9d",
+      "published": "skill/vivado-automation/SKILL.md",
+      "published_sha256": "d49fd132de822bb1f185cf2e66a6d0946f1d44a870032f3363490d084ab8ba9d",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/vivado-automation/troubleshooting.md",
+      "source_scope": "main_project_root",
+      "source_sha256": "ecdc22ead6d2abd6c37f575221f3a9a2e6b86c914928595edbc9aa6f9d274814",
+      "published": "skill/vivado-automation/troubleshooting.md",
+      "published_sha256": "ecdc22ead6d2abd6c37f575221f3a9a2e6b86c914928595edbc9aa6f9d274814",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/vivado-automation/workflow.md",
+      "source_scope": "main_project_root",
+      "source_sha256": "e17d45d851a3d9654b5cd41d2713c55ddbce4d9527c91b98ff538a6debc7853c",
+      "published": "skill/vivado-automation/workflow.md",
+      "published_sha256": "e17d45d851a3d9654b5cd41d2713c55ddbce4d9527c91b98ff538a6debc7853c",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "skill/README.md",
+      "source_scope": "prior_public_crc_skill",
+      "source_sha256": "598f9eea037168c412dd34562472c06c5323f6abdcbd6fa271a9f896e67ee76b",
+      "published": "skill/crc_mmio_guide.md",
+      "published_sha256": "598f9eea037168c412dd34562472c06c5323f6abdcbd6fa271a9f896e67ee76b",
       "adapted_for_publication": false
     }
   ]

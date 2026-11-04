@@ -38,6 +38,10 @@
 
 加速配置的 50 MHz 布线后 WNS / WHS / WPWS 为 +2.824 / +0.044 / +7.000 ns。资源差值是整个 SoC 两种配置的净差；原始资源、时序及基线说明见 [验证材料入口](docs/verification.md)。
 
+## Skill 技能包
+
+完整保留主工程的三个原生 Skill：[CPU 调试](skill/riscv-debug/SKILL.md)、[CPU 验证](skill/riscv-verification/SKILL.md)、[Vivado 自动化](skill/vivado-automation/SKILL.md)，并保留 CRC/MMIO 校验工具。原脚本、契约 TB、写回样例、验证记录和逐文件来源见 [Skill 总入口](skill/README.md)。
+
 ## 文档与结果入口
 
 - [最终设计报告 PDF](report/design_report_official_template.pdf)

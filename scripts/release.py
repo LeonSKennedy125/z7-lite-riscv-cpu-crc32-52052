@@ -13,7 +13,7 @@ def listing():
     for n in names:
         p=Path(n)
         if not n or p.is_absolute() or '..' in p.parts:raise RuntimeError('unsafe release path '+n)
-        if any(not re.fullmatch(r'[a-z0-9_.-]+|README.md',part) for part in p.parts):raise RuntimeError('release naming violation '+n)
+        if any(not re.fullmatch(r'[a-z0-9_.-]+|README.md|SKILL.md',part) for part in p.parts):raise RuntimeError('release naming violation '+n)
         src=(ROOT/p).resolve()
         if not src.is_relative_to(ROOT) or not src.is_file():raise RuntimeError('missing or linked external input '+n)
     return names

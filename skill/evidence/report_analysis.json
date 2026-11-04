@@ -1,0 +1,102 @@
+{
+  "timestamp": "2026-11-03T22:12:57.588925+08:00",
+  "fresh_build": false,
+  "scope": "existing_report_analysis",
+  "source_binding": "MATCHED",
+  "artifacts": {
+    "utilization": {
+      "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\repair_records\\timing_recheck_20261028\\run_20261028_223130\\utilization.rpt",
+      "sha256": "7c76ecd688b90ebe71dafe89b996ee90849cebb7f31ca200b4a03412018eeb62"
+    },
+    "timing": {
+      "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\repair_records\\timing_recheck_20261028\\run_20261028_223130\\timing_summary.rpt",
+      "sha256": "898f9cfec270d32fa7f114a5f9c85eb76eab70453d53b5e38260dedac9d5589f"
+    },
+    "clocks": {
+      "path": "C:\\Users\\liyua\\Downloads\\160MHZ CPURISCV\\repair_records\\timing_recheck_20261028\\run_20261028_223130\\clocks.rpt",
+      "sha256": "b2b6a731ca92e71b2868eb3418ba3933fe940f9aa1f0a374215523f28b6abe7d"
+    }
+  },
+  "resources": {
+    "lut": 6300.0,
+    "ff": 7865.0,
+    "bram_tile": 88.0,
+    "ramb36": 87.0,
+    "ramb18": 2.0,
+    "dsp": 0.0
+  },
+  "timing": {
+    "wns_ns": 0.132,
+    "tns_ns": 0.0,
+    "setup_failing": 0.0,
+    "setup_total": 19251.0,
+    "whs_ns": 0.05,
+    "ths_ns": 0.0,
+    "hold_failing": 0.0,
+    "hold_total": 19235.0,
+    "wpws_ns": 2.357,
+    "tpws_ns": 0.0,
+    "pulse_failing": 0.0,
+    "pulse_total": 9628.0
+  },
+  "constraint_coverage": {
+    "no_clock": 0,
+    "constant_clock": 0,
+    "pulse_width_clock": 0,
+    "unconstrained_internal_endpoints": 0,
+    "no_input_delay": 35,
+    "no_output_delay": 71,
+    "multiple_clock": 0,
+    "generated_clocks": 0,
+    "loops": 0,
+    "partial_input_delay": 0,
+    "partial_output_delay": 0,
+    "latch_loops": 0
+  },
+  "clocks": [
+    {
+      "name": "dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK",
+      "period_ns": 33.0,
+      "constraint_frequency_mhz": 30.303030303030305
+    },
+    {
+      "name": "sys_clk_50",
+      "period_ns": 20.0,
+      "constraint_frequency_mhz": 50.0
+    },
+    {
+      "name": "clk_out1_design_1_clk_wiz_0_0",
+      "period_ns": 6.25,
+      "constraint_frequency_mhz": 160.0
+    },
+    {
+      "name": "clkfbout_design_1_clk_wiz_0_0",
+      "period_ns": 20.0,
+      "constraint_frequency_mhz": 50.0
+    }
+  ],
+  "design_state": "Routed",
+  "missing_evidence": [],
+  "on_chip_timing_pass": true,
+  "status": "ON_CHIP_TIMING_PASS",
+  "board_verified": false,
+  "frequency_note": "Clock report gives constrained frequency, not measured board frequency or proven Fmax.",
+  "report_metadata": {
+    "Tool Version": "Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026",
+    "Date": "Wed Oct 28 22:49:20 2026",
+    "Design": "design_1_wrapper",
+    "Device": "7k325t-ffg676"
+  },
+  "source_manifest": {
+    "sha256": "e56a0d758a4f240e4eff531b414f98363d5bd2e263f508f590523aec35e89e84",
+    "entries": 617,
+    "failures": []
+  },
+  "log_findings": [],
+  "check_pass": true,
+  "system_pending": {
+    "missing_input_delays": 35,
+    "missing_output_delays": 71,
+    "board_pins_electrical_bridge_hardware": "not evaluated by this parser"
+  }
+}
