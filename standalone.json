@@ -1,0 +1,6 @@
+{
+  "mode": "standalone",
+  "ancestor_discovery": false,
+  "production_fallback": false,
+  "schema": 1
+}

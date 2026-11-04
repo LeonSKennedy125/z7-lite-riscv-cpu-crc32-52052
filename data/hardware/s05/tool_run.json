@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "kind": "capture",
+  "attempt_id": "capture_20261102_183416_de2cae60",
+  "status": "COMPLETE",
+  "pass": false,
+  "started_at": "2026-11-02T18:34:16.389655+08:00",
+  "exit_code": 0,
+  "timed_out": false,
+  "source": "actual Vivado2026.1 batch process",
+  "vivado_executable_sha256": "3a4e9e3f03d20cd1994dc2eff44566af7a10eaaae04429e9d460bffe3b0e86e4",
+  "config": {
+    "pcb_revision": "Z7-LITE_ES1",
+    "physical_verified": 1,
+    "USB_serial": "210241793374",
+    "baseline_verified": 1,
+    "cfgbvs": "VCCO",
+    "config_voltage": "3.3",
+    "target": "localhost:3121/xilinx_tcf/Digilent/210241793374",
+    "device_did": "jsn-JTAG-HS2-210241793374-13722093-0",
+    "device_idcode": "00010011011100100010000010010011",
+    "bit": "W:\\local_builds\\s05_es1_20261102_173954_d834d5\\evidence\\demo.bit",
+    "ltx": "W:\\local_builds\\s05_es1_20261102_173954_d834d5\\evidence\\demo.ltx",
+    "vio_instance": "vio",
+    "vio_uuid": "1BE27D511A4C50DC974F3E22D2C609B9",
+    "out": "W:\\evidence\\agent_steps\\step_05\\rework_r4\\attempts\\capture_20261102_183416_de2cae60",
+    "attempt_id": "capture_20261102_183416_de2cae60"
+  },
+  "scripts": {
+    "capture.tcl": "3caf799dd555c213cdaa5d65146cb626452ff9d4b5371b6cd4712b35dde70198",
+    "s05.py": "031e9b39ab14ad02ab14e8296464339b9187dbf1262ce6e656b526826b9898ee"
+  },
+  "argv": [
+    "D:\\XILINX\\2026.1\\Vivado\\bin\\vivado.bat",
+    "-mode",
+    "batch",
+    "-nojournal",
+    "-log",
+    "W:\\evidence\\agent_steps\\step_05\\rework_r4\\attempts\\capture_20261102_183416_de2cae60\\vivado.log",
+    "-source",
+    "W:\\evidence\\agent_steps\\step_05\\rework_r4\\attempts\\capture_20261102_183416_de2cae60\\entry.tcl"
+  ],
+  "entry_sha256": "3da1d57543cd59b2fdf4c50bbf86512100a0489b39a614d5660c0bef8aee5053",
+  "cwd": "W:\\evidence\\agent_steps\\step_05\\rework_r4\\attempts\\capture_20261102_183416_de2cae60",
+  "stdio_policy": "independent PIPE stdout/stderr to separate raw logs; stdin DEVNULL",
+  "pid": 9436,
+  "finished_at": "2026-11-02T18:35:14.209057+08:00",
+  "artifacts": {
+    "accepted_inputs.json": "4c041803febcb90faf00cba2bab0d59f43c8e84f409e228d2c15083e55d97e75",
+    "entry.tcl": "3da1d57543cd59b2fdf4c50bbf86512100a0489b39a614d5660c0bef8aee5053",
+    "events.jsonl": "ca2c64c8cff0bd5ce424c0426359dc8b35364f4e02d462b74b1bf65243a50404",
+    "physical_identity.json": "4bcdbfff97e49389b15d012bace0e36a2c13c97f0a8d401deeb3329a91a91edd",
+    "run_0_scan_0.hex": "c5d1ec8fb84080a3f95abf2b90a76b0e31dae791343fb7e0827ee4a4adabd988",
+    "run_0_scan_1.hex": "c5d1ec8fb84080a3f95abf2b90a76b0e31dae791343fb7e0827ee4a4adabd988",
+    "run_1_scan_0.hex": "c5d1ec8fb84080a3f95abf2b90a76b0e31dae791343fb7e0827ee4a4adabd988",
+    "run_1_scan_1.hex": "c5d1ec8fb84080a3f95abf2b90a76b0e31dae791343fb7e0827ee4a4adabd988",
+    "run_2_scan_0.hex": "c5d1ec8fb84080a3f95abf2b90a76b0e31dae791343fb7e0827ee4a4adabd988",
+    "run_2_scan_1.hex": "c5d1ec8fb84080a3f95abf2b90a76b0e31dae791343fb7e0827ee4a4adabd988",
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.log": "4a1c48486c9f7dd76611800cfdefabb190791c08707ace5f385da02b8e854374",
+    "vivado.log": "96e2031268d920e0d4569d6db87ecc8a3d7d63f6f5a2a3bdd07eb8b9d580565c"
+  }
+}

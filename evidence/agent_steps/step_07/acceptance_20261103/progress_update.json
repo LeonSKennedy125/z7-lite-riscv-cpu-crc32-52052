@@ -1,0 +1,14 @@
+﻿{
+    "before_note":  "Pre-S08 snapshot; contains the S07 PENDING state. The S08 top block was added by the separate S08 execution after this snapshot.",
+    "before_snapshot":  "evidence/agent_steps/step_07/acceptance_20261103/progress_before.md",
+    "edits":  [
+                  "S07 header and current status changed from PENDING to PASS (2026-11-03)",
+                  "S07 acceptance paragraph added with 48 checks/0 failures and non-blocking items",
+                  "S07 table row independent acceptance changed to PASS with acceptance_20261103 entry",
+                  "S08 row blocker note updated: S07 blocker removed; S08 total acceptance remains PENDING",
+                  "S08 top record received a dated note that the S07 blocker is resolved; no S08 pass claimed"
+              ],
+    "after_sha256":  "4771bfd59b4548efdc8bd588180d403b7ec0c3fc8279fc3f29893a6d59681090",
+    "before_sha256":  "2d21351423685a437081ac5c6d64dc9397b024e4aa3036e5a475e857f713638e",
+    "file":  "docs/agent_progress.md"
+}

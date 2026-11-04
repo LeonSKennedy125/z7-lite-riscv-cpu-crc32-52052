@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "name": "z7_crc_mailbox_v1",
+  "description": "12-case CRC-32/ISO-HDLC mailbox used by the Z7-LITE 7010 demo. Payloads are deterministic: empty, ASCII 123456789, and xorshift32(seed=0x13579BDF) low bytes. The checker recomputes every CRC with zlib.crc32; the expected_crc below is only an independent cross-check.",
+  "header": {
+    "magic": "43524331",
+    "version": 1,
+    "clock_hz": 50000000,
+    "ram_bytes": 65536,
+    "case_count": 12,
+    "error_count": 0,
+    "total_words": 104,
+    "executed_checks": 7
+  },
+  "cases": [
+    {"id": 0, "kind": "zeros", "length": 0, "expected_crc": "00000000"},
+    {"id": 1, "kind": "ascii", "length": 9, "data": "123456789", "expected_crc": "cbf43926"},
+    {"id": 2, "kind": "xorshift32", "length": 1, "seed": "13579bdf", "expected_crc": "0bd4b551"},
+    {"id": 3, "kind": "xorshift32", "length": 2, "seed": "13579bdf", "expected_crc": "9fbb5a60"},
+    {"id": 4, "kind": "xorshift32", "length": 3, "seed": "13579bdf", "expected_crc": "c747799e"},
+    {"id": 5, "kind": "xorshift32", "length": 4, "seed": "13579bdf", "expected_crc": "cf72b890"},
+    {"id": 6, "kind": "xorshift32", "length": 7, "seed": "13579bdf", "expected_crc": "b310bb4b"},
+    {"id": 7, "kind": "xorshift32", "length": 16, "seed": "13579bdf", "expected_crc": "16d58768"},
+    {"id": 8, "kind": "xorshift32", "length": 64, "seed": "13579bdf", "expected_crc": "3f9d3d2e"},
+    {"id": 9, "kind": "xorshift32", "length": 256, "seed": "13579bdf", "expected_crc": "21bf9c9a"},
+    {"id": 10, "kind": "xorshift32", "length": 1024, "seed": "13579bdf", "expected_crc": "a041c516"},
+    {"id": 11, "kind": "xorshift32", "length": 4096, "seed": "13579bdf", "expected_crc": "1528b2fa"}
+  ]
+}

@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1110" viewBox="0 0 1600 1110">
+<defs>
+<marker id="data" viewBox="0 0 10 10" markerWidth="7" markerHeight="7" refX="9" refY="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#34445D"/></marker>
+<marker id="reset" viewBox="0 0 10 10" markerWidth="7" markerHeight="7" refX="9" refY="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#996523"/></marker>
+<marker id="clock" viewBox="0 0 10 10" markerWidth="7" markerHeight="7" refX="9" refY="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#6C5B9E"/></marker>
+<marker id="debug" viewBox="0 0 10 10" markerWidth="7" markerHeight="7" refX="9" refY="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#236D8E"/></marker>
+</defs>
+<rect width="1600" height="1110" fill="white"/>
+<g font-family="Microsoft YaHei,Arial,sans-serif" fill="#152239">
+<text x="24" y="44" font-size="35" font-weight="700" text-anchor="start" fill="#152239">六级 RISC-V CPU 与 CRC32 加速器 SoC</text>
+<text x="24" y="85" font-size="26" font-weight="400" text-anchor="start" fill="#152239">Z7-LITE_ES1  |  XC7Z010CLG400-1  |  50 MHz</text>
+<rect x="300" y="128" width="1270" height="824" rx="14" fill="#FAFCFF" stroke="#697B94" stroke-width="2"/>
+<text x="319" y="163" font-size="27" font-weight="700" text-anchor="start" fill="#152239">FPGA 可编程逻辑</text>
+<rect x="20" y="190" width="230" height="125" rx="10" fill="#EDF2F8" stroke="#738198" stroke-width="2"/>
+<text x="37" y="228" font-size="30" font-weight="700" text-anchor="start" fill="#152239">主机 PC</text>
+<text x="37" y="265" font-size="23" font-weight="400" text-anchor="start" fill="#152239">Python 校验与导出</text>
+<text x="37" y="297" font-size="23" font-weight="400" text-anchor="start" fill="#152239">Vivado 硬件管理器</text>
+<rect x="20" y="370" width="230" height="120" rx="10" fill="#EDF2F8" stroke="#738198" stroke-width="2"/>
+<text x="37" y="408" font-size="26" font-weight="700" text-anchor="start" fill="#152239">板载 USB-JTAG</text>
+<text x="37" y="445" font-size="25" font-weight="400" text-anchor="start" fill="#152239">FT232HL</text>
+<text x="37" y="477" font-size="25" font-weight="400" text-anchor="start" fill="#152239">USB ↔ JTAG</text>
+<polyline points="135,315 135,370" fill="none" stroke="#236D8E" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#debug)" marker-start="url(#debug)"/>
+<text x="150" y="345" font-size="24" font-weight="400" text-anchor="start" fill="#236D8E">USB</text>
+<rect x="340" y="195" width="280" height="165" rx="10" fill="#EAF2F8" stroke="#738198" stroke-width="2"/>
+<text x="357" y="233" font-size="28" font-weight="700" text-anchor="start" fill="#152239">JTAG 调试与 VIO</text>
+<text x="357" y="270" font-size="23" font-weight="400" text-anchor="start" fill="#152239">邮箱读取与辅助重启</text>
+<text x="357" y="302" font-size="23" font-weight="400" text-anchor="start" fill="#152239">索引输出 数据状态输入</text>
+<text x="358" y="344" font-size="21" font-weight="400" text-anchor="start" fill="#6C5B9E">clk50</text>
+<polyline points="250,430 278,430 278,273 340,273" fill="none" stroke="#236D8E" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#debug)" marker-start="url(#debug)"/>
+<text x="266" y="252" font-size="23" font-weight="400" text-anchor="start" fill="#236D8E">JTAG</text>
+<rect x="1080" y="174" width="460" height="576" rx="12" fill="#FFF9EF" stroke="#C49A57" stroke-width="2"/>
+<text x="1100" y="207" font-size="29" font-weight="700" text-anchor="start" fill="#152239">crc_mmio 外设子系统</text>
+<rect x="1110" y="230" width="400" height="140" rx="10" fill="#FFF0D8" stroke="#738198" stroke-width="2"/>
+<text x="1127" y="268" font-size="29" font-weight="700" text-anchor="start" fill="#152239">结果邮箱</text>
+<text x="1127" y="305" font-size="25" font-weight="400" text-anchor="start" fill="#152239">128 × 32 位 分布式 RAM</text>
+<text x="1127" y="337" font-size="25" font-weight="400" text-anchor="start" fill="#152239">CPU 写入104字并提交冻结</text>
+<rect x="1110" y="445" width="400" height="160" rx="10" fill="#FFF0D8" stroke="#738198" stroke-width="2"/>
+<text x="1127" y="483" font-size="29" font-weight="700" text-anchor="start" fill="#152239">CRC32 计算引擎</text>
+<text x="1127" y="520" font-size="25" font-weight="400" text-anchor="start" fill="#152239">CRC-32/ISO-HDLC</text>
+<text x="1127" y="552" font-size="25" font-weight="400" text-anchor="start" fill="#152239">4字节缓冲 低字节优先</text>
+<text x="1127" y="584" font-size="25" font-weight="400" text-anchor="start" fill="#152239">有缓冲数据时 1字节/周期</text>
+<rect x="1110" y="635" width="400" height="88" rx="10" fill="#FFF0D8" stroke="#738198" stroke-width="2"/>
+<text x="1127" y="673" font-size="27" font-weight="700" text-anchor="start" fill="#152239">寄存器与计时</text>
+<text x="1127" y="710" font-size="24" font-weight="400" text-anchor="start" fill="#152239">控制 状态 长度 结果 周期</text>
+<text x="1097" y="744" font-size="21" font-weight="400" text-anchor="start" fill="#6C5B9E">clk50 / io_resetn</text>
+<polyline points="620,253 1110,253" fill="none" stroke="#236D8E" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#debug)"/>
+<text x="850" y="239" font-size="25" font-weight="400" text-anchor="middle" fill="#236D8E">read_index[6:0]</text>
+<polyline points="1110,325 620,325" fill="none" stroke="#236D8E" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#debug)"/>
+<text x="850" y="311" font-size="23" font-weight="400" text-anchor="middle" fill="#236D8E">read_data[31:0]  committed  failed</text>
+<rect x="340" y="448" width="230" height="132" rx="10" fill="#E7F4EA" stroke="#738198" stroke-width="2"/>
+<text x="357" y="486" font-size="29" font-weight="700" text-anchor="start" fill="#152239">指令 ROM</text>
+<text x="357" y="523" font-size="25" font-weight="400" text-anchor="start" fill="#152239">16 KiB 同步读取</text>
+<text x="357" y="565" font-size="21" font-weight="400" text-anchor="start" fill="#6C5B9E">clk50</text>
+<rect x="650" y="440" width="350" height="190" rx="10" fill="#E6EEFC" stroke="#738198" stroke-width="2"/>
+<text x="667" y="478" font-size="30" font-weight="700" text-anchor="start" fill="#152239">六级 RISC-V CPU</text>
+<text x="667" y="515" font-size="26" font-weight="400" text-anchor="start" fill="#152239">IF  ID  EX0  EX1  MEM  WB</text>
+<text x="667" y="547" font-size="26" font-weight="400" text-anchor="start" fill="#152239">RV32I + Zicsr</text>
+<text x="667" y="579" font-size="26" font-weight="400" text-anchor="start" fill="#152239">静态预判 三级前递</text>
+<text x="667" y="622" font-size="21" font-weight="400" text-anchor="start" fill="#6C5B9E">clk50 / core_resetn</text>
+<polyline points="650,485 570,485" fill="none" stroke="#34445D" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#data)"/>
+<text x="609" y="473" font-size="21" font-weight="400" text-anchor="middle" fill="#152239">PC / EN</text>
+<polyline points="570,550 650,550" fill="none" stroke="#34445D" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#data)"/>
+<text x="609" y="539" font-size="24" font-weight="400" text-anchor="middle" fill="#152239">指令</text>
+<polyline points="1000,490 1080,490" fill="none" stroke="#34445D" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#data)"/>
+<text x="1040" y="477" font-size="24" font-weight="400" text-anchor="middle" fill="#152239">请求</text>
+<polyline points="1080,565 1000,565" fill="none" stroke="#34445D" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#data)"/>
+<text x="1040" y="552" font-size="24" font-weight="400" text-anchor="middle" fill="#152239">返回</text>
+<rect x="650" y="737" width="350" height="155" rx="10" fill="#E7F4EA" stroke="#738198" stroke-width="2"/>
+<text x="667" y="775" font-size="29" font-weight="700" text-anchor="start" fill="#152239">数据 RAM</text>
+<text x="667" y="812" font-size="25" font-weight="400" text-anchor="start" fill="#152239">64 KiB 单端口 BRAM</text>
+<text x="667" y="844" font-size="25" font-weight="400" text-anchor="start" fill="#152239">输出寄存器 两拍读取</text>
+<text x="667" y="877" font-size="21" font-weight="400" text-anchor="start" fill="#6C5B9E">clk50 / core_resetn</text>
+<polyline points="700,630 700,737" fill="none" stroke="#34445D" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#data)"/>
+<text x="716" y="675" font-size="23" font-weight="400" text-anchor="start" fill="#152239">地址 / 写数据</text>
+<text x="716" y="708" font-size="23" font-weight="400" text-anchor="start" fill="#152239">字节使能</text>
+<polyline points="930,737 930,630" fill="none" stroke="#34445D" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#data)"/>
+<text x="944" y="710" font-size="23" font-weight="400" text-anchor="start" fill="#152239">读数据</text>
+<rect x="340" y="747" width="230" height="155" rx="10" fill="#EEEAF8" stroke="#738198" stroke-width="2"/>
+<text x="357" y="785" font-size="28" font-weight="700" text-anchor="start" fill="#152239">时钟与复位</text>
+<text x="357" y="822" font-size="23" font-weight="400" text-anchor="start" fill="#152239">50 MHz</text>
+<text x="357" y="854" font-size="23" font-weight="400" text-anchor="start" fill="#152239">请求捕获 时钟限定</text>
+<text x="357" y="886" font-size="23" font-weight="400" text-anchor="start" fill="#152239">同步释放</text>
+<rect x="20" y="747" width="230" height="135" rx="10" fill="#EDF2F8" stroke="#738198" stroke-width="2"/>
+<text x="37" y="785" font-size="24" font-weight="700" text-anchor="start" fill="#152239">板载时钟与按键</text>
+<text x="37" y="822" font-size="23" font-weight="400" text-anchor="start" fill="#152239">50 MHz / PL_KEY1</text>
+<polyline points="250,842 280,842 280,875 340,875" fill="none" stroke="#6C5B9E" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#clock)"/>
+<polyline points="365,360 365,402 318,402 318,814 340,814" fill="none" stroke="#996523" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#reset)"/>
+<text x="344" y="392" font-size="24" font-weight="400" text-anchor="start" fill="#996523">restart</text>
+<polyline points="570,814 600,814 600,610 650,610" fill="none" stroke="#6C5B9E" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#clock)" stroke-dasharray="8 6"/>
+<rect x="1080" y="815" width="220" height="91" rx="10" fill="#EEF2F7" stroke="#738198" stroke-width="2"/>
+<text x="1097" y="853" font-size="26" font-weight="700" text-anchor="start" fill="#152239">成功灯控制</text>
+<text x="1097" y="890" font-size="22" font-weight="400" text-anchor="start" fill="#152239">已提交 且 零失败</text>
+<rect x="1320" y="815" width="220" height="91" rx="10" fill="#EEEAF8" stroke="#738198" stroke-width="2"/>
+<text x="1337" y="853" font-size="26" font-weight="700" text-anchor="start" fill="#152239">心跳计数器</text>
+<text x="1337" y="890" font-size="22" font-weight="400" text-anchor="start" fill="#152239">50 MHz 计数翻转</text>
+<polyline points="1510,340 1554,340 1554,770 1190,770 1190,815" fill="none" stroke="#34445D" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#data)"/>
+<text x="1250" y="796" font-size="23" font-weight="400" text-anchor="middle" fill="#152239">committed / failed</text>
+<text x="1380" y="783" font-size="21" font-weight="400" text-anchor="start" fill="#6C5B9E">clk50</text>
+<polyline points="1430,790 1430,815" fill="none" stroke="#6C5B9E" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#clock)" stroke-dasharray="8 6"/>
+<polyline points="1190,906 1190,974" fill="none" stroke="#34445D" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#data)"/>
+<polyline points="1430,906 1430,974" fill="none" stroke="#34445D" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#data)"/>
+<text x="1190" y="1005" font-size="23" font-weight="400" text-anchor="middle" fill="#152239">PL_LED1 成功灯</text>
+<text x="1430" y="1005" font-size="23" font-weight="400" text-anchor="middle" fill="#152239">PL_LED2 心跳灯</text>
+<text x="319" y="929" font-size="22" font-weight="400" text-anchor="start" fill="#53647B">同名网络相连：clk50覆盖CPU、ROM/RAM、MMIO、VIO与心跳；复位进入CPU和外设控制</text>
+<text x="24" y="1047" font-size="24" font-weight="400" text-anchor="start" fill="#152239">MMIO 请求  valid / write / addr[31:0] / wdata[31:0] / be[3:0]     返回  ready / rdata[31:0]</text>
+<text x="24" y="1084" font-size="25" font-weight="400" text-anchor="start" fill="#152239">结果发布  CPU读取CRC结果 → 经MMIO写邮箱与COMMIT → VIO读取 → PC校验与导出</text>
+</g></svg>

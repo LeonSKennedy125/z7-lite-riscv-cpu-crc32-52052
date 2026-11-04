@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "C:\\Users\\21606\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\evidence\\agent_steps\\step_05\\acceptance_20261102\\run_acceptance.py"
+  ],
+  "cwd": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc",
+  "started_at": "2026-11-02T20:04:49.250264+08:00",
+  "script_sha256": "f8f273ff7976c21cbfce10d4630483932618a4d849211df7ce5509e41e52018b",
+  "exit_code": 1,
+  "finished_at": "2026-11-02T20:04:49.479031+08:00",
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "8d3d348097eb1c19dad9ae752b1d4f3b1548207a468c2f60a576271c0182e2b8"
+}

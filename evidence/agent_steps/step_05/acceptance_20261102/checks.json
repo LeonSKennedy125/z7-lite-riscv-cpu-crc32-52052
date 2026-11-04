@@ -1,0 +1,4185 @@
+{
+  "step": "S05",
+  "independent_acceptance": "PASS",
+  "date": "2026-11-02",
+  "timezone": "Asia/Shanghai",
+  "checks_total": 833,
+  "checks_failed": 0,
+  "failures": [],
+  "criteria": {
+    "pcb_basis_and_unique_device": true,
+    "real_capture_source_and_three_reruns": true,
+    "crc_all_match_zero_failures": true,
+    "capture_files_and_report_recomputable": true,
+    "no_simulation_hex_substitution": true,
+    "no_pass_without_board_or_documents": true,
+    "independent_acceptance": "PASS"
+  },
+  "checks": [
+    {
+      "name": "current_workflow",
+      "pass": true,
+      "evidence": "S05_ES1_R4"
+    },
+    {
+      "name": "current_seal_hash",
+      "pass": true,
+      "evidence": "a9ba2f5f7dfbf09a74dffe1d77919c1332b215b47e3cfba9e5cedf4fe1aa7a91"
+    },
+    {
+      "name": "seal_scope",
+      "pass": true,
+      "evidence": "S05 ES1 host capture-script correction (VIO HEX radix) and actual hardware capture"
+    },
+    {
+      "name": "seal_self_check",
+      "pass": true,
+      "evidence": "SELF_CHECK_PASS"
+    },
+    {
+      "name": "build_exists",
+      "pass": true,
+      "evidence": "local_builds/s05_es1_20261102_173954_d834d5"
+    },
+    {
+      "name": "config_properties",
+      "pass": true,
+      "evidence": "{'CFGBVS': 'VCCO', 'CONFIG_VOLTAGE': '3.3'}"
+    },
+    {
+      "name": "download_demo.bit",
+      "pass": true,
+      "evidence": "717bd8cfddeecf7753c8adcff68e0ec0072c0b9ca283c28613c2ac0dd3788d5b"
+    },
+    {
+      "name": "download_demo.ltx",
+      "pass": true,
+      "evidence": "facc5a5a95599c155598321dcd21d34b5d32f14b810fd7b6ef086fb8416ce6ba"
+    },
+    {
+      "name": "host_script_migration/binding.py",
+      "pass": true,
+      "evidence": "migration/binding.py"
+    },
+    {
+      "name": "host_script_migration/verify_current.py",
+      "pass": true,
+      "evidence": "migration/verify_current.py"
+    },
+    {
+      "name": "host_script_run.py",
+      "pass": true,
+      "evidence": "run.py"
+    },
+    {
+      "name": "host_script_evidence/agent_steps/step_05/rework_r1/s05.py",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r1/s05.py"
+    },
+    {
+      "name": "host_script_evidence/agent_steps/step_05/rework_r1/capture.tcl",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r1/capture.tcl"
+    },
+    {
+      "name": "host_script_evidence/agent_steps/step_05/rework_r1/test_controls.py",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r1/test_controls.py"
+    },
+    {
+      "name": "host_script_evidence/agent_steps/step_05/rework_r3/s05.py",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r3/s05.py"
+    },
+    {
+      "name": "host_script_evidence/agent_steps/step_05/rework_r3/capture.tcl",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r3/capture.tcl"
+    },
+    {
+      "name": "host_script_evidence/agent_steps/step_05/rework_r3/r3_binding.py",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r3/r3_binding.py"
+    },
+    {
+      "name": "host_script_evidence/agent_steps/step_05/rework_r3/test_controls.py",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r3/test_controls.py"
+    },
+    {
+      "name": "host_script_evidence/agent_steps/step_05/rework_r3/physical_identity.example.json",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r3/physical_identity.example.json"
+    },
+    {
+      "name": "host_script_evidence/agent_steps/step_05/rework_r3/authorization.json",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r3/authorization.json"
+    },
+    {
+      "name": "host_script_evidence/agent_steps/step_05/rework_r3/rebuild_from_source.py",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r3/rebuild_from_source.py"
+    },
+    {
+      "name": "host_script_evidence/agent_steps/step_05/rework_r3/finalize_build.py",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r3/finalize_build.py"
+    },
+    {
+      "name": "host_script_evidence/agent_steps/step_05/rework_r3/run_cli.py",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r3/run_cli.py"
+    },
+    {
+      "name": "host_script_evidence/agent_steps/step_05/rework_r3/verify_delivery.py",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r3/verify_delivery.py"
+    },
+    {
+      "name": "host_script_evidence/agent_steps/step_05/rework_r3/collect_usb.ps1",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r3/collect_usb.ps1"
+    },
+    {
+      "name": "host_script_evidence/agent_steps/step_05/rework_r4/s05.py",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/s05.py"
+    },
+    {
+      "name": "host_script_evidence/agent_steps/step_05/rework_r4/capture.tcl",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/capture.tcl"
+    },
+    {
+      "name": "host_script_evidence/agent_steps/step_05/rework_r4/r4_binding.py",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/r4_binding.py"
+    },
+    {
+      "name": "host_script_evidence/agent_steps/step_05/rework_r4/test_controls.py",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/test_controls.py"
+    },
+    {
+      "name": "host_script_evidence/agent_steps/step_05/rework_r4/physical_identity.example.json",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/physical_identity.example.json"
+    },
+    {
+      "name": "host_script_evidence/agent_steps/step_05/rework_r4/authorization.json",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/authorization.json"
+    },
+    {
+      "name": "host_script_evidence/agent_steps/step_05/rework_r4/rebuild_from_source.py",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/rebuild_from_source.py"
+    },
+    {
+      "name": "host_script_evidence/agent_steps/step_05/rework_r4/finalize_build.py",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/finalize_build.py"
+    },
+    {
+      "name": "host_script_evidence/agent_steps/step_05/rework_r4/run_cli.py",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/run_cli.py"
+    },
+    {
+      "name": "host_script_evidence/agent_steps/step_05/rework_r4/verify_delivery.py",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/verify_delivery.py"
+    },
+    {
+      "name": "host_script_evidence/agent_steps/step_05/rework_r4/collect_usb.ps1",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/collect_usb.ps1"
+    },
+    {
+      "name": "es1_evidence_evidence/vendor/es1_board.json",
+      "pass": true,
+      "evidence": "evidence/vendor/es1_board.json"
+    },
+    {
+      "name": "es1_evidence_evidence/vendor/es1_hardware.zip",
+      "pass": true,
+      "evidence": "evidence/vendor/es1_hardware.zip"
+    },
+    {
+      "name": "es1_evidence_evidence/agent_steps/step_05/hardware_baseline_20261102/user_message_zh.md",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/hardware_baseline_20261102/user_message_zh.md"
+    },
+    {
+      "name": "es1_evidence_evidence/agent_steps/step_05/rework_r3/controls.command.json",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r3/controls.command.json"
+    },
+    {
+      "name": "es1_evidence_evidence/agent_steps/step_05/rework_r3/controls.stdout.log",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r3/controls.stdout.log"
+    },
+    {
+      "name": "es1_evidence_evidence/agent_steps/step_05/rework_r3/controls.stderr.log",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r3/controls.stderr.log"
+    },
+    {
+      "name": "es1_evidence_evidence/agent_steps/step_05/rework_r4/change_manifest.json",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/change_manifest.json"
+    },
+    {
+      "name": "es1_evidence_evidence/agent_steps/step_05/rework_r4/controls.command.json",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/controls.command.json"
+    },
+    {
+      "name": "es1_evidence_evidence/agent_steps/step_05/rework_r4/controls.stdout.log",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/controls.stdout.log"
+    },
+    {
+      "name": "es1_evidence_evidence/agent_steps/step_05/rework_r4/controls.stderr.log",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/controls.stderr.log"
+    },
+    {
+      "name": "protected_main_count",
+      "pass": true,
+      "evidence": "123"
+    },
+    {
+      "name": "protected_main_xpr",
+      "pass": true,
+      "evidence": "1caeb61279a026a34e5783898d1b90d5f09a0acc2788aa74fb367f3f89c1641a"
+    },
+    {
+      "name": "frozen_rom.bin",
+      "pass": true,
+      "evidence": "rom.bin"
+    },
+    {
+      "name": "frozen_ram.bin",
+      "pass": true,
+      "evidence": "ram.bin"
+    },
+    {
+      "name": "frozen_rom.coe",
+      "pass": true,
+      "evidence": "rom.coe"
+    },
+    {
+      "name": "frozen_ram.coe",
+      "pass": true,
+      "evidence": "ram.coe"
+    },
+    {
+      "name": "frozen_rom.hex",
+      "pass": true,
+      "evidence": "rom.hex"
+    },
+    {
+      "name": "frozen_ram.hex",
+      "pass": true,
+      "evidence": "ram.hex"
+    },
+    {
+      "name": "frozen_expected.hex",
+      "pass": true,
+      "evidence": "expected.hex"
+    },
+    {
+      "name": "frozen_lengths.hex",
+      "pass": true,
+      "evidence": "lengths.hex"
+    },
+    {
+      "name": "frozen_symbols.hex",
+      "pass": true,
+      "evidence": "symbols.hex"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.srcs\\sources_1\\ip\\vio_result\\vio_result.xci",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.srcs\\sources_1\\ip\\vio_result\\vio_result.xci"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\vio_result\\doc\\vio_v3_0_changelog.txt",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\vio_result\\doc\\vio_v3_0_changelog.txt"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\vio_result\\vio_result.vho",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\vio_result\\vio_result.vho"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\vio_result\\vio_result.veo",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\vio_result\\vio_result.veo"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\vio_result\\vio_result_sv.sveo",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\vio_result\\vio_result_sv.sveo"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\vio_result\\sim\\vio_result.v",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\vio_result\\sim\\vio_result.v"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\vio_result\\hdl\\verilog\\ltlib_v1_0_4_ver.vh",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\vio_result\\hdl\\verilog\\ltlib_v1_0_4_ver.vh"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\vio_result\\hdl\\verilog\\ltlib_v1_0_4_lib_fn.vh",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\vio_result\\hdl\\verilog\\ltlib_v1_0_4_lib_fn.vh"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\vio_result\\hdl\\ltlib_v1_0_vl_rfs.v",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\vio_result\\hdl\\ltlib_v1_0_vl_rfs.v"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\vio_result\\hdl\\verilog\\xsdbs_v1_0_6_i2x.vh",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\vio_result\\hdl\\verilog\\xsdbs_v1_0_6_i2x.vh"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\vio_result\\hdl\\verilog\\xsdbs_v1_0_6_in.vh",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\vio_result\\hdl\\verilog\\xsdbs_v1_0_6_in.vh"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\vio_result\\hdl\\xsdbs_v1_0_rfs.v",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\vio_result\\hdl\\xsdbs_v1_0_rfs.v"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\vio_result\\hdl\\vio_v3_0_syn_rfs.v",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\vio_result\\hdl\\vio_v3_0_syn_rfs.v"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\vio_result\\hdl\\vio_v3_0_28_vio_include.v",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\vio_result\\hdl\\vio_v3_0_28_vio_include.v"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\vio_result\\vio_result.xdc",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\vio_result\\vio_result.xdc"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\vio_result\\synth\\vio_result.v",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\vio_result\\synth\\vio_result.v"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\vio_result\\vio_result.xml",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\vio_result\\vio_result.xml"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.srcs\\sources_1\\ip\\orip\\orip.xci",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.srcs\\sources_1\\ip\\orip\\orip.xci"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\orip\\doc\\util_vector_logic_v2_0_changelog.txt",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\orip\\doc\\util_vector_logic_v2_0_changelog.txt"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\orip\\orip.vho",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\orip\\orip.vho"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\orip\\orip.veo",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\orip\\orip.veo"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\orip\\orip_sv.sveo",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\orip\\orip_sv.sveo"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\orip\\hdl\\util_vector_logic_v2_0_rfs.v",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\orip\\hdl\\util_vector_logic_v2_0_rfs.v"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\orip\\sim\\orip.v",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\orip\\sim\\orip.v"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\orip\\synth\\orip.v",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\orip\\synth\\orip.v"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\orip\\orip.xml",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\orip\\orip.xml"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.srcs\\sources_1\\ip\\invip\\invip.xci",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.srcs\\sources_1\\ip\\invip\\invip.xci"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\invip\\doc\\util_vector_logic_v2_0_changelog.txt",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\invip\\doc\\util_vector_logic_v2_0_changelog.txt"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\invip\\invip.vho",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\invip\\invip.vho"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\invip\\invip.veo",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\invip\\invip.veo"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\invip\\invip_sv.sveo",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\invip\\invip_sv.sveo"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\invip\\hdl\\util_vector_logic_v2_0_rfs.v",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\invip\\hdl\\util_vector_logic_v2_0_rfs.v"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\invip\\sim\\invip.v",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\invip\\sim\\invip.v"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\invip\\synth\\invip.v",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\invip\\synth\\invip.v"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\invip\\invip.xml",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\invip\\invip.xml"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.srcs\\sources_1\\ip\\rstip\\rstip.xci",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.srcs\\sources_1\\ip\\rstip\\rstip.xci"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\rstip\\doc\\proc_sys_reset_v5_0_changelog.txt",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\rstip\\doc\\proc_sys_reset_v5_0_changelog.txt"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\rstip\\rstip_board.xdc",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\rstip\\rstip_board.xdc"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\rstip\\rstip.vho",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\rstip\\rstip.vho"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\rstip\\rstip.veo",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\rstip\\rstip.veo"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\rstip\\rstip_sv.sveo",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\rstip\\rstip_sv.sveo"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\rstip\\hdl\\proc_sys_reset_v5_0_rfs.vhd",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\rstip\\hdl\\proc_sys_reset_v5_0_rfs.vhd"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\rstip\\sim\\rstip.vhd",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\rstip\\sim\\rstip.vhd"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\rstip\\synth\\rstip.vhd",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\rstip\\synth\\rstip.vhd"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\rstip\\rstip.xml",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\rstip\\rstip.xml"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.srcs\\sources_1\\ip\\clk50\\clk50.xci",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.srcs\\sources_1\\ip\\clk50\\clk50.xci"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\clk50\\doc\\clk_wiz_v6_0_changelog.txt",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\clk50\\doc\\clk_wiz_v6_0_changelog.txt"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\clk50\\clk50_board.xdc",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\clk50\\clk50_board.xdc"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\clk50\\clk50.veo",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\clk50\\clk50.veo"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\clk50\\clk50.xdc",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\clk50\\clk50.xdc"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\clk50\\clk50_late.xdc",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\clk50\\clk50_late.xdc"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\clk50\\clk50_ooc.xdc",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\clk50\\clk50_ooc.xdc"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\clk50\\mmcm_pll_drp_func_7s_mmcm.vh",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\clk50\\mmcm_pll_drp_func_7s_mmcm.vh"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\clk50\\mmcm_pll_drp_func_7s_pll.vh",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\clk50\\mmcm_pll_drp_func_7s_pll.vh"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\clk50\\mmcm_pll_drp_func_us_mmcm.vh",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\clk50\\mmcm_pll_drp_func_us_mmcm.vh"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\clk50\\mmcm_pll_drp_func_us_pll.vh",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\clk50\\mmcm_pll_drp_func_us_pll.vh"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\clk50\\mmcm_pll_drp_func_us_plus_pll.vh",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\clk50\\mmcm_pll_drp_func_us_plus_pll.vh"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\clk50\\mmcm_pll_drp_func_us_plus_mmcm.vh",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\clk50\\mmcm_pll_drp_func_us_plus_mmcm.vh"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\clk50\\clk50_clk_wiz.v",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\clk50\\clk50_clk_wiz.v"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\clk50\\clk50.v",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\clk50\\clk50.v"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\clk50\\clk50.xml",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\clk50\\clk50.xml"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.srcs\\sources_1\\ip\\DTCM\\DTCM.xci",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.srcs\\sources_1\\ip\\DTCM\\DTCM.xci"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\DTCM\\doc\\blk_mem_gen_v8_4_changelog.txt",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\DTCM\\doc\\blk_mem_gen_v8_4_changelog.txt"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\DTCM\\DTCM.vho",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\DTCM\\DTCM.vho"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\DTCM\\DTCM.veo",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\DTCM\\DTCM.veo"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\DTCM\\DTCM_sv.sveo",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\DTCM\\DTCM_sv.sveo"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\DTCM\\summary.log",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\DTCM\\summary.log"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\DTCM\\misc\\blk_mem_gen_v8_4.vhd",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\DTCM\\misc\\blk_mem_gen_v8_4.vhd"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\DTCM\\DTCM_ooc.xdc",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\DTCM\\DTCM_ooc.xdc"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\DTCM\\DTCM.mif",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\DTCM\\DTCM.mif"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\DTCM\\simulation\\blk_mem_gen_v8_4.v",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\DTCM\\simulation\\blk_mem_gen_v8_4.v"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\DTCM\\sim\\DTCM.v",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\DTCM\\sim\\DTCM.v"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\DTCM\\hdl\\blk_mem_gen_v8_4_syn_rfs.vhd",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\DTCM\\hdl\\blk_mem_gen_v8_4_syn_rfs.vhd"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\DTCM\\synth\\DTCM.vhd",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\DTCM\\synth\\DTCM.vhd"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\DTCM\\DTCM.xml",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\DTCM\\DTCM.xml"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\firmware\\out\\ram.coe",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\firmware\\out\\ram.coe"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.srcs\\sources_1\\ip\\I_ROM\\I_ROM.xci",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.srcs\\sources_1\\ip\\I_ROM\\I_ROM.xci"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\I_ROM\\doc\\blk_mem_gen_v8_4_changelog.txt",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\I_ROM\\doc\\blk_mem_gen_v8_4_changelog.txt"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\I_ROM\\I_ROM.vho",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\I_ROM\\I_ROM.vho"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\I_ROM\\I_ROM.veo",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\I_ROM\\I_ROM.veo"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\I_ROM\\I_ROM_sv.sveo",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\I_ROM\\I_ROM_sv.sveo"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\I_ROM\\summary.log",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\I_ROM\\summary.log"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\I_ROM\\misc\\blk_mem_gen_v8_4.vhd",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\I_ROM\\misc\\blk_mem_gen_v8_4.vhd"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\I_ROM\\I_ROM_ooc.xdc",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\I_ROM\\I_ROM_ooc.xdc"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\I_ROM\\I_ROM.mif",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\I_ROM\\I_ROM.mif"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\I_ROM\\simulation\\blk_mem_gen_v8_4.v",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\I_ROM\\simulation\\blk_mem_gen_v8_4.v"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\I_ROM\\sim\\I_ROM.v",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\I_ROM\\sim\\I_ROM.v"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\I_ROM\\hdl\\blk_mem_gen_v8_4_syn_rfs.vhd",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\I_ROM\\hdl\\blk_mem_gen_v8_4_syn_rfs.vhd"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\I_ROM\\synth\\I_ROM.vhd",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\I_ROM\\synth\\I_ROM.vhd"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\I_ROM\\I_ROM.xml",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.gen\\sources_1\\ip\\I_ROM\\I_ROM.xml"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\firmware\\out\\rom.coe",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\firmware\\out\\rom.coe"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\alu.v",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\alu.v"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\branch_ctrl.v",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\branch_ctrl.v"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\comp.v",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\comp.v"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\cpu_reset_control.v",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\cpu_reset_control.v"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\cpu_reset_sync.v",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\cpu_reset_sync.v"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\csr_top.v",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\csr_top.v"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\ctrl.v",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\ctrl.v"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\decoder.v",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\decoder.v"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\demo_cpu.v",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\demo_cpu.v"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\ex_mem.v",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\ex_mem.v"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\ex_mux.v",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\ex_mux.v"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\ex_pipe.v",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\ex_pipe.v"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\forward.v",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\forward.v"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\forward_ctrl.v",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\forward_ctrl.v"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\ibrom.v",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\ibrom.v"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\id_ex.v",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\id_ex.v"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\if_id.v",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\if_id.v"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\imm_gen.v",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\imm_gen.v"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\instr_minidecoder.v",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\instr_minidecoder.v"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\led_ctrl.v",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\led_ctrl.v"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\mem_dtcm.v",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\mem_dtcm.v"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\mem_forward.v",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\mem_forward.v"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\mem_wb.v",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\mem_wb.v"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\npc.v",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\npc.v"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\pc_judge.v",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\pc_judge.v"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\regfile.v",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\regfile.v"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\save_load_use.v",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\save_load_use.v"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\stall.v",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\stall.v"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\store.v",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\store.v"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\wb_forward.v",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\wb_forward.v"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\wb_mux.v",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\wb_mux.v"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\crc_mmio.sv",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\crc_mmio.sv"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\csr_decode.sv",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\csr_decode.sv"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\csr_pkg.sv",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\csr_pkg.sv"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\csr_regfile.sv",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\core\\csr_regfile.sv"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\demo_top.sv",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\src\\demo_top.sv"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\firmware\\out\\ram.coe",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\firmware\\out\\ram.coe"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\firmware\\out\\rom.coe",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\firmware\\out\\rom.coe"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\constraints\\board_r11.xdc",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\constraints\\board_r11.xdc"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\sim\\tb_cpu.sv",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\sim\\tb_cpu.sv"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\sim\\tb_memory.sv",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\sim\\tb_memory.sv"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\sim\\tb_cpu_faults.sv",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\sim\\tb_cpu_faults.sv"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\firmware\\out\\expected.hex",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\firmware\\out\\expected.hex"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\firmware\\out\\lengths.hex",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\firmware\\out\\lengths.hex"
+    },
+    {
+      "name": "registered_D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\firmware\\out\\symbols.hex",
+      "pass": true,
+      "evidence": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\firmware\\out\\symbols.hex"
+    },
+    {
+      "name": "input_b/p/demo.srcs/sources_1/ip/clk50/clk50.xci",
+      "pass": true,
+      "evidence": "b/p/demo.srcs/sources_1/ip/clk50/clk50.xci"
+    },
+    {
+      "name": "input_b/p/demo.srcs/sources_1/ip/DTCM/DTCM.xci",
+      "pass": true,
+      "evidence": "b/p/demo.srcs/sources_1/ip/DTCM/DTCM.xci"
+    },
+    {
+      "name": "input_b/p/demo.srcs/sources_1/ip/I_ROM/I_ROM.xci",
+      "pass": true,
+      "evidence": "b/p/demo.srcs/sources_1/ip/I_ROM/I_ROM.xci"
+    },
+    {
+      "name": "input_b/p/demo.srcs/sources_1/ip/invip/invip.xci",
+      "pass": true,
+      "evidence": "b/p/demo.srcs/sources_1/ip/invip/invip.xci"
+    },
+    {
+      "name": "input_b/p/demo.srcs/sources_1/ip/orip/orip.xci",
+      "pass": true,
+      "evidence": "b/p/demo.srcs/sources_1/ip/orip/orip.xci"
+    },
+    {
+      "name": "input_b/p/demo.srcs/sources_1/ip/rstip/rstip.xci",
+      "pass": true,
+      "evidence": "b/p/demo.srcs/sources_1/ip/rstip/rstip.xci"
+    },
+    {
+      "name": "input_b/p/demo.srcs/sources_1/ip/vio_result/vio_result.xci",
+      "pass": true,
+      "evidence": "b/p/demo.srcs/sources_1/ip/vio_result/vio_result.xci"
+    },
+    {
+      "name": "input_constraints/board_r11.xdc",
+      "pass": true,
+      "evidence": "constraints/board_r11.xdc"
+    },
+    {
+      "name": "input_evidence/rules/source.json",
+      "pass": true,
+      "evidence": "evidence/rules/source.json"
+    },
+    {
+      "name": "input_evidence/rules/track_guide_2026.md",
+      "pass": true,
+      "evidence": "evidence/rules/track_guide_2026.md"
+    },
+    {
+      "name": "input_evidence/source_manifest.json",
+      "pass": true,
+      "evidence": "evidence/source_manifest.json"
+    },
+    {
+      "name": "input_evidence/toolchain.json",
+      "pass": true,
+      "evidence": "evidence/toolchain.json"
+    },
+    {
+      "name": "input_evidence/vectors.json",
+      "pass": true,
+      "evidence": "evidence/vectors.json"
+    },
+    {
+      "name": "input_firmware/generated.h",
+      "pass": true,
+      "evidence": "firmware/generated.h"
+    },
+    {
+      "name": "input_firmware/link.ld",
+      "pass": true,
+      "evidence": "firmware/link.ld"
+    },
+    {
+      "name": "input_firmware/main.c",
+      "pass": true,
+      "evidence": "firmware/main.c"
+    },
+    {
+      "name": "input_firmware/out/audit.json",
+      "pass": true,
+      "evidence": "firmware/out/audit.json"
+    },
+    {
+      "name": "input_firmware/out/expected.hex",
+      "pass": true,
+      "evidence": "firmware/out/expected.hex"
+    },
+    {
+      "name": "input_firmware/out/firmware.dis",
+      "pass": true,
+      "evidence": "firmware/out/firmware.dis"
+    },
+    {
+      "name": "input_firmware/out/firmware.elf",
+      "pass": true,
+      "evidence": "firmware/out/firmware.elf"
+    },
+    {
+      "name": "input_firmware/out/firmware.elf-main.su",
+      "pass": true,
+      "evidence": "firmware/out/firmware.elf-main.su"
+    },
+    {
+      "name": "input_firmware/out/firmware.map",
+      "pass": true,
+      "evidence": "firmware/out/firmware.map"
+    },
+    {
+      "name": "input_firmware/out/lengths.hex",
+      "pass": true,
+      "evidence": "firmware/out/lengths.hex"
+    },
+    {
+      "name": "input_firmware/out/nm.txt",
+      "pass": true,
+      "evidence": "firmware/out/nm.txt"
+    },
+    {
+      "name": "input_firmware/out/ram.bin",
+      "pass": true,
+      "evidence": "firmware/out/ram.bin"
+    },
+    {
+      "name": "input_firmware/out/ram.coe",
+      "pass": true,
+      "evidence": "firmware/out/ram.coe"
+    },
+    {
+      "name": "input_firmware/out/ram.hex",
+      "pass": true,
+      "evidence": "firmware/out/ram.hex"
+    },
+    {
+      "name": "input_firmware/out/readelf.txt",
+      "pass": true,
+      "evidence": "firmware/out/readelf.txt"
+    },
+    {
+      "name": "input_firmware/out/rom.bin",
+      "pass": true,
+      "evidence": "firmware/out/rom.bin"
+    },
+    {
+      "name": "input_firmware/out/rom.coe",
+      "pass": true,
+      "evidence": "firmware/out/rom.coe"
+    },
+    {
+      "name": "input_firmware/out/rom.hex",
+      "pass": true,
+      "evidence": "firmware/out/rom.hex"
+    },
+    {
+      "name": "input_firmware/out/symbols.hex",
+      "pass": true,
+      "evidence": "firmware/out/symbols.hex"
+    },
+    {
+      "name": "input_firmware/start.s",
+      "pass": true,
+      "evidence": "firmware/start.s"
+    },
+    {
+      "name": "input_release_manifest.json",
+      "pass": true,
+      "evidence": "release_manifest.json"
+    },
+    {
+      "name": "input_run.py",
+      "pass": true,
+      "evidence": "run.py"
+    },
+    {
+      "name": "input_scripts/audit_inputs.tcl",
+      "pass": true,
+      "evidence": "scripts/audit_inputs.tcl"
+    },
+    {
+      "name": "input_scripts/audit_routed.tcl",
+      "pass": true,
+      "evidence": "scripts/audit_routed.tcl"
+    },
+    {
+      "name": "input_scripts/build.tcl",
+      "pass": true,
+      "evidence": "scripts/build.tcl"
+    },
+    {
+      "name": "input_scripts/dependency_audit.py",
+      "pass": true,
+      "evidence": "scripts/dependency_audit.py"
+    },
+    {
+      "name": "input_scripts/evidence.py",
+      "pass": true,
+      "evidence": "scripts/evidence.py"
+    },
+    {
+      "name": "input_scripts/faults.py",
+      "pass": true,
+      "evidence": "scripts/faults.py"
+    },
+    {
+      "name": "input_scripts/firmware.py",
+      "pass": true,
+      "evidence": "scripts/firmware.py"
+    },
+    {
+      "name": "input_scripts/firmware_audit.py",
+      "pass": true,
+      "evidence": "scripts/firmware_audit.py"
+    },
+    {
+      "name": "input_scripts/hardware.tcl",
+      "pass": true,
+      "evidence": "scripts/hardware.tcl"
+    },
+    {
+      "name": "input_scripts/implementation.py",
+      "pass": true,
+      "evidence": "scripts/implementation.py"
+    },
+    {
+      "name": "input_scripts/preflight.tcl",
+      "pass": true,
+      "evidence": "scripts/preflight.tcl"
+    },
+    {
+      "name": "input_scripts/rebuild.py",
+      "pass": true,
+      "evidence": "scripts/rebuild.py"
+    },
+    {
+      "name": "input_scripts/release.py",
+      "pass": true,
+      "evidence": "scripts/release.py"
+    },
+    {
+      "name": "input_scripts/release_files.txt",
+      "pass": true,
+      "evidence": "scripts/release_files.txt"
+    },
+    {
+      "name": "input_scripts/report.py",
+      "pass": true,
+      "evidence": "scripts/report.py"
+    },
+    {
+      "name": "input_scripts/rtl_files.txt",
+      "pass": true,
+      "evidence": "scripts/rtl_files.txt"
+    },
+    {
+      "name": "input_scripts/run_sim.tcl",
+      "pass": true,
+      "evidence": "scripts/run_sim.tcl"
+    },
+    {
+      "name": "input_scripts/session_setup.tcl",
+      "pass": true,
+      "evidence": "scripts/session_setup.tcl"
+    },
+    {
+      "name": "input_scripts/test_evidence.py",
+      "pass": true,
+      "evidence": "scripts/test_evidence.py"
+    },
+    {
+      "name": "input_scripts/test_report.py",
+      "pass": true,
+      "evidence": "scripts/test_report.py"
+    },
+    {
+      "name": "input_scripts/verify.py",
+      "pass": true,
+      "evidence": "scripts/verify.py"
+    },
+    {
+      "name": "input_sim/tb_cpu.sv",
+      "pass": true,
+      "evidence": "sim/tb_cpu.sv"
+    },
+    {
+      "name": "input_sim/tb_cpu_faults.sv",
+      "pass": true,
+      "evidence": "sim/tb_cpu_faults.sv"
+    },
+    {
+      "name": "input_sim/tb_crc.sv",
+      "pass": true,
+      "evidence": "sim/tb_crc.sv"
+    },
+    {
+      "name": "input_sim/tb_memory.sv",
+      "pass": true,
+      "evidence": "sim/tb_memory.sv"
+    },
+    {
+      "name": "input_src/core/alu.v",
+      "pass": true,
+      "evidence": "src/core/alu.v"
+    },
+    {
+      "name": "input_src/core/branch_ctrl.v",
+      "pass": true,
+      "evidence": "src/core/branch_ctrl.v"
+    },
+    {
+      "name": "input_src/core/comp.v",
+      "pass": true,
+      "evidence": "src/core/comp.v"
+    },
+    {
+      "name": "input_src/core/cpu_memory_map.vh",
+      "pass": true,
+      "evidence": "src/core/cpu_memory_map.vh"
+    },
+    {
+      "name": "input_src/core/cpu_reset_control.v",
+      "pass": true,
+      "evidence": "src/core/cpu_reset_control.v"
+    },
+    {
+      "name": "input_src/core/cpu_reset_sync.v",
+      "pass": true,
+      "evidence": "src/core/cpu_reset_sync.v"
+    },
+    {
+      "name": "input_src/core/csr_decode.sv",
+      "pass": true,
+      "evidence": "src/core/csr_decode.sv"
+    },
+    {
+      "name": "input_src/core/csr_pkg.sv",
+      "pass": true,
+      "evidence": "src/core/csr_pkg.sv"
+    },
+    {
+      "name": "input_src/core/csr_regfile.sv",
+      "pass": true,
+      "evidence": "src/core/csr_regfile.sv"
+    },
+    {
+      "name": "input_src/core/csr_top.v",
+      "pass": true,
+      "evidence": "src/core/csr_top.v"
+    },
+    {
+      "name": "input_src/core/ctrl.v",
+      "pass": true,
+      "evidence": "src/core/ctrl.v"
+    },
+    {
+      "name": "input_src/core/decoder.v",
+      "pass": true,
+      "evidence": "src/core/decoder.v"
+    },
+    {
+      "name": "input_src/core/demo_cpu.v",
+      "pass": true,
+      "evidence": "src/core/demo_cpu.v"
+    },
+    {
+      "name": "input_src/core/ex_mem.v",
+      "pass": true,
+      "evidence": "src/core/ex_mem.v"
+    },
+    {
+      "name": "input_src/core/ex_mux.v",
+      "pass": true,
+      "evidence": "src/core/ex_mux.v"
+    },
+    {
+      "name": "input_src/core/ex_pipe.v",
+      "pass": true,
+      "evidence": "src/core/ex_pipe.v"
+    },
+    {
+      "name": "input_src/core/forward.v",
+      "pass": true,
+      "evidence": "src/core/forward.v"
+    },
+    {
+      "name": "input_src/core/forward_ctrl.v",
+      "pass": true,
+      "evidence": "src/core/forward_ctrl.v"
+    },
+    {
+      "name": "input_src/core/ibrom.v",
+      "pass": true,
+      "evidence": "src/core/ibrom.v"
+    },
+    {
+      "name": "input_src/core/id_ex.v",
+      "pass": true,
+      "evidence": "src/core/id_ex.v"
+    },
+    {
+      "name": "input_src/core/if_id.v",
+      "pass": true,
+      "evidence": "src/core/if_id.v"
+    },
+    {
+      "name": "input_src/core/imm_gen.v",
+      "pass": true,
+      "evidence": "src/core/imm_gen.v"
+    },
+    {
+      "name": "input_src/core/instr_minidecoder.v",
+      "pass": true,
+      "evidence": "src/core/instr_minidecoder.v"
+    },
+    {
+      "name": "input_src/core/led_ctrl.v",
+      "pass": true,
+      "evidence": "src/core/led_ctrl.v"
+    },
+    {
+      "name": "input_src/core/mem_dtcm.v",
+      "pass": true,
+      "evidence": "src/core/mem_dtcm.v"
+    },
+    {
+      "name": "input_src/core/mem_forward.v",
+      "pass": true,
+      "evidence": "src/core/mem_forward.v"
+    },
+    {
+      "name": "input_src/core/mem_wb.v",
+      "pass": true,
+      "evidence": "src/core/mem_wb.v"
+    },
+    {
+      "name": "input_src/core/npc.v",
+      "pass": true,
+      "evidence": "src/core/npc.v"
+    },
+    {
+      "name": "input_src/core/pc_judge.v",
+      "pass": true,
+      "evidence": "src/core/pc_judge.v"
+    },
+    {
+      "name": "input_src/core/regfile.v",
+      "pass": true,
+      "evidence": "src/core/regfile.v"
+    },
+    {
+      "name": "input_src/core/riscv_define.vh",
+      "pass": true,
+      "evidence": "src/core/riscv_define.vh"
+    },
+    {
+      "name": "input_src/core/save_load_use.v",
+      "pass": true,
+      "evidence": "src/core/save_load_use.v"
+    },
+    {
+      "name": "input_src/core/stall.v",
+      "pass": true,
+      "evidence": "src/core/stall.v"
+    },
+    {
+      "name": "input_src/core/store.v",
+      "pass": true,
+      "evidence": "src/core/store.v"
+    },
+    {
+      "name": "input_src/core/wb_forward.v",
+      "pass": true,
+      "evidence": "src/core/wb_forward.v"
+    },
+    {
+      "name": "input_src/core/wb_mux.v",
+      "pass": true,
+      "evidence": "src/core/wb_mux.v"
+    },
+    {
+      "name": "input_src/crc_mmio.sv",
+      "pass": true,
+      "evidence": "src/crc_mmio.sv"
+    },
+    {
+      "name": "input_src/demo_top.sv",
+      "pass": true,
+      "evidence": "src/demo_top.sv"
+    },
+    {
+      "name": "input_standalone.json",
+      "pass": true,
+      "evidence": "standalone.json"
+    },
+    {
+      "name": "revalidation_hash",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r3/build_current.json"
+    },
+    {
+      "name": "revalidation_status",
+      "pass": true,
+      "evidence": "SELF_CHECK_PASS"
+    },
+    {
+      "name": "revalidation_exact",
+      "pass": true,
+      "evidence": "local_builds/s05_es1_20261102_173954_d834d5"
+    },
+    {
+      "name": "revalidation_commands",
+      "pass": true,
+      "evidence": "command sequence"
+    },
+    {
+      "name": "command_firmware_exit",
+      "pass": true,
+      "evidence": "firmware"
+    },
+    {
+      "name": "command_firmware_stdout",
+      "pass": true,
+      "evidence": "local_builds/s05_es1_20261102_173954_d834d5/evidence/s05_revalidation_resume_174120/00_firmware.stdout.log"
+    },
+    {
+      "name": "command_firmware_stderr",
+      "pass": true,
+      "evidence": "local_builds/s05_es1_20261102_173954_d834d5/evidence/s05_revalidation_resume_174120/00_firmware.stderr.log"
+    },
+    {
+      "name": "command_project_exit",
+      "pass": true,
+      "evidence": "project"
+    },
+    {
+      "name": "command_project_stdout",
+      "pass": true,
+      "evidence": "local_builds/s05_es1_20261102_173954_d834d5/evidence/s05_revalidation_resume_174126/01_project.stdout.log"
+    },
+    {
+      "name": "command_project_stderr",
+      "pass": true,
+      "evidence": "local_builds/s05_es1_20261102_173954_d834d5/evidence/s05_revalidation_resume_174126/01_project.stderr.log"
+    },
+    {
+      "name": "command_unit_exit",
+      "pass": true,
+      "evidence": "unit"
+    },
+    {
+      "name": "command_unit_stdout",
+      "pass": true,
+      "evidence": "local_builds/s05_es1_20261102_173954_d834d5/evidence/s05_revalidation_resume_174233/02_unit.stdout.log"
+    },
+    {
+      "name": "command_unit_stderr",
+      "pass": true,
+      "evidence": "local_builds/s05_es1_20261102_173954_d834d5/evidence/s05_revalidation_resume_174233/02_unit.stderr.log"
+    },
+    {
+      "name": "command_memory_exit",
+      "pass": true,
+      "evidence": "memory"
+    },
+    {
+      "name": "command_memory_stdout",
+      "pass": true,
+      "evidence": "local_builds/s05_es1_20261102_173954_d834d5/evidence/s05_revalidation_resume_174253/03_memory.stdout.log"
+    },
+    {
+      "name": "command_memory_stderr",
+      "pass": true,
+      "evidence": "local_builds/s05_es1_20261102_173954_d834d5/evidence/s05_revalidation_resume_174253/03_memory.stderr.log"
+    },
+    {
+      "name": "command_simulate_exit",
+      "pass": true,
+      "evidence": "simulate"
+    },
+    {
+      "name": "command_simulate_stdout",
+      "pass": true,
+      "evidence": "local_builds/s05_es1_20261102_173954_d834d5/evidence/s05_revalidation_resume_174323/04_simulate.stdout.log"
+    },
+    {
+      "name": "command_simulate_stderr",
+      "pass": true,
+      "evidence": "local_builds/s05_es1_20261102_173954_d834d5/evidence/s05_revalidation_resume_174323/04_simulate.stderr.log"
+    },
+    {
+      "name": "command_faults_exit",
+      "pass": true,
+      "evidence": "faults"
+    },
+    {
+      "name": "command_faults_stdout",
+      "pass": true,
+      "evidence": "local_builds/s05_es1_20261102_173954_d834d5/evidence/s05_revalidation_resume_174708/05_faults.stdout.log"
+    },
+    {
+      "name": "command_faults_stderr",
+      "pass": true,
+      "evidence": "local_builds/s05_es1_20261102_173954_d834d5/evidence/s05_revalidation_resume_174708/05_faults.stderr.log"
+    },
+    {
+      "name": "command_controls_exit",
+      "pass": true,
+      "evidence": "controls"
+    },
+    {
+      "name": "command_controls_stdout",
+      "pass": true,
+      "evidence": "local_builds/s05_es1_20261102_173954_d834d5/evidence/s05_revalidation_resume_175149/06_controls.stdout.log"
+    },
+    {
+      "name": "command_controls_stderr",
+      "pass": true,
+      "evidence": "local_builds/s05_es1_20261102_173954_d834d5/evidence/s05_revalidation_resume_175149/06_controls.stderr.log"
+    },
+    {
+      "name": "command_implement_exit",
+      "pass": true,
+      "evidence": "implement"
+    },
+    {
+      "name": "command_implement_stdout",
+      "pass": true,
+      "evidence": "local_builds/s05_es1_20261102_173954_d834d5/evidence/s05_revalidation_resume_175149/07_implement.stdout.log"
+    },
+    {
+      "name": "command_implement_stderr",
+      "pass": true,
+      "evidence": "local_builds/s05_es1_20261102_173954_d834d5/evidence/s05_revalidation_resume_175149/07_implement.stderr.log"
+    },
+    {
+      "name": "command_project_exit",
+      "pass": true,
+      "evidence": "project"
+    },
+    {
+      "name": "command_project_stdout",
+      "pass": true,
+      "evidence": "local_builds/s05_es1_20261102_173954_d834d5/evidence/s05_revalidation_resume_175807/08_project.stdout.log"
+    },
+    {
+      "name": "command_project_stderr",
+      "pass": true,
+      "evidence": "local_builds/s05_es1_20261102_173954_d834d5/evidence/s05_revalidation_resume_175807/08_project.stderr.log"
+    },
+    {
+      "name": "command_report_exit",
+      "pass": true,
+      "evidence": "report"
+    },
+    {
+      "name": "command_report_stdout",
+      "pass": true,
+      "evidence": "local_builds/s05_es1_20261102_173954_d834d5/evidence/s05_revalidation_resume_175909/09_report.stdout.log"
+    },
+    {
+      "name": "command_report_stderr",
+      "pass": true,
+      "evidence": "local_builds/s05_es1_20261102_173954_d834d5/evidence/s05_revalidation_resume_175909/09_report.stderr.log"
+    },
+    {
+      "name": "revalidation_gates",
+      "pass": true,
+      "evidence": "gates"
+    },
+    {
+      "name": "gate_firmware",
+      "pass": true,
+      "evidence": "evidence/firmware_result.json"
+    },
+    {
+      "name": "gate_project",
+      "pass": true,
+      "evidence": "evidence/project_result.json"
+    },
+    {
+      "name": "gate_unit",
+      "pass": true,
+      "evidence": "evidence/unit_result.json"
+    },
+    {
+      "name": "gate_memory",
+      "pass": true,
+      "evidence": "evidence/memory_result.json"
+    },
+    {
+      "name": "gate_simulate",
+      "pass": true,
+      "evidence": "evidence/simulate_result.json"
+    },
+    {
+      "name": "gate_faults",
+      "pass": true,
+      "evidence": "evidence/faults_result.json"
+    },
+    {
+      "name": "gate_controls",
+      "pass": true,
+      "evidence": "evidence/controls_result.json"
+    },
+    {
+      "name": "gate_implement",
+      "pass": true,
+      "evidence": "evidence/implement_result.json"
+    },
+    {
+      "name": "gate_report_simulation",
+      "pass": true,
+      "evidence": "evidence/report_simulation_result.json"
+    },
+    {
+      "name": "merged_CFGBVS",
+      "pass": true,
+      "evidence": "['VCCO']"
+    },
+    {
+      "name": "merged_CONFIG_VOLTAGE",
+      "pass": true,
+      "evidence": "['3.3']"
+    },
+    {
+      "name": "device_part",
+      "pass": true,
+      "evidence": "xc7z010clg400-1"
+    },
+    {
+      "name": "demo_pins",
+      "pass": true,
+      "evidence": "{'clock': 'N18', 'resetn': 'P16', 'led_ok': 'P15', 'led_heartbeat': 'U12'}"
+    },
+    {
+      "name": "demo_clock",
+      "pass": true,
+      "evidence": "20ns clock"
+    },
+    {
+      "name": "source_archive_hash",
+      "pass": true,
+      "evidence": "29215665782df967c53d64461876c67d26d44efa4bf25f409011f893b9b47635"
+    },
+    {
+      "name": "source_no_removed",
+      "pass": true,
+      "evidence": "[]"
+    },
+    {
+      "name": "source_added_exact",
+      "pass": true,
+      "evidence": "['docs/hardware_baseline_zh.md', 'evidence/vendor/es1_board.json', 'evidence/vendor/es1_hardware.zip']"
+    },
+    {
+      "name": "source_modified_exact",
+      "pass": true,
+      "evidence": "['README.md', 'constraints/board_r11.xdc', 'release_manifest.json', 'run.py', 'scripts/evidence.py', 'scripts/release_files.txt']"
+    },
+    {
+      "name": "source_no_functional_change",
+      "pass": true,
+      "evidence": "[]"
+    },
+    {
+      "name": "xdc_change_only_config",
+      "pass": true,
+      "evidence": "['set_property CFGBVS GND [current_design]', 'set_property CFGBVS VCCO [current_design]', 'set_property CONFIG_VOLTAGE 1.8 [current_design]', 'set_property CONFIG_VOLTAGE 3.3 [current_design]']"
+    },
+    {
+      "name": "archive_input_constraints/board_r11.xdc",
+      "pass": true,
+      "evidence": "constraints/board_r11.xdc"
+    },
+    {
+      "name": "archive_input_data/frozen/expected.hex",
+      "pass": true,
+      "evidence": "data/frozen/expected.hex"
+    },
+    {
+      "name": "archive_input_data/frozen/lengths.hex",
+      "pass": true,
+      "evidence": "data/frozen/lengths.hex"
+    },
+    {
+      "name": "archive_input_data/frozen/ram.bin",
+      "pass": true,
+      "evidence": "data/frozen/ram.bin"
+    },
+    {
+      "name": "archive_input_data/frozen/ram.coe",
+      "pass": true,
+      "evidence": "data/frozen/ram.coe"
+    },
+    {
+      "name": "archive_input_data/frozen/ram.hex",
+      "pass": true,
+      "evidence": "data/frozen/ram.hex"
+    },
+    {
+      "name": "archive_input_data/frozen/rom.bin",
+      "pass": true,
+      "evidence": "data/frozen/rom.bin"
+    },
+    {
+      "name": "archive_input_data/frozen/rom.coe",
+      "pass": true,
+      "evidence": "data/frozen/rom.coe"
+    },
+    {
+      "name": "archive_input_data/frozen/rom.hex",
+      "pass": true,
+      "evidence": "data/frozen/rom.hex"
+    },
+    {
+      "name": "archive_input_data/frozen/symbols.hex",
+      "pass": true,
+      "evidence": "data/frozen/symbols.hex"
+    },
+    {
+      "name": "archive_input_docs/ai_collaboration.md",
+      "pass": true,
+      "evidence": "docs/ai_collaboration.md"
+    },
+    {
+      "name": "archive_input_docs/hardware_baseline_zh.md",
+      "pass": true,
+      "evidence": "docs/hardware_baseline_zh.md"
+    },
+    {
+      "name": "archive_input_docs/interface.md",
+      "pass": true,
+      "evidence": "docs/interface.md"
+    },
+    {
+      "name": "archive_input_docs/release_notes.md",
+      "pass": true,
+      "evidence": "docs/release_notes.md"
+    },
+    {
+      "name": "archive_input_docs/s02_regression.md",
+      "pass": true,
+      "evidence": "docs/s02_regression.md"
+    },
+    {
+      "name": "archive_input_evidence/provenance/cpu_design.docx",
+      "pass": true,
+      "evidence": "evidence/provenance/cpu_design.docx"
+    },
+    {
+      "name": "archive_input_evidence/provenance/excluded_sources.json",
+      "pass": true,
+      "evidence": "evidence/provenance/excluded_sources.json"
+    },
+    {
+      "name": "archive_input_evidence/provenance/full_source_manifest.json",
+      "pass": true,
+      "evidence": "evidence/provenance/full_source_manifest.json"
+    },
+    {
+      "name": "archive_input_evidence/provenance/s03/acceptance.json",
+      "pass": true,
+      "evidence": "evidence/provenance/s03/acceptance.json"
+    },
+    {
+      "name": "archive_input_evidence/provenance/s03/report.md",
+      "pass": true,
+      "evidence": "evidence/provenance/s03/report.md"
+    },
+    {
+      "name": "archive_input_evidence/provenance/s03/timing_summary.rpt",
+      "pass": true,
+      "evidence": "evidence/provenance/s03/timing_summary.rpt"
+    },
+    {
+      "name": "archive_input_evidence/provenance/s03/utilization.rpt",
+      "pass": true,
+      "evidence": "evidence/provenance/s03/utilization.rpt"
+    },
+    {
+      "name": "archive_input_evidence/provenance/source_changes.diff",
+      "pass": true,
+      "evidence": "evidence/provenance/source_changes.diff"
+    },
+    {
+      "name": "archive_input_evidence/rules/source.json",
+      "pass": true,
+      "evidence": "evidence/rules/source.json"
+    },
+    {
+      "name": "archive_input_evidence/rules/track_guide_2026.md",
+      "pass": true,
+      "evidence": "evidence/rules/track_guide_2026.md"
+    },
+    {
+      "name": "archive_input_evidence/source_manifest.json",
+      "pass": true,
+      "evidence": "evidence/source_manifest.json"
+    },
+    {
+      "name": "archive_input_evidence/toolchain.json",
+      "pass": true,
+      "evidence": "evidence/toolchain.json"
+    },
+    {
+      "name": "archive_input_evidence/vendor/es1_board.json",
+      "pass": true,
+      "evidence": "evidence/vendor/es1_board.json"
+    },
+    {
+      "name": "archive_input_evidence/vendor/es1_hardware.zip",
+      "pass": true,
+      "evidence": "evidence/vendor/es1_hardware.zip"
+    },
+    {
+      "name": "archive_input_evidence/vendor/schematic_page_10.png",
+      "pass": true,
+      "evidence": "evidence/vendor/schematic_page_10.png"
+    },
+    {
+      "name": "archive_input_evidence/vendor/schematic_page_4.png",
+      "pass": true,
+      "evidence": "evidence/vendor/schematic_page_4.png"
+    },
+    {
+      "name": "archive_input_evidence/vendor/schematic_page_5.png",
+      "pass": true,
+      "evidence": "evidence/vendor/schematic_page_5.png"
+    },
+    {
+      "name": "archive_input_evidence/vendor/z7_lite_r11.pdf",
+      "pass": true,
+      "evidence": "evidence/vendor/z7_lite_r11.pdf"
+    },
+    {
+      "name": "archive_input_firmware/link.ld",
+      "pass": true,
+      "evidence": "firmware/link.ld"
+    },
+    {
+      "name": "archive_input_firmware/main.c",
+      "pass": true,
+      "evidence": "firmware/main.c"
+    },
+    {
+      "name": "archive_input_firmware/start.s",
+      "pass": true,
+      "evidence": "firmware/start.s"
+    },
+    {
+      "name": "archive_input_README.md",
+      "pass": true,
+      "evidence": "README.md"
+    },
+    {
+      "name": "archive_input_run.py",
+      "pass": true,
+      "evidence": "run.py"
+    },
+    {
+      "name": "archive_input_scripts/audit_inputs.tcl",
+      "pass": true,
+      "evidence": "scripts/audit_inputs.tcl"
+    },
+    {
+      "name": "archive_input_scripts/audit_routed.tcl",
+      "pass": true,
+      "evidence": "scripts/audit_routed.tcl"
+    },
+    {
+      "name": "archive_input_scripts/build.tcl",
+      "pass": true,
+      "evidence": "scripts/build.tcl"
+    },
+    {
+      "name": "archive_input_scripts/dependency_audit.py",
+      "pass": true,
+      "evidence": "scripts/dependency_audit.py"
+    },
+    {
+      "name": "archive_input_scripts/evidence.py",
+      "pass": true,
+      "evidence": "scripts/evidence.py"
+    },
+    {
+      "name": "archive_input_scripts/faults.py",
+      "pass": true,
+      "evidence": "scripts/faults.py"
+    },
+    {
+      "name": "archive_input_scripts/firmware.py",
+      "pass": true,
+      "evidence": "scripts/firmware.py"
+    },
+    {
+      "name": "archive_input_scripts/firmware_audit.py",
+      "pass": true,
+      "evidence": "scripts/firmware_audit.py"
+    },
+    {
+      "name": "archive_input_scripts/hardware.tcl",
+      "pass": true,
+      "evidence": "scripts/hardware.tcl"
+    },
+    {
+      "name": "archive_input_scripts/implementation.py",
+      "pass": true,
+      "evidence": "scripts/implementation.py"
+    },
+    {
+      "name": "archive_input_scripts/preflight.tcl",
+      "pass": true,
+      "evidence": "scripts/preflight.tcl"
+    },
+    {
+      "name": "archive_input_scripts/rebuild.py",
+      "pass": true,
+      "evidence": "scripts/rebuild.py"
+    },
+    {
+      "name": "archive_input_scripts/release.py",
+      "pass": true,
+      "evidence": "scripts/release.py"
+    },
+    {
+      "name": "archive_input_scripts/release_files.txt",
+      "pass": true,
+      "evidence": "scripts/release_files.txt"
+    },
+    {
+      "name": "archive_input_scripts/report.py",
+      "pass": true,
+      "evidence": "scripts/report.py"
+    },
+    {
+      "name": "archive_input_scripts/rtl_files.txt",
+      "pass": true,
+      "evidence": "scripts/rtl_files.txt"
+    },
+    {
+      "name": "archive_input_scripts/run_sim.tcl",
+      "pass": true,
+      "evidence": "scripts/run_sim.tcl"
+    },
+    {
+      "name": "archive_input_scripts/session_setup.tcl",
+      "pass": true,
+      "evidence": "scripts/session_setup.tcl"
+    },
+    {
+      "name": "archive_input_scripts/test_evidence.py",
+      "pass": true,
+      "evidence": "scripts/test_evidence.py"
+    },
+    {
+      "name": "archive_input_scripts/test_report.py",
+      "pass": true,
+      "evidence": "scripts/test_report.py"
+    },
+    {
+      "name": "archive_input_scripts/verify.py",
+      "pass": true,
+      "evidence": "scripts/verify.py"
+    },
+    {
+      "name": "archive_input_sim/tb_cpu.sv",
+      "pass": true,
+      "evidence": "sim/tb_cpu.sv"
+    },
+    {
+      "name": "archive_input_sim/tb_cpu_faults.sv",
+      "pass": true,
+      "evidence": "sim/tb_cpu_faults.sv"
+    },
+    {
+      "name": "archive_input_sim/tb_crc.sv",
+      "pass": true,
+      "evidence": "sim/tb_crc.sv"
+    },
+    {
+      "name": "archive_input_sim/tb_memory.sv",
+      "pass": true,
+      "evidence": "sim/tb_memory.sv"
+    },
+    {
+      "name": "archive_input_skill/README.md",
+      "pass": true,
+      "evidence": "skill/README.md"
+    },
+    {
+      "name": "archive_input_src/core/alu.v",
+      "pass": true,
+      "evidence": "src/core/alu.v"
+    },
+    {
+      "name": "archive_input_src/core/branch_ctrl.v",
+      "pass": true,
+      "evidence": "src/core/branch_ctrl.v"
+    },
+    {
+      "name": "archive_input_src/core/comp.v",
+      "pass": true,
+      "evidence": "src/core/comp.v"
+    },
+    {
+      "name": "archive_input_src/core/cpu_memory_map.vh",
+      "pass": true,
+      "evidence": "src/core/cpu_memory_map.vh"
+    },
+    {
+      "name": "archive_input_src/core/cpu_reset_control.v",
+      "pass": true,
+      "evidence": "src/core/cpu_reset_control.v"
+    },
+    {
+      "name": "archive_input_src/core/cpu_reset_sync.v",
+      "pass": true,
+      "evidence": "src/core/cpu_reset_sync.v"
+    },
+    {
+      "name": "archive_input_src/core/csr_decode.sv",
+      "pass": true,
+      "evidence": "src/core/csr_decode.sv"
+    },
+    {
+      "name": "archive_input_src/core/csr_pkg.sv",
+      "pass": true,
+      "evidence": "src/core/csr_pkg.sv"
+    },
+    {
+      "name": "archive_input_src/core/csr_regfile.sv",
+      "pass": true,
+      "evidence": "src/core/csr_regfile.sv"
+    },
+    {
+      "name": "archive_input_src/core/csr_top.v",
+      "pass": true,
+      "evidence": "src/core/csr_top.v"
+    },
+    {
+      "name": "archive_input_src/core/ctrl.v",
+      "pass": true,
+      "evidence": "src/core/ctrl.v"
+    },
+    {
+      "name": "archive_input_src/core/decoder.v",
+      "pass": true,
+      "evidence": "src/core/decoder.v"
+    },
+    {
+      "name": "archive_input_src/core/demo_cpu.v",
+      "pass": true,
+      "evidence": "src/core/demo_cpu.v"
+    },
+    {
+      "name": "archive_input_src/core/ex_mem.v",
+      "pass": true,
+      "evidence": "src/core/ex_mem.v"
+    },
+    {
+      "name": "archive_input_src/core/ex_mux.v",
+      "pass": true,
+      "evidence": "src/core/ex_mux.v"
+    },
+    {
+      "name": "archive_input_src/core/ex_pipe.v",
+      "pass": true,
+      "evidence": "src/core/ex_pipe.v"
+    },
+    {
+      "name": "archive_input_src/core/forward.v",
+      "pass": true,
+      "evidence": "src/core/forward.v"
+    },
+    {
+      "name": "archive_input_src/core/forward_ctrl.v",
+      "pass": true,
+      "evidence": "src/core/forward_ctrl.v"
+    },
+    {
+      "name": "archive_input_src/core/ibrom.v",
+      "pass": true,
+      "evidence": "src/core/ibrom.v"
+    },
+    {
+      "name": "archive_input_src/core/id_ex.v",
+      "pass": true,
+      "evidence": "src/core/id_ex.v"
+    },
+    {
+      "name": "archive_input_src/core/if_id.v",
+      "pass": true,
+      "evidence": "src/core/if_id.v"
+    },
+    {
+      "name": "archive_input_src/core/imm_gen.v",
+      "pass": true,
+      "evidence": "src/core/imm_gen.v"
+    },
+    {
+      "name": "archive_input_src/core/instr_minidecoder.v",
+      "pass": true,
+      "evidence": "src/core/instr_minidecoder.v"
+    },
+    {
+      "name": "archive_input_src/core/led_ctrl.v",
+      "pass": true,
+      "evidence": "src/core/led_ctrl.v"
+    },
+    {
+      "name": "archive_input_src/core/mem_dtcm.v",
+      "pass": true,
+      "evidence": "src/core/mem_dtcm.v"
+    },
+    {
+      "name": "archive_input_src/core/mem_forward.v",
+      "pass": true,
+      "evidence": "src/core/mem_forward.v"
+    },
+    {
+      "name": "archive_input_src/core/mem_wb.v",
+      "pass": true,
+      "evidence": "src/core/mem_wb.v"
+    },
+    {
+      "name": "archive_input_src/core/npc.v",
+      "pass": true,
+      "evidence": "src/core/npc.v"
+    },
+    {
+      "name": "archive_input_src/core/pc_judge.v",
+      "pass": true,
+      "evidence": "src/core/pc_judge.v"
+    },
+    {
+      "name": "archive_input_src/core/regfile.v",
+      "pass": true,
+      "evidence": "src/core/regfile.v"
+    },
+    {
+      "name": "archive_input_src/core/riscv_define.vh",
+      "pass": true,
+      "evidence": "src/core/riscv_define.vh"
+    },
+    {
+      "name": "archive_input_src/core/save_load_use.v",
+      "pass": true,
+      "evidence": "src/core/save_load_use.v"
+    },
+    {
+      "name": "archive_input_src/core/stall.v",
+      "pass": true,
+      "evidence": "src/core/stall.v"
+    },
+    {
+      "name": "archive_input_src/core/store.v",
+      "pass": true,
+      "evidence": "src/core/store.v"
+    },
+    {
+      "name": "archive_input_src/core/wb_forward.v",
+      "pass": true,
+      "evidence": "src/core/wb_forward.v"
+    },
+    {
+      "name": "archive_input_src/core/wb_mux.v",
+      "pass": true,
+      "evidence": "src/core/wb_mux.v"
+    },
+    {
+      "name": "archive_input_src/crc_mmio.sv",
+      "pass": true,
+      "evidence": "src/crc_mmio.sv"
+    },
+    {
+      "name": "archive_input_src/demo_top.sv",
+      "pass": true,
+      "evidence": "src/demo_top.sv"
+    },
+    {
+      "name": "archive_input_standalone.json",
+      "pass": true,
+      "evidence": "standalone.json"
+    },
+    {
+      "name": "archive_input_submission_checklist.md",
+      "pass": true,
+      "evidence": "submission_checklist.md"
+    },
+    {
+      "name": "bit_sync",
+      "pass": true,
+      "evidence": "(247, 247)"
+    },
+    {
+      "name": "bit_payload_identical",
+      "pass": true,
+      "evidence": "fabric payload differs"
+    },
+    {
+      "name": "bit_header_only",
+      "pass": true,
+      "evidence": "[180, 186, 188, 189, 192]"
+    },
+    {
+      "name": "bitgen_log",
+      "pass": true,
+      "evidence": "['implement_1793613110207708700.console.log']"
+    },
+    {
+      "name": "ltx_one_vio",
+      "pass": true,
+      "evidence": "1"
+    },
+    {
+      "name": "ltx_probes",
+      "pass": true,
+      "evidence": "{'read_data': ('IN', 0, 32), 'committed': ('IN', 1, 1), 'failed': ('IN', 2, 1), 'read_index': ('OUT', 0, 7), 'restart': ('OUT', 1, 1)}"
+    },
+    {
+      "name": "preflight_tool",
+      "pass": true,
+      "evidence": "COMPLETE"
+    },
+    {
+      "name": "preflight_source",
+      "pass": true,
+      "evidence": "actual Vivado2026.1 batch process"
+    },
+    {
+      "name": "preflight_entry",
+      "pass": true,
+      "evidence": "entry"
+    },
+    {
+      "name": "preflight_scripts",
+      "pass": true,
+      "evidence": "scripts"
+    },
+    {
+      "name": "preflight_artifact_accepted_inputs.json",
+      "pass": true,
+      "evidence": "accepted_inputs.json"
+    },
+    {
+      "name": "preflight_artifact_entry.tcl",
+      "pass": true,
+      "evidence": "entry.tcl"
+    },
+    {
+      "name": "preflight_artifact_events.jsonl",
+      "pass": true,
+      "evidence": "events.jsonl"
+    },
+    {
+      "name": "preflight_artifact_stderr.log",
+      "pass": true,
+      "evidence": "stderr.log"
+    },
+    {
+      "name": "preflight_artifact_stdout.log",
+      "pass": true,
+      "evidence": "stdout.log"
+    },
+    {
+      "name": "preflight_artifact_vivado.log",
+      "pass": true,
+      "evidence": "vivado.log"
+    },
+    {
+      "name": "preflight_events",
+      "pass": true,
+      "evidence": "begin/end"
+    },
+    {
+      "name": "preflight_device",
+      "pass": true,
+      "evidence": "[{'object': 'xc7z010_1', 'NAME': 'xc7z010_1', 'PART': 'xc7z010', 'INDEX': '1', 'IDCODE': '00010011011100100010000010010011', 'DID': 'jsn-JTAG-HS2-210241793374-13722093-0'}]"
+    },
+    {
+      "name": "preflight_target",
+      "pass": true,
+      "evidence": "[{'object': 'localhost:3121/xilinx_tcf/Digilent/210241793374', 'NAME': 'localhost:3121/xilinx_tcf/Digilent/210241793374', 'PARAM.DEVICE': 'jsn-JTAG-HS2-210241793374', 'PARAM.FREQUENCY': '10000000', 'PARAM.TYPE': 'xilinx_tcf', 'TID': 'jsn-JTAG-HS2-210241793374', 'UID': 'Digilent/210241793374'}]"
+    },
+    {
+      "name": "capture_tool",
+      "pass": true,
+      "evidence": "COMPLETE"
+    },
+    {
+      "name": "capture_source",
+      "pass": true,
+      "evidence": "actual Vivado2026.1 batch process"
+    },
+    {
+      "name": "capture_config",
+      "pass": true,
+      "evidence": "{'pcb_revision': 'Z7-LITE_ES1', 'physical_verified': 1, 'USB_serial': '210241793374', 'baseline_verified': 1, 'cfgbvs': 'VCCO', 'config_voltage': '3.3', 'target': 'localhost:3121/xilinx_tcf/Digilent/210241793374', 'device_did': 'jsn-JTAG-HS2-210241793374-13722093-0', 'device_idcode': '00010011011100100010000010010011', 'bit': 'W:\\\\local_builds\\\\s05_es1_20261102_173954_d834d5\\\\evidence\\\\demo.bit', 'ltx': 'W:\\\\local_builds\\\\s05_es1_20261102_173954_d834d5\\\\evidence\\\\demo.ltx', 'vio_instance': 'vio', 'vio_uuid': '1BE27D511A4C50DC974F3E22D2C609B9', 'out': 'W:\\\\evidence\\\\agent_steps\\\\step_05\\\\rework_r4\\\\attempts\\\\capture_20261102_183416_de2cae60', 'attempt_id': 'capture_20261102_183416_de2cae60'}"
+    },
+    {
+      "name": "capture_downloads",
+      "pass": true,
+      "evidence": "downloads"
+    },
+    {
+      "name": "capture_entry",
+      "pass": true,
+      "evidence": "entry"
+    },
+    {
+      "name": "capture_scripts",
+      "pass": true,
+      "evidence": "scripts"
+    },
+    {
+      "name": "capture_artifact_accepted_inputs.json",
+      "pass": true,
+      "evidence": "accepted_inputs.json"
+    },
+    {
+      "name": "capture_artifact_entry.tcl",
+      "pass": true,
+      "evidence": "entry.tcl"
+    },
+    {
+      "name": "capture_artifact_events.jsonl",
+      "pass": true,
+      "evidence": "events.jsonl"
+    },
+    {
+      "name": "capture_artifact_physical_identity.json",
+      "pass": true,
+      "evidence": "physical_identity.json"
+    },
+    {
+      "name": "capture_artifact_run_0_scan_0.hex",
+      "pass": true,
+      "evidence": "run_0_scan_0.hex"
+    },
+    {
+      "name": "capture_artifact_run_0_scan_1.hex",
+      "pass": true,
+      "evidence": "run_0_scan_1.hex"
+    },
+    {
+      "name": "capture_artifact_run_1_scan_0.hex",
+      "pass": true,
+      "evidence": "run_1_scan_0.hex"
+    },
+    {
+      "name": "capture_artifact_run_1_scan_1.hex",
+      "pass": true,
+      "evidence": "run_1_scan_1.hex"
+    },
+    {
+      "name": "capture_artifact_run_2_scan_0.hex",
+      "pass": true,
+      "evidence": "run_2_scan_0.hex"
+    },
+    {
+      "name": "capture_artifact_run_2_scan_1.hex",
+      "pass": true,
+      "evidence": "run_2_scan_1.hex"
+    },
+    {
+      "name": "capture_artifact_stderr.log",
+      "pass": true,
+      "evidence": "stderr.log"
+    },
+    {
+      "name": "capture_artifact_stdout.log",
+      "pass": true,
+      "evidence": "stdout.log"
+    },
+    {
+      "name": "capture_artifact_vivado.log",
+      "pass": true,
+      "evidence": "vivado.log"
+    },
+    {
+      "name": "capture_vivado_log",
+      "pass": true,
+      "evidence": "vivado log"
+    },
+    {
+      "name": "capture_binding",
+      "pass": true,
+      "evidence": "accepted inputs"
+    },
+    {
+      "name": "events_begin_end",
+      "pass": true,
+      "evidence": "begin/end"
+    },
+    {
+      "name": "events_no_error",
+      "pass": true,
+      "evidence": "error event"
+    },
+    {
+      "name": "events_counts",
+      "pass": true,
+      "evidence": "{'PROGRAM_BEGIN': 1, 'PROGRAM_END': 1, 'VIO': 1, 'VIO_UUID': 1, 'PROBE': 5, 'RESET_LOW': 3, 'RESET_ASSERTED': 3, 'RESET_RELEASED': 3, 'RUN_END': 3, 'SCAN_END': 6, 'WORD': 624, 'CAPTURE_END': 1}"
+    },
+    {
+      "name": "capture_device",
+      "pass": true,
+      "evidence": "[{'object': 'xc7z010_1', 'NAME': 'xc7z010_1', 'PART': 'xc7z010', 'INDEX': '1', 'IDCODE': '00010011011100100010000010010011', 'DID': 'jsn-JTAG-HS2-210241793374-13722093-0'}]"
+    },
+    {
+      "name": "capture_target",
+      "pass": true,
+      "evidence": "[{'object': 'localhost:3121/xilinx_tcf/Digilent/210241793374', 'NAME': 'localhost:3121/xilinx_tcf/Digilent/210241793374', 'PARAM.DEVICE': 'jsn-JTAG-HS2-210241793374', 'PARAM.FREQUENCY': '10000000', 'PARAM.TYPE': 'xilinx_tcf', 'TID': 'jsn-JTAG-HS2-210241793374', 'UID': 'Digilent/210241793374'}]"
+    },
+    {
+      "name": "capture_vio",
+      "pass": true,
+      "evidence": "{'object': 'hw_vio_1', 'CORE_UUID': '1BE27D511A4C50DC974F3E22D2C609B9', 'INSTANCE_NAME': 'vio', 'NAME': 'hw_vio_1'}"
+    },
+    {
+      "name": "capture_uuid",
+      "pass": true,
+      "evidence": "{'ltx_uuid': '1BE27D511A4C50DC974F3E22D2C609B9', 'runtime_verified': '1'}"
+    },
+    {
+      "name": "capture_probes",
+      "pass": true,
+      "evidence": "{'committed': ('vio_input', 1, 1), 'failed': ('vio_input', 2, 1), 'read_data': ('vio_input', 0, 32), 'read_index': ('vio_output', 0, 7), 'restart': ('vio_output', 1, 1)}"
+    },
+    {
+      "name": "status_failed_zero",
+      "pass": true,
+      "evidence": "18"
+    },
+    {
+      "name": "run_0_RESET_LOW",
+      "pass": true,
+      "evidence": "[14]"
+    },
+    {
+      "name": "run_0_RESET_ASSERTED",
+      "pass": true,
+      "evidence": "[16]"
+    },
+    {
+      "name": "run_0_RESET_RELEASED",
+      "pass": true,
+      "evidence": "[17]"
+    },
+    {
+      "name": "run_0_RUN_END",
+      "pass": true,
+      "evidence": "[233]"
+    },
+    {
+      "name": "run_0_order",
+      "pass": true,
+      "evidence": "{'RESET_LOW': 14, 'RESET_ASSERTED': 16, 'RESET_RELEASED': 17, 'RUN_END': 233}"
+    },
+    {
+      "name": "run_0_reset_clear",
+      "pass": true,
+      "evidence": "[{'run': '0', 'stage': 'reset_asserted', 'committed': '0', 'failed': '0'}]"
+    },
+    {
+      "name": "run_0_scan_0_start_committed",
+      "pass": true,
+      "evidence": "[{'run': '0', 'stage': 'scan_0_start', 'committed': '1', 'failed': '0'}]"
+    },
+    {
+      "name": "run_0_scan_0_end_committed",
+      "pass": true,
+      "evidence": "[{'run': '0', 'stage': 'scan_0_end', 'committed': '1', 'failed': '0'}]"
+    },
+    {
+      "name": "run_0_scan_0_words",
+      "pass": true,
+      "evidence": "104"
+    },
+    {
+      "name": "run_0_scan_0_position",
+      "pass": true,
+      "evidence": "position"
+    },
+    {
+      "name": "run_0_scan_1_start_committed",
+      "pass": true,
+      "evidence": "[{'run': '0', 'stage': 'scan_1_start', 'committed': '1', 'failed': '0'}]"
+    },
+    {
+      "name": "run_0_scan_1_end_committed",
+      "pass": true,
+      "evidence": "[{'run': '0', 'stage': 'scan_1_end', 'committed': '1', 'failed': '0'}]"
+    },
+    {
+      "name": "run_0_scan_1_words",
+      "pass": true,
+      "evidence": "104"
+    },
+    {
+      "name": "run_0_scan_1_position",
+      "pass": true,
+      "evidence": "position"
+    },
+    {
+      "name": "run_0_stability_window",
+      "pass": true,
+      "evidence": "1037929"
+    },
+    {
+      "name": "run_1_RESET_LOW",
+      "pass": true,
+      "evidence": "[234]"
+    },
+    {
+      "name": "run_1_RESET_ASSERTED",
+      "pass": true,
+      "evidence": "[236]"
+    },
+    {
+      "name": "run_1_RESET_RELEASED",
+      "pass": true,
+      "evidence": "[237]"
+    },
+    {
+      "name": "run_1_RUN_END",
+      "pass": true,
+      "evidence": "[453]"
+    },
+    {
+      "name": "run_1_order",
+      "pass": true,
+      "evidence": "{'RESET_LOW': 234, 'RESET_ASSERTED': 236, 'RESET_RELEASED': 237, 'RUN_END': 453}"
+    },
+    {
+      "name": "run_1_reset_clear",
+      "pass": true,
+      "evidence": "[{'run': '1', 'stage': 'reset_asserted', 'committed': '0', 'failed': '0'}]"
+    },
+    {
+      "name": "run_1_scan_0_start_committed",
+      "pass": true,
+      "evidence": "[{'run': '1', 'stage': 'scan_0_start', 'committed': '1', 'failed': '0'}]"
+    },
+    {
+      "name": "run_1_scan_0_end_committed",
+      "pass": true,
+      "evidence": "[{'run': '1', 'stage': 'scan_0_end', 'committed': '1', 'failed': '0'}]"
+    },
+    {
+      "name": "run_1_scan_0_words",
+      "pass": true,
+      "evidence": "104"
+    },
+    {
+      "name": "run_1_scan_0_position",
+      "pass": true,
+      "evidence": "position"
+    },
+    {
+      "name": "run_1_scan_1_start_committed",
+      "pass": true,
+      "evidence": "[{'run': '1', 'stage': 'scan_1_start', 'committed': '1', 'failed': '0'}]"
+    },
+    {
+      "name": "run_1_scan_1_end_committed",
+      "pass": true,
+      "evidence": "[{'run': '1', 'stage': 'scan_1_end', 'committed': '1', 'failed': '0'}]"
+    },
+    {
+      "name": "run_1_scan_1_words",
+      "pass": true,
+      "evidence": "104"
+    },
+    {
+      "name": "run_1_scan_1_position",
+      "pass": true,
+      "evidence": "position"
+    },
+    {
+      "name": "run_1_stability_window",
+      "pass": true,
+      "evidence": "1030431"
+    },
+    {
+      "name": "run_2_RESET_LOW",
+      "pass": true,
+      "evidence": "[454]"
+    },
+    {
+      "name": "run_2_RESET_ASSERTED",
+      "pass": true,
+      "evidence": "[456]"
+    },
+    {
+      "name": "run_2_RESET_RELEASED",
+      "pass": true,
+      "evidence": "[457]"
+    },
+    {
+      "name": "run_2_RUN_END",
+      "pass": true,
+      "evidence": "[673]"
+    },
+    {
+      "name": "run_2_order",
+      "pass": true,
+      "evidence": "{'RESET_LOW': 454, 'RESET_ASSERTED': 456, 'RESET_RELEASED': 457, 'RUN_END': 673}"
+    },
+    {
+      "name": "run_2_reset_clear",
+      "pass": true,
+      "evidence": "[{'run': '2', 'stage': 'reset_asserted', 'committed': '0', 'failed': '0'}]"
+    },
+    {
+      "name": "run_2_scan_0_start_committed",
+      "pass": true,
+      "evidence": "[{'run': '2', 'stage': 'scan_0_start', 'committed': '1', 'failed': '0'}]"
+    },
+    {
+      "name": "run_2_scan_0_end_committed",
+      "pass": true,
+      "evidence": "[{'run': '2', 'stage': 'scan_0_end', 'committed': '1', 'failed': '0'}]"
+    },
+    {
+      "name": "run_2_scan_0_words",
+      "pass": true,
+      "evidence": "104"
+    },
+    {
+      "name": "run_2_scan_0_position",
+      "pass": true,
+      "evidence": "position"
+    },
+    {
+      "name": "run_2_scan_1_start_committed",
+      "pass": true,
+      "evidence": "[{'run': '2', 'stage': 'scan_1_start', 'committed': '1', 'failed': '0'}]"
+    },
+    {
+      "name": "run_2_scan_1_end_committed",
+      "pass": true,
+      "evidence": "[{'run': '2', 'stage': 'scan_1_end', 'committed': '1', 'failed': '0'}]"
+    },
+    {
+      "name": "run_2_scan_1_words",
+      "pass": true,
+      "evidence": "104"
+    },
+    {
+      "name": "run_2_scan_1_position",
+      "pass": true,
+      "evidence": "position"
+    },
+    {
+      "name": "run_2_stability_window",
+      "pass": true,
+      "evidence": "1041321"
+    },
+    {
+      "name": "capture_terminal",
+      "pass": true,
+      "evidence": "{'runs': '3', 'scans': '6', 'words_per_scan': '104', 'reset_method': 'VIO_AUX_RESET_REQUEST'}"
+    },
+    {
+      "name": "hex_0_0_lines",
+      "pass": true,
+      "evidence": "104"
+    },
+    {
+      "name": "hex_0_0_header",
+      "pass": true,
+      "evidence": "[1129464625, 1, 50000000, 65536, 12, 0, 104, 7]"
+    },
+    {
+      "name": "hex_0_0_errors",
+      "pass": true,
+      "evidence": "0"
+    },
+    {
+      "name": "hex_0_0_case_0",
+      "pass": true,
+      "evidence": "[0, 0, 0, 0, 0]"
+    },
+    {
+      "name": "hex_0_0_case_1",
+      "pass": true,
+      "evidence": "[1, 9, 3421780262, 3421780262, 3421780262]"
+    },
+    {
+      "name": "hex_0_0_case_2",
+      "pass": true,
+      "evidence": "[2, 1, 198489425, 198489425, 198489425]"
+    },
+    {
+      "name": "hex_0_0_case_3",
+      "pass": true,
+      "evidence": "[3, 2, 2679855712, 2679855712, 2679855712]"
+    },
+    {
+      "name": "hex_0_0_case_4",
+      "pass": true,
+      "evidence": "[4, 3, 3343350174, 3343350174, 3343350174]"
+    },
+    {
+      "name": "hex_0_0_case_5",
+      "pass": true,
+      "evidence": "[5, 4, 3480402064, 3480402064, 3480402064]"
+    },
+    {
+      "name": "hex_0_0_case_6",
+      "pass": true,
+      "evidence": "[6, 7, 3004218187, 3004218187, 3004218187]"
+    },
+    {
+      "name": "hex_0_0_case_7",
+      "pass": true,
+      "evidence": "[7, 16, 383092584, 383092584, 383092584]"
+    },
+    {
+      "name": "hex_0_0_case_8",
+      "pass": true,
+      "evidence": "[8, 64, 1067269422, 1067269422, 1067269422]"
+    },
+    {
+      "name": "hex_0_0_case_9",
+      "pass": true,
+      "evidence": "[9, 256, 566205594, 566205594, 566205594]"
+    },
+    {
+      "name": "hex_0_0_case_10",
+      "pass": true,
+      "evidence": "[10, 1024, 2688664854, 2688664854, 2688664854]"
+    },
+    {
+      "name": "hex_0_0_case_11",
+      "pass": true,
+      "evidence": "[11, 4096, 354988794, 354988794, 354988794]"
+    },
+    {
+      "name": "hex_0_1_lines",
+      "pass": true,
+      "evidence": "104"
+    },
+    {
+      "name": "hex_0_1_header",
+      "pass": true,
+      "evidence": "[1129464625, 1, 50000000, 65536, 12, 0, 104, 7]"
+    },
+    {
+      "name": "hex_0_1_errors",
+      "pass": true,
+      "evidence": "0"
+    },
+    {
+      "name": "hex_0_1_case_0",
+      "pass": true,
+      "evidence": "[0, 0, 0, 0, 0]"
+    },
+    {
+      "name": "hex_0_1_case_1",
+      "pass": true,
+      "evidence": "[1, 9, 3421780262, 3421780262, 3421780262]"
+    },
+    {
+      "name": "hex_0_1_case_2",
+      "pass": true,
+      "evidence": "[2, 1, 198489425, 198489425, 198489425]"
+    },
+    {
+      "name": "hex_0_1_case_3",
+      "pass": true,
+      "evidence": "[3, 2, 2679855712, 2679855712, 2679855712]"
+    },
+    {
+      "name": "hex_0_1_case_4",
+      "pass": true,
+      "evidence": "[4, 3, 3343350174, 3343350174, 3343350174]"
+    },
+    {
+      "name": "hex_0_1_case_5",
+      "pass": true,
+      "evidence": "[5, 4, 3480402064, 3480402064, 3480402064]"
+    },
+    {
+      "name": "hex_0_1_case_6",
+      "pass": true,
+      "evidence": "[6, 7, 3004218187, 3004218187, 3004218187]"
+    },
+    {
+      "name": "hex_0_1_case_7",
+      "pass": true,
+      "evidence": "[7, 16, 383092584, 383092584, 383092584]"
+    },
+    {
+      "name": "hex_0_1_case_8",
+      "pass": true,
+      "evidence": "[8, 64, 1067269422, 1067269422, 1067269422]"
+    },
+    {
+      "name": "hex_0_1_case_9",
+      "pass": true,
+      "evidence": "[9, 256, 566205594, 566205594, 566205594]"
+    },
+    {
+      "name": "hex_0_1_case_10",
+      "pass": true,
+      "evidence": "[10, 1024, 2688664854, 2688664854, 2688664854]"
+    },
+    {
+      "name": "hex_0_1_case_11",
+      "pass": true,
+      "evidence": "[11, 4096, 354988794, 354988794, 354988794]"
+    },
+    {
+      "name": "run_0_mailbox_stable",
+      "pass": true,
+      "evidence": "scan pair differs"
+    },
+    {
+      "name": "hex_1_0_lines",
+      "pass": true,
+      "evidence": "104"
+    },
+    {
+      "name": "hex_1_0_header",
+      "pass": true,
+      "evidence": "[1129464625, 1, 50000000, 65536, 12, 0, 104, 7]"
+    },
+    {
+      "name": "hex_1_0_errors",
+      "pass": true,
+      "evidence": "0"
+    },
+    {
+      "name": "hex_1_0_case_0",
+      "pass": true,
+      "evidence": "[0, 0, 0, 0, 0]"
+    },
+    {
+      "name": "hex_1_0_case_1",
+      "pass": true,
+      "evidence": "[1, 9, 3421780262, 3421780262, 3421780262]"
+    },
+    {
+      "name": "hex_1_0_case_2",
+      "pass": true,
+      "evidence": "[2, 1, 198489425, 198489425, 198489425]"
+    },
+    {
+      "name": "hex_1_0_case_3",
+      "pass": true,
+      "evidence": "[3, 2, 2679855712, 2679855712, 2679855712]"
+    },
+    {
+      "name": "hex_1_0_case_4",
+      "pass": true,
+      "evidence": "[4, 3, 3343350174, 3343350174, 3343350174]"
+    },
+    {
+      "name": "hex_1_0_case_5",
+      "pass": true,
+      "evidence": "[5, 4, 3480402064, 3480402064, 3480402064]"
+    },
+    {
+      "name": "hex_1_0_case_6",
+      "pass": true,
+      "evidence": "[6, 7, 3004218187, 3004218187, 3004218187]"
+    },
+    {
+      "name": "hex_1_0_case_7",
+      "pass": true,
+      "evidence": "[7, 16, 383092584, 383092584, 383092584]"
+    },
+    {
+      "name": "hex_1_0_case_8",
+      "pass": true,
+      "evidence": "[8, 64, 1067269422, 1067269422, 1067269422]"
+    },
+    {
+      "name": "hex_1_0_case_9",
+      "pass": true,
+      "evidence": "[9, 256, 566205594, 566205594, 566205594]"
+    },
+    {
+      "name": "hex_1_0_case_10",
+      "pass": true,
+      "evidence": "[10, 1024, 2688664854, 2688664854, 2688664854]"
+    },
+    {
+      "name": "hex_1_0_case_11",
+      "pass": true,
+      "evidence": "[11, 4096, 354988794, 354988794, 354988794]"
+    },
+    {
+      "name": "hex_1_1_lines",
+      "pass": true,
+      "evidence": "104"
+    },
+    {
+      "name": "hex_1_1_header",
+      "pass": true,
+      "evidence": "[1129464625, 1, 50000000, 65536, 12, 0, 104, 7]"
+    },
+    {
+      "name": "hex_1_1_errors",
+      "pass": true,
+      "evidence": "0"
+    },
+    {
+      "name": "hex_1_1_case_0",
+      "pass": true,
+      "evidence": "[0, 0, 0, 0, 0]"
+    },
+    {
+      "name": "hex_1_1_case_1",
+      "pass": true,
+      "evidence": "[1, 9, 3421780262, 3421780262, 3421780262]"
+    },
+    {
+      "name": "hex_1_1_case_2",
+      "pass": true,
+      "evidence": "[2, 1, 198489425, 198489425, 198489425]"
+    },
+    {
+      "name": "hex_1_1_case_3",
+      "pass": true,
+      "evidence": "[3, 2, 2679855712, 2679855712, 2679855712]"
+    },
+    {
+      "name": "hex_1_1_case_4",
+      "pass": true,
+      "evidence": "[4, 3, 3343350174, 3343350174, 3343350174]"
+    },
+    {
+      "name": "hex_1_1_case_5",
+      "pass": true,
+      "evidence": "[5, 4, 3480402064, 3480402064, 3480402064]"
+    },
+    {
+      "name": "hex_1_1_case_6",
+      "pass": true,
+      "evidence": "[6, 7, 3004218187, 3004218187, 3004218187]"
+    },
+    {
+      "name": "hex_1_1_case_7",
+      "pass": true,
+      "evidence": "[7, 16, 383092584, 383092584, 383092584]"
+    },
+    {
+      "name": "hex_1_1_case_8",
+      "pass": true,
+      "evidence": "[8, 64, 1067269422, 1067269422, 1067269422]"
+    },
+    {
+      "name": "hex_1_1_case_9",
+      "pass": true,
+      "evidence": "[9, 256, 566205594, 566205594, 566205594]"
+    },
+    {
+      "name": "hex_1_1_case_10",
+      "pass": true,
+      "evidence": "[10, 1024, 2688664854, 2688664854, 2688664854]"
+    },
+    {
+      "name": "hex_1_1_case_11",
+      "pass": true,
+      "evidence": "[11, 4096, 354988794, 354988794, 354988794]"
+    },
+    {
+      "name": "run_1_mailbox_stable",
+      "pass": true,
+      "evidence": "scan pair differs"
+    },
+    {
+      "name": "hex_2_0_lines",
+      "pass": true,
+      "evidence": "104"
+    },
+    {
+      "name": "hex_2_0_header",
+      "pass": true,
+      "evidence": "[1129464625, 1, 50000000, 65536, 12, 0, 104, 7]"
+    },
+    {
+      "name": "hex_2_0_errors",
+      "pass": true,
+      "evidence": "0"
+    },
+    {
+      "name": "hex_2_0_case_0",
+      "pass": true,
+      "evidence": "[0, 0, 0, 0, 0]"
+    },
+    {
+      "name": "hex_2_0_case_1",
+      "pass": true,
+      "evidence": "[1, 9, 3421780262, 3421780262, 3421780262]"
+    },
+    {
+      "name": "hex_2_0_case_2",
+      "pass": true,
+      "evidence": "[2, 1, 198489425, 198489425, 198489425]"
+    },
+    {
+      "name": "hex_2_0_case_3",
+      "pass": true,
+      "evidence": "[3, 2, 2679855712, 2679855712, 2679855712]"
+    },
+    {
+      "name": "hex_2_0_case_4",
+      "pass": true,
+      "evidence": "[4, 3, 3343350174, 3343350174, 3343350174]"
+    },
+    {
+      "name": "hex_2_0_case_5",
+      "pass": true,
+      "evidence": "[5, 4, 3480402064, 3480402064, 3480402064]"
+    },
+    {
+      "name": "hex_2_0_case_6",
+      "pass": true,
+      "evidence": "[6, 7, 3004218187, 3004218187, 3004218187]"
+    },
+    {
+      "name": "hex_2_0_case_7",
+      "pass": true,
+      "evidence": "[7, 16, 383092584, 383092584, 383092584]"
+    },
+    {
+      "name": "hex_2_0_case_8",
+      "pass": true,
+      "evidence": "[8, 64, 1067269422, 1067269422, 1067269422]"
+    },
+    {
+      "name": "hex_2_0_case_9",
+      "pass": true,
+      "evidence": "[9, 256, 566205594, 566205594, 566205594]"
+    },
+    {
+      "name": "hex_2_0_case_10",
+      "pass": true,
+      "evidence": "[10, 1024, 2688664854, 2688664854, 2688664854]"
+    },
+    {
+      "name": "hex_2_0_case_11",
+      "pass": true,
+      "evidence": "[11, 4096, 354988794, 354988794, 354988794]"
+    },
+    {
+      "name": "hex_2_1_lines",
+      "pass": true,
+      "evidence": "104"
+    },
+    {
+      "name": "hex_2_1_header",
+      "pass": true,
+      "evidence": "[1129464625, 1, 50000000, 65536, 12, 0, 104, 7]"
+    },
+    {
+      "name": "hex_2_1_errors",
+      "pass": true,
+      "evidence": "0"
+    },
+    {
+      "name": "hex_2_1_case_0",
+      "pass": true,
+      "evidence": "[0, 0, 0, 0, 0]"
+    },
+    {
+      "name": "hex_2_1_case_1",
+      "pass": true,
+      "evidence": "[1, 9, 3421780262, 3421780262, 3421780262]"
+    },
+    {
+      "name": "hex_2_1_case_2",
+      "pass": true,
+      "evidence": "[2, 1, 198489425, 198489425, 198489425]"
+    },
+    {
+      "name": "hex_2_1_case_3",
+      "pass": true,
+      "evidence": "[3, 2, 2679855712, 2679855712, 2679855712]"
+    },
+    {
+      "name": "hex_2_1_case_4",
+      "pass": true,
+      "evidence": "[4, 3, 3343350174, 3343350174, 3343350174]"
+    },
+    {
+      "name": "hex_2_1_case_5",
+      "pass": true,
+      "evidence": "[5, 4, 3480402064, 3480402064, 3480402064]"
+    },
+    {
+      "name": "hex_2_1_case_6",
+      "pass": true,
+      "evidence": "[6, 7, 3004218187, 3004218187, 3004218187]"
+    },
+    {
+      "name": "hex_2_1_case_7",
+      "pass": true,
+      "evidence": "[7, 16, 383092584, 383092584, 383092584]"
+    },
+    {
+      "name": "hex_2_1_case_8",
+      "pass": true,
+      "evidence": "[8, 64, 1067269422, 1067269422, 1067269422]"
+    },
+    {
+      "name": "hex_2_1_case_9",
+      "pass": true,
+      "evidence": "[9, 256, 566205594, 566205594, 566205594]"
+    },
+    {
+      "name": "hex_2_1_case_10",
+      "pass": true,
+      "evidence": "[10, 1024, 2688664854, 2688664854, 2688664854]"
+    },
+    {
+      "name": "hex_2_1_case_11",
+      "pass": true,
+      "evidence": "[11, 4096, 354988794, 354988794, 354988794]"
+    },
+    {
+      "name": "run_2_mailbox_stable",
+      "pass": true,
+      "evidence": "scan pair differs"
+    },
+    {
+      "name": "cross_run_mailbox",
+      "pass": true,
+      "evidence": "runs differ"
+    },
+    {
+      "name": "cycles_identical",
+      "pass": true,
+      "evidence": "cycle fields differ"
+    },
+    {
+      "name": "sim_match_0_0",
+      "pass": true,
+      "evidence": "sim hex"
+    },
+    {
+      "name": "sim_match_0_1",
+      "pass": true,
+      "evidence": "sim hex"
+    },
+    {
+      "name": "sim_match_1_0",
+      "pass": true,
+      "evidence": "sim hex"
+    },
+    {
+      "name": "sim_match_1_1",
+      "pass": true,
+      "evidence": "sim hex"
+    },
+    {
+      "name": "sim_match_2_0",
+      "pass": true,
+      "evidence": "sim hex"
+    },
+    {
+      "name": "sim_match_2_1",
+      "pass": true,
+      "evidence": "sim hex"
+    },
+    {
+      "name": "results_pass",
+      "pass": true,
+      "evidence": "SELF_CHECK_PASS"
+    },
+    {
+      "name": "results_counts",
+      "pass": true,
+      "evidence": "3"
+    },
+    {
+      "name": "results_failures",
+      "pass": true,
+      "evidence": "[0, 0, 0]"
+    },
+    {
+      "name": "results_observation",
+      "pass": true,
+      "evidence": "physical LED observation"
+    },
+    {
+      "name": "results_reset",
+      "pass": true,
+      "evidence": "VIO auxiliary hardware reset request; no button/power-cycle claim"
+    },
+    {
+      "name": "results_prior_scope_note",
+      "pass": true,
+      "evidence": "r4-only scope; r3 retained at stage level"
+    },
+    {
+      "name": "receipt_pass",
+      "pass": true,
+      "evidence": "True"
+    },
+    {
+      "name": "receipt_bit_ltx",
+      "pass": true,
+      "evidence": "bit/ltx"
+    },
+    {
+      "name": "receipt_report",
+      "pass": true,
+      "evidence": "9342136b78b44e019ae80e36b571d1ef36100212b087b4ceae9874635686b707"
+    },
+    {
+      "name": "receipt_identity",
+      "pass": true,
+      "evidence": "identity"
+    },
+    {
+      "name": "receipt_tool",
+      "pass": true,
+      "evidence": "tool/events"
+    },
+    {
+      "name": "receipt_run_0_scan_0.hex",
+      "pass": true,
+      "evidence": "run_0_scan_0.hex"
+    },
+    {
+      "name": "receipt_run_0_scan_1.hex",
+      "pass": true,
+      "evidence": "run_0_scan_1.hex"
+    },
+    {
+      "name": "receipt_run_1_scan_0.hex",
+      "pass": true,
+      "evidence": "run_1_scan_0.hex"
+    },
+    {
+      "name": "receipt_run_1_scan_1.hex",
+      "pass": true,
+      "evidence": "run_1_scan_1.hex"
+    },
+    {
+      "name": "receipt_run_2_scan_0.hex",
+      "pass": true,
+      "evidence": "run_2_scan_0.hex"
+    },
+    {
+      "name": "receipt_run_2_scan_1.hex",
+      "pass": true,
+      "evidence": "run_2_scan_1.hex"
+    },
+    {
+      "name": "observation_user",
+      "pass": true,
+      "evidence": "observation"
+    },
+    {
+      "name": "observation_prior_analysis",
+      "pass": true,
+      "evidence": "r3 analysis"
+    },
+    {
+      "name": "failed_attempt_retained",
+      "pass": true,
+      "evidence": "FAIL"
+    },
+    {
+      "name": "failed_attempt_cause",
+      "pass": true,
+      "evidence": "error event"
+    },
+    {
+      "name": "failed_attempt_no_reset",
+      "pass": true,
+      "evidence": "no reset/scan"
+    },
+    {
+      "name": "retained_build_attempt_01.json",
+      "pass": true,
+      "evidence": "build_attempt_01.json"
+    },
+    {
+      "name": "retained_build_attempt_02.json",
+      "pass": true,
+      "evidence": "build_attempt_02.json"
+    },
+    {
+      "name": "retained_build_attempt_03.json",
+      "pass": true,
+      "evidence": "build_attempt_03.json"
+    },
+    {
+      "name": "retained_preserved_build_20261102_174120.json",
+      "pass": true,
+      "evidence": "preserved_build_20261102_174120.json"
+    },
+    {
+      "name": "stage_result",
+      "pass": true,
+      "evidence": "SELF_CHECK_PASS"
+    },
+    {
+      "name": "evidence_report.md",
+      "pass": true,
+      "evidence": "report.md"
+    },
+    {
+      "name": "evidence_inputs.json",
+      "pass": true,
+      "evidence": "inputs.json"
+    },
+    {
+      "name": "evidence_logs_index.json",
+      "pass": true,
+      "evidence": "logs_index.json"
+    },
+    {
+      "name": "evidence_progress_update.json",
+      "pass": true,
+      "evidence": "progress_update.json"
+    },
+    {
+      "name": "evidence_board_identity.json",
+      "pass": true,
+      "evidence": "board_identity.json"
+    },
+    {
+      "name": "evidence_rework_r4/seal.json",
+      "pass": true,
+      "evidence": "rework_r4/seal.json"
+    },
+    {
+      "name": "evidence_rework_r4/validated_binding.json",
+      "pass": true,
+      "evidence": "rework_r4/validated_binding.json"
+    },
+    {
+      "name": "evidence_rework_r4/physical_identity.json",
+      "pass": true,
+      "evidence": "rework_r4/physical_identity.json"
+    },
+    {
+      "name": "evidence_rework_r4/observations_20261102.json",
+      "pass": true,
+      "evidence": "rework_r4/observations_20261102.json"
+    },
+    {
+      "name": "evidence_rework_r4/change_manifest.json",
+      "pass": true,
+      "evidence": "rework_r4/change_manifest.json"
+    },
+    {
+      "name": "evidence_rework_r4/capture_fix.diff",
+      "pass": true,
+      "evidence": "rework_r4/capture_fix.diff"
+    },
+    {
+      "name": "evidence_rework_r4/controls.command.json",
+      "pass": true,
+      "evidence": "rework_r4/controls.command.json"
+    },
+    {
+      "name": "evidence_rework_r4/controls.stdout.log",
+      "pass": true,
+      "evidence": "rework_r4/controls.stdout.log"
+    },
+    {
+      "name": "evidence_rework_r4/finalize/command.json",
+      "pass": true,
+      "evidence": "rework_r4/finalize/command.json"
+    },
+    {
+      "name": "evidence_rework_r4/finalize/stdout.log",
+      "pass": true,
+      "evidence": "rework_r4/finalize/stdout.log"
+    },
+    {
+      "name": "evidence_rework_r3/build_current.json",
+      "pass": true,
+      "evidence": "rework_r3/build_current.json"
+    },
+    {
+      "name": "evidence_rework_r3/configuration_fix.diff",
+      "pass": true,
+      "evidence": "rework_r3/configuration_fix.diff"
+    },
+    {
+      "name": "evidence_rework_r4/usb_driver_20261102.json",
+      "pass": true,
+      "evidence": "rework_r4/usb_driver_20261102.json"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r3/attempts/capture_20261102_182943_15e90a91/accepted_inputs.json",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r3/attempts/capture_20261102_182943_15e90a91/accepted_inputs.json"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r3/attempts/capture_20261102_182943_15e90a91/entry.tcl",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r3/attempts/capture_20261102_182943_15e90a91/entry.tcl"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r3/attempts/capture_20261102_182943_15e90a91/events.jsonl",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r3/attempts/capture_20261102_182943_15e90a91/events.jsonl"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r3/attempts/capture_20261102_182943_15e90a91/physical_identity.json",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r3/attempts/capture_20261102_182943_15e90a91/physical_identity.json"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r3/attempts/capture_20261102_182943_15e90a91/stderr.log",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r3/attempts/capture_20261102_182943_15e90a91/stderr.log"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r3/attempts/capture_20261102_182943_15e90a91/stdout.log",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r3/attempts/capture_20261102_182943_15e90a91/stdout.log"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r3/attempts/capture_20261102_182943_15e90a91/tool_run.json",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r3/attempts/capture_20261102_182943_15e90a91/tool_run.json"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r3/attempts/capture_20261102_182943_15e90a91/vivado.log",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r3/attempts/capture_20261102_182943_15e90a91/vivado.log"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r3/rebuild.command.json",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r3/rebuild.command.json"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r3/rebuild.stderr.log",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r3/rebuild.stderr.log"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r3/rebuild.stdout.log",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r3/rebuild.stdout.log"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r3/rebuild_from_source.py",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r3/rebuild_from_source.py"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r3/rebuild_pipe.command.json",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r3/rebuild_pipe.command.json"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r3/rebuild_pipe.stderr.log",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r3/rebuild_pipe.stderr.log"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r3/rebuild_pipe.stdout.log",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r3/rebuild_pipe.stdout.log"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r3/rebuild_pipe_resume.command.json",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r3/rebuild_pipe_resume.command.json"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r3/rebuild_pipe_resume.stderr.log",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r3/rebuild_pipe_resume.stderr.log"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r3/rebuild_pipe_resume.stdout.log",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r3/rebuild_pipe_resume.stdout.log"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r3/rebuild_resume.command.json",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r3/rebuild_resume.command.json"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r3/rebuild_resume.stderr.log",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r3/rebuild_resume.stderr.log"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r3/rebuild_resume.stdout.log",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r3/rebuild_resume.stdout.log"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r3/rebuild_resume02.command.json",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r3/rebuild_resume02.command.json"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r3/rebuild_resume02.stderr.log",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r3/rebuild_resume02.stderr.log"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r3/rebuild_resume02.stdout.log",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r3/rebuild_resume02.stdout.log"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/attempts/capture_20261102_183416_de2cae60/accepted_inputs.json",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/attempts/capture_20261102_183416_de2cae60/accepted_inputs.json"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/attempts/capture_20261102_183416_de2cae60/entry.tcl",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/attempts/capture_20261102_183416_de2cae60/entry.tcl"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/attempts/capture_20261102_183416_de2cae60/events.jsonl",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/attempts/capture_20261102_183416_de2cae60/events.jsonl"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/attempts/capture_20261102_183416_de2cae60/physical_identity.json",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/attempts/capture_20261102_183416_de2cae60/physical_identity.json"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/attempts/capture_20261102_183416_de2cae60/run_0_scan_0.hex",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/attempts/capture_20261102_183416_de2cae60/run_0_scan_0.hex"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/attempts/capture_20261102_183416_de2cae60/run_0_scan_1.hex",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/attempts/capture_20261102_183416_de2cae60/run_0_scan_1.hex"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/attempts/capture_20261102_183416_de2cae60/run_1_scan_0.hex",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/attempts/capture_20261102_183416_de2cae60/run_1_scan_0.hex"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/attempts/capture_20261102_183416_de2cae60/run_1_scan_1.hex",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/attempts/capture_20261102_183416_de2cae60/run_1_scan_1.hex"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/attempts/capture_20261102_183416_de2cae60/run_2_scan_0.hex",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/attempts/capture_20261102_183416_de2cae60/run_2_scan_0.hex"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/attempts/capture_20261102_183416_de2cae60/run_2_scan_1.hex",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/attempts/capture_20261102_183416_de2cae60/run_2_scan_1.hex"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/attempts/capture_20261102_183416_de2cae60/stderr.log",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/attempts/capture_20261102_183416_de2cae60/stderr.log"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/attempts/capture_20261102_183416_de2cae60/stdout.log",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/attempts/capture_20261102_183416_de2cae60/stdout.log"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/attempts/capture_20261102_183416_de2cae60/tool_run.json",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/attempts/capture_20261102_183416_de2cae60/tool_run.json"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/attempts/capture_20261102_183416_de2cae60/vivado.log",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/attempts/capture_20261102_183416_de2cae60/vivado.log"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/attempts/preflight_20261102_183328_87bceaaa/accepted_inputs.json",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/attempts/preflight_20261102_183328_87bceaaa/accepted_inputs.json"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/attempts/preflight_20261102_183328_87bceaaa/discovery.json",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/attempts/preflight_20261102_183328_87bceaaa/discovery.json"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/attempts/preflight_20261102_183328_87bceaaa/entry.tcl",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/attempts/preflight_20261102_183328_87bceaaa/entry.tcl"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/attempts/preflight_20261102_183328_87bceaaa/events.jsonl",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/attempts/preflight_20261102_183328_87bceaaa/events.jsonl"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/attempts/preflight_20261102_183328_87bceaaa/stderr.log",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/attempts/preflight_20261102_183328_87bceaaa/stderr.log"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/attempts/preflight_20261102_183328_87bceaaa/stdout.log",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/attempts/preflight_20261102_183328_87bceaaa/stdout.log"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/attempts/preflight_20261102_183328_87bceaaa/tool_run.json",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/attempts/preflight_20261102_183328_87bceaaa/tool_run.json"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/attempts/preflight_20261102_183328_87bceaaa/vivado.log",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/attempts/preflight_20261102_183328_87bceaaa/vivado.log"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/cli_calls/20261102_183323_check_be3c8d/command.json",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/cli_calls/20261102_183323_check_be3c8d/command.json"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/cli_calls/20261102_183323_check_be3c8d/stderr.log",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/cli_calls/20261102_183323_check_be3c8d/stderr.log"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/cli_calls/20261102_183323_check_be3c8d/stdout.log",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/cli_calls/20261102_183323_check_be3c8d/stdout.log"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/cli_calls/20261102_183327_preflight_2dd652/command.json",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/cli_calls/20261102_183327_preflight_2dd652/command.json"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/cli_calls/20261102_183327_preflight_2dd652/stderr.log",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/cli_calls/20261102_183327_preflight_2dd652/stderr.log"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/cli_calls/20261102_183327_preflight_2dd652/stdout.log",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/cli_calls/20261102_183327_preflight_2dd652/stdout.log"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/cli_calls/20261102_183415_capture_232bfc/command.json",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/cli_calls/20261102_183415_capture_232bfc/command.json"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/cli_calls/20261102_183415_capture_232bfc/stderr.log",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/cli_calls/20261102_183415_capture_232bfc/stderr.log"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/cli_calls/20261102_183415_capture_232bfc/stdout.log",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/cli_calls/20261102_183415_capture_232bfc/stdout.log"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/cli_calls/20261102_184606_report_a269de/command.json",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/cli_calls/20261102_184606_report_a269de/command.json"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/cli_calls/20261102_184606_report_a269de/stderr.log",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/cli_calls/20261102_184606_report_a269de/stderr.log"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/cli_calls/20261102_184606_report_a269de/stdout.log",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/cli_calls/20261102_184606_report_a269de/stdout.log"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/controls.command.json",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/controls.command.json"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/controls.stderr.log",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/controls.stderr.log"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/controls.stdout.log",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/controls.stdout.log"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/finalize/command.json",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/finalize/command.json"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/finalize/stderr.log",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/finalize/stderr.log"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/finalize/stdout.log",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/finalize/stdout.log"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/ambiguous_probe/events.jsonl",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/ambiguous_probe/events.jsonl"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/failed/events.jsonl",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/failed/events.jsonl"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/invalid_word/events.jsonl",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/invalid_word/events.jsonl"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/invalid_word/run_0_scan_0.hex",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/invalid_word/run_0_scan_0.hex"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/multiple_devices/events.jsonl",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/multiple_devices/events.jsonl"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/multiple_targets/events.jsonl",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/multiple_targets/events.jsonl"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/no_target/events.jsonl",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/no_target/events.jsonl"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/normal/events.jsonl",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/normal/events.jsonl"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/normal/run_0_scan_0.hex",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/normal/run_0_scan_0.hex"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/normal/run_0_scan_1.hex",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/normal/run_0_scan_1.hex"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/normal/run_1_scan_0.hex",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/normal/run_1_scan_0.hex"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/normal/run_1_scan_1.hex",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/normal/run_1_scan_1.hex"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/normal/run_2_scan_0.hex",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/normal/run_2_scan_0.hex"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/normal/run_2_scan_1.hex",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/normal/run_2_scan_1.hex"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/NOT_HARDWARE.txt",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/NOT_HARDWARE.txt"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/partial_read/events.jsonl",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/partial_read/events.jsonl"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/partial_read/run_0_scan_0.hex",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/partial_read/run_0_scan_0.hex"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/reset_not_clear/events.jsonl",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/reset_not_clear/events.jsonl"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/results.json",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/results.json"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/synthetic_identity.json",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/synthetic_identity.json"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/timeout/events.jsonl",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/timeout/events.jsonl"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/unconfirmed/events.jsonl",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/unconfirmed/events.jsonl"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/unstable/events.jsonl",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/unstable/events.jsonl"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/unstable/run_0_scan_0.hex",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/unstable/run_0_scan_0.hex"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/unstable/run_0_scan_1.hex",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/unstable/run_0_scan_1.hex"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/unstable/run_1_scan_0.hex",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/unstable/run_1_scan_0.hex"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/unstable/run_1_scan_1.hex",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/unstable/run_1_scan_1.hex"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/unstable/run_2_scan_0.hex",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/unstable/run_2_scan_0.hex"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/unstable/run_2_scan_1.hex",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/unstable/run_2_scan_1.hex"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/wrong_config/events.jsonl",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/wrong_config/events.jsonl"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/wrong_device/events.jsonl",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/wrong_device/events.jsonl"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/wrong_direction/events.jsonl",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/wrong_direction/events.jsonl"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/wrong_pcb/events.jsonl",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/wrong_pcb/events.jsonl"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/wrong_port/events.jsonl",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/wrong_port/events.jsonl"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/wrong_serial/events.jsonl",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/wrong_serial/events.jsonl"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/wrong_target_uid/events.jsonl",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/wrong_target_uid/events.jsonl"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/wrong_width/events.jsonl",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/controls/mock_7439c7a0/wrong_width/events.jsonl"
+    },
+    {
+      "name": "index_docs/hardware_baseline_zh.md",
+      "pass": true,
+      "evidence": "docs/hardware_baseline_zh.md"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r3/authorization.json",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r3/authorization.json"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r3/before_manifest.json",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r3/before_manifest.json"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r3/build_current.json",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r3/build_current.json"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r3/configuration_fix.diff",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r3/configuration_fix.diff"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r3/physical_identity.json",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r3/physical_identity.json"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r3/seal.json",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r3/seal.json"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r3/validated_binding.json",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r3/validated_binding.json"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/authorization.json",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/authorization.json"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/before_manifest.json",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/before_manifest.json"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/capture_fix.diff",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/capture_fix.diff"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/change_manifest.json",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/change_manifest.json"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/observations_20261102.json",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/observations_20261102.json"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/physical_identity.json",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/physical_identity.json"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/seal.json",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/seal.json"
+    },
+    {
+      "name": "index_evidence/agent_steps/step_05/rework_r4/validated_binding.json",
+      "pass": true,
+      "evidence": "evidence/agent_steps/step_05/rework_r4/validated_binding.json"
+    },
+    {
+      "name": "index_evidence/vendor/es1_board.json",
+      "pass": true,
+      "evidence": "evidence/vendor/es1_board.json"
+    },
+    {
+      "name": "index_evidence/vendor/es1_hardware.zip",
+      "pass": true,
+      "evidence": "evidence/vendor/es1_hardware.zip"
+    },
+    {
+      "name": "index_evidence/vendor/z7_lite_r11.pdf",
+      "pass": true,
+      "evidence": "evidence/vendor/z7_lite_r11.pdf"
+    },
+    {
+      "name": "index_migration/current.json",
+      "pass": true,
+      "evidence": "migration/current.json"
+    },
+    {
+      "name": "index_report/hardware/capture_20261102_183416_de2cae60/report_387fc78b/capture_receipt.json",
+      "pass": true,
+      "evidence": "report/hardware/capture_20261102_183416_de2cae60/report_387fc78b/capture_receipt.json"
+    },
+    {
+      "name": "index_report/hardware/capture_20261102_183416_de2cae60/report_387fc78b/results.csv",
+      "pass": true,
+      "evidence": "report/hardware/capture_20261102_183416_de2cae60/report_387fc78b/results.csv"
+    },
+    {
+      "name": "index_report/hardware/capture_20261102_183416_de2cae60/report_387fc78b/results.json",
+      "pass": true,
+      "evidence": "report/hardware/capture_20261102_183416_de2cae60/report_387fc78b/results.json"
+    },
+    {
+      "name": "index_report/hardware/README.md",
+      "pass": true,
+      "evidence": "report/hardware/README.md"
+    },
+    {
+      "name": "index_report/hardware/status.json",
+      "pass": true,
+      "evidence": "report/hardware/status.json"
+    },
+    {
+      "name": "progress_after",
+      "pass": true,
+      "evidence": "1e01662ff6155ad09ade53b21e68dbebcfe7bfd1fa89dc26d0989239cf1b0fe8"
+    },
+    {
+      "name": "progress_before",
+      "pass": true,
+      "evidence": "c5dc27dde33b3cd978859c8fe81a2c55db3c406a001ab6500d055ebe490bfe06"
+    },
+    {
+      "name": "progress_acceptance_entry",
+      "pass": true,
+      "evidence": "acceptance entry"
+    },
+    {
+      "name": "no_s06",
+      "pass": true,
+      "evidence": "step_06"
+    },
+    {
+      "name": "historical_s04",
+      "pass": true,
+      "evidence": "S04 acceptance"
+    },
+    {
+      "name": "authorization",
+      "pass": true,
+      "evidence": "Full S05: CRC CFGBVS=VCCO and CONFIG_VOLTAGE=3.3; ES1 physical-document gate adaptation; affected S03/S04 revalidation; only after gates pass JTAG programming and three VIO auxiliary hardware reset/captures on USB serial 210241793374"
+    },
+    {
+      "name": "identity_board",
+      "pass": true,
+      "evidence": "Z7-LITE_ES1"
+    },
+    {
+      "name": "identity_schematic",
+      "pass": true,
+      "evidence": "schematic"
+    },
+    {
+      "name": "identity_archive",
+      "pass": true,
+      "evidence": "archive"
+    },
+    {
+      "name": "capture_gate_Z7-LITE_ES1",
+      "pass": true,
+      "evidence": "Z7-LITE_ES1"
+    },
+    {
+      "name": "capture_gate_210241793374",
+      "pass": true,
+      "evidence": "210241793374"
+    },
+    {
+      "name": "capture_gate_VCCO",
+      "pass": true,
+      "evidence": "VCCO"
+    },
+    {
+      "name": "capture_gate_3.3",
+      "pass": true,
+      "evidence": "3.3"
+    },
+    {
+      "name": "driver",
+      "pass": true,
+      "evidence": "2.12.36.20"
+    },
+    {
+      "name": "board_identity_historical",
+      "pass": true,
+      "evidence": "pre-authorization snapshot; not current status"
+    }
+  ]
+}

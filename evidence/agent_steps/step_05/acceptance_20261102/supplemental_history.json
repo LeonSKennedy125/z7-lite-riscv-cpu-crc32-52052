@@ -1,0 +1,106 @@
+{
+  "scope": "S05 history retained outside the final r4 capture history; hashes allow an auditor to find it from this acceptance record",
+  "r3_failed_capture": {
+    "attempt": {
+      "path": "evidence/agent_steps/step_05/rework_r3/attempts/capture_20261102_182943_15e90a91/tool_run.json",
+      "sha256": "6d0e859dbbdc4eddfea716b17fad7f2bb7e7af63e1699feaa100250d9231398f",
+      "bytes": 2735
+    },
+    "events": {
+      "path": "evidence/agent_steps/step_05/rework_r3/attempts/capture_20261102_182943_15e90a91/events.jsonl",
+      "sha256": "194e3532d7803a45f24045a6dbae14f3d537e0f21cc08e91206fbe2f1d9a32fe",
+      "bytes": 4117
+    },
+    "reason": "Vivado Designutils 20-1474 rejected a one-character OUTPUT_VALUE for the 7-bit HEX read_index probe before any reset or scan",
+    "reset_or_scan_events": 0,
+    "raw_scans": 0
+  },
+  "r3_preflight": {
+    "attempt": {
+      "path": "evidence/agent_steps/step_05/rework_r3/attempts/preflight_20261102_182844_a4546e6e/tool_run.json",
+      "sha256": "67ca6a93694cf47ad3b13c185aaf2e007f358cdfe82694bd6c953665f1f4c41f",
+      "bytes": 2040
+    },
+    "events": {
+      "path": "evidence/agent_steps/step_05/rework_r3/attempts/preflight_20261102_182844_a4546e6e/events.jsonl",
+      "sha256": "593164ba4c2c23a14e141c8df5ccbaf977cb7e3620153b942c8e8eb02185822e",
+      "bytes": 1677
+    },
+    "note": "This is the preflight named in the r4 physical_identity connection_evidence text; the capture itself used the r4 preflight 20261102_183328_87bceaaa."
+  },
+  "r3_controls": {
+    "command": {
+      "path": "evidence/agent_steps/step_05/rework_r3/controls.command.json",
+      "sha256": "a7759e0096e1fce4d55faec0519fc28efd5ccbd943c46d74b21e9c0675bd921f",
+      "bytes": 821
+    },
+    "stdout": {
+      "path": "evidence/agent_steps/step_05/rework_r3/controls.stdout.log",
+      "sha256": "3b6c10a2aee9b463c2f7f76a337c52354c2b99bbba85aed9c2b83139b3bad516",
+      "bytes": 187
+    },
+    "stderr": {
+      "path": "evidence/agent_steps/step_05/rework_r3/controls.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": "43 controls; synthetic fixtures only"
+  },
+  "r1_failed_preflight": {
+    "attempt": {
+      "path": "evidence/agent_steps/step_05/rework_r1/attempts/preflight_20261031_115033_6a43d006/tool_run.json",
+      "sha256": "cc84bc6bf4c52fa50ce4e6f7c3578757d284704691fc5a0146f91f9d6aab301d",
+      "bytes": 1947
+    },
+    "events": {
+      "path": "evidence/agent_steps/step_05/rework_r1/attempts/preflight_20261031_115033_6a43d006/events.jsonl",
+      "sha256": "abe690ca480164ab143cf1e886e1afce64db4460d891b7c403b6627c0ebc7111",
+      "bytes": 1188
+    }
+  },
+  "preserved_build_alias": {
+    "preserved": {
+      "path": "evidence/agent_steps/step_05/rework_r3/preserved_build_20261102_174120.json",
+      "sha256": "e376a37f0ceabf0dcc8f5d9488b9a4757345d166fc4a91d84337c8a4bcd1ba1b",
+      "bytes": 3984
+    },
+    "attempt_03": {
+      "path": "evidence/agent_steps/step_05/rework_r3/build_attempt_03.json",
+      "sha256": "e376a37f0ceabf0dcc8f5d9488b9a4757345d166fc4a91d84337c8a4bcd1ba1b",
+      "bytes": 3984
+    },
+    "note": "byte-identical alias/copy of the same failed build attempt, not a fourth independent attempt"
+  },
+  "physical_identity_label": {
+    "file": {
+      "path": "evidence/agent_steps/step_05/rework_r4/physical_identity.json",
+      "sha256": "4bcdbfff97e49389b15d012bace0e36a2c13c97f0a8d401deeb3329a91a91edd",
+      "bytes": 1693
+    },
+    "note": "connection_evidence text names the r3 preflight 20261102_182844_a4546e6e as r4; the actual r4 preflight is 20261102_183328_87bceaaa. Bytes are preserved because the capture receipt binds the attempt copy."
+  },
+  "board_identity_pre_authorization": {
+    "file": {
+      "path": "evidence/agent_steps/step_05/board_identity.json",
+      "sha256": "2d3d86b1fdc7e8f22e7c4153449d9e7dcafb325ee06b90d3456f0d0766f8e782",
+      "bytes": 4959
+    },
+    "note": "snapshot from before the 2026-11-02 full S05 authorization; its GND/1.8 blocked status is historical, not the current build status."
+  },
+  "validated_binding_pre_capture": {
+    "file": {
+      "path": "evidence/agent_steps/step_05/rework_r4/validated_binding.json",
+      "sha256": "4c041803febcb90faf00cba2bab0d59f43c8e84f409e228d2c15083e55d97e75",
+      "bytes": 3743
+    },
+    "note": "pre-capture source binding; hardware_live_verified=false is a source-binding field, not the capture result. The capture receipt/events are the hardware evidence."
+  },
+  "latest_capture_pointer": {
+    "file": {
+      "path": "evidence/agent_steps/step_05/rework_r4/latest_capture.json",
+      "sha256": "400f666cee0b794c8d1251a9701b7c563a26301020072faa99af65f79130adf0",
+      "bytes": 243
+    },
+    "note": "points to the pre-observation report CLI exit 3; the final report CLI is cli_calls/20261102_184606_report_a269de with exit 0 and results report_387fc78b."
+  }
+}

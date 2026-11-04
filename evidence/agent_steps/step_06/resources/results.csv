@@ -1,0 +1,8 @@
+metric,resource_baseline,accelerated,accelerated_minus_baseline
+LUT,6130,6560,430
+FF,7694,7892,198
+BRAM36_equivalent,20,20,0
+DSP,0,0,0
+WNS_ns,2.961,2.824,-0.137
+WHS_ns,0.037,0.044,0.006999999999999999
+WPWS_ns,7.0,7.0,0.0

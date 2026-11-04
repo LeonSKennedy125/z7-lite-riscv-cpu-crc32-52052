@@ -1,0 +1,19 @@
+{
+  "argv": [
+    "C:\\Users\\21606\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "skill/scripts/check_manifest.py",
+    "--root",
+    "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\delivery\\source_candidate_s07_20261102",
+    "--manifest",
+    "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\delivery\\source_candidate_s07_20261102\\release_manifest.json",
+    "--json",
+    "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\evidence\\agent_steps\\step_07\\acceptance_20261103\\manifest_verify.json"
+  ],
+  "cwd": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc",
+  "exit_code": 0,
+  "stdout": "MANIFEST_PASS: 127 files, missing 0, mismatch 0, extra 0\n",
+  "stderr": ""
+}

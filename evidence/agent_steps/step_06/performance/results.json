@@ -1,0 +1,2566 @@
+{
+  "schema": 1,
+  "step": "S06",
+  "source": "real S05 R4 JTAG/VIO mailbox; six 104-word scans",
+  "active_build": "local_builds/s05_es1_20261102_173954_d834d5",
+  "capture_attempt": "evidence/agent_steps/step_05/rework_r4/attempts/capture_20261102_183416_de2cae60",
+  "bit_sha256": "717bd8cfddeecf7753c8adcff68e0ec0072c0b9ca283c28613c2ac0dd3788d5b",
+  "ltx_sha256": "facc5a5a95599c155598321dcd21d34b5d32f14b810fd7b6ef086fb8416ce6ba",
+  "clock_hz": 50000000,
+  "cycle_ns": 20,
+  "time_conversion": "cycles / 50 microseconds; nominal board clock, not an independent oscillator calibration",
+  "run_count": 3,
+  "case_count": 12,
+  "CRC_matches": 36,
+  "failure_counts": [
+    0,
+    0,
+    0
+  ],
+  "primary_timing_scope": "ticks bracket the complete hardware_crc call: ABORT/configuration, CPU loads and MMIO feeding, tail packing, polling, status/error checks, result read, return and tick sampling overhead",
+  "engine_scope": "START acceptance through final-byte processing; includes CPU feeding gaps; not pure isolated CRC compute time",
+  "statistics_policy": "All three runs shown. Mean/min/max and signed differences retained; no best-run selection or timing subtraction.",
+  "timing_excludes": "Payload generation, bitwise reference CRC, mailbox writes and JTAG host scan are outside both timed calls.",
+  "power_measurement": null,
+  "energy_efficiency": null,
+  "rows": [
+    {
+      "run": 1,
+      "case": 0,
+      "bytes": 0,
+      "input_kind": "xorshift32",
+      "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_crc": "00000000",
+      "software_crc": "00000000",
+      "hardware_crc": "00000000",
+      "software_cycles": 21,
+      "hardware_total_cycles": 55,
+      "engine_session_cycles": 0,
+      "software_us": 0.42,
+      "hardware_total_us": 1.1,
+      "engine_session_us": 0.0,
+      "speedup": 0.38181818181818183,
+      "software_minus_hardware_cycles": -34
+    },
+    {
+      "run": 1,
+      "case": 1,
+      "bytes": 9,
+      "input_kind": "ASCII 123456789",
+      "data_sha256": "15e2b0d3c33891ebb0f1ef609ec419420c20e320ce94c65fbc8c3312448eb225",
+      "expected_crc": "cbf43926",
+      "software_crc": "cbf43926",
+      "hardware_crc": "cbf43926",
+      "software_cycles": 174,
+      "hardware_total_cycles": 79,
+      "engine_session_cycles": 39,
+      "software_us": 3.48,
+      "hardware_total_us": 1.58,
+      "engine_session_us": 0.78,
+      "speedup": 2.2025316455696204,
+      "software_minus_hardware_cycles": 95
+    },
+    {
+      "run": 1,
+      "case": 2,
+      "bytes": 1,
+      "input_kind": "xorshift32",
+      "data_sha256": "de2e331d891ae267a7009cb45b4e8830f170e0c937288ea2731a1941c7a53b0d",
+      "expected_crc": "0bd4b551",
+      "software_crc": "0bd4b551",
+      "hardware_crc": "0bd4b551",
+      "software_cycles": 38,
+      "hardware_total_cycles": 59,
+      "engine_session_cycles": 19,
+      "software_us": 0.76,
+      "hardware_total_us": 1.18,
+      "engine_session_us": 0.38,
+      "speedup": 0.6440677966101694,
+      "software_minus_hardware_cycles": -21
+    },
+    {
+      "run": 1,
+      "case": 3,
+      "bytes": 2,
+      "input_kind": "xorshift32",
+      "data_sha256": "ea2bc1a78841c059974456045b4f7ad12a787bebb92ae6141c35d20d23fd462e",
+      "expected_crc": "9fbb5a60",
+      "software_crc": "9fbb5a60",
+      "hardware_crc": "9fbb5a60",
+      "software_cycles": 55,
+      "hardware_total_cycles": 64,
+      "engine_session_cycles": 24,
+      "software_us": 1.1,
+      "hardware_total_us": 1.28,
+      "engine_session_us": 0.48,
+      "speedup": 0.859375,
+      "software_minus_hardware_cycles": -9
+    },
+    {
+      "run": 1,
+      "case": 4,
+      "bytes": 3,
+      "input_kind": "xorshift32",
+      "data_sha256": "8e9b6f987397bbab52f68812f4f23d8d8f64d49fabacf1e24c9061688b8deec3",
+      "expected_crc": "c747799e",
+      "software_crc": "c747799e",
+      "hardware_crc": "c747799e",
+      "software_cycles": 72,
+      "hardware_total_cycles": 74,
+      "engine_session_cycles": 34,
+      "software_us": 1.44,
+      "hardware_total_us": 1.48,
+      "engine_session_us": 0.68,
+      "speedup": 0.972972972972973,
+      "software_minus_hardware_cycles": -2
+    },
+    {
+      "run": 1,
+      "case": 5,
+      "bytes": 4,
+      "input_kind": "xorshift32",
+      "data_sha256": "dd35f2323351e7fcef6d0474e299ff1e017c1a5b3f7e7e82328a2f68e443bcb7",
+      "expected_crc": "cf72b890",
+      "software_crc": "cf72b890",
+      "hardware_crc": "cf72b890",
+      "software_cycles": 89,
+      "hardware_total_cycles": 65,
+      "engine_session_cycles": 20,
+      "software_us": 1.78,
+      "hardware_total_us": 1.3,
+      "engine_session_us": 0.4,
+      "speedup": 1.3692307692307693,
+      "software_minus_hardware_cycles": 24
+    },
+    {
+      "run": 1,
+      "case": 6,
+      "bytes": 7,
+      "input_kind": "xorshift32",
+      "data_sha256": "94a0137c6c6968847472fbd0abccc3310e3ed75683eaa9220159aab6448fc8e0",
+      "expected_crc": "b310bb4b",
+      "software_crc": "b310bb4b",
+      "hardware_crc": "b310bb4b",
+      "software_cycles": 140,
+      "hardware_total_cycles": 84,
+      "engine_session_cycles": 44,
+      "software_us": 2.8,
+      "hardware_total_us": 1.68,
+      "engine_session_us": 0.88,
+      "speedup": 1.6666666666666667,
+      "software_minus_hardware_cycles": 56
+    },
+    {
+      "run": 1,
+      "case": 7,
+      "bytes": 16,
+      "input_kind": "xorshift32",
+      "data_sha256": "383da1f3bfa63b6610de13e531b909de2c9529828f9ca2f3e210be92b4a0d5b4",
+      "expected_crc": "16d58768",
+      "software_crc": "16d58768",
+      "hardware_crc": "16d58768",
+      "software_cycles": 293,
+      "hardware_total_cycles": 95,
+      "engine_session_cycles": 50,
+      "software_us": 5.86,
+      "hardware_total_us": 1.9,
+      "engine_session_us": 1.0,
+      "speedup": 3.0842105263157893,
+      "software_minus_hardware_cycles": 198
+    },
+    {
+      "run": 1,
+      "case": 8,
+      "bytes": 64,
+      "input_kind": "xorshift32",
+      "data_sha256": "23de77bc2db8bdd257e00e705272297b07425893154d2713a333e904eb5c15ac",
+      "expected_crc": "3f9d3d2e",
+      "software_crc": "3f9d3d2e",
+      "hardware_crc": "3f9d3d2e",
+      "software_cycles": 1109,
+      "hardware_total_cycles": 215,
+      "engine_session_cycles": 170,
+      "software_us": 22.18,
+      "hardware_total_us": 4.3,
+      "engine_session_us": 3.4,
+      "speedup": 5.158139534883721,
+      "software_minus_hardware_cycles": 894
+    },
+    {
+      "run": 1,
+      "case": 9,
+      "bytes": 256,
+      "input_kind": "xorshift32",
+      "data_sha256": "a6132e8e14616c7d58f2aa5466bdd44a09a6136aa8576dc97d48eced21687027",
+      "expected_crc": "21bf9c9a",
+      "software_crc": "21bf9c9a",
+      "hardware_crc": "21bf9c9a",
+      "software_cycles": 4373,
+      "hardware_total_cycles": 695,
+      "engine_session_cycles": 650,
+      "software_us": 87.46,
+      "hardware_total_us": 13.9,
+      "engine_session_us": 13.0,
+      "speedup": 6.292086330935252,
+      "software_minus_hardware_cycles": 3678
+    },
+    {
+      "run": 1,
+      "case": 10,
+      "bytes": 1024,
+      "input_kind": "xorshift32",
+      "data_sha256": "db42f2dadc550467d5bda4de776b4437f8d3d0af32c0447a462626c12e3793cd",
+      "expected_crc": "a041c516",
+      "software_crc": "a041c516",
+      "hardware_crc": "a041c516",
+      "software_cycles": 17429,
+      "hardware_total_cycles": 2615,
+      "engine_session_cycles": 2570,
+      "software_us": 348.58,
+      "hardware_total_us": 52.3,
+      "engine_session_us": 51.4,
+      "speedup": 6.6650095602294455,
+      "software_minus_hardware_cycles": 14814
+    },
+    {
+      "run": 1,
+      "case": 11,
+      "bytes": 4096,
+      "input_kind": "xorshift32",
+      "data_sha256": "8128b9a48f8c2ebbda642595dfe4b42b0f278e036e90400f4db840ee75e4ece6",
+      "expected_crc": "1528b2fa",
+      "software_crc": "1528b2fa",
+      "hardware_crc": "1528b2fa",
+      "software_cycles": 69653,
+      "hardware_total_cycles": 10295,
+      "engine_session_cycles": 10250,
+      "software_us": 1393.06,
+      "hardware_total_us": 205.9,
+      "engine_session_us": 205.0,
+      "speedup": 6.765711510441962,
+      "software_minus_hardware_cycles": 59358
+    },
+    {
+      "run": 2,
+      "case": 0,
+      "bytes": 0,
+      "input_kind": "xorshift32",
+      "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_crc": "00000000",
+      "software_crc": "00000000",
+      "hardware_crc": "00000000",
+      "software_cycles": 21,
+      "hardware_total_cycles": 55,
+      "engine_session_cycles": 0,
+      "software_us": 0.42,
+      "hardware_total_us": 1.1,
+      "engine_session_us": 0.0,
+      "speedup": 0.38181818181818183,
+      "software_minus_hardware_cycles": -34
+    },
+    {
+      "run": 2,
+      "case": 1,
+      "bytes": 9,
+      "input_kind": "ASCII 123456789",
+      "data_sha256": "15e2b0d3c33891ebb0f1ef609ec419420c20e320ce94c65fbc8c3312448eb225",
+      "expected_crc": "cbf43926",
+      "software_crc": "cbf43926",
+      "hardware_crc": "cbf43926",
+      "software_cycles": 174,
+      "hardware_total_cycles": 79,
+      "engine_session_cycles": 39,
+      "software_us": 3.48,
+      "hardware_total_us": 1.58,
+      "engine_session_us": 0.78,
+      "speedup": 2.2025316455696204,
+      "software_minus_hardware_cycles": 95
+    },
+    {
+      "run": 2,
+      "case": 2,
+      "bytes": 1,
+      "input_kind": "xorshift32",
+      "data_sha256": "de2e331d891ae267a7009cb45b4e8830f170e0c937288ea2731a1941c7a53b0d",
+      "expected_crc": "0bd4b551",
+      "software_crc": "0bd4b551",
+      "hardware_crc": "0bd4b551",
+      "software_cycles": 38,
+      "hardware_total_cycles": 59,
+      "engine_session_cycles": 19,
+      "software_us": 0.76,
+      "hardware_total_us": 1.18,
+      "engine_session_us": 0.38,
+      "speedup": 0.6440677966101694,
+      "software_minus_hardware_cycles": -21
+    },
+    {
+      "run": 2,
+      "case": 3,
+      "bytes": 2,
+      "input_kind": "xorshift32",
+      "data_sha256": "ea2bc1a78841c059974456045b4f7ad12a787bebb92ae6141c35d20d23fd462e",
+      "expected_crc": "9fbb5a60",
+      "software_crc": "9fbb5a60",
+      "hardware_crc": "9fbb5a60",
+      "software_cycles": 55,
+      "hardware_total_cycles": 64,
+      "engine_session_cycles": 24,
+      "software_us": 1.1,
+      "hardware_total_us": 1.28,
+      "engine_session_us": 0.48,
+      "speedup": 0.859375,
+      "software_minus_hardware_cycles": -9
+    },
+    {
+      "run": 2,
+      "case": 4,
+      "bytes": 3,
+      "input_kind": "xorshift32",
+      "data_sha256": "8e9b6f987397bbab52f68812f4f23d8d8f64d49fabacf1e24c9061688b8deec3",
+      "expected_crc": "c747799e",
+      "software_crc": "c747799e",
+      "hardware_crc": "c747799e",
+      "software_cycles": 72,
+      "hardware_total_cycles": 74,
+      "engine_session_cycles": 34,
+      "software_us": 1.44,
+      "hardware_total_us": 1.48,
+      "engine_session_us": 0.68,
+      "speedup": 0.972972972972973,
+      "software_minus_hardware_cycles": -2
+    },
+    {
+      "run": 2,
+      "case": 5,
+      "bytes": 4,
+      "input_kind": "xorshift32",
+      "data_sha256": "dd35f2323351e7fcef6d0474e299ff1e017c1a5b3f7e7e82328a2f68e443bcb7",
+      "expected_crc": "cf72b890",
+      "software_crc": "cf72b890",
+      "hardware_crc": "cf72b890",
+      "software_cycles": 89,
+      "hardware_total_cycles": 65,
+      "engine_session_cycles": 20,
+      "software_us": 1.78,
+      "hardware_total_us": 1.3,
+      "engine_session_us": 0.4,
+      "speedup": 1.3692307692307693,
+      "software_minus_hardware_cycles": 24
+    },
+    {
+      "run": 2,
+      "case": 6,
+      "bytes": 7,
+      "input_kind": "xorshift32",
+      "data_sha256": "94a0137c6c6968847472fbd0abccc3310e3ed75683eaa9220159aab6448fc8e0",
+      "expected_crc": "b310bb4b",
+      "software_crc": "b310bb4b",
+      "hardware_crc": "b310bb4b",
+      "software_cycles": 140,
+      "hardware_total_cycles": 84,
+      "engine_session_cycles": 44,
+      "software_us": 2.8,
+      "hardware_total_us": 1.68,
+      "engine_session_us": 0.88,
+      "speedup": 1.6666666666666667,
+      "software_minus_hardware_cycles": 56
+    },
+    {
+      "run": 2,
+      "case": 7,
+      "bytes": 16,
+      "input_kind": "xorshift32",
+      "data_sha256": "383da1f3bfa63b6610de13e531b909de2c9529828f9ca2f3e210be92b4a0d5b4",
+      "expected_crc": "16d58768",
+      "software_crc": "16d58768",
+      "hardware_crc": "16d58768",
+      "software_cycles": 293,
+      "hardware_total_cycles": 95,
+      "engine_session_cycles": 50,
+      "software_us": 5.86,
+      "hardware_total_us": 1.9,
+      "engine_session_us": 1.0,
+      "speedup": 3.0842105263157893,
+      "software_minus_hardware_cycles": 198
+    },
+    {
+      "run": 2,
+      "case": 8,
+      "bytes": 64,
+      "input_kind": "xorshift32",
+      "data_sha256": "23de77bc2db8bdd257e00e705272297b07425893154d2713a333e904eb5c15ac",
+      "expected_crc": "3f9d3d2e",
+      "software_crc": "3f9d3d2e",
+      "hardware_crc": "3f9d3d2e",
+      "software_cycles": 1109,
+      "hardware_total_cycles": 215,
+      "engine_session_cycles": 170,
+      "software_us": 22.18,
+      "hardware_total_us": 4.3,
+      "engine_session_us": 3.4,
+      "speedup": 5.158139534883721,
+      "software_minus_hardware_cycles": 894
+    },
+    {
+      "run": 2,
+      "case": 9,
+      "bytes": 256,
+      "input_kind": "xorshift32",
+      "data_sha256": "a6132e8e14616c7d58f2aa5466bdd44a09a6136aa8576dc97d48eced21687027",
+      "expected_crc": "21bf9c9a",
+      "software_crc": "21bf9c9a",
+      "hardware_crc": "21bf9c9a",
+      "software_cycles": 4373,
+      "hardware_total_cycles": 695,
+      "engine_session_cycles": 650,
+      "software_us": 87.46,
+      "hardware_total_us": 13.9,
+      "engine_session_us": 13.0,
+      "speedup": 6.292086330935252,
+      "software_minus_hardware_cycles": 3678
+    },
+    {
+      "run": 2,
+      "case": 10,
+      "bytes": 1024,
+      "input_kind": "xorshift32",
+      "data_sha256": "db42f2dadc550467d5bda4de776b4437f8d3d0af32c0447a462626c12e3793cd",
+      "expected_crc": "a041c516",
+      "software_crc": "a041c516",
+      "hardware_crc": "a041c516",
+      "software_cycles": 17429,
+      "hardware_total_cycles": 2615,
+      "engine_session_cycles": 2570,
+      "software_us": 348.58,
+      "hardware_total_us": 52.3,
+      "engine_session_us": 51.4,
+      "speedup": 6.6650095602294455,
+      "software_minus_hardware_cycles": 14814
+    },
+    {
+      "run": 2,
+      "case": 11,
+      "bytes": 4096,
+      "input_kind": "xorshift32",
+      "data_sha256": "8128b9a48f8c2ebbda642595dfe4b42b0f278e036e90400f4db840ee75e4ece6",
+      "expected_crc": "1528b2fa",
+      "software_crc": "1528b2fa",
+      "hardware_crc": "1528b2fa",
+      "software_cycles": 69653,
+      "hardware_total_cycles": 10295,
+      "engine_session_cycles": 10250,
+      "software_us": 1393.06,
+      "hardware_total_us": 205.9,
+      "engine_session_us": 205.0,
+      "speedup": 6.765711510441962,
+      "software_minus_hardware_cycles": 59358
+    },
+    {
+      "run": 3,
+      "case": 0,
+      "bytes": 0,
+      "input_kind": "xorshift32",
+      "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_crc": "00000000",
+      "software_crc": "00000000",
+      "hardware_crc": "00000000",
+      "software_cycles": 21,
+      "hardware_total_cycles": 55,
+      "engine_session_cycles": 0,
+      "software_us": 0.42,
+      "hardware_total_us": 1.1,
+      "engine_session_us": 0.0,
+      "speedup": 0.38181818181818183,
+      "software_minus_hardware_cycles": -34
+    },
+    {
+      "run": 3,
+      "case": 1,
+      "bytes": 9,
+      "input_kind": "ASCII 123456789",
+      "data_sha256": "15e2b0d3c33891ebb0f1ef609ec419420c20e320ce94c65fbc8c3312448eb225",
+      "expected_crc": "cbf43926",
+      "software_crc": "cbf43926",
+      "hardware_crc": "cbf43926",
+      "software_cycles": 174,
+      "hardware_total_cycles": 79,
+      "engine_session_cycles": 39,
+      "software_us": 3.48,
+      "hardware_total_us": 1.58,
+      "engine_session_us": 0.78,
+      "speedup": 2.2025316455696204,
+      "software_minus_hardware_cycles": 95
+    },
+    {
+      "run": 3,
+      "case": 2,
+      "bytes": 1,
+      "input_kind": "xorshift32",
+      "data_sha256": "de2e331d891ae267a7009cb45b4e8830f170e0c937288ea2731a1941c7a53b0d",
+      "expected_crc": "0bd4b551",
+      "software_crc": "0bd4b551",
+      "hardware_crc": "0bd4b551",
+      "software_cycles": 38,
+      "hardware_total_cycles": 59,
+      "engine_session_cycles": 19,
+      "software_us": 0.76,
+      "hardware_total_us": 1.18,
+      "engine_session_us": 0.38,
+      "speedup": 0.6440677966101694,
+      "software_minus_hardware_cycles": -21
+    },
+    {
+      "run": 3,
+      "case": 3,
+      "bytes": 2,
+      "input_kind": "xorshift32",
+      "data_sha256": "ea2bc1a78841c059974456045b4f7ad12a787bebb92ae6141c35d20d23fd462e",
+      "expected_crc": "9fbb5a60",
+      "software_crc": "9fbb5a60",
+      "hardware_crc": "9fbb5a60",
+      "software_cycles": 55,
+      "hardware_total_cycles": 64,
+      "engine_session_cycles": 24,
+      "software_us": 1.1,
+      "hardware_total_us": 1.28,
+      "engine_session_us": 0.48,
+      "speedup": 0.859375,
+      "software_minus_hardware_cycles": -9
+    },
+    {
+      "run": 3,
+      "case": 4,
+      "bytes": 3,
+      "input_kind": "xorshift32",
+      "data_sha256": "8e9b6f987397bbab52f68812f4f23d8d8f64d49fabacf1e24c9061688b8deec3",
+      "expected_crc": "c747799e",
+      "software_crc": "c747799e",
+      "hardware_crc": "c747799e",
+      "software_cycles": 72,
+      "hardware_total_cycles": 74,
+      "engine_session_cycles": 34,
+      "software_us": 1.44,
+      "hardware_total_us": 1.48,
+      "engine_session_us": 0.68,
+      "speedup": 0.972972972972973,
+      "software_minus_hardware_cycles": -2
+    },
+    {
+      "run": 3,
+      "case": 5,
+      "bytes": 4,
+      "input_kind": "xorshift32",
+      "data_sha256": "dd35f2323351e7fcef6d0474e299ff1e017c1a5b3f7e7e82328a2f68e443bcb7",
+      "expected_crc": "cf72b890",
+      "software_crc": "cf72b890",
+      "hardware_crc": "cf72b890",
+      "software_cycles": 89,
+      "hardware_total_cycles": 65,
+      "engine_session_cycles": 20,
+      "software_us": 1.78,
+      "hardware_total_us": 1.3,
+      "engine_session_us": 0.4,
+      "speedup": 1.3692307692307693,
+      "software_minus_hardware_cycles": 24
+    },
+    {
+      "run": 3,
+      "case": 6,
+      "bytes": 7,
+      "input_kind": "xorshift32",
+      "data_sha256": "94a0137c6c6968847472fbd0abccc3310e3ed75683eaa9220159aab6448fc8e0",
+      "expected_crc": "b310bb4b",
+      "software_crc": "b310bb4b",
+      "hardware_crc": "b310bb4b",
+      "software_cycles": 140,
+      "hardware_total_cycles": 84,
+      "engine_session_cycles": 44,
+      "software_us": 2.8,
+      "hardware_total_us": 1.68,
+      "engine_session_us": 0.88,
+      "speedup": 1.6666666666666667,
+      "software_minus_hardware_cycles": 56
+    },
+    {
+      "run": 3,
+      "case": 7,
+      "bytes": 16,
+      "input_kind": "xorshift32",
+      "data_sha256": "383da1f3bfa63b6610de13e531b909de2c9529828f9ca2f3e210be92b4a0d5b4",
+      "expected_crc": "16d58768",
+      "software_crc": "16d58768",
+      "hardware_crc": "16d58768",
+      "software_cycles": 293,
+      "hardware_total_cycles": 95,
+      "engine_session_cycles": 50,
+      "software_us": 5.86,
+      "hardware_total_us": 1.9,
+      "engine_session_us": 1.0,
+      "speedup": 3.0842105263157893,
+      "software_minus_hardware_cycles": 198
+    },
+    {
+      "run": 3,
+      "case": 8,
+      "bytes": 64,
+      "input_kind": "xorshift32",
+      "data_sha256": "23de77bc2db8bdd257e00e705272297b07425893154d2713a333e904eb5c15ac",
+      "expected_crc": "3f9d3d2e",
+      "software_crc": "3f9d3d2e",
+      "hardware_crc": "3f9d3d2e",
+      "software_cycles": 1109,
+      "hardware_total_cycles": 215,
+      "engine_session_cycles": 170,
+      "software_us": 22.18,
+      "hardware_total_us": 4.3,
+      "engine_session_us": 3.4,
+      "speedup": 5.158139534883721,
+      "software_minus_hardware_cycles": 894
+    },
+    {
+      "run": 3,
+      "case": 9,
+      "bytes": 256,
+      "input_kind": "xorshift32",
+      "data_sha256": "a6132e8e14616c7d58f2aa5466bdd44a09a6136aa8576dc97d48eced21687027",
+      "expected_crc": "21bf9c9a",
+      "software_crc": "21bf9c9a",
+      "hardware_crc": "21bf9c9a",
+      "software_cycles": 4373,
+      "hardware_total_cycles": 695,
+      "engine_session_cycles": 650,
+      "software_us": 87.46,
+      "hardware_total_us": 13.9,
+      "engine_session_us": 13.0,
+      "speedup": 6.292086330935252,
+      "software_minus_hardware_cycles": 3678
+    },
+    {
+      "run": 3,
+      "case": 10,
+      "bytes": 1024,
+      "input_kind": "xorshift32",
+      "data_sha256": "db42f2dadc550467d5bda4de776b4437f8d3d0af32c0447a462626c12e3793cd",
+      "expected_crc": "a041c516",
+      "software_crc": "a041c516",
+      "hardware_crc": "a041c516",
+      "software_cycles": 17429,
+      "hardware_total_cycles": 2615,
+      "engine_session_cycles": 2570,
+      "software_us": 348.58,
+      "hardware_total_us": 52.3,
+      "engine_session_us": 51.4,
+      "speedup": 6.6650095602294455,
+      "software_minus_hardware_cycles": 14814
+    },
+    {
+      "run": 3,
+      "case": 11,
+      "bytes": 4096,
+      "input_kind": "xorshift32",
+      "data_sha256": "8128b9a48f8c2ebbda642595dfe4b42b0f278e036e90400f4db840ee75e4ece6",
+      "expected_crc": "1528b2fa",
+      "software_crc": "1528b2fa",
+      "hardware_crc": "1528b2fa",
+      "software_cycles": 69653,
+      "hardware_total_cycles": 10295,
+      "engine_session_cycles": 10250,
+      "software_us": 1393.06,
+      "hardware_total_us": 205.9,
+      "engine_session_us": 205.0,
+      "speedup": 6.765711510441962,
+      "software_minus_hardware_cycles": 59358
+    }
+  ],
+  "cases": [
+    {
+      "case": 0,
+      "bytes": 0,
+      "input_kind": "xorshift32",
+      "runs": [
+        {
+          "run": 1,
+          "case": 0,
+          "bytes": 0,
+          "input_kind": "xorshift32",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "expected_crc": "00000000",
+          "software_crc": "00000000",
+          "hardware_crc": "00000000",
+          "software_cycles": 21,
+          "hardware_total_cycles": 55,
+          "engine_session_cycles": 0,
+          "software_us": 0.42,
+          "hardware_total_us": 1.1,
+          "engine_session_us": 0.0,
+          "speedup": 0.38181818181818183,
+          "software_minus_hardware_cycles": -34
+        },
+        {
+          "run": 2,
+          "case": 0,
+          "bytes": 0,
+          "input_kind": "xorshift32",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "expected_crc": "00000000",
+          "software_crc": "00000000",
+          "hardware_crc": "00000000",
+          "software_cycles": 21,
+          "hardware_total_cycles": 55,
+          "engine_session_cycles": 0,
+          "software_us": 0.42,
+          "hardware_total_us": 1.1,
+          "engine_session_us": 0.0,
+          "speedup": 0.38181818181818183,
+          "software_minus_hardware_cycles": -34
+        },
+        {
+          "run": 3,
+          "case": 0,
+          "bytes": 0,
+          "input_kind": "xorshift32",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "expected_crc": "00000000",
+          "software_crc": "00000000",
+          "hardware_crc": "00000000",
+          "software_cycles": 21,
+          "hardware_total_cycles": 55,
+          "engine_session_cycles": 0,
+          "software_us": 0.42,
+          "hardware_total_us": 1.1,
+          "engine_session_us": 0.0,
+          "speedup": 0.38181818181818183,
+          "software_minus_hardware_cycles": -34
+        }
+      ],
+      "speedup_definition": "software_cycles / hardware_total_cycles",
+      "software_baseline": "256-entry table in the SAME S05 accelerated firmware",
+      "statistics": {
+        "software_cycles": {
+          "per_run": [
+            21,
+            21,
+            21
+          ],
+          "min": 21,
+          "max": 21,
+          "mean": 21.0,
+          "spread": 0,
+          "run2_minus_run1": 0,
+          "run3_minus_run1": 0
+        },
+        "hardware_total_cycles": {
+          "per_run": [
+            55,
+            55,
+            55
+          ],
+          "min": 55,
+          "max": 55,
+          "mean": 55.0,
+          "spread": 0,
+          "run2_minus_run1": 0,
+          "run3_minus_run1": 0
+        },
+        "engine_session_cycles": {
+          "per_run": [
+            0,
+            0,
+            0
+          ],
+          "min": 0,
+          "max": 0,
+          "mean": 0.0,
+          "spread": 0,
+          "run2_minus_run1": 0,
+          "run3_minus_run1": 0
+        },
+        "software_us": {
+          "per_run": [
+            0.42,
+            0.42,
+            0.42
+          ],
+          "min": 0.42,
+          "max": 0.42,
+          "mean": 0.42,
+          "spread": 0.0,
+          "run2_minus_run1": 0.0,
+          "run3_minus_run1": 0.0
+        },
+        "hardware_total_us": {
+          "per_run": [
+            1.1,
+            1.1,
+            1.1
+          ],
+          "min": 1.1,
+          "max": 1.1,
+          "mean": 1.1,
+          "spread": 0.0,
+          "run2_minus_run1": 0.0,
+          "run3_minus_run1": 0.0
+        },
+        "engine_session_us": {
+          "per_run": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "min": 0.0,
+          "max": 0.0,
+          "mean": 0.0,
+          "spread": 0.0,
+          "run2_minus_run1": 0.0,
+          "run3_minus_run1": 0.0
+        },
+        "speedup": {
+          "per_run": [
+            0.38181818181818183,
+            0.38181818181818183,
+            0.38181818181818183
+          ],
+          "min": 0.38181818181818183,
+          "max": 0.38181818181818183,
+          "mean": 0.38181818181818183,
+          "spread": 0.0,
+          "run2_minus_run1": 0.0,
+          "run3_minus_run1": 0.0
+        }
+      }
+    },
+    {
+      "case": 1,
+      "bytes": 9,
+      "input_kind": "ASCII 123456789",
+      "runs": [
+        {
+          "run": 1,
+          "case": 1,
+          "bytes": 9,
+          "input_kind": "ASCII 123456789",
+          "data_sha256": "15e2b0d3c33891ebb0f1ef609ec419420c20e320ce94c65fbc8c3312448eb225",
+          "expected_crc": "cbf43926",
+          "software_crc": "cbf43926",
+          "hardware_crc": "cbf43926",
+          "software_cycles": 174,
+          "hardware_total_cycles": 79,
+          "engine_session_cycles": 39,
+          "software_us": 3.48,
+          "hardware_total_us": 1.58,
+          "engine_session_us": 0.78,
+          "speedup": 2.2025316455696204,
+          "software_minus_hardware_cycles": 95
+        },
+        {
+          "run": 2,
+          "case": 1,
+          "bytes": 9,
+          "input_kind": "ASCII 123456789",
+          "data_sha256": "15e2b0d3c33891ebb0f1ef609ec419420c20e320ce94c65fbc8c3312448eb225",
+          "expected_crc": "cbf43926",
+          "software_crc": "cbf43926",
+          "hardware_crc": "cbf43926",
+          "software_cycles": 174,
+          "hardware_total_cycles": 79,
+          "engine_session_cycles": 39,
+          "software_us": 3.48,
+          "hardware_total_us": 1.58,
+          "engine_session_us": 0.78,
+          "speedup": 2.2025316455696204,
+          "software_minus_hardware_cycles": 95
+        },
+        {
+          "run": 3,
+          "case": 1,
+          "bytes": 9,
+          "input_kind": "ASCII 123456789",
+          "data_sha256": "15e2b0d3c33891ebb0f1ef609ec419420c20e320ce94c65fbc8c3312448eb225",
+          "expected_crc": "cbf43926",
+          "software_crc": "cbf43926",
+          "hardware_crc": "cbf43926",
+          "software_cycles": 174,
+          "hardware_total_cycles": 79,
+          "engine_session_cycles": 39,
+          "software_us": 3.48,
+          "hardware_total_us": 1.58,
+          "engine_session_us": 0.78,
+          "speedup": 2.2025316455696204,
+          "software_minus_hardware_cycles": 95
+        }
+      ],
+      "speedup_definition": "software_cycles / hardware_total_cycles",
+      "software_baseline": "256-entry table in the SAME S05 accelerated firmware",
+      "statistics": {
+        "software_cycles": {
+          "per_run": [
+            174,
+            174,
+            174
+          ],
+          "min": 174,
+          "max": 174,
+          "mean": 174.0,
+          "spread": 0,
+          "run2_minus_run1": 0,
+          "run3_minus_run1": 0
+        },
+        "hardware_total_cycles": {
+          "per_run": [
+            79,
+            79,
+            79
+          ],
+          "min": 79,
+          "max": 79,
+          "mean": 79.0,
+          "spread": 0,
+          "run2_minus_run1": 0,
+          "run3_minus_run1": 0
+        },
+        "engine_session_cycles": {
+          "per_run": [
+            39,
+            39,
+            39
+          ],
+          "min": 39,
+          "max": 39,
+          "mean": 39.0,
+          "spread": 0,
+          "run2_minus_run1": 0,
+          "run3_minus_run1": 0
+        },
+        "software_us": {
+          "per_run": [
+            3.48,
+            3.48,
+            3.48
+          ],
+          "min": 3.48,
+          "max": 3.48,
+          "mean": 3.48,
+          "spread": 0.0,
+          "run2_minus_run1": 0.0,
+          "run3_minus_run1": 0.0
+        },
+        "hardware_total_us": {
+          "per_run": [
+            1.58,
+            1.58,
+            1.58
+          ],
+          "min": 1.58,
+          "max": 1.58,
+          "mean": 1.58,
+          "spread": 0.0,
+          "run2_minus_run1": 0.0,
+          "run3_minus_run1": 0.0
+        },
+        "engine_session_us": {
+          "per_run": [
+            0.78,
+            0.78,
+            0.78
+          ],
+          "min": 0.78,
+          "max": 0.78,
+          "mean": 0.7799999999999999,
+          "spread": 0.0,
+          "run2_minus_run1": 0.0,
+          "run3_minus_run1": 0.0
+        },
+        "speedup": {
+          "per_run": [
+            2.2025316455696204,
+            2.2025316455696204,
+            2.2025316455696204
+          ],
+          "min": 2.2025316455696204,
+          "max": 2.2025316455696204,
+          "mean": 2.2025316455696204,
+          "spread": 0.0,
+          "run2_minus_run1": 0.0,
+          "run3_minus_run1": 0.0
+        }
+      }
+    },
+    {
+      "case": 2,
+      "bytes": 1,
+      "input_kind": "xorshift32",
+      "runs": [
+        {
+          "run": 1,
+          "case": 2,
+          "bytes": 1,
+          "input_kind": "xorshift32",
+          "data_sha256": "de2e331d891ae267a7009cb45b4e8830f170e0c937288ea2731a1941c7a53b0d",
+          "expected_crc": "0bd4b551",
+          "software_crc": "0bd4b551",
+          "hardware_crc": "0bd4b551",
+          "software_cycles": 38,
+          "hardware_total_cycles": 59,
+          "engine_session_cycles": 19,
+          "software_us": 0.76,
+          "hardware_total_us": 1.18,
+          "engine_session_us": 0.38,
+          "speedup": 0.6440677966101694,
+          "software_minus_hardware_cycles": -21
+        },
+        {
+          "run": 2,
+          "case": 2,
+          "bytes": 1,
+          "input_kind": "xorshift32",
+          "data_sha256": "de2e331d891ae267a7009cb45b4e8830f170e0c937288ea2731a1941c7a53b0d",
+          "expected_crc": "0bd4b551",
+          "software_crc": "0bd4b551",
+          "hardware_crc": "0bd4b551",
+          "software_cycles": 38,
+          "hardware_total_cycles": 59,
+          "engine_session_cycles": 19,
+          "software_us": 0.76,
+          "hardware_total_us": 1.18,
+          "engine_session_us": 0.38,
+          "speedup": 0.6440677966101694,
+          "software_minus_hardware_cycles": -21
+        },
+        {
+          "run": 3,
+          "case": 2,
+          "bytes": 1,
+          "input_kind": "xorshift32",
+          "data_sha256": "de2e331d891ae267a7009cb45b4e8830f170e0c937288ea2731a1941c7a53b0d",
+          "expected_crc": "0bd4b551",
+          "software_crc": "0bd4b551",
+          "hardware_crc": "0bd4b551",
+          "software_cycles": 38,
+          "hardware_total_cycles": 59,
+          "engine_session_cycles": 19,
+          "software_us": 0.76,
+          "hardware_total_us": 1.18,
+          "engine_session_us": 0.38,
+          "speedup": 0.6440677966101694,
+          "software_minus_hardware_cycles": -21
+        }
+      ],
+      "speedup_definition": "software_cycles / hardware_total_cycles",
+      "software_baseline": "256-entry table in the SAME S05 accelerated firmware",
+      "statistics": {
+        "software_cycles": {
+          "per_run": [
+            38,
+            38,
+            38
+          ],
+          "min": 38,
+          "max": 38,
+          "mean": 38.0,
+          "spread": 0,
+          "run2_minus_run1": 0,
+          "run3_minus_run1": 0
+        },
+        "hardware_total_cycles": {
+          "per_run": [
+            59,
+            59,
+            59
+          ],
+          "min": 59,
+          "max": 59,
+          "mean": 59.0,
+          "spread": 0,
+          "run2_minus_run1": 0,
+          "run3_minus_run1": 0
+        },
+        "engine_session_cycles": {
+          "per_run": [
+            19,
+            19,
+            19
+          ],
+          "min": 19,
+          "max": 19,
+          "mean": 19.0,
+          "spread": 0,
+          "run2_minus_run1": 0,
+          "run3_minus_run1": 0
+        },
+        "software_us": {
+          "per_run": [
+            0.76,
+            0.76,
+            0.76
+          ],
+          "min": 0.76,
+          "max": 0.76,
+          "mean": 0.7600000000000001,
+          "spread": 0.0,
+          "run2_minus_run1": 0.0,
+          "run3_minus_run1": 0.0
+        },
+        "hardware_total_us": {
+          "per_run": [
+            1.18,
+            1.18,
+            1.18
+          ],
+          "min": 1.18,
+          "max": 1.18,
+          "mean": 1.18,
+          "spread": 0.0,
+          "run2_minus_run1": 0.0,
+          "run3_minus_run1": 0.0
+        },
+        "engine_session_us": {
+          "per_run": [
+            0.38,
+            0.38,
+            0.38
+          ],
+          "min": 0.38,
+          "max": 0.38,
+          "mean": 0.38000000000000006,
+          "spread": 0.0,
+          "run2_minus_run1": 0.0,
+          "run3_minus_run1": 0.0
+        },
+        "speedup": {
+          "per_run": [
+            0.6440677966101694,
+            0.6440677966101694,
+            0.6440677966101694
+          ],
+          "min": 0.6440677966101694,
+          "max": 0.6440677966101694,
+          "mean": 0.6440677966101694,
+          "spread": 0.0,
+          "run2_minus_run1": 0.0,
+          "run3_minus_run1": 0.0
+        }
+      }
+    },
+    {
+      "case": 3,
+      "bytes": 2,
+      "input_kind": "xorshift32",
+      "runs": [
+        {
+          "run": 1,
+          "case": 3,
+          "bytes": 2,
+          "input_kind": "xorshift32",
+          "data_sha256": "ea2bc1a78841c059974456045b4f7ad12a787bebb92ae6141c35d20d23fd462e",
+          "expected_crc": "9fbb5a60",
+          "software_crc": "9fbb5a60",
+          "hardware_crc": "9fbb5a60",
+          "software_cycles": 55,
+          "hardware_total_cycles": 64,
+          "engine_session_cycles": 24,
+          "software_us": 1.1,
+          "hardware_total_us": 1.28,
+          "engine_session_us": 0.48,
+          "speedup": 0.859375,
+          "software_minus_hardware_cycles": -9
+        },
+        {
+          "run": 2,
+          "case": 3,
+          "bytes": 2,
+          "input_kind": "xorshift32",
+          "data_sha256": "ea2bc1a78841c059974456045b4f7ad12a787bebb92ae6141c35d20d23fd462e",
+          "expected_crc": "9fbb5a60",
+          "software_crc": "9fbb5a60",
+          "hardware_crc": "9fbb5a60",
+          "software_cycles": 55,
+          "hardware_total_cycles": 64,
+          "engine_session_cycles": 24,
+          "software_us": 1.1,
+          "hardware_total_us": 1.28,
+          "engine_session_us": 0.48,
+          "speedup": 0.859375,
+          "software_minus_hardware_cycles": -9
+        },
+        {
+          "run": 3,
+          "case": 3,
+          "bytes": 2,
+          "input_kind": "xorshift32",
+          "data_sha256": "ea2bc1a78841c059974456045b4f7ad12a787bebb92ae6141c35d20d23fd462e",
+          "expected_crc": "9fbb5a60",
+          "software_crc": "9fbb5a60",
+          "hardware_crc": "9fbb5a60",
+          "software_cycles": 55,
+          "hardware_total_cycles": 64,
+          "engine_session_cycles": 24,
+          "software_us": 1.1,
+          "hardware_total_us": 1.28,
+          "engine_session_us": 0.48,
+          "speedup": 0.859375,
+          "software_minus_hardware_cycles": -9
+        }
+      ],
+      "speedup_definition": "software_cycles / hardware_total_cycles",
+      "software_baseline": "256-entry table in the SAME S05 accelerated firmware",
+      "statistics": {
+        "software_cycles": {
+          "per_run": [
+            55,
+            55,
+            55
+          ],
+          "min": 55,
+          "max": 55,
+          "mean": 55.0,
+          "spread": 0,
+          "run2_minus_run1": 0,
+          "run3_minus_run1": 0
+        },
+        "hardware_total_cycles": {
+          "per_run": [
+            64,
+            64,
+            64
+          ],
+          "min": 64,
+          "max": 64,
+          "mean": 64.0,
+          "spread": 0,
+          "run2_minus_run1": 0,
+          "run3_minus_run1": 0
+        },
+        "engine_session_cycles": {
+          "per_run": [
+            24,
+            24,
+            24
+          ],
+          "min": 24,
+          "max": 24,
+          "mean": 24.0,
+          "spread": 0,
+          "run2_minus_run1": 0,
+          "run3_minus_run1": 0
+        },
+        "software_us": {
+          "per_run": [
+            1.1,
+            1.1,
+            1.1
+          ],
+          "min": 1.1,
+          "max": 1.1,
+          "mean": 1.1,
+          "spread": 0.0,
+          "run2_minus_run1": 0.0,
+          "run3_minus_run1": 0.0
+        },
+        "hardware_total_us": {
+          "per_run": [
+            1.28,
+            1.28,
+            1.28
+          ],
+          "min": 1.28,
+          "max": 1.28,
+          "mean": 1.28,
+          "spread": 0.0,
+          "run2_minus_run1": 0.0,
+          "run3_minus_run1": 0.0
+        },
+        "engine_session_us": {
+          "per_run": [
+            0.48,
+            0.48,
+            0.48
+          ],
+          "min": 0.48,
+          "max": 0.48,
+          "mean": 0.48,
+          "spread": 0.0,
+          "run2_minus_run1": 0.0,
+          "run3_minus_run1": 0.0
+        },
+        "speedup": {
+          "per_run": [
+            0.859375,
+            0.859375,
+            0.859375
+          ],
+          "min": 0.859375,
+          "max": 0.859375,
+          "mean": 0.859375,
+          "spread": 0.0,
+          "run2_minus_run1": 0.0,
+          "run3_minus_run1": 0.0
+        }
+      }
+    },
+    {
+      "case": 4,
+      "bytes": 3,
+      "input_kind": "xorshift32",
+      "runs": [
+        {
+          "run": 1,
+          "case": 4,
+          "bytes": 3,
+          "input_kind": "xorshift32",
+          "data_sha256": "8e9b6f987397bbab52f68812f4f23d8d8f64d49fabacf1e24c9061688b8deec3",
+          "expected_crc": "c747799e",
+          "software_crc": "c747799e",
+          "hardware_crc": "c747799e",
+          "software_cycles": 72,
+          "hardware_total_cycles": 74,
+          "engine_session_cycles": 34,
+          "software_us": 1.44,
+          "hardware_total_us": 1.48,
+          "engine_session_us": 0.68,
+          "speedup": 0.972972972972973,
+          "software_minus_hardware_cycles": -2
+        },
+        {
+          "run": 2,
+          "case": 4,
+          "bytes": 3,
+          "input_kind": "xorshift32",
+          "data_sha256": "8e9b6f987397bbab52f68812f4f23d8d8f64d49fabacf1e24c9061688b8deec3",
+          "expected_crc": "c747799e",
+          "software_crc": "c747799e",
+          "hardware_crc": "c747799e",
+          "software_cycles": 72,
+          "hardware_total_cycles": 74,
+          "engine_session_cycles": 34,
+          "software_us": 1.44,
+          "hardware_total_us": 1.48,
+          "engine_session_us": 0.68,
+          "speedup": 0.972972972972973,
+          "software_minus_hardware_cycles": -2
+        },
+        {
+          "run": 3,
+          "case": 4,
+          "bytes": 3,
+          "input_kind": "xorshift32",
+          "data_sha256": "8e9b6f987397bbab52f68812f4f23d8d8f64d49fabacf1e24c9061688b8deec3",
+          "expected_crc": "c747799e",
+          "software_crc": "c747799e",
+          "hardware_crc": "c747799e",
+          "software_cycles": 72,
+          "hardware_total_cycles": 74,
+          "engine_session_cycles": 34,
+          "software_us": 1.44,
+          "hardware_total_us": 1.48,
+          "engine_session_us": 0.68,
+          "speedup": 0.972972972972973,
+          "software_minus_hardware_cycles": -2
+        }
+      ],
+      "speedup_definition": "software_cycles / hardware_total_cycles",
+      "software_baseline": "256-entry table in the SAME S05 accelerated firmware",
+      "statistics": {
+        "software_cycles": {
+          "per_run": [
+            72,
+            72,
+            72
+          ],
+          "min": 72,
+          "max": 72,
+          "mean": 72.0,
+          "spread": 0,
+          "run2_minus_run1": 0,
+          "run3_minus_run1": 0
+        },
+        "hardware_total_cycles": {
+          "per_run": [
+            74,
+            74,
+            74
+          ],
+          "min": 74,
+          "max": 74,
+          "mean": 74.0,
+          "spread": 0,
+          "run2_minus_run1": 0,
+          "run3_minus_run1": 0
+        },
+        "engine_session_cycles": {
+          "per_run": [
+            34,
+            34,
+            34
+          ],
+          "min": 34,
+          "max": 34,
+          "mean": 34.0,
+          "spread": 0,
+          "run2_minus_run1": 0,
+          "run3_minus_run1": 0
+        },
+        "software_us": {
+          "per_run": [
+            1.44,
+            1.44,
+            1.44
+          ],
+          "min": 1.44,
+          "max": 1.44,
+          "mean": 1.4400000000000002,
+          "spread": 0.0,
+          "run2_minus_run1": 0.0,
+          "run3_minus_run1": 0.0
+        },
+        "hardware_total_us": {
+          "per_run": [
+            1.48,
+            1.48,
+            1.48
+          ],
+          "min": 1.48,
+          "max": 1.48,
+          "mean": 1.4799999999999998,
+          "spread": 0.0,
+          "run2_minus_run1": 0.0,
+          "run3_minus_run1": 0.0
+        },
+        "engine_session_us": {
+          "per_run": [
+            0.68,
+            0.68,
+            0.68
+          ],
+          "min": 0.68,
+          "max": 0.68,
+          "mean": 0.68,
+          "spread": 0.0,
+          "run2_minus_run1": 0.0,
+          "run3_minus_run1": 0.0
+        },
+        "speedup": {
+          "per_run": [
+            0.972972972972973,
+            0.972972972972973,
+            0.972972972972973
+          ],
+          "min": 0.972972972972973,
+          "max": 0.972972972972973,
+          "mean": 0.9729729729729731,
+          "spread": 0.0,
+          "run2_minus_run1": 0.0,
+          "run3_minus_run1": 0.0
+        }
+      }
+    },
+    {
+      "case": 5,
+      "bytes": 4,
+      "input_kind": "xorshift32",
+      "runs": [
+        {
+          "run": 1,
+          "case": 5,
+          "bytes": 4,
+          "input_kind": "xorshift32",
+          "data_sha256": "dd35f2323351e7fcef6d0474e299ff1e017c1a5b3f7e7e82328a2f68e443bcb7",
+          "expected_crc": "cf72b890",
+          "software_crc": "cf72b890",
+          "hardware_crc": "cf72b890",
+          "software_cycles": 89,
+          "hardware_total_cycles": 65,
+          "engine_session_cycles": 20,
+          "software_us": 1.78,
+          "hardware_total_us": 1.3,
+          "engine_session_us": 0.4,
+          "speedup": 1.3692307692307693,
+          "software_minus_hardware_cycles": 24
+        },
+        {
+          "run": 2,
+          "case": 5,
+          "bytes": 4,
+          "input_kind": "xorshift32",
+          "data_sha256": "dd35f2323351e7fcef6d0474e299ff1e017c1a5b3f7e7e82328a2f68e443bcb7",
+          "expected_crc": "cf72b890",
+          "software_crc": "cf72b890",
+          "hardware_crc": "cf72b890",
+          "software_cycles": 89,
+          "hardware_total_cycles": 65,
+          "engine_session_cycles": 20,
+          "software_us": 1.78,
+          "hardware_total_us": 1.3,
+          "engine_session_us": 0.4,
+          "speedup": 1.3692307692307693,
+          "software_minus_hardware_cycles": 24
+        },
+        {
+          "run": 3,
+          "case": 5,
+          "bytes": 4,
+          "input_kind": "xorshift32",
+          "data_sha256": "dd35f2323351e7fcef6d0474e299ff1e017c1a5b3f7e7e82328a2f68e443bcb7",
+          "expected_crc": "cf72b890",
+          "software_crc": "cf72b890",
+          "hardware_crc": "cf72b890",
+          "software_cycles": 89,
+          "hardware_total_cycles": 65,
+          "engine_session_cycles": 20,
+          "software_us": 1.78,
+          "hardware_total_us": 1.3,
+          "engine_session_us": 0.4,
+          "speedup": 1.3692307692307693,
+          "software_minus_hardware_cycles": 24
+        }
+      ],
+      "speedup_definition": "software_cycles / hardware_total_cycles",
+      "software_baseline": "256-entry table in the SAME S05 accelerated firmware",
+      "statistics": {
+        "software_cycles": {
+          "per_run": [
+            89,
+            89,
+            89
+          ],
+          "min": 89,
+          "max": 89,
+          "mean": 89.0,
+          "spread": 0,
+          "run2_minus_run1": 0,
+          "run3_minus_run1": 0
+        },
+        "hardware_total_cycles": {
+          "per_run": [
+            65,
+            65,
+            65
+          ],
+          "min": 65,
+          "max": 65,
+          "mean": 65.0,
+          "spread": 0,
+          "run2_minus_run1": 0,
+          "run3_minus_run1": 0
+        },
+        "engine_session_cycles": {
+          "per_run": [
+            20,
+            20,
+            20
+          ],
+          "min": 20,
+          "max": 20,
+          "mean": 20.0,
+          "spread": 0,
+          "run2_minus_run1": 0,
+          "run3_minus_run1": 0
+        },
+        "software_us": {
+          "per_run": [
+            1.78,
+            1.78,
+            1.78
+          ],
+          "min": 1.78,
+          "max": 1.78,
+          "mean": 1.78,
+          "spread": 0.0,
+          "run2_minus_run1": 0.0,
+          "run3_minus_run1": 0.0
+        },
+        "hardware_total_us": {
+          "per_run": [
+            1.3,
+            1.3,
+            1.3
+          ],
+          "min": 1.3,
+          "max": 1.3,
+          "mean": 1.3,
+          "spread": 0.0,
+          "run2_minus_run1": 0.0,
+          "run3_minus_run1": 0.0
+        },
+        "engine_session_us": {
+          "per_run": [
+            0.4,
+            0.4,
+            0.4
+          ],
+          "min": 0.4,
+          "max": 0.4,
+          "mean": 0.4000000000000001,
+          "spread": 0.0,
+          "run2_minus_run1": 0.0,
+          "run3_minus_run1": 0.0
+        },
+        "speedup": {
+          "per_run": [
+            1.3692307692307693,
+            1.3692307692307693,
+            1.3692307692307693
+          ],
+          "min": 1.3692307692307693,
+          "max": 1.3692307692307693,
+          "mean": 1.369230769230769,
+          "spread": 0.0,
+          "run2_minus_run1": 0.0,
+          "run3_minus_run1": 0.0
+        }
+      }
+    },
+    {
+      "case": 6,
+      "bytes": 7,
+      "input_kind": "xorshift32",
+      "runs": [
+        {
+          "run": 1,
+          "case": 6,
+          "bytes": 7,
+          "input_kind": "xorshift32",
+          "data_sha256": "94a0137c6c6968847472fbd0abccc3310e3ed75683eaa9220159aab6448fc8e0",
+          "expected_crc": "b310bb4b",
+          "software_crc": "b310bb4b",
+          "hardware_crc": "b310bb4b",
+          "software_cycles": 140,
+          "hardware_total_cycles": 84,
+          "engine_session_cycles": 44,
+          "software_us": 2.8,
+          "hardware_total_us": 1.68,
+          "engine_session_us": 0.88,
+          "speedup": 1.6666666666666667,
+          "software_minus_hardware_cycles": 56
+        },
+        {
+          "run": 2,
+          "case": 6,
+          "bytes": 7,
+          "input_kind": "xorshift32",
+          "data_sha256": "94a0137c6c6968847472fbd0abccc3310e3ed75683eaa9220159aab6448fc8e0",
+          "expected_crc": "b310bb4b",
+          "software_crc": "b310bb4b",
+          "hardware_crc": "b310bb4b",
+          "software_cycles": 140,
+          "hardware_total_cycles": 84,
+          "engine_session_cycles": 44,
+          "software_us": 2.8,
+          "hardware_total_us": 1.68,
+          "engine_session_us": 0.88,
+          "speedup": 1.6666666666666667,
+          "software_minus_hardware_cycles": 56
+        },
+        {
+          "run": 3,
+          "case": 6,
+          "bytes": 7,
+          "input_kind": "xorshift32",
+          "data_sha256": "94a0137c6c6968847472fbd0abccc3310e3ed75683eaa9220159aab6448fc8e0",
+          "expected_crc": "b310bb4b",
+          "software_crc": "b310bb4b",
+          "hardware_crc": "b310bb4b",
+          "software_cycles": 140,
+          "hardware_total_cycles": 84,
+          "engine_session_cycles": 44,
+          "software_us": 2.8,
+          "hardware_total_us": 1.68,
+          "engine_session_us": 0.88,
+          "speedup": 1.6666666666666667,
+          "software_minus_hardware_cycles": 56
+        }
+      ],
+      "speedup_definition": "software_cycles / hardware_total_cycles",
+      "software_baseline": "256-entry table in the SAME S05 accelerated firmware",
+      "statistics": {
+        "software_cycles": {
+          "per_run": [
+            140,
+            140,
+            140
+          ],
+          "min": 140,
+          "max": 140,
+          "mean": 140.0,
+          "spread": 0,
+          "run2_minus_run1": 0,
+          "run3_minus_run1": 0
+        },
+        "hardware_total_cycles": {
+          "per_run": [
+            84,
+            84,
+            84
+          ],
+          "min": 84,
+          "max": 84,
+          "mean": 84.0,
+          "spread": 0,
+          "run2_minus_run1": 0,
+          "run3_minus_run1": 0
+        },
+        "engine_session_cycles": {
+          "per_run": [
+            44,
+            44,
+            44
+          ],
+          "min": 44,
+          "max": 44,
+          "mean": 44.0,
+          "spread": 0,
+          "run2_minus_run1": 0,
+          "run3_minus_run1": 0
+        },
+        "software_us": {
+          "per_run": [
+            2.8,
+            2.8,
+            2.8
+          ],
+          "min": 2.8,
+          "max": 2.8,
+          "mean": 2.7999999999999994,
+          "spread": 0.0,
+          "run2_minus_run1": 0.0,
+          "run3_minus_run1": 0.0
+        },
+        "hardware_total_us": {
+          "per_run": [
+            1.68,
+            1.68,
+            1.68
+          ],
+          "min": 1.68,
+          "max": 1.68,
+          "mean": 1.68,
+          "spread": 0.0,
+          "run2_minus_run1": 0.0,
+          "run3_minus_run1": 0.0
+        },
+        "engine_session_us": {
+          "per_run": [
+            0.88,
+            0.88,
+            0.88
+          ],
+          "min": 0.88,
+          "max": 0.88,
+          "mean": 0.88,
+          "spread": 0.0,
+          "run2_minus_run1": 0.0,
+          "run3_minus_run1": 0.0
+        },
+        "speedup": {
+          "per_run": [
+            1.6666666666666667,
+            1.6666666666666667,
+            1.6666666666666667
+          ],
+          "min": 1.6666666666666667,
+          "max": 1.6666666666666667,
+          "mean": 1.6666666666666667,
+          "spread": 0.0,
+          "run2_minus_run1": 0.0,
+          "run3_minus_run1": 0.0
+        }
+      }
+    },
+    {
+      "case": 7,
+      "bytes": 16,
+      "input_kind": "xorshift32",
+      "runs": [
+        {
+          "run": 1,
+          "case": 7,
+          "bytes": 16,
+          "input_kind": "xorshift32",
+          "data_sha256": "383da1f3bfa63b6610de13e531b909de2c9529828f9ca2f3e210be92b4a0d5b4",
+          "expected_crc": "16d58768",
+          "software_crc": "16d58768",
+          "hardware_crc": "16d58768",
+          "software_cycles": 293,
+          "hardware_total_cycles": 95,
+          "engine_session_cycles": 50,
+          "software_us": 5.86,
+          "hardware_total_us": 1.9,
+          "engine_session_us": 1.0,
+          "speedup": 3.0842105263157893,
+          "software_minus_hardware_cycles": 198
+        },
+        {
+          "run": 2,
+          "case": 7,
+          "bytes": 16,
+          "input_kind": "xorshift32",
+          "data_sha256": "383da1f3bfa63b6610de13e531b909de2c9529828f9ca2f3e210be92b4a0d5b4",
+          "expected_crc": "16d58768",
+          "software_crc": "16d58768",
+          "hardware_crc": "16d58768",
+          "software_cycles": 293,
+          "hardware_total_cycles": 95,
+          "engine_session_cycles": 50,
+          "software_us": 5.86,
+          "hardware_total_us": 1.9,
+          "engine_session_us": 1.0,
+          "speedup": 3.0842105263157893,
+          "software_minus_hardware_cycles": 198
+        },
+        {
+          "run": 3,
+          "case": 7,
+          "bytes": 16,
+          "input_kind": "xorshift32",
+          "data_sha256": "383da1f3bfa63b6610de13e531b909de2c9529828f9ca2f3e210be92b4a0d5b4",
+          "expected_crc": "16d58768",
+          "software_crc": "16d58768",
+          "hardware_crc": "16d58768",
+          "software_cycles": 293,
+          "hardware_total_cycles": 95,
+          "engine_session_cycles": 50,
+          "software_us": 5.86,
+          "hardware_total_us": 1.9,
+          "engine_session_us": 1.0,
+          "speedup": 3.0842105263157893,
+          "software_minus_hardware_cycles": 198
+        }
+      ],
+      "speedup_definition": "software_cycles / hardware_total_cycles",
+      "software_baseline": "256-entry table in the SAME S05 accelerated firmware",
+      "statistics": {
+        "software_cycles": {
+          "per_run": [
+            293,
+            293,
+            293
+          ],
+          "min": 293,
+          "max": 293,
+          "mean": 293.0,
+          "spread": 0,
+          "run2_minus_run1": 0,
+          "run3_minus_run1": 0
+        },
+        "hardware_total_cycles": {
+          "per_run": [
+            95,
+            95,
+            95
+          ],
+          "min": 95,
+          "max": 95,
+          "mean": 95.0,
+          "spread": 0,
+          "run2_minus_run1": 0,
+          "run3_minus_run1": 0
+        },
+        "engine_session_cycles": {
+          "per_run": [
+            50,
+            50,
+            50
+          ],
+          "min": 50,
+          "max": 50,
+          "mean": 50.0,
+          "spread": 0,
+          "run2_minus_run1": 0,
+          "run3_minus_run1": 0
+        },
+        "software_us": {
+          "per_run": [
+            5.86,
+            5.86,
+            5.86
+          ],
+          "min": 5.86,
+          "max": 5.86,
+          "mean": 5.86,
+          "spread": 0.0,
+          "run2_minus_run1": 0.0,
+          "run3_minus_run1": 0.0
+        },
+        "hardware_total_us": {
+          "per_run": [
+            1.9,
+            1.9,
+            1.9
+          ],
+          "min": 1.9,
+          "max": 1.9,
+          "mean": 1.8999999999999997,
+          "spread": 0.0,
+          "run2_minus_run1": 0.0,
+          "run3_minus_run1": 0.0
+        },
+        "engine_session_us": {
+          "per_run": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "min": 1.0,
+          "max": 1.0,
+          "mean": 1.0,
+          "spread": 0.0,
+          "run2_minus_run1": 0.0,
+          "run3_minus_run1": 0.0
+        },
+        "speedup": {
+          "per_run": [
+            3.0842105263157893,
+            3.0842105263157893,
+            3.0842105263157893
+          ],
+          "min": 3.0842105263157893,
+          "max": 3.0842105263157893,
+          "mean": 3.0842105263157893,
+          "spread": 0.0,
+          "run2_minus_run1": 0.0,
+          "run3_minus_run1": 0.0
+        }
+      }
+    },
+    {
+      "case": 8,
+      "bytes": 64,
+      "input_kind": "xorshift32",
+      "runs": [
+        {
+          "run": 1,
+          "case": 8,
+          "bytes": 64,
+          "input_kind": "xorshift32",
+          "data_sha256": "23de77bc2db8bdd257e00e705272297b07425893154d2713a333e904eb5c15ac",
+          "expected_crc": "3f9d3d2e",
+          "software_crc": "3f9d3d2e",
+          "hardware_crc": "3f9d3d2e",
+          "software_cycles": 1109,
+          "hardware_total_cycles": 215,
+          "engine_session_cycles": 170,
+          "software_us": 22.18,
+          "hardware_total_us": 4.3,
+          "engine_session_us": 3.4,
+          "speedup": 5.158139534883721,
+          "software_minus_hardware_cycles": 894
+        },
+        {
+          "run": 2,
+          "case": 8,
+          "bytes": 64,
+          "input_kind": "xorshift32",
+          "data_sha256": "23de77bc2db8bdd257e00e705272297b07425893154d2713a333e904eb5c15ac",
+          "expected_crc": "3f9d3d2e",
+          "software_crc": "3f9d3d2e",
+          "hardware_crc": "3f9d3d2e",
+          "software_cycles": 1109,
+          "hardware_total_cycles": 215,
+          "engine_session_cycles": 170,
+          "software_us": 22.18,
+          "hardware_total_us": 4.3,
+          "engine_session_us": 3.4,
+          "speedup": 5.158139534883721,
+          "software_minus_hardware_cycles": 894
+        },
+        {
+          "run": 3,
+          "case": 8,
+          "bytes": 64,
+          "input_kind": "xorshift32",
+          "data_sha256": "23de77bc2db8bdd257e00e705272297b07425893154d2713a333e904eb5c15ac",
+          "expected_crc": "3f9d3d2e",
+          "software_crc": "3f9d3d2e",
+          "hardware_crc": "3f9d3d2e",
+          "software_cycles": 1109,
+          "hardware_total_cycles": 215,
+          "engine_session_cycles": 170,
+          "software_us": 22.18,
+          "hardware_total_us": 4.3,
+          "engine_session_us": 3.4,
+          "speedup": 5.158139534883721,
+          "software_minus_hardware_cycles": 894
+        }
+      ],
+      "speedup_definition": "software_cycles / hardware_total_cycles",
+      "software_baseline": "256-entry table in the SAME S05 accelerated firmware",
+      "statistics": {
+        "software_cycles": {
+          "per_run": [
+            1109,
+            1109,
+            1109
+          ],
+          "min": 1109,
+          "max": 1109,
+          "mean": 1109.0,
+          "spread": 0,
+          "run2_minus_run1": 0,
+          "run3_minus_run1": 0
+        },
+        "hardware_total_cycles": {
+          "per_run": [
+            215,
+            215,
+            215
+          ],
+          "min": 215,
+          "max": 215,
+          "mean": 215.0,
+          "spread": 0,
+          "run2_minus_run1": 0,
+          "run3_minus_run1": 0
+        },
+        "engine_session_cycles": {
+          "per_run": [
+            170,
+            170,
+            170
+          ],
+          "min": 170,
+          "max": 170,
+          "mean": 170.0,
+          "spread": 0,
+          "run2_minus_run1": 0,
+          "run3_minus_run1": 0
+        },
+        "software_us": {
+          "per_run": [
+            22.18,
+            22.18,
+            22.18
+          ],
+          "min": 22.18,
+          "max": 22.18,
+          "mean": 22.179999999999996,
+          "spread": 0.0,
+          "run2_minus_run1": 0.0,
+          "run3_minus_run1": 0.0
+        },
+        "hardware_total_us": {
+          "per_run": [
+            4.3,
+            4.3,
+            4.3
+          ],
+          "min": 4.3,
+          "max": 4.3,
+          "mean": 4.3,
+          "spread": 0.0,
+          "run2_minus_run1": 0.0,
+          "run3_minus_run1": 0.0
+        },
+        "engine_session_us": {
+          "per_run": [
+            3.4,
+            3.4,
+            3.4
+          ],
+          "min": 3.4,
+          "max": 3.4,
+          "mean": 3.4,
+          "spread": 0.0,
+          "run2_minus_run1": 0.0,
+          "run3_minus_run1": 0.0
+        },
+        "speedup": {
+          "per_run": [
+            5.158139534883721,
+            5.158139534883721,
+            5.158139534883721
+          ],
+          "min": 5.158139534883721,
+          "max": 5.158139534883721,
+          "mean": 5.158139534883721,
+          "spread": 0.0,
+          "run2_minus_run1": 0.0,
+          "run3_minus_run1": 0.0
+        }
+      }
+    },
+    {
+      "case": 9,
+      "bytes": 256,
+      "input_kind": "xorshift32",
+      "runs": [
+        {
+          "run": 1,
+          "case": 9,
+          "bytes": 256,
+          "input_kind": "xorshift32",
+          "data_sha256": "a6132e8e14616c7d58f2aa5466bdd44a09a6136aa8576dc97d48eced21687027",
+          "expected_crc": "21bf9c9a",
+          "software_crc": "21bf9c9a",
+          "hardware_crc": "21bf9c9a",
+          "software_cycles": 4373,
+          "hardware_total_cycles": 695,
+          "engine_session_cycles": 650,
+          "software_us": 87.46,
+          "hardware_total_us": 13.9,
+          "engine_session_us": 13.0,
+          "speedup": 6.292086330935252,
+          "software_minus_hardware_cycles": 3678
+        },
+        {
+          "run": 2,
+          "case": 9,
+          "bytes": 256,
+          "input_kind": "xorshift32",
+          "data_sha256": "a6132e8e14616c7d58f2aa5466bdd44a09a6136aa8576dc97d48eced21687027",
+          "expected_crc": "21bf9c9a",
+          "software_crc": "21bf9c9a",
+          "hardware_crc": "21bf9c9a",
+          "software_cycles": 4373,
+          "hardware_total_cycles": 695,
+          "engine_session_cycles": 650,
+          "software_us": 87.46,
+          "hardware_total_us": 13.9,
+          "engine_session_us": 13.0,
+          "speedup": 6.292086330935252,
+          "software_minus_hardware_cycles": 3678
+        },
+        {
+          "run": 3,
+          "case": 9,
+          "bytes": 256,
+          "input_kind": "xorshift32",
+          "data_sha256": "a6132e8e14616c7d58f2aa5466bdd44a09a6136aa8576dc97d48eced21687027",
+          "expected_crc": "21bf9c9a",
+          "software_crc": "21bf9c9a",
+          "hardware_crc": "21bf9c9a",
+          "software_cycles": 4373,
+          "hardware_total_cycles": 695,
+          "engine_session_cycles": 650,
+          "software_us": 87.46,
+          "hardware_total_us": 13.9,
+          "engine_session_us": 13.0,
+          "speedup": 6.292086330935252,
+          "software_minus_hardware_cycles": 3678
+        }
+      ],
+      "speedup_definition": "software_cycles / hardware_total_cycles",
+      "software_baseline": "256-entry table in the SAME S05 accelerated firmware",
+      "statistics": {
+        "software_cycles": {
+          "per_run": [
+            4373,
+            4373,
+            4373
+          ],
+          "min": 4373,
+          "max": 4373,
+          "mean": 4373.0,
+          "spread": 0,
+          "run2_minus_run1": 0,
+          "run3_minus_run1": 0
+        },
+        "hardware_total_cycles": {
+          "per_run": [
+            695,
+            695,
+            695
+          ],
+          "min": 695,
+          "max": 695,
+          "mean": 695.0,
+          "spread": 0,
+          "run2_minus_run1": 0,
+          "run3_minus_run1": 0
+        },
+        "engine_session_cycles": {
+          "per_run": [
+            650,
+            650,
+            650
+          ],
+          "min": 650,
+          "max": 650,
+          "mean": 650.0,
+          "spread": 0,
+          "run2_minus_run1": 0,
+          "run3_minus_run1": 0
+        },
+        "software_us": {
+          "per_run": [
+            87.46,
+            87.46,
+            87.46
+          ],
+          "min": 87.46,
+          "max": 87.46,
+          "mean": 87.46,
+          "spread": 0.0,
+          "run2_minus_run1": 0.0,
+          "run3_minus_run1": 0.0
+        },
+        "hardware_total_us": {
+          "per_run": [
+            13.9,
+            13.9,
+            13.9
+          ],
+          "min": 13.9,
+          "max": 13.9,
+          "mean": 13.9,
+          "spread": 0.0,
+          "run2_minus_run1": 0.0,
+          "run3_minus_run1": 0.0
+        },
+        "engine_session_us": {
+          "per_run": [
+            13.0,
+            13.0,
+            13.0
+          ],
+          "min": 13.0,
+          "max": 13.0,
+          "mean": 13.0,
+          "spread": 0.0,
+          "run2_minus_run1": 0.0,
+          "run3_minus_run1": 0.0
+        },
+        "speedup": {
+          "per_run": [
+            6.292086330935252,
+            6.292086330935252,
+            6.292086330935252
+          ],
+          "min": 6.292086330935252,
+          "max": 6.292086330935252,
+          "mean": 6.292086330935252,
+          "spread": 0.0,
+          "run2_minus_run1": 0.0,
+          "run3_minus_run1": 0.0
+        }
+      }
+    },
+    {
+      "case": 10,
+      "bytes": 1024,
+      "input_kind": "xorshift32",
+      "runs": [
+        {
+          "run": 1,
+          "case": 10,
+          "bytes": 1024,
+          "input_kind": "xorshift32",
+          "data_sha256": "db42f2dadc550467d5bda4de776b4437f8d3d0af32c0447a462626c12e3793cd",
+          "expected_crc": "a041c516",
+          "software_crc": "a041c516",
+          "hardware_crc": "a041c516",
+          "software_cycles": 17429,
+          "hardware_total_cycles": 2615,
+          "engine_session_cycles": 2570,
+          "software_us": 348.58,
+          "hardware_total_us": 52.3,
+          "engine_session_us": 51.4,
+          "speedup": 6.6650095602294455,
+          "software_minus_hardware_cycles": 14814
+        },
+        {
+          "run": 2,
+          "case": 10,
+          "bytes": 1024,
+          "input_kind": "xorshift32",
+          "data_sha256": "db42f2dadc550467d5bda4de776b4437f8d3d0af32c0447a462626c12e3793cd",
+          "expected_crc": "a041c516",
+          "software_crc": "a041c516",
+          "hardware_crc": "a041c516",
+          "software_cycles": 17429,
+          "hardware_total_cycles": 2615,
+          "engine_session_cycles": 2570,
+          "software_us": 348.58,
+          "hardware_total_us": 52.3,
+          "engine_session_us": 51.4,
+          "speedup": 6.6650095602294455,
+          "software_minus_hardware_cycles": 14814
+        },
+        {
+          "run": 3,
+          "case": 10,
+          "bytes": 1024,
+          "input_kind": "xorshift32",
+          "data_sha256": "db42f2dadc550467d5bda4de776b4437f8d3d0af32c0447a462626c12e3793cd",
+          "expected_crc": "a041c516",
+          "software_crc": "a041c516",
+          "hardware_crc": "a041c516",
+          "software_cycles": 17429,
+          "hardware_total_cycles": 2615,
+          "engine_session_cycles": 2570,
+          "software_us": 348.58,
+          "hardware_total_us": 52.3,
+          "engine_session_us": 51.4,
+          "speedup": 6.6650095602294455,
+          "software_minus_hardware_cycles": 14814
+        }
+      ],
+      "speedup_definition": "software_cycles / hardware_total_cycles",
+      "software_baseline": "256-entry table in the SAME S05 accelerated firmware",
+      "statistics": {
+        "software_cycles": {
+          "per_run": [
+            17429,
+            17429,
+            17429
+          ],
+          "min": 17429,
+          "max": 17429,
+          "mean": 17429.0,
+          "spread": 0,
+          "run2_minus_run1": 0,
+          "run3_minus_run1": 0
+        },
+        "hardware_total_cycles": {
+          "per_run": [
+            2615,
+            2615,
+            2615
+          ],
+          "min": 2615,
+          "max": 2615,
+          "mean": 2615.0,
+          "spread": 0,
+          "run2_minus_run1": 0,
+          "run3_minus_run1": 0
+        },
+        "engine_session_cycles": {
+          "per_run": [
+            2570,
+            2570,
+            2570
+          ],
+          "min": 2570,
+          "max": 2570,
+          "mean": 2570.0,
+          "spread": 0,
+          "run2_minus_run1": 0,
+          "run3_minus_run1": 0
+        },
+        "software_us": {
+          "per_run": [
+            348.58,
+            348.58,
+            348.58
+          ],
+          "min": 348.58,
+          "max": 348.58,
+          "mean": 348.58,
+          "spread": 0.0,
+          "run2_minus_run1": 0.0,
+          "run3_minus_run1": 0.0
+        },
+        "hardware_total_us": {
+          "per_run": [
+            52.3,
+            52.3,
+            52.3
+          ],
+          "min": 52.3,
+          "max": 52.3,
+          "mean": 52.29999999999999,
+          "spread": 0.0,
+          "run2_minus_run1": 0.0,
+          "run3_minus_run1": 0.0
+        },
+        "engine_session_us": {
+          "per_run": [
+            51.4,
+            51.4,
+            51.4
+          ],
+          "min": 51.4,
+          "max": 51.4,
+          "mean": 51.4,
+          "spread": 0.0,
+          "run2_minus_run1": 0.0,
+          "run3_minus_run1": 0.0
+        },
+        "speedup": {
+          "per_run": [
+            6.6650095602294455,
+            6.6650095602294455,
+            6.6650095602294455
+          ],
+          "min": 6.6650095602294455,
+          "max": 6.6650095602294455,
+          "mean": 6.6650095602294455,
+          "spread": 0.0,
+          "run2_minus_run1": 0.0,
+          "run3_minus_run1": 0.0
+        }
+      }
+    },
+    {
+      "case": 11,
+      "bytes": 4096,
+      "input_kind": "xorshift32",
+      "runs": [
+        {
+          "run": 1,
+          "case": 11,
+          "bytes": 4096,
+          "input_kind": "xorshift32",
+          "data_sha256": "8128b9a48f8c2ebbda642595dfe4b42b0f278e036e90400f4db840ee75e4ece6",
+          "expected_crc": "1528b2fa",
+          "software_crc": "1528b2fa",
+          "hardware_crc": "1528b2fa",
+          "software_cycles": 69653,
+          "hardware_total_cycles": 10295,
+          "engine_session_cycles": 10250,
+          "software_us": 1393.06,
+          "hardware_total_us": 205.9,
+          "engine_session_us": 205.0,
+          "speedup": 6.765711510441962,
+          "software_minus_hardware_cycles": 59358
+        },
+        {
+          "run": 2,
+          "case": 11,
+          "bytes": 4096,
+          "input_kind": "xorshift32",
+          "data_sha256": "8128b9a48f8c2ebbda642595dfe4b42b0f278e036e90400f4db840ee75e4ece6",
+          "expected_crc": "1528b2fa",
+          "software_crc": "1528b2fa",
+          "hardware_crc": "1528b2fa",
+          "software_cycles": 69653,
+          "hardware_total_cycles": 10295,
+          "engine_session_cycles": 10250,
+          "software_us": 1393.06,
+          "hardware_total_us": 205.9,
+          "engine_session_us": 205.0,
+          "speedup": 6.765711510441962,
+          "software_minus_hardware_cycles": 59358
+        },
+        {
+          "run": 3,
+          "case": 11,
+          "bytes": 4096,
+          "input_kind": "xorshift32",
+          "data_sha256": "8128b9a48f8c2ebbda642595dfe4b42b0f278e036e90400f4db840ee75e4ece6",
+          "expected_crc": "1528b2fa",
+          "software_crc": "1528b2fa",
+          "hardware_crc": "1528b2fa",
+          "software_cycles": 69653,
+          "hardware_total_cycles": 10295,
+          "engine_session_cycles": 10250,
+          "software_us": 1393.06,
+          "hardware_total_us": 205.9,
+          "engine_session_us": 205.0,
+          "speedup": 6.765711510441962,
+          "software_minus_hardware_cycles": 59358
+        }
+      ],
+      "speedup_definition": "software_cycles / hardware_total_cycles",
+      "software_baseline": "256-entry table in the SAME S05 accelerated firmware",
+      "statistics": {
+        "software_cycles": {
+          "per_run": [
+            69653,
+            69653,
+            69653
+          ],
+          "min": 69653,
+          "max": 69653,
+          "mean": 69653.0,
+          "spread": 0,
+          "run2_minus_run1": 0,
+          "run3_minus_run1": 0
+        },
+        "hardware_total_cycles": {
+          "per_run": [
+            10295,
+            10295,
+            10295
+          ],
+          "min": 10295,
+          "max": 10295,
+          "mean": 10295.0,
+          "spread": 0,
+          "run2_minus_run1": 0,
+          "run3_minus_run1": 0
+        },
+        "engine_session_cycles": {
+          "per_run": [
+            10250,
+            10250,
+            10250
+          ],
+          "min": 10250,
+          "max": 10250,
+          "mean": 10250.0,
+          "spread": 0,
+          "run2_minus_run1": 0,
+          "run3_minus_run1": 0
+        },
+        "software_us": {
+          "per_run": [
+            1393.06,
+            1393.06,
+            1393.06
+          ],
+          "min": 1393.06,
+          "max": 1393.06,
+          "mean": 1393.0600000000002,
+          "spread": 0.0,
+          "run2_minus_run1": 0.0,
+          "run3_minus_run1": 0.0
+        },
+        "hardware_total_us": {
+          "per_run": [
+            205.9,
+            205.9,
+            205.9
+          ],
+          "min": 205.9,
+          "max": 205.9,
+          "mean": 205.9,
+          "spread": 0.0,
+          "run2_minus_run1": 0.0,
+          "run3_minus_run1": 0.0
+        },
+        "engine_session_us": {
+          "per_run": [
+            205.0,
+            205.0,
+            205.0
+          ],
+          "min": 205.0,
+          "max": 205.0,
+          "mean": 205.0,
+          "spread": 0.0,
+          "run2_minus_run1": 0.0,
+          "run3_minus_run1": 0.0
+        },
+        "speedup": {
+          "per_run": [
+            6.765711510441962,
+            6.765711510441962,
+            6.765711510441962
+          ],
+          "min": 6.765711510441962,
+          "max": 6.765711510441962,
+          "mean": 6.765711510441963,
+          "spread": 0.0,
+          "run2_minus_run1": 0.0,
+          "run3_minus_run1": 0.0
+        }
+      }
+    }
+  ],
+  "source_hashes": {
+    "evidence/agent_steps/step_05/rework_r4/attempts/capture_20261102_183416_de2cae60/run_0_scan_0.hex": "c5d1ec8fb84080a3f95abf2b90a76b0e31dae791343fb7e0827ee4a4adabd988",
+    "evidence/agent_steps/step_05/rework_r4/attempts/capture_20261102_183416_de2cae60/run_0_scan_1.hex": "c5d1ec8fb84080a3f95abf2b90a76b0e31dae791343fb7e0827ee4a4adabd988",
+    "evidence/agent_steps/step_05/rework_r4/attempts/capture_20261102_183416_de2cae60/run_1_scan_0.hex": "c5d1ec8fb84080a3f95abf2b90a76b0e31dae791343fb7e0827ee4a4adabd988",
+    "evidence/agent_steps/step_05/rework_r4/attempts/capture_20261102_183416_de2cae60/run_1_scan_1.hex": "c5d1ec8fb84080a3f95abf2b90a76b0e31dae791343fb7e0827ee4a4adabd988",
+    "evidence/agent_steps/step_05/rework_r4/attempts/capture_20261102_183416_de2cae60/run_2_scan_0.hex": "c5d1ec8fb84080a3f95abf2b90a76b0e31dae791343fb7e0827ee4a4adabd988",
+    "evidence/agent_steps/step_05/rework_r4/attempts/capture_20261102_183416_de2cae60/run_2_scan_1.hex": "c5d1ec8fb84080a3f95abf2b90a76b0e31dae791343fb7e0827ee4a4adabd988",
+    "migration/current.json": "d7dba293dc1b088890c194c84bd745c69b85684a10ad420f44e9be65b4038a9c",
+    "evidence/agent_steps/step_05/rework_r4/seal.json": "a9ba2f5f7dfbf09a74dffe1d77919c1332b215b47e3cfba9e5cedf4fe1aa7a91",
+    "report/hardware/capture_20261102_183416_de2cae60/report_387fc78b/capture_receipt.json": "5278450b7aaa129b4ec27498064406b3574d0f574b19f473c694bc7329a80701",
+    "report/hardware/capture_20261102_183416_de2cae60/report_387fc78b/results.json": "9342136b78b44e019ae80e36b571d1ef36100212b087b4ceae9874635686b707",
+    "evidence/agent_steps/step_05/rework_r4/attempts/capture_20261102_183416_de2cae60/events.jsonl": "ca2c64c8cff0bd5ce424c0426359dc8b35364f4e02d462b74b1bf65243a50404",
+    "evidence/agent_steps/step_05/rework_r4/attempts/capture_20261102_183416_de2cae60/tool_run.json": "3dd180f612ccc2d34b21c0d881d10c282d051a58e8a1596b08a25b8c1d3997d5",
+    "evidence/agent_steps/step_05/rework_r4/attempts/capture_20261102_183416_de2cae60/accepted_inputs.json": "4c041803febcb90faf00cba2bab0d59f43c8e84f409e228d2c15083e55d97e75",
+    "evidence/agent_steps/step_05/acceptance_20261102/acceptance.json": "20cdec2701123d96c19d2c44e0a27d0669e3a812128c2881e5617d8222d05d65"
+  }
+}

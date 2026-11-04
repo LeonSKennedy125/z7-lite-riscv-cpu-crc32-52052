@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-04",
+  "baseline_release": "crc50-s08-20261103-review2",
+  "functional_release": "crc50-s06-60bd9a8688114c57",
+  "functional_payload_sha256": "60bd9a8688114c575f2898e630e440668674bae615cb6b70aa85326f1d5e4b91",
+  "measured_bit_sha256": "717bd8cfddeecf7753c8adcff68e0ec0072c0b9ca283c28613c2ac0dd3788d5b",
+  "measured_ltx_sha256": "facc5a5a95599c155598321dcd21d34b5d32f14b810fd7b6ef086fb8416ce6ba",
+  "final_pdf": {
+    "path": "report/design_report_official_template.pdf",
+    "sha256": "7fb60827a552ac2a32ff7246f7ad7ff325b59efa054215d3f1ebb349da1fc303"
+  },
+  "rtl_firmware_constraints_unchanged": true,
+  "publication_host_changes": [
+    "portable BIT/LTX/sample paths in demo_console.py",
+    "root-relative validator in runtime driver",
+    "exclude .git from manifest payload scan"
+  ],
+  "video": "Submitted separately by the team; no video files in this repository",
+  "new_board_operation": false
+}

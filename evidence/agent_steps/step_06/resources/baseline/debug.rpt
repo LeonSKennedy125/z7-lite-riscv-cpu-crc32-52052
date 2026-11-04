@@ -1,0 +1,128 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Mon Nov  2 20:59:27 2026
+| Host         : LeonS running 64-bit major release  (build 9200)
+| Design       : demo_top
+| Device       : xc7z010clg400-1
+| Speed File   : -1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Debug Core Information
+
+Table of Contents
+-----------------
+1. Debug Cores
+1.1 dbg_hub: (labtools_xsdbm_v3, implemented, inserted)
+1.2 vio: (labtools_vio_v3, implemented, instantiated)
+
+1. Debug Cores
+--------------
+
+1.1 dbg_hub: (labtools_xsdbm_v3, implemented, inserted)
+-------------------------------------------------------
+
+Parameter Data for Debug Core "dbg_hub"
++----------------------+-----------+
+| Parameter            | Value     |
++----------------------+-----------+
+| C_CLK_INPUT_FREQ_HZ  | 300000000 |
++----------------------+-----------+
+| C_ENABLE_CLK_DIVIDER | false     |
++----------------------+-----------+
+| C_USER_SCAN_CHAIN    | 1         |
++----------------------+-----------+
+
+
+Channel Data for Debug Core "dbg_hub"
++---------------+---------+---------------+------------------+----------+------------+--------+
+| Port Name     | Port    | Port Spec     | Channel Name     | Net Type | MARK_DEBUG | Net    |
+|               | Type    |               |                  |          |            | Name   |
++---------------+---------+---------------+------------------+----------+------------+--------+
+| clk           | input   | clk           | clk[0]           | signal   | false      | clk    |
++---------------+---------+---------------+------------------+----------+------------+--------+
+
+
+Peripherals Connected to Debug Hub 'dbg_hub' (1 Peripherals):
++-------+----------+---------------+
+| Index | Type     | Instance Name |
++-------+----------+---------------+
+| 0     | vio_v3_0 | vio           |
++-------+----------+---------------+
+
+
+1.2 vio: (labtools_vio_v3, implemented, instantiated)
+-----------------------------------------------------
+
+UUID of Debug Core "vio"
++----------------------------------+
+| UUID                             |
++----------------------------------+
+| 1BE27D511A4C50DC974F3E22D2C609B9 |
++----------------------------------+
+
+
+Parameter Data for Debug Core "vio"
++------------------------+-------+
+| Parameter              | Value |
++------------------------+-------+
+| C_EN_PROBE_IN_ACTIVITY | true  |
++------------------------+-------+
+
+
+Channel Data for Debug Core "vio"
++---------------+---------+---------------+------------------+----------+------------+------------------+
+| Port Name     | Port    | Port Spec     | Channel Name     | Net Type | MARK_DEBUG | Net Name         |
+|               | Type    |               |                  |          |            |                  |
++---------------+---------+---------------+------------------+----------+------------+------------------+
+| clk           | input   | CLK           | clk[0]           | signal   | false      | clk              |
++---------------+---------+---------------+------------------+----------+------------+------------------+
+| probe_in0     | input   | PROBE_IN      | probe_in0[0]     | signal   | true       | read_data[0]     |
+|               |         |               | probe_in0[1]     | signal   | true       | read_data[1]     |
+|               |         |               | probe_in0[2]     | signal   | true       | read_data[2]     |
+|               |         |               | probe_in0[3]     | signal   | true       | read_data[3]     |
+|               |         |               | probe_in0[4]     | signal   | true       | read_data[4]     |
+|               |         |               | probe_in0[5]     | signal   | true       | read_data[5]     |
+|               |         |               | probe_in0[6]     | signal   | true       | read_data[6]     |
+|               |         |               | probe_in0[7]     | signal   | true       | read_data[7]     |
+|               |         |               | probe_in0[8]     | signal   | true       | read_data[8]     |
+|               |         |               | probe_in0[9]     | signal   | true       | read_data[9]     |
+|               |         |               | probe_in0[10]    | signal   | true       | read_data[10]    |
+|               |         |               | probe_in0[11]    | signal   | true       | read_data[11]    |
+|               |         |               | probe_in0[12]    | signal   | true       | read_data[12]    |
+|               |         |               | probe_in0[13]    | signal   | true       | read_data[13]    |
+|               |         |               | probe_in0[14]    | signal   | true       | read_data[14]    |
+|               |         |               | probe_in0[15]    | signal   | true       | read_data[15]    |
+|               |         |               | probe_in0[16]    | signal   | true       | read_data[16]    |
+|               |         |               | probe_in0[17]    | signal   | true       | read_data[17]    |
+|               |         |               | probe_in0[18]    | signal   | true       | read_data[18]    |
+|               |         |               | probe_in0[19]    | signal   | true       | read_data[19]    |
+|               |         |               | probe_in0[20]    | signal   | true       | read_data[20]    |
+|               |         |               | probe_in0[21]    | signal   | true       | read_data[21]    |
+|               |         |               | probe_in0[22]    | signal   | true       | read_data[22]    |
+|               |         |               | probe_in0[23]    | signal   | true       | read_data[23]    |
+|               |         |               | probe_in0[24]    | signal   | true       | read_data[24]    |
+|               |         |               | probe_in0[25]    | signal   | true       | read_data[25]    |
+|               |         |               | probe_in0[26]    | signal   | true       | read_data[26]    |
+|               |         |               | probe_in0[27]    | signal   | true       | read_data[27]    |
+|               |         |               | probe_in0[28]    | signal   | true       | read_data[28]    |
+|               |         |               | probe_in0[29]    | signal   | true       | read_data[29]    |
+|               |         |               | probe_in0[30]    | signal   | true       | read_data[30]    |
+|               |         |               | probe_in0[31]    | signal   | true       | read_data[31]    |
++---------------+---------+---------------+------------------+----------+------------+------------------+
+| probe_in1     | input   | PROBE_IN      | probe_in1[0]     | signal   | true       | committed        |
++---------------+---------+---------------+------------------+----------+------------+------------------+
+| probe_in2     | input   | PROBE_IN      | probe_in2[0]     | signal   | true       | failed           |
++---------------+---------+---------------+------------------+----------+------------+------------------+
+| probe_out0    | output  | PROBE_OUT     | probe_out0[0]    | signal   | true       | read_index[0]    |
+|               |         |               | probe_out0[1]    | signal   | true       | read_index[1]    |
+|               |         |               | probe_out0[2]    | signal   | true       | read_index[2]    |
+|               |         |               | probe_out0[3]    | signal   | true       | read_index[3]    |
+|               |         |               | probe_out0[4]    | signal   | true       | read_index[4]    |
+|               |         |               | probe_out0[5]    | signal   | true       | read_index[5]    |
+|               |         |               | probe_out0[6]    | signal   | true       | read_index[6]    |
++---------------+---------+---------------+------------------+----------+------------+------------------+
+| probe_out1    | output  | PROBE_OUT     | probe_out1[0]    | signal   | true       | restart          |
++---------------+---------+---------------+------------------+----------+------------+------------------+
+
+

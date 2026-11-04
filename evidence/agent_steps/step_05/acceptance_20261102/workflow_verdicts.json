@@ -1,0 +1,325 @@
+{
+  "source": "Four independent review agents; read-only; findings retained including minor/note items",
+  "verdicts": {
+    "build": {
+      "verdict": "PASS",
+      "findings": [
+        {
+          "severity": "minor",
+          "claim": "The new BIT is byte-identical to the previous current BIT except for 5 header bytes carrying the build date/time; the stage report's statement that the BIT changed because of the CFGBVS/CONFIG_VOLTAGE correction is not supported by the bitstream.",
+          "evidence": "New: local_builds/s05_es1_20261102_173954_d834d5/evidence/demo.bit sha256 717bd8cfddeecf7753c8adcff68e0ec0072c0b9ca283c28613c2ac0dd3788d5b. Old: local_builds/relocated_20261031/evidence/demo.bit sha256 5e47faab6b55ae6cf6569631ec73bdc54d8bc3a8e9e8d7a3e7b455beda82bea8. Byte diff only at offsets 180,186,188,189,192 = header '2026/11/01 19:35:00' vs '2026/11/02 17:57:02'. Payload after sync word 0xAA995566 (offset 247) is identical in new, relocated and clean_builds/20261030_162300_d25c1c: sha256 0b79240f846b8c3299c854aa2265f05d8a8571bde63e44a44d397a9d083a9a97. The new file is a genuine fresh write (implement log line 1470 Bitgen Completed Successfully; header time 2026/11/02 17:57:02).",
+          "detail": "CFGBVS and CONFIG_VOLTAGE are project/DRC properties, not fabric configuration bits, so identical payload is technically expected. The corrected values are present in local_builds/s05_es1_20261102_173954_d834d5/evidence/static/constraints_merged.xdc lines 186-187 and in b/p/demo.xpr. This does not invalidate the enumerated build/download checks, but the report should justify excluding the old BIT on provenance (built from the old project configuration) rather than implying the programmed design changed: the old and new BITs program the same fabric."
+        },
+        {
+          "severity": "note",
+          "claim": "The r4 seal predates the actual hardware capture and does not bind the capture receipt/results; validated_binding.hardware_live_verified is false.",
+          "evidence": "evidence/agent_steps/step_05/rework_r4/seal.json sha256 a9ba2f5f7dfbf09a74dffe1d77919c1332b215b47e3cfba9e5cedf4fe1aa7a91, date 2026-11-02T18:33:05. evidence/agent_steps/step_05/rework_r4/validated_binding.json has \"hardware_live_verified\": false. Capture attempt evidence/agent_steps/step_05/rework_r4/attempts/capture_20261102_183416_de2cae60 started 18:34:16. report/hardware/status.json (recorded 18:46:30) binds capture_receipt_sha256 5278450b7aaa129b4ec27498064406b3574d0f574b19f473c694bc7329a80701 and results_sha256 9342136b78b44e019ae80e36b571d1ef36100212b087b4ceae9874635686b707.",
+          "detail": "Not a blocker for this dimension: the seal's build/download fields are verified. For overall S05 acceptance, the seal's scope text says 'and actual hardware capture', but its ES1_evidence (10 files) contains only r3/r4 controls and change_manifest, not capture_receipt.json/results.json; the hardware evidence is bound separately by report/hardware/status.json."
+        },
+        {
+          "severity": "note",
+          "claim": "The seal's main_cpu_protection paths are relative to the parent workspace, not the demo root; all 123 hashes nevertheless match the protected production files.",
+          "evidence": "evidence/agent_steps/step_05/rework_r4/seal.json main_cpu_protection keys such as RISCV_5pipeline.srcs/constrs_1/new/cpu_reset_sync.xdc resolve under D:/vivado2026.1_project/160MHZ CPURISCV/ and all 123/123 SHA-256 values match; r3 and migration seals carry the identical 123-entry map.",
+          "detail": "The seal does not record the base path. A reviewer resolving these keys against the demo root D:/vivado2026.1_project/160MHZ CPURISCV/board/z7_lite_7010_crc sees them as absent; they exist at the parent production project root and are unchanged across old/r3/r4 seals."
+        },
+        {
+          "severity": "note",
+          "claim": "The new source archive differs from the accepted S04 archive in exactly 6 modified and 3 added files; no RTL, firmware, testbench, IP-config, or non-authorized constraint change was found.",
+          "evidence": "New delivery/source_candidate_20261102_173954_d834d5.zip sha256 29215665782df967c53d64461876c67d26d44efa4bf25f409011f893b9b47635, 105 members; accepted S04 delivery/source_candidate_20261030_162300_d25c1c.zip sha256 94e321db412a216bfe7327905105e43f6c9c5ab2f5a67bd11b8fe7cb550da04a, 102 members; 96 identical. Modified: README.md, constraints/board_r11.xdc, release_manifest.json, run.py, scripts/evidence.py, scripts/release_files.txt. Added: docs/hardware_baseline_zh.md, evidence/vendor/es1_board.json, evidence/vendor/es1_hardware.zip. The board_r11.xdc diff is only set_property CFGBVS GND->VCCO and CONFIG_VOLTAGE 1.8->3.3 plus comments; src/**, firmware/*, sim/* and scripts/build.tcl are byte-identical.",
+          "detail": "run.py adds a guard blocking the legacy hardware entry; scripts/evidence.py changes subprocess stdio capture to pipes; release_manifest.json and scripts/release_files.txt are hash/list bookkeeping; README/docs/vendor files are non-design. The vendor zip contains a Z7_LITE.xdc but build.tcl references only constraints/board_r11.xdc plus generated IP XDCs. The new archive extracts to the 105 build-root input files byte-for-byte (105/105)."
+        },
+        {
+          "severity": "note",
+          "claim": "The demo-root docs/hardware_baseline_zh.md differs from the archive/build copy; the build inputs still match the archive.",
+          "evidence": "Demo root docs/hardware_baseline_zh.md sha256 8769fa31b895bf56... vs archive and build copy sha256 3f0aaed96a9530a3f4fd7342ba7b4e879d2a1a0f7f6f098199740e9e547aa4cb; all 105 build-root files match the archive.",
+          "detail": "Docs-only post-build update; the updated root document is not a build input."
+        },
+        {
+          "severity": "note",
+          "claim": "build_current command 1's validated_receipt is a superseded project receipt; the final gate uses command 8's receipt.",
+          "evidence": "evidence/agent_steps/step_05/rework_r3/build_current.json commands[1].validated_receipt.receipt_sha256 = eafa945deb4eb637b3b069f871a42215e718644012fc5fa09d38b4e6cdea637c; commands[8].validated_receipt.receipt_sha256 = 7c4834e8793a8e218460f990ce7143c2dea3be644622e0a5724faba8fdc42bfb; actual evidence/project_result.json = 7c4834e8...; gates.project.receipt_sha256 = 7c4834e8....",
+          "detail": "Command 8 re-ran project at 17:58-17:59 and regenerated project_result.json; all 9 final gates match the current receipts, so this is a historical per-command snapshot, not a stale gate."
+        }
+      ],
+      "checks_run": [
+        "migration/current.json: seal path evidence/agent_steps/step_05/rework_r4/seal.json, seal_sha256 a9ba2f5f7dfbf09a74dffe1d77919c1332b215b47e3cfba9e5cedf4fe1aa7a91 matches actual, workflow S05_ES1_R4; r4 seal status SELF_CHECK_PASS, independent_acceptance PENDING.",
+        "r4 seal field verification: build local_builds/s05_es1_20261102_173954_d834d5 exists; downloads demo.bit 717bd8.../demo.ltx facc5a... match build evidence and impl_1 outputs; 28/28 host_scripts, 10/10 ES1_evidence, 123/123 main_cpu_protection (parent-workspace base), 99/99 current_inputs files, 136/136 registered_files, 6/6 MIF checks match; source_archive 94e321..., new_source_archive 292156..., historical_acceptance 738ddf..., revalidation_record 550503... hashes match.",
+        "Zip file-by-file comparison: new 29215665782df967c53d64461876c67d26d44efa4bf25f409011f893b9b47635 (105 members) vs S04 94e321db412a216bfe7327905105e43f6c9c5ab2f5a67bd11b8fe7cb550da04a (102 members): 96 identical, 6 modified, 3 added, 0 removed; no RTL/firmware/testbench/IP-config changes; constraints diff only the two authorized set_property lines plus comments.",
+        "New archive extracts to exactly the 105 build-root input files, 105/105 byte-identical; release_manifest.json lists the other 104 archive members with matching hashes (self-excluded); initial_package_exact true, initial_file_count 105.",
+        "Merged XDC local_builds/s05_es1_20261102_173954_d834d5/evidence/static/constraints_merged.xdc: exactly one set_property CFGBVS VCCO and one CONFIG_VOLTAGE 3.3 (lines 186-187); four ports clock N18, resetn P16, led_ok P15, led_heartbeat U12; create_clock -period 20.000 -name sys_clk_50 [get_ports clock] present; device xc7z010clg400-1 in b/p/demo.xpr and in DRC/methodology/check_timing headers.",
+        "build_current.json: 10/10 commands exit 0, timed_out false, stdin DEVNULL, stdout/stderr SHA-256 all match; 9/9 gates status PASS with matching receipt hashes; gate receipt artifacts (59) and nested command logs (22) all match; frozen images 9/9 match root data/frozen and build data/frozen; dependency audit evidence/dependencies/audit.json 3ca8ebd4... status PASS, all_package_hashes_match true, old_Z_drive_consumed false; fresh create_project at 17:41:27, config_ip_cache -disable_cache, no incremental checkpoint, no old DCP reads; consumed_old_DCP_or_cache false.",
+        "Timing (evidence/static/timing_summary.rpt and evidence/timing_summary.rpt): WNS 2.824, TNS 0.000, WHS 0.044, THS 0.000, WPWS 7.000, TPWS 0.000; 0 failing endpoints; 'All user specified timing constraints are met.' DRC (evidence/static/drc.rpt and evidence/drc.rpt): 5 checks, 0 errors (PDCN-1569 x3, RTSTAT-10, ZPS7-1 warnings). Methodology: 4 LUTAR-1 warnings, 0 errors. Bitgen: 0 Errors, completed successfully.",
+        "demo.bit sha256 717bd8cfddeecf7753c8adcff68e0ec0072c0b9ca283c28613c2ac0dd3788d5b matches implement_result artifact, seal downloads, r3/r4 seals and capture receipt; header part 7z010clg400, date 2026/11/02 17:57:02; file size 2,083,939. demo.ltx sha256 facc5a5a95599c155598321dcd21d34b5d32f14b810fd7b6ef086fb8416ce6ba parses as JSON: exactly one VIO core type VIO_V2 named 'vio', UUID 1BE27D511A4C50DC974F3E22D2C609B9, exactly five probes read_data IN/0/32, committed IN/1/1, failed IN/2/1, read_index OUT/0/7, restart OUT/1/1; evidence/static/debug_cores.rpt independently confirms UUID and net mapping.",
+        "Old BIT 5e47faab6b55ae6cf6569631ec73bdc54d8bc3a8e9e8d7a3e7b455beda82bea8 remains in local_builds/relocated_20261031/evidence/demo.bit; old migration/seal.json sha256 892552a1f7915533efb0ca0a90d970d264090e7453c4c6ddffc52bcf9224eb73 has 9/9 gate receipts and 6/6 host scripts intact; current sealed download is the new 717bd8...; current result.json/inputs.json/status.json all record 717bd8..., no current status record uses 5e47faab.",
+        "Bitstream payload comparison: new vs old relocated vs S04 clean build are identical from sync word 0xAA995566 onward (sha256 0b79240f846b8c3299c854aa2265f05d8a8571bde63e44a44d397a9d083a9a97); the new and old BIT files differ only in 5 header bytes encoding build date/time. This is consistent with CFGBVS/CONFIG_VOLTAGE being project/DRC properties rather than fabric configuration bits.",
+        "Root firmware/out/expected.hex sha256 17d9dcb10659a4aec2e1c3ab06620ed0f1bba22d38ac3d36f53ea79ba46db060 matches frozen expected.hex, build firmware/out/expected.hex and archive data/frozen/expected.hex.",
+        "Authorizations r3/r4: scope exactly CFGBVS=VCCO and CONFIG_VOLTAGE=3.3 with allow_RTL_feature_changes false and allow_S06_S08 false; change_manifest.json and capture_fix.diff show the r4 change is only read_index initial value [format %02x 0]; failed r3 capture attempt and preserved failed build record retained."
+      ]
+    },
+    "hardware": {
+      "verdict": "PASS",
+      "findings": [
+        {
+          "severity": "note",
+          "claim": "六份硬件 HEX 为实际硬件 VIO 读取，且与三次仿真邮箱逐字节相同。",
+          "evidence": "run_0_scan_0/1、run_1_scan_0/1、run_2_scan_0/1.hex 的 SHA-256 均为 c5d1ec8fb84080a3f95abf2b90a76b0e31dae791343fb7e0827ee4a4adabd988；local_builds/s05_es1_20261102_173954_d834d5/b/p/demo.sim/sim_1/behav/xsim/mailbox_sim_run_0/1/2.hex 也均为同一 SHA-256；events.jsonl 的 624 个 WORD 值与六份 HEX 逐字一致。",
+          "detail": "确定性固件的三次硬件运行与仿真产生相同数值是预期结果，并与 Vivado Hardware Manager 日志、LTX/VIO 映射、每字约 18ms 的 VIO 事务时序相互印证。但硬件 HEX 本身没有硬件独有熵，不能仅凭 HEX 内容区分硬件读取与仿真复制；实际采集结论依赖 events.jsonl、Vivado 日志与工具调用哈希链，而不是 HEX 数值差异。"
+        },
+        {
+          "severity": "minor",
+          "claim": "最终 results.json 的 pass=true / SELF_CHECK_PASS 并非硬件数据变化，而是以用户目视 LED 声明为唯一新增条件。",
+          "evidence": "report_9a9d60cc/results.json（18:35）与 report_387fc78b/results.json（18:46）对比：per_run_rows、cycle_comparison、六份 HEX 哈希完全相同；差异仅为 pass false→true、status PENDING_OBSERVATION_OR_ANOMALY_ANALYSIS→SELF_CHECK_PASS、physical_LED_observation_verified false→true。report_9a9d60cc/capture_receipt.json 的 hardware_self_check_pass=false 且 observations 为空；最终回执 hardware_self_check_pass=true 并内嵌 observations_20261102.json。",
+          "detail": "36 例 CRC、零失败、邮箱冻结和周期一致在 18:35 的报告中已经存在，但当时自检状态是 PENDING_OBSERVATION_OR_ANOMALY_ANALYSIS；18:46 的 PASS 依赖 observations_20261102.json 中记录的用户回答（success=已点亮、heartbeat=持续闪烁）。该文件明确写明 observation_method 为 User visual observation，not inferred from VIO/LTX/simulation；physical_identity.json 同时记录 power_rails_measured=false。独立验收应把 LED/供电轨保留为用户声明限制，不应视为仪器实测。"
+        },
+        {
+          "severity": "minor",
+          "claim": "results.json 的 all_capture_attempts 只枚举 rework_r4/attempts，遗漏已保留的 rework_r3 失败 capture；prior_failed_attempts_unresolved 因扫描范围而结构上为空。",
+          "evidence": "results.json all_capture_attempts 仅含 capture_20261102_183416_de2cae60 一条（tool_status=COMPLETE，exit 0，raw_scans_preserved=6），prior_failed_attempts_unresolved=[]。rework_r3/attempts/capture_20261102_182943_15e90a91 完整存在（tool_run.json status=FAIL、exit 1、events.jsonl 15 条、stdout.log/vivado.log 含 ERROR、无 run_*.hex）。step 级 result.json 的 prior_failed_attempts_retained、inputs.json 的 prior_failed_capture、capture_receipt.json 的 observations.prior_attempt_analysis、logs_index.json 均引用该 r3 attempt。",
+          "detail": "r3 attempt 未被删除或隐藏；它在 stage 级记录、索引和最终回执中均有绑定，且原因与原始日志一致。问题仅在于 results.json 的字段名为 all_capture_attempts，实际范围是 rework_r4，故该字段不是全部 S05 capture 历史；prior_failed_attempts_unresolved 也因只 glob rework_r4/attempts 而无法发现 r3。独立验收应说明该字段范围，或把 r3 显式列入历史。"
+        },
+        {
+          "severity": "minor",
+          "claim": "validated_binding.json（以及 capture attempt 的 accepted_inputs.json 副本）仍保留采集前的 hardware_live_verified=false。",
+          "evidence": "rework_r4/validated_binding.json 与 capture_20261102_183416_de2cae60/accepted_inputs.json 均为 SHA-256 4c041803febcb90faf00cba2bab0d59f43c8e84f409e228d2c15083e55d97e75；字段 hardware_live_verified=false，classification 为 independent acceptance PENDING。",
+          "detail": "该绑定是采集前创建的输入/门禁绑定，采集成功后未更新；它不否定实际采集结果（tool_run 配置、bit/ltx 和 results.json 均显示实际编程与读取），但作为最终验收包字段会与 board_measured=true 产生表面冲突，应标注其为采集前状态。"
+        },
+        {
+          "severity": "minor",
+          "claim": "board_identity.json 仍含旧配置字段，与实际重建的 CFGBVS=VCCO / CONFIG_VOLTAGE=3.3 相矛盾。",
+          "evidence": "evidence/agent_steps/step_05/board_identity.json：current_sealed_configuration={\"CFGBVS\":\"GND\",\"CONFIG_VOLTAGE\":\"1.8\"}，download_eligibility=BLOCKED_CONFIGURATION_MISMATCH; NO_PROGRAMMING_OR_RESET_AUTHORIZATION，live_hardware_rechecked_this_round=false；required_configuration={\"CFGBVS\":\"VCCO\",\"CONFIG_VOLTAGE\":\"3.3\"}。local_builds/s05_es1_20261102_173954_d834d5/constraints/board_r11.xdc 与 evidence/static/constraints_merged.xdc 均为 CFGBVS VCCO、CONFIG_VOLTAGE 3.3。",
+          "detail": "board_identity.json 是 2026-11-01 的只读快照（current_scope=READ_ONLY_DOCUMENTATION_USB_DRIVER_JTAG_FPGA_SCAN），已被 docs/hardware_baseline_zh.md 和 2026-11-02 的配置修正/重建取代；但 result.json 的 evidence_files 将其列入且未加历史标注。实际 bit/ltx 与实现约束是正确配置，故不影响采集数据，但该文件会造成验收歧义。"
+        },
+        {
+          "severity": "minor",
+          "claim": "physical_identity.json 的 connection_evidence 把 r3 preflight 误标为 r4 workflow。",
+          "evidence": "rework_r4/attempts/capture_20261102_183416_de2cae60/physical_identity.json：connection_evidence=\"Fresh actual preflight_20261102_182844_a4546e6e (r4 workflow); ...\"。该 attempt 实际位于 rework_r3/attempts/preflight_20261102_182844_a4546e6e；r4 的 preflight 是 rework_r4/attempts/preflight_20261102_183328_87bceaaa（tool_run.json 和 capture 的 --preflight 参数均指向后者）。",
+          "detail": "capture 的 tool_run config、accepted_inputs 和实际 target/device 来自 r4 preflight，因此采集数据不受影响；仅身份文件的文字引用错误。该文件创建于 r4 preflight 之前（18:32 vs 18:33:28），说明它复用了 r3 preflight 的描述。"
+        },
+        {
+          "severity": "note",
+          "claim": "preflight/capture 的 tool_run.json pass=false，尽管 status=COMPLETE、exit_code=0、timed_out=false。",
+          "evidence": "preflight_20261102_183328_87bceaaa/tool_run.json 与 capture_20261102_183416_de2cae60/tool_run.json 均为 status=COMPLETE、exit_code=0、timed_out=false、pass=false；s05.py 第 165 行注释为 \"A successful tool process is never hardware acceptance.\"。",
+          "detail": "这是 s05.py 的刻意设计：工具进程成功不等于硬件验收；不是失败迹象。独立验收应以 status/exit/timed_out 和事件/哈希为准，不应把 pass=false 误读为工具失败。"
+        },
+        {
+          "severity": "note",
+          "claim": "rework_r1 还存在一次更早的失败 preflight，未纳入当前 results.json 的 prior-attempt 分析。",
+          "evidence": "rework_r1/attempts/preflight_20261031_115033_6a43d006/tool_run.json：status=FAIL、exit_code=1、timed_out=false；events.jsonl 的 ERROR 为 [Common 17-39] 'get_hw_targets' failed due to earlier errors。该 attempt 在 rework_r1，不在 rework_r4/attempts；当前 results.json 的 prior_failed_attempts_unresolved=[]。",
+          "detail": "该失败属于 2026-10-31 早期 preflight（非 capture），且当前报告的范围是 rework_r4 capture；如果独立验收要求覆盖全部 S05 历史 attempt，应补充说明其已保留但不属于本次 capture 历史。"
+        }
+      ],
+      "checks_run": [
+        "对 preflight_20261102_183328_87bceaaa、capture_20261102_183416_de2cae60、r3 capture_20261102_182943_15e90a91 的 tool_run.json、entry.tcl、events.jsonl、stdout.log、vivado.log、accepted_inputs.json、physical_identity.json 以及 capture.tcl/s05.py 逐一重算 SHA-256，并与 tool_run 的 artifacts/scripts/entry_sha256 比对：全部一致；Vivado 可执行文件 SHA-256 3a4e9e3f03d20cd1994dc2eff44566af7a10eaaae04429e9d460bffe3b0e86e4 与 D:/XILINX/2026.1/Vivado/bin/unwrapped/win64.o/vivado.exe 一致。",
+        "检查 capture/preflight 的 stdout.log 与 vivado.log：均含 Vivado v2026.1 banner、实际命令行 vivado.exe -mode batch -nojournal -log ... -source ...、S05_TERMINAL 与退出 0；按行首 ERROR:/FATAL/Fatal: 检测为 0 条（回显脚本中的 'event ERROR' 字样不是运行错误）。",
+        "解析 capture events.jsonl 676 条：BEGIN 1、TOOL 1、TARGET 1、DEVICE 2、PROGRAM_BEGIN 1、PROGRAM_END 1、VIO 1、VIO_UUID 1、PROBE 5、RESET_LOW 3、RESET_ASSERTED 3、RESET_RELEASED 3、STATUS 18、WORD 624、SCAN_END 6、RUN_END 3、CAPTURE_END 1、END 1；无 ERROR/CLEANUP_ERROR。",
+        "核对唯一目标 localhost:3121/xilinx_tcf/Digilent/210241793374（UID Digilent/210241793374）、唯一 xc7z010_1、IDCODE 0x13722093；LTX VIO UUID 1BE27D511A4C50DC974F3E22D2C609B9 与运行期 CORE_UUID 一致；LTX pin 映射与 5 个 PROBE 完全一致：read_data IN/32/port0、committed IN/1/port1、failed IN/1/port2、read_index OUT/7/port0、restart OUT/1/port1。",
+        "逐 run 检查 RESET_LOW→RESET_ASSERTED→RESET_RELEASED→RUN_END；reset_asserted 的 committed=0/failed=0；scan_0_start/end 与 scan_1_start/end 的 committed=1/failed=0；三次复位、六次扫描；CAPTURE_END 为 runs=3/scans=6/VIO_AUX_RESET_REQUEST。",
+        "独立实现 xorshift32（seed 0x13579BDF，x^=x<<13、x^=x>>17、x^=x<<5，全 32 位无符号，取低字节）与 zlib.crc32，不导入 s05.py；解析六份 104 字 HEX：header 精确为 [0x43524331,1,50000000,65536,12,0,104,7]；12 例 bytes/expected/software/hardware CRC 全部与独立 zlib 一致；cycle 字段满足 0<software_cycles<10^7、0<hardware_total_cycles<10^7、0<=engine_session_cycles<=hardware_total_cycles。",
+        "六份硬件 HEX 两两相同且与 mailbox_sim_run_0/1/2.hex 三份逐字节相同（SHA-256 均为 c5d1ec8fb84080a3f95abf2b90a76b0e31dae791343fb7e0827ee4a4adabd988）；每个 scan 的 WORD 索引严格为 0..103，scan 对与三次运行全部一致。",
+        "三次 run 的 scan-1 首个 WORD 相对 scan-0 SCAN_END 的间隔分别为 1,037,929 / 1,030,431 / 1,041,321 微秒，均 >=1,000,000。",
+        "从原始 HEX 重算 results.json 的 per_run_rows、cycle_comparison、cycles_identical 与 results.csv 的 36 行：全部一致；CRC_cases_verified=36、failure_counts=[0,0,0]、mailbox_stable=true、cycles_identical=true、reset_method=VIO auxiliary hardware reset request。",
+        "重算 capture_receipt.json 的 physical_identity_sha256、tool_run_sha256、events_sha256、六份 captures、report_sha256 以及 bit_sha256 717bd8cfddeecf7753c8adcff68e0ec0072c0b9ca283c28613c2ac0dd3788d5b、ltx_sha256 facc5a5a95599c155598321dcd21d34b5d32f14b810fd7b6ef086fb8416ce6ba：全部一致；receipt 内嵌 observations 与 observations_20261102.json 完全一致；receipt 的 target/device/VIO 记录与 events.jsonl 完全一致。",
+        "检查 r3 失败 attempt：tool_run status=FAIL、exit_code=1、timed_out=false；events.jsonl 的 ERROR 为 [Designutils 20-1474]，detail 指向 rdi::set_property OUTPUT_VALUE 0 read_index / set_property OUTPUT_VALUE 0 $index；无 RESET/WORD/SCAN_END/RUN_END，目录中无 run_*.hex；文档原因“7 位 read_index 在 HEX 下需要 2 个字符、脚本写入单字符 0”与 stdout.log/vivado.log 的 ERROR: 行完全一致；文件保留在 rework_r3/attempts。",
+        "核对 step 级 result.json 的全部 evidence_files 哈希、hardware_results/csv/capture_receipt/observations/build_revalidation/source_archive/migration_seal 哈希、rework_r4/seal.json 与 rework_r3/seal.json 哈希、validated_binding.json 哈希、migration/current.json 哈希：全部一致。",
+        "交叉检查 observations_20261102.json、physical_identity.json、board_identity.json、report/hardware/status.json、docs/hardware_baseline_zh.md 与构建约束：实际 XDC 为 CFGBVS VCCO / CONFIG_VOLTAGE 3.3；发现 board_identity.json 仍保留旧 GND/1.8 与 BLOCKED 字段，validated_binding.json 仍为 hardware_live_verified=false，physical_identity.json 的 connection_evidence 误引 r3 preflight。",
+        "对比 report_9a9d60cc 与 report_387fc78b：per_run_rows、cycle_comparison、六份 HEX 哈希完全相同；仅 pass/physical_LED_observation_verified/status 和 observations 变化，说明最终 SELF_CHECK_PASS 以用户 LED 声明的加入为唯一新增条件。"
+      ]
+    },
+    "records": {
+      "verdict": "PASS",
+      "findings": [
+        {
+          "severity": "minor",
+          "claim": "result.json 列入的 board_identity.json 仍是 S05 授权前快照，其 download_eligibility/current_sealed_configuration 与最终实际执行状态矛盾。",
+          "evidence": "D:/vivado2026.1_project/160MHZ CPURISCV/board/z7_lite_7010_crc/evidence/agent_steps/step_05/board_identity.json（SHA-256 2d3d86b1fdc7e8f22e7c4153449d9e7dcafb325ee06b90d3456f0d0766f8e782）第16行仍为 download_eligibility=BLOCKED_CONFIGURATION_MISMATCH; NO_PROGRAMMING_OR_RESET_AUTHORIZATION，current_sealed_configuration 为 CFGBVS=GND/CONFIG_VOLTAGE=1.8，live_hardware_rechecked_this_round=false；同目录 result.json 的 evidence_files 记录了该哈希，而 result.json 的 actual_capture_attempt 已为 capture_20261102_183416_de2cae60，report/hardware/status.json 的 board_measured=true。",
+          "detail": "该文件是 2026-11-02T17:14:27 授权前的物理基准快照；authorization.json 已 approved=true，result.json/report.md/status.json/migration/current.json 对最终 S05 状态的表述一致且无歧义。建议在 result.json 中将其标注为 pre-authorization 历史快照或更新其 download_eligibility/current_sealed_configuration；这是文档一致性问题，不阻断本次验收。"
+        },
+        {
+          "severity": "minor",
+          "claim": "演示根 AGENTS.md 仍保留旧的“当前封存构建配置错误/仅允许只读/S05 0/3”状态，并仍指向 rework_r1/s05.py。",
+          "evidence": "D:/vivado2026.1_project/160MHZ CPURISCV/board/z7_lite_7010_crc/AGENTS.md 第7行仍写 The current sealed build still contains those wrong configuration properties and is blocked for programming，第9行仍写 The latest user scope permits document/read-only checks only ... S05 remains incomplete with 0/3 real runs，第21行仍写 Use evidence/agent_steps/step_05/rework_r1/s05.py for S05；同文件第3行记录完整 S05 授权，第22行记录三次 VIO 复位/36-of-36 CRC 证据。",
+          "detail": "第3行已声明下方旧只读限制被本次授权取代，第22行给出最终证据，故当前状态并非真正歧义；但第7/9/21行会误导后续执行。建议更新为 S05_ES1_R4 的 rework_r4/s05.py 与已完成状态。"
+        },
+        {
+          "severity": "minor",
+          "claim": "logs_index.json 没有索引 r3 preflight 尝试与 r3 controls 日志，索引非全量；已索引的 126 项全部哈希/字节匹配。",
+          "evidence": "D:/vivado2026.1_project/160MHZ CPURISCV/board/z7_lite_7010_crc/evidence/agent_steps/step_05/logs_index.json 的 actual_log_files 64 项、offline_control_files 37 项、reference_files 25 项全部匹配；但 D:/vivado2026.1_project/160MHZ CPURISCV/board/z7_lite_7010_crc/evidence/agent_steps/step_05/rework_r3/attempts/preflight_20261102_182844_a4546e6e/ 下 8 个文件及 D:/vivado2026.1_project/160MHZ CPURISCV/board/z7_lite_7010_crc/evidence/agent_steps/step_05/rework_r3/controls.command.json、controls.stdout.log、controls.stderr.log 未出现在 actual_log_files。r3 seal（bfdeadd8...）的 ES1_evidence 和 r4 physical_identity.json 分别绑定这些文件。",
+          "detail": "最终 r4 实际采集、保留失败、修正脚本控制与参考输入均被完整索引；缺的是 r3 前置 preflight 与 r3 控制日志。它们存在且被 seal/identity 引用，不构成证据缺失，只是索引完整性/清晰度问题。可在索引中补充分组或注明它们属于 r3 历史范围。"
+        },
+        {
+          "severity": "note",
+          "claim": "r4 physical_identity.json 将 r3 的 preflight 20261102_182844_a4546e6e 标为 r4 workflow，而 r4 实际 preflight 是 20261102_183328_87bceaaa。",
+          "evidence": "D:/vivado2026.1_project/160MHZ CPURISCV/board/z7_lite_7010_crc/evidence/agent_steps/step_05/rework_r4/physical_identity.json 第19行 connection_evidence；实际目录 D:/vivado2026.1_project/160MHZ CPURISCV/board/z7_lite_7010_crc/evidence/agent_steps/step_05/rework_r3/attempts/preflight_20261102_182844_a4546e6e 与 D:/vivado2026.1_project/160MHZ CPURISCV/board/z7_lite_7010_crc/evidence/agent_steps/step_05/rework_r4/attempts/preflight_20261102_183328_87bceaaa 均存在且包含 tool_run.json/events.jsonl。",
+          "detail": "标签错误；引用的 preflight 真实存在，r4 preflight 另有记录。建议把 r4 workflow 标注改为 r3，或直接引用 r4 preflight。"
+        },
+        {
+          "severity": "note",
+          "claim": "docs/agent_progress.md 在追加段落后，历史行尾出现双 CR（CR CR LF），历史部分字节改变但文本内容未变。",
+          "evidence": "D:/vivado2026.1_project/160MHZ CPURISCV/board/z7_lite_7010_crc/docs/agent_progress.md 原始字节含 90 个 CRLF 与 82 个孤立 CR；before 副本只有 82 个 CRLF。把双 CR 归一化后，当前文件前缀与 D:/vivado2026.1_project/160MHZ CPURISCV/board/z7_lite_7010_crc/evidence/agent_steps/step_05/rework_r4/before/docs/agent_progress.md（SHA-256 c5dc27dde33b3cd978859c8fe81a2c55db3c406a001ab6500d055ebe490bfe06）逐字节一致，仅多出 2001 字节追加段。",
+          "detail": "progress_update 的 before/after 哈希均匹配，追加段落与证据一致；双 CR 是追加操作的行尾格式缺陷，不是内容改写。若要求历史字节纯净，应修正行尾。"
+        },
+        {
+          "severity": "note",
+          "claim": "preserved_build_20261102_174120.json 与 build_attempt_03.json 字节完全相同，实际是同一失败尝试记录的副本，而非独立快照。",
+          "evidence": "两者 SHA-256 均为 e376a37f0ceabf0dcc8f5d9488b9a4757345d166fc4a91d84337c8a4bcd1ba1b，大小 3984 字节；D:/vivado2026.1_project/160MHZ CPURISCV/board/z7_lite_7010_crc/evidence/agent_steps/step_05/rework_r3/build_current.json 的 prior_failed_revalidation 指向 preserved_build，report.md 同时列出两者。",
+          "detail": "失败尝试保留要求已满足；命名可能让人误以为存在第四个独立构建尝试。建议注明 preserved_build 是 attempt_03 的副本/别名。"
+        },
+        {
+          "severity": "note",
+          "claim": "成功采集的原始 tool_run.json 记录 pass=false，而 results.json/capture_receipt 为 SELF_CHECK_PASS；这是设计使然而非矛盾。",
+          "evidence": "D:/vivado2026.1_project/160MHZ CPURISCV/board/z7_lite_7010_crc/evidence/agent_steps/step_05/rework_r4/attempts/capture_20261102_183416_de2cae60/tool_run.json 为 kind=capture、status=COMPLETE、exit_code=0、pass=false；同目录 stdout.log 末行为 S05_TERMINAL CAPTURED_REQUIRES_HOST_AND_PHYSICAL_LED_VALIDATION；D:/vivado2026.1_project/160MHZ CPURISCV/board/z7_lite_7010_crc/report/hardware/capture_20261102_183416_de2cae60/report_387fc78b/results.json 的 pass=true；capture_receipt.json 的 hardware_self_check_pass=true。",
+          "detail": "原始 Vivado 采集不执行主机 CRC/LED 校验，pass 由后续 host validation 生成。建议在 tool_run schema 或文档中注明 pass=false 的含义。"
+        },
+        {
+          "severity": "note",
+          "claim": "result.json 的 evidence_files 路径基准是 evidence/agent_steps/step_05/，但记录本身未写明该基准。",
+          "evidence": "result.json evidence_files 的键为 report.md、inputs.json 等；verify_delivery.py 第52-53行按 STEP/rel 计算；以 step_05 为基准 18/18 匹配，以演示根为基准 18/18 不存在。",
+          "detail": "验证器已实现该约定，但独立复核者若按根目录解析会误报缺失。建议在 result.json 增加 base 字段或文档说明。"
+        },
+        {
+          "severity": "note",
+          "claim": "validated_binding.json 与 inputs.json 的 accepted_binding.hardware_live_verified 仍为 false，容易被误读为实际硬件未验证。",
+          "evidence": "D:/vivado2026.1_project/160MHZ CPURISCV/board/z7_lite_7010_crc/evidence/agent_steps/step_05/rework_r4/validated_binding.json 与 D:/vivado2026.1_project/160MHZ CPURISCV/board/z7_lite_7010_crc/evidence/agent_steps/step_05/inputs.json 的 accepted_binding 均含 hardware_live_verified=false；D:/vivado2026.1_project/160MHZ CPURISCV/board/z7_lite_7010_crc/migration/binding.py 第67行将该字段固定为 False；result.json/report.md/status.json 的实际采集结论为 board_measured=true、heartbeat/success LED 已验证。",
+          "detail": "该字段是源绑定（source binding）属性，不代表后续真实采集结果；但名称具有误导性。建议改名或注明其含义。"
+        },
+        {
+          "severity": "note",
+          "claim": "父工程 AGENTS.md 仍写 S05 hardware is pending，与演示根最终状态不一致，但位于演示根写入范围之外。",
+          "evidence": "D:/vivado2026.1_project/160MHZ CPURISCV/AGENTS.md 的 2026-11-01 CRC relocation continuation 段；演示根 D:/vivado2026.1_project/160MHZ CPURISCV/board/z7_lite_7010_crc/AGENTS.md 第22行、result.json、report.md 均记录 S05 已完成采集。",
+          "detail": "该项不阻断演示根 S05 验收；建议父级记录在下一次维护时同步。"
+        }
+      ],
+      "checks_run": [
+        "重算 result.json evidence_files 18 项 SHA-256（基准 evidence/agent_steps/step_05/）：18/18 匹配；另行验证 build_revalidation、hardware_results、hardware_csv、capture_receipt、observations、source_archive、capture_fix、usb_driver 等引用哈希。",
+        "重算 logs_index.json 的 126 项（actual_log_files 64、offline_control_files 37、reference_files 25）SHA-256 与字节数：全部匹配且无登记条目缺文件；完整性比较发现 r3 preflight/controls 未入索引（文件真实存在并被 seal/identity 绑定）。",
+        "核对 result.json 的 pass=true、execution_self_check=SELF_CHECK_PASS、independent_acceptance=PENDING、S06_S08_executed=false；与 report/hardware/capture_20261102_183416_de2cae60/report_387fc78b/results.json、capture_receipt.json 及原始 attempt 计数一致（3 复位、3 运行、6 扫描、104 字、36 CRC、失败 [0,0,0]）。",
+        "检查 rework_r4/verification、verification_after_docfix、verification_final、verification_final2：全部 exit_code=0，stdout 均为指定 S05_EXECUTION_SELF_CHECK_VERIFIED 行；command.json 记录的脚本/stdout/stderr 哈希均匹配。",
+        "独立解析 676 条 capture events.jsonl：3 组 RESET_LOW/RESET_ASSERTED/RESET_RELEASED，每次 reset_asserted committed=0；624 个 WORD 分成 6 次扫描，每次索引 0..103 顺序完整；所有 STATUS failed=0；两次扫描间隔 1.03-1.04 秒。",
+        "独立生成 12 组 xorshift 测试向量并用 zlib.crc32 重算：36 个 run-case 的 reference/software/hardware CRC 全部一致；逐字段重建 per_run_rows 与 results.json 完全一致；6 份 HEX 与原始 WORD 事件逐字一致；results.csv 36 行与 results.json 一致。",
+        "验证 progress_update.json：before_saved_as 存在且 SHA-256 为 c5dc27dd...；当前 docs/agent_progress.md SHA-256 为 c99a58ab...；追加段落内容与结果证据一致；仅发现历史行尾双 CR 格式问题。",
+        "验证保留性：r3 失败采集 9 个文件完整（tool_run SHA-256 6d0e859d...；events 显示 WORD=0、RESET=0，失败在复位前）；build_attempt_01/02/03 及其命令日志哈希匹配；失败候选构建 s05_es1_20261102_171656_17ac7f 仍在；relocated_20261031 抽样 46 项哈希匹配 historical_binding；r3 seal bfdeadd8... 全部条目匹配；S01-S04 验收记录保留，S04 acceptance.json 738ddfc9... 与两个 seal 一致，S01-S04 result.json 仍为 independent_acceptance=PENDING 且 mtime 未变。",
+        "验证 r4 seal a9ba2f5f... 的全部条目：99 项 current_inputs、136 项 registered_files、9 份 frozen_images、6 项 MIF、2 个 downloads、9 项 gate receipts、123 项 main_cpu_protection、28 项 host_scripts、10 项 ES1_evidence 全部匹配。",
+        "验证范围：无 step_06/07/08 执行目录或结果；旧/新源码包逐文件比较只有 XDC 配置、README、release_manifest、release_files、run.py、scripts/evidence.py 差异及 3 个新增文档/厂商文件，无 RTL/固件/IP/CPU 功能变化。",
+        "验证物理/授权链：authorization approved=true、USB=210241793374、allow_S06_S08=false；physical_identity 为 Z7-LITE_ES1/H251800347/xc7z010clg400-1、source=user_supplied_physical_confirmation；厂商包 6 文件，schematic 7e6c992e...、XDC a47f7228...；preflight 唯一 target/唯一 xc7z010_1、IDCODE 0x13722093；capture.tcl gate 要求 Z7-LITE_ES1，wrong_pcb 控制按预期报错；FTDI 2.12.36.20、IsSigned=true。",
+        "逐项判定 S05 验收出口：PCB 依据（用户文字确认+配套原理图，未提供照片/未实测供电轨，记录已披露）、唯一正确器件、真实 Vivado 采集、三次 VIO 复位、36/36 CRC、失败 0、可由命令重算、无仿真 HEX、自检通过且独立验收 PENDING——均满足。",
+        "核对陈旧状态：board_identity.json、AGENTS.md 第7/9/21行、docs/agent_progress.md 历史段、父 AGENTS.md 存在旧状态；权威 result.json/report.md/status.json/migration/current.json 一致且无歧义，归为 minor/note。",
+        "本次复核为只读：未运行 Vivado，未创建、修改或删除任何文件。"
+      ]
+    },
+    "adversarial": {
+      "verdict": "PASS",
+      "findings": [
+        {
+          "severity": "minor",
+          "claim": "report.md overclaims that the new BIT changed because of the CFGBVS/CONFIG_VOLTAGE correction; the bitstream payload is byte-identical to the old relocated and S04 clean BITs.",
+          "evidence": "D:/vivado2026.1_project/160MHZ CPURISCV/board/z7_lite_7010_crc/evidence/agent_steps/step_05/report.md line 18; new BIT local_builds/s05_es1_20261102_173954_d834d5/evidence/demo.bit sha256 717bd8cfddeecf7753c8adcff68e0ec0072c0b9ca283c28613c2ac0dd3788d5b; old relocated local_builds/relocated_20261031/evidence/demo.bit sha256 5e47faab6b55ae6cf6569631ec73bdc54d8bc3a8e9e8d7a3e7b455beda82bea8; S04 clean clean_builds/20261030_162300_d25c1c/evidence/demo.bit sha256 90c11f514dcc458673f92908db7e27e5d0339a9bef12a66e801f63d2685ed112; byte diff new-vs-old only offsets 180,186,188,189,192; payload from sync word 0xAA995566 (offset 247) sha256 0b79240f846b8c3299c854aa2265f05d8a8571bde63e44a44d397a9d083a9a97 in all three.",
+          "detail": "Concrete failure: a reviewer believes the configuration correction changed the programmed fabric or that the old BIT was invalid for the board. In fact CFGBVS/CONFIG_VOLTAGE are set only by the XDC and affect DRC/project properties; the new BIT is a genuine fresh build (bitgen completed 2026-11-02 17:57:02) but its fabric image is identical, so the old BIT would program the same design. The capture is not affected because the new file is the one sealed and downloaded, but the report sentence must be corrected to say the new file differs only in header build metadata."
+        },
+        {
+          "severity": "minor",
+          "claim": "docs/agent_progress.md still presents S05 as PENDING_HARDWARE with 0/3 real runs in its current-status header and step table, contradicting its own appended 2026-11-02 entry.",
+          "evidence": "D:/vivado2026.1_project/160MHZ CPURISCV/board/z7_lite_7010_crc/docs/agent_progress.md lines 3-7 and the step table around line 23 ('S05 真实上板 ... 最新目标0；真实采集0/3 ... 待独立验收，未通过'); appended final entry near lines 84-88 records 3 VIO resets, six 104-word scans, 36/36 CRC and SELF_CHECK_PASS; progress_update.json records before_sha256 c5dc27dde33b3cd978859c8fe81a2c55db3c406a001ab6500d055ebe490bfe06 and after_sha256 c99a58abece990ce72e544fc98a00059feb1d0e1967c6055820b7d23993bac57.",
+          "detail": "Concrete failure: a reader opening the progress document sees the top header dated 2026-11-01 and the table saying S05 0/3 not passed, and may conclude S05 hardware was never run. The append is the latest dated entry and the authoritative result.json/report.md/status.json are current, so this is a documentation contradiction, not an evidence gap. The top header and table should be updated or explicitly marked superseded by the 2026-11-02 S05 entry."
+        },
+        {
+          "severity": "minor",
+          "claim": "board_identity.json is still a pre-authorization snapshot claiming programming is blocked and the current sealed configuration is GND/1.8, yet result.json lists it as S05 evidence without a historical qualifier.",
+          "evidence": "D:/vivado2026.1_project/160MHZ CPURISCV/board/z7_lite_7010_crc/evidence/agent_steps/step_05/board_identity.json sha256 2d3d86b1fdc7e8f22e7c4153449d9e7dcafb325ee06b90d3456f0d0766f8e782: download_eligibility='BLOCKED_CONFIGURATION_MISMATCH; NO_PROGRAMMING_OR_RESET_AUTHORIZATION', current_sealed_configuration=CFGBVS GND / CONFIG_VOLTAGE 1.8, current_scope='READ_ONLY_DOCUMENTATION_USB_DRIVER_JTAG_FPGA_SCAN', live_hardware_rechecked_this_round=false; result.json evidence_files includes that hash; final result/report/hardware/status.json record CFGBVS VCCO / CONFIG_VOLTAGE 3.3 and the real capture.",
+          "detail": "Concrete failure: an auditor checking result.json's evidence list finds a file that says the build is blocked for programming and has the wrong configuration, which appears to contradict the authorized download and three hardware resets. The file is a pre-authorization baseline and the authorization.json and final records resolve the conflict, but result.json should label it as a historical pre-authorization snapshot or update its download_eligibility/current_sealed_configuration."
+        },
+        {
+          "severity": "minor",
+          "claim": "The demo-root AGENTS.md still contains stale middle-section statements that the sealed build is blocked for programming, that only read-only checks are authorized, that S05 is incomplete at 0/3, and that rework_r1/s05.py should be used.",
+          "evidence": "D:/vivado2026.1_project/160MHZ CPURISCV/board/z7_lite_7010_crc/AGENTS.md line 7 ('The current sealed build still contains those wrong configuration properties and is blocked for programming'), line 9 ('The latest user scope permits document/read-only checks only ... S05 remains incomplete with 0/3 real runs'), line 21 ('Use evidence/agent_steps/step_05/rework_r1/s05.py for S05'); the top authorization paragraph says the restriction is superseded and the bottom paragraph records the S05 evidence.",
+          "detail": "Concrete failure: a follow-on agent reading the middle of AGENTS.md could refuse the completed S05 capture or use the superseded rework_r1 entry instead of rework_r4. The top and bottom paragraphs are current, but the middle statements should be updated or clearly marked historical."
+        },
+        {
+          "severity": "minor",
+          "claim": "rework_r4/physical_identity.json mislabels the r3 preflight 20261102_182844_a4546e6e as an r4-workflow preflight; the actual r4 preflight used by the capture is 20261102_183328_87bceaaa.",
+          "evidence": "D:/vivado2026.1_project/160MHZ CPURISCV/board/z7_lite_7010_crc/evidence/agent_steps/step_05/rework_r4/physical_identity.json line 19 connection_evidence='Fresh actual preflight_20261102_182844_a4546e6e (r4 workflow); one Digilent/210241793374 target, one XC7Z010 IDCODE0x13722093'; that attempt is at evidence/agent_steps/step_05/rework_r3/attempts/preflight_20261102_182844_a4546e6e; the r4 preflight is evidence/agent_steps/step_05/rework_r4/attempts/preflight_20261102_183328_87bceaaa and is the --preflight argument in evidence/agent_steps/step_05/rework_r4/cli_calls/20261102_183415_capture_232bfc/command.json.",
+          "detail": "Concrete failure: traceability of the physical identity is weakened; a reviewer following the text looks at the wrong preflight. The capture config and target/device checks came from the r4 preflight and the capture re-verifies target UID/device DID/IDCODE, so the capture data are unaffected; only the identity text is wrong."
+        },
+        {
+          "severity": "minor",
+          "claim": "results.json's all_capture_attempts contains only the r4 capture and prior_failed_attempts_unresolved is empty because the code globs only rework_r4/attempts, omitting the retained r3 failed capture from the results-level history.",
+          "evidence": "D:/vivado2026.1_project/160MHZ CPURISCV/board/z7_lite_7010_crc/report/hardware/capture_20261102_183416_de2cae60/report_387fc78b/results.json all_capture_attempts=[capture_20261102_183416_de2cae60] and prior_failed_attempts_unresolved=[]; the failed r3 capture evidence/agent_steps/step_05/rework_r3/attempts/capture_20261102_182943_15e90a91 has tool_run status FAIL, exit_code 1, 15 events including Designutils 20-1474 at read_index, and no run_*.hex; step result.json prior_failed_attempts_retained and observations_20261102.json prior_attempt_analysis do record it.",
+          "detail": "Concrete failure: a reviewer relying only on results.json's field named all_capture_attempts misses the earlier failed capture and sees a clean prior-attempt history. The r3 failure is retained and bound elsewhere, so this is a scope/labeling defect; include r3 explicitly or state that the field covers rework_r4 only."
+        },
+        {
+          "severity": "minor",
+          "claim": "logs_index.json indexes 126 matching entries but omits the r3 preflight attempt and the r3 controls logs, both of which are referenced by the r3 seal and the r4 physical identity.",
+          "evidence": "D:/vivado2026.1_project/160MHZ CPURISCV/board/z7_lite_7010_crc/evidence/agent_steps/step_05/logs_index.json: 64 actual_log_files, 37 offline_control_files, 25 reference_files, all 126 hashes match; no entry contains preflight_20261102_182844 or rework_r3/controls; the r3 seal ES1_evidence and rework_r4/physical_identity.json reference those files, which exist on disk.",
+          "detail": "Concrete failure: the log index is not a complete index of the S05 control/preflight logs; an auditor searching only the index cannot find the r3 preflight/controls history. The final r4 capture, the retained failure, and the r4 controls are fully indexed."
+        },
+        {
+          "severity": "minor",
+          "claim": "migration/report_zh.md still states S05 real-board work is pending at 0/3 real captures, contradicting the current S05 result and report.",
+          "evidence": "D:/vivado2026.1_project/160MHZ CPURISCV/board/z7_lite_7010_crc/migration/report_zh.md line 5 ('S05真实上板仍待硬件，未通过'), line 44 ('实际采集0/3'), and line 70 ('S05仍需要确认实际PCB/完整器件丝印...'); the current result.json/report.md/status.json record 3/3 runs and SELF_CHECK_PASS.",
+          "detail": "Concrete failure: the demo-root AGENTS.md and progress document point readers to migration/report_zh.md, where they would see a stale S05-pending conclusion. The migration report is a historical 2026-11-01 relocation record and the latest dated S05 report supersedes it, but it should be labeled historical or updated."
+        },
+        {
+          "severity": "note",
+          "claim": "The r4 seal is dated 18:33:05, before the 18:34:16 capture, and its scope text says 'and actual hardware capture' while its ES1_evidence contains no capture_receipt.json/results.json.",
+          "evidence": "D:/vivado2026.1_project/160MHZ CPURISCV/board/z7_lite_7010_crc/evidence/agent_steps/step_05/rework_r4/seal.json sha256 a9ba2f5f7dfbf09a74dffe1d77919c1332b215b47e3cfba9e5cedf4fe1aa7a91, date 2026-11-02T18:33:05+08:00, scope 'S05 ES1 host capture-script correction (VIO HEX radix) and actual hardware capture', ES1_evidence 10 files; capture attempt capture_20261102_183416_de2cae60 started 18:34:16; the capture receipt report/hardware/capture_20261102_183416_de2cae60/report_387fc78b/capture_receipt.json sha256 5278450b7aaa129b4ec27498064406b3574d0f574b19f473c694bc7329a80701 binds the tool_run/events/HEX/bit/ltx, and report/hardware/status.json binds the receipt/results.",
+          "detail": "Concrete failure: a reviewer could read the seal as the binding record for the actual capture and then note that the receipt/results are absent from the seal. The capture evidence is bound separately and completely, but the seal's scope/date should be clarified so it is not mistaken for the capture binding."
+        },
+        {
+          "severity": "note",
+          "claim": "validated_binding.json and the capture attempt's accepted_inputs.json still carry hardware_live_verified=false, and rework_r4/latest_capture.json records CLI_exit_code=3 from the pre-observation report, even though the final capture tool exited 0 and the final report CLI exited 0.",
+          "evidence": "D:/vivado2026.1_project/160MHZ CPURISCV/board/z7_lite_7010_crc/evidence/agent_steps/step_05/rework_r4/validated_binding.json and attempts/capture_20261102_183416_de2cae60/accepted_inputs.json both sha256 4c041803febcb90faf00cba2bab0d59f43c8e84f409e228d2c15083e55d97e75 with hardware_live_verified=false; rework_r4/latest_capture.json 'CLI_exit_code': 3; cli_calls/20261102_183415_capture_232bfc/command.json exit 3 (report without observations, report_9a9d60cc PENDING_OBSERVATION_OR_ANOMALY_ANALYSIS) and cli_calls/20261102_184606_report_a269de/command.json exit 0 (final report_387fc78b SELF_CHECK_PASS).",
+          "detail": "Concrete failure: a reviewer sees hardware_live_verified=false or the exit 3 pointer and concludes the hardware was not live or the capture CLI failed. These are pre-observation snapshots; the capture tool_run itself is status COMPLETE, exit 0, and the final report is exit 0. The fields should be time-labeled or updated."
+        },
+        {
+          "severity": "note",
+          "claim": "The six hardware HEX files are byte-identical to the three simulation mailbox HEX files, so the HEX values alone cannot distinguish a hardware capture from a simulation copy.",
+          "evidence": "D:/vivado2026.1_project/160MHZ CPURISCV/board/z7_lite_7010_crc/evidence/agent_steps/step_05/rework_r4/attempts/capture_20261102_183416_de2cae60/run_*.hex all sha256 c5d1ec8fb84080a3f95abf2b90a76b0e31dae791343fb7e0827ee4a4adabd988; local_builds/s05_es1_20261102_173954_d834d5/b/p/demo.sim/sim_1/behav/xsim/mailbox_sim_run_0/1/2.hex also c5d1ec8f...; hardware HEX mtimes 18:34 during the capture and sim mtimes 17:44; the 624 WORD events in events.jsonl match the HEX; the Vivado log shows hw_server/target/xc7z010/programming/VIO and the user observed the LEDs.",
+          "detail": "Concrete failure/limitation: because the firmware is deterministic, equal values are expected, but a reviewer cannot use the HEX content to prove hardware origin. Authenticity rests on the raw Vivado 2026.1 session log, the 34-second real-time event sequence (~18 ms per VIO word), the sealed capture script reads, and the user LED observation. The acceptance report should state this residual limitation and not claim the HEX values independently prove hardware."
+        },
+        {
+          "severity": "note",
+          "claim": "The physical board identity, speed grade, power, and LED success/heartbeat observations are user-attested rather than independently measured; power rails were not measured and no board photograph was provided.",
+          "evidence": "D:/vivado2026.1_project/160MHZ CPURISCV/board/z7_lite_7010_crc/evidence/agent_steps/step_05/rework_r4/physical_identity.json source='user_supplied_physical_confirmation', power_confirmed=true, power_evidence='User reported steady power LED; fresh JTAG preflight ... Rail voltages were not measured', power_rails_measured=false, whole_board_ES1_R11_equivalence_asserted=false; observations_20261102.json observation_method='User visual observation of the physical Z7-LITE_ES1 board ... not inferred from VIO, LTX or simulation'; result.json heartbeat_verified=true, success_LED_verified=true, physical_revision_confirmed=true; report.md states 未提供实物照片.",
+          "detail": "Concrete limitation: the S05 prompt asks for user-provided PCB silkscreen/matching schematic, device, power, USB-JTAG and driver, and the stage records these as user statements plus the vendor archive and JTAG ID. The acceptance may pass on that basis, but it must not describe them as independent instrument measurements; the board photo, rail voltages, and LED states remain user-attested."
+        },
+        {
+          "severity": "note",
+          "claim": "The common prompt's start-of-step requirement to output the resolved working directory, main XPR and current CRC XPR is only partially recorded: inputs.json records working_directory but no main XPR path.",
+          "evidence": "D:/vivado2026.1_project/160MHZ CPURISCV/board/z7_lite_7010_crc/evidence/agent_steps/step_05/inputs.json keys include working_directory='D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc' but no main XPR field; rework_r4/seal.json main_cpu_protection includes RISCV_5pipeline.xpr (123/123 hashes match under D:/vivado2026.1_project/160MHZ CPURISCV), and local_builds/s05_es1_20261102_173954_d834d5/b/p/demo.xpr exists.",
+          "detail": "Concrete failure: the explicit pre-execution path check is not auditable from inputs.json, although the seal binds the main XPR hash and the build XPR exists. No main-project design write was found; the only recent file outside the demo is RISCV_5pipeline.cache/wt/project.wpc at 11:00, before the 17:14 S05 authorization."
+        },
+        {
+          "severity": "note",
+          "claim": "The new source archive contains tooling changes beyond the two authorized XDC properties (scripts/evidence.py stdio-pipe change and run.py legacy-hardware guard); the r4 change_manifest covers only capture.tcl.",
+          "evidence": "D:/vivado2026.1_project/160MHZ CPURISCV/board/z7_lite_7010_crc/delivery/source_candidate_20261102_173954_d834d5.zip vs delivery/source_candidate_20261030_162300_d25c1c.zip: 96 identical, 6 modified (constraints/board_r11.xdc, README.md, release_manifest.json, run.py, scripts/evidence.py, scripts/release_files.txt), 3 added (docs/hardware_baseline_zh.md, evidence/vendor/es1_board.json, evidence/vendor/es1_hardware.zip); scripts/evidence.py diff changes subprocess stdout/stderr to PIPE pumps; run.py adds a legacy hardware entry guard; no src/**, firmware/**, sim/** or build.tcl change; change_manifest.json says 'build, RTL, firmware and constraints unchanged' and lists only capture.tcl; build_attempt_03.json/preserved_build_20261102_174120.json record the stdio failure/retry.",
+          "detail": "Concrete failure: the S05 report's change list should state the host-tooling changes and why they were necessary; otherwise the new build differs from the accepted S04 source in files not named by the authorization. The changes are host/evidence tooling, not CPU/RTL/firmware/constraints, and the affected S03/S04 gates were re-run; this is a scope-disclosure issue, not a design change."
+        },
+        {
+          "severity": "note",
+          "claim": "docs/agent_progress.md's historical suffix contains CR CR LF sequences (82 lone CR), an append-format artifact not present in the saved before copy.",
+          "evidence": "D:/vivado2026.1_project/160MHZ CPURISCV/board/z7_lite_7010_crc/docs/agent_progress.md current bytes: 90 CRLF and 82 lone CR; before copy evidence/agent_steps/step_05/rework_r4/before/docs/agent_progress.md: 82 CRLF and 0 lone CR; after normalizing CRCRLF to CRLF the current prefix equals the before file and the 2083-byte appended entry matches progress_update.json.",
+          "detail": "Concrete failure: the progress document's historical bytes are not clean even though the text content is unchanged; the append wrote CRLF over existing CRLF. It does not alter the S05 evidence, but the file should be normalized if byte-purity of history is required."
+        }
+      ],
+      "checks_run": [
+        "Rehashed all 18 result.json evidence_files under the step_05 base: 18/18 match; migration/current.json sha256 d7dba293dc1b088890c194c84bd745c69b85684a10ad420f44e9be65b4038a9c matches migration_marker_sha256; r4 seal sha256 a9ba2f5f7dfbf09a74dffe1d77919c1332b215b47e3cfba9e5cedf4fe1aa7a91 matches.",
+        "Re-verified every r4 seal section: host_scripts 28/28, main_cpu_protection 123/123 under the parent production root, ES1_evidence 10/10, current_inputs.files 99/99, gates 9/9, downloads 2/2, frozen_images 9/9, MIF 6/6, registered_files 136/136 all present and matching.",
+        "Compared the new and S04 source archives in memory: 105 vs 102 members, 96 identical, 6 modified, 3 added, 0 removed; modified files are constraints/board_r11.xdc (CFGBVS GND->VCCO, CONFIG_VOLTAGE 1.8->3.3 plus comments only), README.md, release_manifest.json, run.py, scripts/evidence.py, scripts/release_files.txt; added are docs/hardware_baseline_zh.md and two evidence/vendor files; no RTL, firmware, testbench or IP-config changes.",
+        "Verified the new archive extracts to the build root 105/105 byte-identical and that release_manifest.json covers the other 104 members; build_root initial_package_exact=true, initial_file_count=105, consumed_old_DCP_or_cache=false, hardware_actions=false.",
+        "Compared the three BIT files: new 717bd8cf..., relocated_20261031 5e47faab..., clean_builds/20261030_162300_d25c1c 90c11f51...; byte diff new-vs-old only at offsets 180,186,188,189,192 encoding '2026/11/02 17:57:02' vs '2026/11/01 19:35:00'; payload from sync 0xAA995566 (offset 247) sha256 0b79240f846b8c3299c854aa2265f05d8a8571bde63e44a44d397a9d083a9a97 identical in all three; LTX sha256 facc5a5a... identical in all three.",
+        "Verified constraints_merged.xdc lines 186-187 contain exactly one set_property CFGBVS VCCO and one CONFIG_VOLTAGE 3.3; timing_summary.rpt WNS 2.824, TNS 0.000, WHS 0.044, THS 0.000, 0 failing endpoints; DRC report 5 warnings and 0 errors; bitgen log 'Bitgen Completed Successfully' with 0 Errors; io.rpt shows M6 CFGBVS_0 at 3.30 V.",
+        "Parsed the r4 capture tool_run.json: started 2026-11-02T18:34:16+08:00, status COMPLETE, exit_code 0, timed_out false, Vivado executable sha256 3a4e9e3f03d20cd1994dc2eff44566af7a10eaaae04429e9d460bffe3b0e86e4 matching D:/XILINX/2026.1/Vivado/bin/unwrapped/win64.o/vivado.exe; artifacts hashes all match; capture.tcl 3caf799d... and s05.py 031e9b39... match the sealed host scripts.",
+        "Read the capture vivado.log: Vivado v2026.1, hw_server/cs_server, target localhost:3121/xilinx_tcf/Digilent/210241793374, 'End of startup status: HIGH', 'Device xc7z010 ... is programmed with a design that has 1 VIO core(s)', 'Uploading output probe values for VIO core [hw_vio_1]', exit 0; stderr empty; no runtime ERROR lines.",
+        "Parsed 676 capture events: BEGIN 1, TOOL 1, TARGET 1, DEVICE 2, PROGRAM_BEGIN/END 1/1, VIO/UUID 1/1, PROBE 5, RESET_LOW/ASSERTED/RELEASED 3/3/3, STATUS 18, WORD 624, SCAN_END 6, RUN_END 3, CAPTURE_END 1, END 1; no ERROR/CLEANUP_ERROR; every reset_asserted shows committed=0, every scan boundary committed=1/failed=0.",
+        "Parsed the LTX: one VIO_V2 core named vio, UUID 1BE27D511A4C50DC974F3E22D2C609B9, pins read_data IN/32/port0, committed IN/1/port1, failed IN/1/port2, read_index OUT/7/port0, restart OUT/1/port1; matches the runtime VIO and PROBE events; debug_cores.rpt independently shows the same UUID and net mapping.",
+        "Independently implemented xorshift32 (seed 0x13579BDF, x^=x<<13, x^=x>>17, x^=x<<5, low byte) and zlib.crc32, without importing s05.py, and parsed all six 104-word HEX files: header exactly [0x43524331,1,50000000,65536,12,0,104,7]; 12 reference/software/hardware CRC values per run match zlib in all six scans (36 run-cases); cycle bounds hold; six scans are byte-identical; all 624 WORD events match the HEX word-for-word.",
+        "Verified the three scan-1 first-word times relative to scan-0 SCAN_END are 1,037,929 / 1,030,431 / 1,041,321 microseconds (all >=1 s), and rebuilt results.csv 36 rows and results.json per_run_rows/cycle_comparison from the raw HEX with no mismatches; cycle spreads are all zero.",
+        "Checked the retained r3 failed capture: tool_run status FAIL, exit_code 1, 15 events ending in Designutils 20-1474 at 'rdi::set_property OUTPUT_VALUE 0 read_index' before any RESET_LOW/scan, no run_*.hex, files retained; verified the r4 capture CLI used --preflight rework_r4/attempts/preflight_20261102_183328_87bceaaa; r1 failed preflight, r3 build_attempt_01/02/03, preserved_build and failed build s05_es1_20261102_171656_17ac7f also retained.",
+        "Recomputed the parent main-project protection: 123/123 SHA-256 match under D:/vivado2026.1_project/160MHZ CPURISCV (including RISCV_5pipeline.xpr); a filesystem scan outside the demo found only RISCV_5pipeline.cache/wt/project.wpc with mtime 2026-11-02 11:00:20, before the 17:14 S05 authorization, and no main RTL/BD/IP/XDC/XPR write.",
+        "Confirmed no S06-S08 execution: evidence/agent_steps contains only step_01..step_05; the only step_06/07/08 files are the prompt documents; result.json S06_S08_executed=false and stop_after=S05; no performance optimization or release action was run.",
+        "Checked records and detected stale/contradictory state: board_identity.json still says BLOCKED/GND-1.8, docs/agent_progress.md top/table still say S05 0/3 not passed, AGENTS.md lines 7/9/21 still say blocked/read-only/0/3 and rework_r1, migration/report_zh.md still says S05 pending; these contradict the final result.json/report.md/status.json and are reported as minor/note documentation defects, not evidence gaps.",
+        "Ran the stage's read-only verify_delivery.py only as a cross-check (it re-verifies the seal, events, zlib, receipts and evidence hashes and writes nothing): it printed S05_EXECUTION_SELF_CHECK_VERIFIED and exited 0; its conclusion was not used as the independent proof.",
+        "Verified path/tool provenance: subst shows W: -> the demo root, X: -> the new build and Y: -> the failed build; the capture config uses W: paths; USB driver snapshot is FTDI 2.12.36.20 signed, device USB\\VID_0403&PID_6014\\210241793374; JTAG target is unique with one xc7z010_1 at IDCODE 0x13722093."
+      ]
+    }
+  }
+}

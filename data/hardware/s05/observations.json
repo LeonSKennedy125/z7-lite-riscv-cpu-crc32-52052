@@ -1,0 +1,38 @@
+{
+  "attempt_id": "capture_20261102_183416_de2cae60",
+  "heartbeat_observed": true,
+  "success_LED_observed": true,
+  "user_statement": "用户在本轮 S05 硬件采集结束后（2026-11-02，Asia/Shanghai）于实物板上确认：PL_LED1（P15，低电平点亮）保持点亮；PL_LED2（U12，心跳灯）持续闪烁。",
+  "observation_time": "2026-11-02T18:40:00+08:00",
+  "observation_method": "User visual observation of the physical Z7-LITE_ES1 board in the active session; not inferred from VIO, LTX or simulation.",
+  "success_LED_meaning": "PL_LED1 is driven by the accepted success output; it was observed lit after three VIO auxiliary resets, consistent with 12/12 CRC cases matching.",
+  "heartbeat_LED_meaning": "PL_LED2 is driven by the accepted heartbeat output; continuous blinking was observed, not a static level.",
+  "user_confirmation_channel": "AskUserQuestion answers: success=已点亮, heartbeat=持续闪烁",
+  "prior_attempt_analysis": {
+    "capture_20261102_182943_15e90a91": {
+      "reason": "Retained failed capture from rework_r3. PROGRAM_BEGIN/PROGRAM_END completed and VIO mapping matched, but Vivado rejected the initial read_index OUTPUT_VALUE \"0\" because the 7-bit HEX probe requires two characters. Failure occurred before RESET_LOW; no reset or scan was executed and no result was selected away. Corrected in rework_r4/capture.tcl and revalidated by 43 host controls.",
+      "supporting_evidence": [
+        {
+          "path": "tool_run.json",
+          "sha256": "6d0e859dbbdc4eddfea716b17fad7f2bb7e7af63e1699feaa100250d9231398f"
+        },
+        {
+          "path": "events.jsonl",
+          "sha256": "194e3532d7803a45f24045a6dbae14f3d537e0f21cc08e91206fbe2f1d9a32fe"
+        },
+        {
+          "path": "stdout.log",
+          "sha256": "cdacd2beb8ac1e85bd2445f26fd4a5ba715522d8e1c8018ff11d89579cd57e2c"
+        },
+        {
+          "path": "vivado.log",
+          "sha256": "97cecda9bf61b7a802e0926256eddf72f4540070400329a9f7b2267411af46a6"
+        },
+        {
+          "path": "entry.tcl",
+          "sha256": "8d88978607464fd1dbaef2f0c2ea062cf4834ffa1492fd1034e409ced427a63a"
+        }
+      ]
+    }
+  }
+}

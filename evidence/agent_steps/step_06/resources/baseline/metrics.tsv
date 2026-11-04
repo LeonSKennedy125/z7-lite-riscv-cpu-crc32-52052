@@ -1,0 +1,16 @@
+metric	value
+part	xc7z010clg400-1
+setup_slack_ns	2.961
+hold_slack_ns	0.037
+DTCM_RAMB36	16
+IROM_RAMB36	4
+cpu/*IF_ID*	245
+cpu/*ID_EX*	449
+cpu/*EX_pipe*	2135
+cpu/*EX_MEM*	369
+cpu/*MEM_WB*	347
+cpu/*Regfile*	1888
+cpu/*csr_top*	266
+peripheral/*mailbox*	4305
+vio/*	712
+dbg_hub/*	1426

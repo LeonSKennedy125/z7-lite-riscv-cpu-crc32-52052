@@ -1,0 +1,134 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite GOLD license has been detected. Your current license is active and will expire on Permanent.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Mon Nov  2 20:56:49 2026
+# Process ID         : 48432
+# Current directory  : W:/evidence/agent_steps/step_06/runtime_tmp
+# Command line       : vivado.exe -mode batch -nojournal -log W:/evidence/agent_steps/step_06/resources/accelerated/vivado_final.log -source W:/evidence/agent_steps/step_06/resource_audit.tcl -tclargs X:/evidence/routed.dcp W:/evidence/agent_steps/step_06/resources/accelerated
+# Log file           : W:/evidence/agent_steps/step_06/resources/accelerated/vivado_final.log
+# Journal file       : 
+# Running On         : LeonS
+# Platform           : Windows 11
+# Operating System   : 26300
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i9-13980HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 16937 MB
+# Swap memory        : 21482 MB
+# Total Virtual      : 38419 MB
+# Available Virtual  : 5333 MB
+#-----------------------------------------------------------
+source W:/evidence/agent_steps/step_06/resource_audit.tcl
+# if {[version -short] ne "2026.1"} {error "Vivado2026.1 required"}
+# source W:/scripts/session_setup.tcl
+## if {[version -short] ne "2026.1"} {error "Vivado2026.1 required"}
+## report_param debug.enable_data_collection
+WARNING: [Common 17-35] No params matched 'debug.enable_data_collection'.
+
+## puts "S03_R1_TELEMETRY_BEFORE=[get_param debug.enable_data_collection]"
+S03_R1_TELEMETRY_BEFORE=1
+## set_param debug.enable_data_collection false
+## if {[get_param debug.enable_data_collection] != 0} {error "session telemetry collection remains enabled"}
+## puts "S03_R1_TELEMETRY_SESSION_ONLY=[get_param debug.enable_data_collection]"
+S03_R1_TELEMETRY_SESSION_ONLY=0
+# set checkpoint [lindex $argv 0]
+# set out [lindex $argv 1]
+# file mkdir $out
+# open_checkpoint $checkpoint
+Command: open_checkpoint X:/evidence/routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 341.602 ; gain = 4.125
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 833.324 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1305 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2026.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 945.172 ; gain = 1.852
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1550.637 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1550.637 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1550.637 ; gain = 0.000
+Read placeStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.258 . Memory (MB): peak = 1574.480 ; gain = 23.844
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1574.480 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.115 . Memory (MB): peak = 1574.480 ; gain = 0.000
+Read Physdb Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.411 . Memory (MB): peak = 1574.480 ; gain = 23.844
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.452 . Memory (MB): peak = 1574.480 ; gain = 28.848
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1574.480 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 6 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2026.1 (64-bit) build 6511674
+open_checkpoint: Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1574.480 ; gain = 1246.246
+# if {[get_property PART [current_design]] ne "xc7z010clg400-1"} {error "wrong device"}
+# report_utilization -file [file join $out utilization.rpt]
+# report_utilization -hierarchical -file [file join $out hierarchy.rpt]
+# report_timing_summary -report_unconstrained -check_timing_verbose -file [file join $out timing.rpt]
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+# report_clocks -file [file join $out clocks.rpt]
+# report_route_status -file [file join $out route.rpt]
+# report_ram_utilization -file [file join $out ram.rpt]
+report_ram_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1638.266 ; gain = 0.000
+# report_debug_core -file [file join $out debug.rpt]
+INFO: [Chipscope 16-14] Writing ChipScope report to file 'W:/evidence/agent_steps/step_06/resources/accelerated/debug.rpt'.
+report_debug_core: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1657.168 ; gain = 18.902
+# report_drc -file [file join $out drc.rpt]
+Command: report_drc -file W:/evidence/agent_steps/step_06/resources/accelerated/drc.rpt
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/XILINX/2026.1/Vivado/data/ip'.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file W:/evidence/agent_steps/step_06/resources/accelerated/drc.rpt.
+report_drc completed successfully
+# check_timing -verbose -file [file join $out check_timing.rpt]
+# set f [open [file join $out primitives.tsv] w]
+# puts $f "name\tref_name\tDOA_REG\tREAD_WIDTH_A\tWRITE_WIDTH_A"
+# set dtcm 0
+# set irom 0
+# foreach c [get_cells -hier -filter {REF_NAME == RAMB36E1 || REF_NAME == RAMB18E1}] {
+#  puts $f "[get_property NAME $c]\t[get_property REF_NAME $c]\t[get_property DOA_REG $c]\t[get_property READ_WIDTH_A $c]\t[get_property WRITE_WIDTH_A $c]"
+#  if {[string match *u_DTCM* $c]} {incr dtcm;if {[get_property DOA_REG $c]!=1} {error "DTCM output register missing"}}
+#  if {[string match *IROM* $c] || [string match *I_ROM* $c]} {incr irom}
+# }
+# close $f
+# if {$dtcm!=16 || $irom!=4} {error "CPU memory capacity optimized away: dtcm=$dtcm irom=$irom"}
+# set f [open [file join $out metrics.tsv] w]
+# puts $f "metric\tvalue"
+# puts $f "part\t[get_property PART [current_design]]"
+# puts $f "setup_slack_ns\t[get_property SLACK [get_timing_paths -delay_type max -max_paths 1]]"
+# puts $f "hold_slack_ns\t[get_property SLACK [get_timing_paths -delay_type min -max_paths 1]]"
+# puts $f "DTCM_RAMB36\t$dtcm"
+# puts $f "IROM_RAMB36\t$irom"
+# foreach pattern {cpu/*IF_ID* cpu/*ID_EX* cpu/*EX_pipe* cpu/*EX_MEM* cpu/*MEM_WB* cpu/*Regfile* cpu/*csr_top* peripheral/*mailbox* vio/* dbg_hub/*} {
+#  set cells [get_cells -hier -filter "IS_PRIMITIVE == 1 && NAME =~ $pattern"]
+#  puts $f "$pattern\t[llength $cells]"
+#  if {[llength $cells]==0} {error "required CPU/debug/mailbox structure missing: $pattern"}
+# }
+# close $f
+# set f [open [file join $out clocks.tsv] w]
+# puts $f "name\tperiod\tmaster"
+# foreach c [get_clocks] {puts $f "$c\t[get_property PERIOD $c]\t[get_property MASTER_CLOCK $c]"}
+WARNING: [Common 17-673] Cannot get value of property 'MASTER_CLOCK' because this property is not valid in conjunction with other property setting on this object.
+WARNING: [Common 17-673] Cannot get value of property 'MASTER_CLOCK' because this property is not valid in conjunction with other property setting on this object.
+# close $f
+# puts "S06_ROUTED_STRUCTURE_PASS dtcm=$dtcm irom=$irom"
+S06_ROUTED_STRUCTURE_PASS dtcm=16 irom=4
+# close_design
+INFO: [Common 17-206] Exiting Vivado at Mon Nov  2 20:57:20 2026...

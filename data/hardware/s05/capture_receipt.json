@@ -1,0 +1,136 @@
+{
+  "source": "actual Vivado2026.1 Hardware Manager capture",
+  "attempt_id": "capture_20261102_183416_de2cae60",
+  "hardware_self_check_pass": true,
+  "physical_identity_sha256": "4bcdbfff97e49389b15d012bace0e36a2c13c97f0a8d401deeb3329a91a91edd",
+  "bit_sha256": "717bd8cfddeecf7753c8adcff68e0ec0072c0b9ca283c28613c2ac0dd3788d5b",
+  "ltx_sha256": "facc5a5a95599c155598321dcd21d34b5d32f14b810fd7b6ef086fb8416ce6ba",
+  "tool_run_sha256": "3dd180f612ccc2d34b21c0d881d10c282d051a58e8a1596b08a25b8c1d3997d5",
+  "events_sha256": "ca2c64c8cff0bd5ce424c0426359dc8b35364f4e02d462b74b1bf65243a50404",
+  "captures": {
+    "run_0_scan_0.hex": "c5d1ec8fb84080a3f95abf2b90a76b0e31dae791343fb7e0827ee4a4adabd988",
+    "run_0_scan_1.hex": "c5d1ec8fb84080a3f95abf2b90a76b0e31dae791343fb7e0827ee4a4adabd988",
+    "run_1_scan_0.hex": "c5d1ec8fb84080a3f95abf2b90a76b0e31dae791343fb7e0827ee4a4adabd988",
+    "run_1_scan_1.hex": "c5d1ec8fb84080a3f95abf2b90a76b0e31dae791343fb7e0827ee4a4adabd988",
+    "run_2_scan_0.hex": "c5d1ec8fb84080a3f95abf2b90a76b0e31dae791343fb7e0827ee4a4adabd988",
+    "run_2_scan_1.hex": "c5d1ec8fb84080a3f95abf2b90a76b0e31dae791343fb7e0827ee4a4adabd988"
+  },
+  "observations": {
+    "attempt_id": "capture_20261102_183416_de2cae60",
+    "heartbeat_observed": true,
+    "success_LED_observed": true,
+    "user_statement": "用户在本轮 S05 硬件采集结束后（2026-11-02，Asia/Shanghai）于实物板上确认：PL_LED1（P15，低电平点亮）保持点亮；PL_LED2（U12，心跳灯）持续闪烁。",
+    "observation_time": "2026-11-02T18:40:00+08:00",
+    "observation_method": "User visual observation of the physical Z7-LITE_ES1 board in the active session; not inferred from VIO, LTX or simulation.",
+    "success_LED_meaning": "PL_LED1 is driven by the accepted success output; it was observed lit after three VIO auxiliary resets, consistent with 12/12 CRC cases matching.",
+    "heartbeat_LED_meaning": "PL_LED2 is driven by the accepted heartbeat output; continuous blinking was observed, not a static level.",
+    "user_confirmation_channel": "AskUserQuestion answers: success=已点亮, heartbeat=持续闪烁",
+    "prior_attempt_analysis": {
+      "capture_20261102_182943_15e90a91": {
+        "reason": "Retained failed capture from rework_r3. PROGRAM_BEGIN/PROGRAM_END completed and VIO mapping matched, but Vivado rejected the initial read_index OUTPUT_VALUE \"0\" because the 7-bit HEX probe requires two characters. Failure occurred before RESET_LOW; no reset or scan was executed and no result was selected away. Corrected in rework_r4/capture.tcl and revalidated by 43 host controls.",
+        "supporting_evidence": [
+          {
+            "path": "tool_run.json",
+            "sha256": "6d0e859dbbdc4eddfea716b17fad7f2bb7e7af63e1699feaa100250d9231398f"
+          },
+          {
+            "path": "events.jsonl",
+            "sha256": "194e3532d7803a45f24045a6dbae14f3d537e0f21cc08e91206fbe2f1d9a32fe"
+          },
+          {
+            "path": "stdout.log",
+            "sha256": "cdacd2beb8ac1e85bd2445f26fd4a5ba715522d8e1c8018ff11d89579cd57e2c"
+          },
+          {
+            "path": "vivado.log",
+            "sha256": "97cecda9bf61b7a802e0926256eddf72f4540070400329a9f7b2267411af46a6"
+          },
+          {
+            "path": "entry.tcl",
+            "sha256": "8d88978607464fd1dbaef2f0c2ea062cf4834ffa1492fd1034e409ced427a63a"
+          }
+        ]
+      }
+    }
+  },
+  "target_and_device": [
+    {
+      "object": "localhost:3121/xilinx_tcf/Digilent/210241793374",
+      "NAME": "localhost:3121/xilinx_tcf/Digilent/210241793374",
+      "PARAM.DEVICE": "jsn-JTAG-HS2-210241793374",
+      "PARAM.FREQUENCY": "10000000",
+      "PARAM.TYPE": "xilinx_tcf",
+      "TID": "jsn-JTAG-HS2-210241793374",
+      "UID": "Digilent/210241793374"
+    },
+    {
+      "object": "arm_dap_0",
+      "NAME": "arm_dap_0",
+      "PART": "arm_dap",
+      "INDEX": "0",
+      "IDCODE": "01001011101000000000010001110111",
+      "DID": "jsn-JTAG-HS2-210241793374-4ba00477-0"
+    },
+    {
+      "object": "xc7z010_1",
+      "NAME": "xc7z010_1",
+      "PART": "xc7z010",
+      "INDEX": "1",
+      "IDCODE": "00010011011100100010000010010011",
+      "DID": "jsn-JTAG-HS2-210241793374-13722093-0"
+    }
+  ],
+  "runtime_VIO": [
+    {
+      "object": "hw_vio_1",
+      "CORE_UUID": "1BE27D511A4C50DC974F3E22D2C609B9",
+      "INSTANCE_NAME": "vio",
+      "NAME": "hw_vio_1"
+    },
+    {
+      "ltx_uuid": "1BE27D511A4C50DC974F3E22D2C609B9",
+      "runtime_verified": "1"
+    },
+    {
+      "object": "committed",
+      "CORE_UUID": "1BE27D511A4C50DC974F3E22D2C609B9",
+      "NAME": "committed",
+      "PROBE_PORT": "1",
+      "PROBE_PORT_BIT_COUNT": "1",
+      "TYPE": "vio_input"
+    },
+    {
+      "object": "failed",
+      "CORE_UUID": "1BE27D511A4C50DC974F3E22D2C609B9",
+      "NAME": "failed",
+      "PROBE_PORT": "2",
+      "PROBE_PORT_BIT_COUNT": "1",
+      "TYPE": "vio_input"
+    },
+    {
+      "object": "read_data",
+      "CORE_UUID": "1BE27D511A4C50DC974F3E22D2C609B9",
+      "NAME": "read_data",
+      "PROBE_PORT": "0",
+      "PROBE_PORT_BIT_COUNT": "32",
+      "TYPE": "vio_input"
+    },
+    {
+      "object": "read_index",
+      "CORE_UUID": "1BE27D511A4C50DC974F3E22D2C609B9",
+      "NAME": "read_index",
+      "PROBE_PORT": "0",
+      "PROBE_PORT_BIT_COUNT": "7",
+      "TYPE": "vio_output"
+    },
+    {
+      "object": "restart",
+      "CORE_UUID": "1BE27D511A4C50DC974F3E22D2C609B9",
+      "NAME": "restart",
+      "PROBE_PORT": "1",
+      "PROBE_PORT_BIT_COUNT": "1",
+      "TYPE": "vio_output"
+    }
+  ],
+  "report_sha256": "9342136b78b44e019ae80e36b571d1ef36100212b087b4ceae9874635686b707"
+}

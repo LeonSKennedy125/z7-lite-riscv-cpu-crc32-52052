@@ -1,0 +1,247 @@
+{
+  "checks": [
+    {
+      "name": "workdir",
+      "pass": true,
+      "detail": "cwd=D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc"
+    },
+    {
+      "name": "main_xpr",
+      "pass": true,
+      "detail": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\RISCV_5pipeline.xpr"
+    },
+    {
+      "name": "current_build_inside_root",
+      "pass": true,
+      "detail": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5"
+    },
+    {
+      "name": "current_demo_xpr",
+      "pass": true,
+      "detail": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\local_builds\\s05_es1_20261102_173954_d834d5\\b\\p\\demo.xpr"
+    },
+    {
+      "name": "s06_independent_acceptance",
+      "pass": true,
+      "detail": "PASS"
+    },
+    {
+      "name": "s07_execution_self_check",
+      "pass": true,
+      "detail": "SELF_CHECK_PASS"
+    },
+    {
+      "name": "s07_self_check_keeps_pending",
+      "pass": true,
+      "detail": "PENDING"
+    },
+    {
+      "name": "word_exists",
+      "pass": true,
+      "detail": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\report\\design_report.docx"
+    },
+    {
+      "name": "word_shape",
+      "pass": true,
+      "detail": "paragraphs=201 tables=17 images=4"
+    },
+    {
+      "name": "word_sections",
+      "pass": true,
+      "detail": "missing=[]"
+    },
+    {
+      "name": "word_required_values",
+      "pass": false,
+      "detail": "missing=['12/12']"
+    },
+    {
+      "name": "word_no_internal_traces",
+      "pass": true,
+      "detail": "present=[]"
+    },
+    {
+      "name": "word_no_drive_paths",
+      "pass": true,
+      "detail": "hits=0"
+    },
+    {
+      "name": "word_crc_scope",
+      "pass": true,
+      "detail": "error-detection statement"
+    },
+    {
+      "name": "word_perf_4096_sw",
+      "pass": true,
+      "detail": "69653"
+    },
+    {
+      "name": "word_perf_4096_hw",
+      "pass": true,
+      "detail": "10295"
+    },
+    {
+      "name": "word_perf_speedup",
+      "pass": true,
+      "detail": "6.765711510441962"
+    },
+    {
+      "name": "word_res_lut_base",
+      "pass": true,
+      "detail": "value=6130"
+    },
+    {
+      "name": "word_res_lut_acc",
+      "pass": true,
+      "detail": "value=6560"
+    },
+    {
+      "name": "word_res_ff_base",
+      "pass": true,
+      "detail": "value=7694"
+    },
+    {
+      "name": "word_res_ff_acc",
+      "pass": true,
+      "detail": "value=7892"
+    },
+    {
+      "name": "word_res_wns_base",
+      "pass": true,
+      "detail": "value=2.961"
+    },
+    {
+      "name": "word_res_wns_acc",
+      "pass": true,
+      "detail": "value=2.824"
+    },
+    {
+      "name": "word_layout_fit",
+      "pass": true,
+      "detail": "usable=6.536; tables=[]; images=[]"
+    },
+    {
+      "name": "ai_quotes",
+      "pass": true,
+      "detail": "19 quotes; failures=[]"
+    },
+    {
+      "name": "ai_record_files",
+      "pass": true,
+      "detail": "record and session prompts exist"
+    },
+    {
+      "name": "ai_record_boundaries",
+      "pass": true,
+      "detail": "states no full export/no internal reasoning"
+    },
+    {
+      "name": "ai_session_prompts",
+      "pass": true,
+      "detail": "P1-P3 present"
+    },
+    {
+      "name": "skill_sections",
+      "pass": true,
+      "detail": "scope/method/failure/effect/examples"
+    },
+    {
+      "name": "skill_self_test",
+      "pass": true,
+      "detail": "exit=0"
+    },
+    {
+      "name": "skill_six_dumps",
+      "pass": true,
+      "detail": "dumps=6 exit=0"
+    },
+    {
+      "name": "skill_staged_manifest",
+      "pass": true,
+      "detail": "exit=0"
+    },
+    {
+      "name": "skill_no_pynq_claim",
+      "pass": false,
+      "detail": "PYNQ not claimed"
+    },
+    {
+      "name": "license_mit_text",
+      "pass": true,
+      "detail": "MIT holder"
+    },
+    {
+      "name": "license_decision",
+      "pass": true,
+      "detail": "SELECTED_MIT"
+    },
+    {
+      "name": "license_publication",
+      "pass": true,
+      "detail": "not published/submitted"
+    },
+    {
+      "name": "amd_header",
+      "pass": true,
+      "detail": [
+        "//Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.",
+        "//Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved."
+      ]
+    },
+    {
+      "name": "license_amd_not_team",
+      "pass": true,
+      "detail": "AMD file excluded from team license"
+    },
+    {
+      "name": "license_vendor_excluded",
+      "pass": true,
+      "detail": "entries=8"
+    },
+    {
+      "name": "license_no_root_file",
+      "pass": true,
+      "detail": "root LICENSE is not a file"
+    },
+    {
+      "name": "readme_license_status",
+      "pass": true,
+      "detail": "README license/publication status"
+    },
+    {
+      "name": "stage_manifest_license",
+      "pass": true,
+      "detail": "SELECTED_MIT"
+    },
+    {
+      "name": "stage_no_internal_docs",
+      "pass": true,
+      "detail": "no internal report/trace in package"
+    },
+    {
+      "name": "stage_word_present",
+      "pass": true,
+      "detail": "design_report.docx"
+    },
+    {
+      "name": "stage_functional_identical",
+      "pass": true,
+      "detail": "files=76 changed=[]"
+    },
+    {
+      "name": "stage_manifest_exists",
+      "pass": true,
+      "detail": "manifest"
+    },
+    {
+      "name": "executor_self_check",
+      "pass": true,
+      "detail": "exit=0"
+    },
+    {
+      "name": "publication_not_done",
+      "pass": true,
+      "detail": "progress says not published"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "unused_core_files": [
+    "bht.sv",
+    "clock_higher.v",
+    "fifo.sv",
+    "irom.v",
+    "rv32m_inport.v",
+    "rv32m_mux.v",
+    "rv32m_outport.v",
+    "tage_predictor.sv",
+    "tage_table.sv",
+    "top.sv"
+  ],
+  "reason": "not instantiated by demo_top/demo_cpu; RV32M/TAGE/ITTAGE are not delivered features",
+  "not_removed_from_original_frozen_demo": true,
+  "not_registered_by_build": "scripts/rtl_files.txt",
+  "other_exclusions": [
+    "tools/ (installed separately)",
+    "b/ and all old generated projects",
+    "*.dcp, cache and .Xil",
+    "failed attempts and s01t_* fixtures",
+    "__pycache__ and *.pyc",
+    "resource_baseline.sv (S06-only experiment)",
+    "original parent projects and original XPR/BD",
+    "historical PASS receipts copied as current evidence"
+  ],
+  "necessary_documentation_remaining": [
+    "S05 real PCB/board capture",
+    "S06 measured performance and resource analysis",
+    "S07 final design report, AI collaboration and reusable skill review, rights confirmation and license selection",
+    "S08 final release and authorized public repository/competition submission"
+  ]
+}

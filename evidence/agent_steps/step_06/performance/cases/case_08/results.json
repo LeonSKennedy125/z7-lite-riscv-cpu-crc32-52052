@@ -1,0 +1,156 @@
+{
+  "case": 8,
+  "bytes": 64,
+  "input_kind": "xorshift32",
+  "runs": [
+    {
+      "run": 1,
+      "case": 8,
+      "bytes": 64,
+      "input_kind": "xorshift32",
+      "data_sha256": "23de77bc2db8bdd257e00e705272297b07425893154d2713a333e904eb5c15ac",
+      "expected_crc": "3f9d3d2e",
+      "software_crc": "3f9d3d2e",
+      "hardware_crc": "3f9d3d2e",
+      "software_cycles": 1109,
+      "hardware_total_cycles": 215,
+      "engine_session_cycles": 170,
+      "software_us": 22.18,
+      "hardware_total_us": 4.3,
+      "engine_session_us": 3.4,
+      "speedup": 5.158139534883721,
+      "software_minus_hardware_cycles": 894
+    },
+    {
+      "run": 2,
+      "case": 8,
+      "bytes": 64,
+      "input_kind": "xorshift32",
+      "data_sha256": "23de77bc2db8bdd257e00e705272297b07425893154d2713a333e904eb5c15ac",
+      "expected_crc": "3f9d3d2e",
+      "software_crc": "3f9d3d2e",
+      "hardware_crc": "3f9d3d2e",
+      "software_cycles": 1109,
+      "hardware_total_cycles": 215,
+      "engine_session_cycles": 170,
+      "software_us": 22.18,
+      "hardware_total_us": 4.3,
+      "engine_session_us": 3.4,
+      "speedup": 5.158139534883721,
+      "software_minus_hardware_cycles": 894
+    },
+    {
+      "run": 3,
+      "case": 8,
+      "bytes": 64,
+      "input_kind": "xorshift32",
+      "data_sha256": "23de77bc2db8bdd257e00e705272297b07425893154d2713a333e904eb5c15ac",
+      "expected_crc": "3f9d3d2e",
+      "software_crc": "3f9d3d2e",
+      "hardware_crc": "3f9d3d2e",
+      "software_cycles": 1109,
+      "hardware_total_cycles": 215,
+      "engine_session_cycles": 170,
+      "software_us": 22.18,
+      "hardware_total_us": 4.3,
+      "engine_session_us": 3.4,
+      "speedup": 5.158139534883721,
+      "software_minus_hardware_cycles": 894
+    }
+  ],
+  "speedup_definition": "software_cycles / hardware_total_cycles",
+  "software_baseline": "256-entry table in the SAME S05 accelerated firmware",
+  "statistics": {
+    "software_cycles": {
+      "per_run": [
+        1109,
+        1109,
+        1109
+      ],
+      "min": 1109,
+      "max": 1109,
+      "mean": 1109.0,
+      "spread": 0,
+      "run2_minus_run1": 0,
+      "run3_minus_run1": 0
+    },
+    "hardware_total_cycles": {
+      "per_run": [
+        215,
+        215,
+        215
+      ],
+      "min": 215,
+      "max": 215,
+      "mean": 215.0,
+      "spread": 0,
+      "run2_minus_run1": 0,
+      "run3_minus_run1": 0
+    },
+    "engine_session_cycles": {
+      "per_run": [
+        170,
+        170,
+        170
+      ],
+      "min": 170,
+      "max": 170,
+      "mean": 170.0,
+      "spread": 0,
+      "run2_minus_run1": 0,
+      "run3_minus_run1": 0
+    },
+    "software_us": {
+      "per_run": [
+        22.18,
+        22.18,
+        22.18
+      ],
+      "min": 22.18,
+      "max": 22.18,
+      "mean": 22.179999999999996,
+      "spread": 0.0,
+      "run2_minus_run1": 0.0,
+      "run3_minus_run1": 0.0
+    },
+    "hardware_total_us": {
+      "per_run": [
+        4.3,
+        4.3,
+        4.3
+      ],
+      "min": 4.3,
+      "max": 4.3,
+      "mean": 4.3,
+      "spread": 0.0,
+      "run2_minus_run1": 0.0,
+      "run3_minus_run1": 0.0
+    },
+    "engine_session_us": {
+      "per_run": [
+        3.4,
+        3.4,
+        3.4
+      ],
+      "min": 3.4,
+      "max": 3.4,
+      "mean": 3.4,
+      "spread": 0.0,
+      "run2_minus_run1": 0.0,
+      "run3_minus_run1": 0.0
+    },
+    "speedup": {
+      "per_run": [
+        5.158139534883721,
+        5.158139534883721,
+        5.158139534883721
+      ],
+      "min": 5.158139534883721,
+      "max": 5.158139534883721,
+      "mean": 5.158139534883721,
+      "spread": 0.0,
+      "run2_minus_run1": 0.0,
+      "run3_minus_run1": 0.0
+    }
+  }
+}

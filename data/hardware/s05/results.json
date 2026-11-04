@@ -1,0 +1,765 @@
+{
+  "source": "actual Vivado2026.1 Hardware Manager capture",
+  "attempt_id": "capture_20261102_183416_de2cae60",
+  "board_measured": true,
+  "pass": true,
+  "status": "SELF_CHECK_PASS",
+  "independent_acceptance": "PENDING",
+  "runs": 3,
+  "scans": 6,
+  "words_per_scan": 104,
+  "CRC_cases_verified": 36,
+  "failure_counts": [
+    0,
+    0,
+    0
+  ],
+  "mailbox_stable": true,
+  "reset_method": "VIO auxiliary hardware reset request; no button/power-cycle claim",
+  "physical_LED_observation_verified": true,
+  "cycle_analysis_complete": true,
+  "all_capture_attempts": [
+    {
+      "attempt_id": "capture_20261102_183416_de2cae60",
+      "tool_status": "COMPLETE",
+      "tool_exit_code": 0,
+      "validation_failures": [],
+      "raw_scans_preserved": 6
+    }
+  ],
+  "prior_failed_attempts_unresolved": [],
+  "raw_capture_attempt": "evidence/agent_steps/step_05/rework_r4/attempts/capture_20261102_183416_de2cae60",
+  "per_run_rows": [
+    [
+      {
+        "case": 0,
+        "bytes": 0,
+        "reference_crc": "00000000",
+        "software_crc": "00000000",
+        "hardware_crc": "00000000",
+        "software_cycles": 21,
+        "hardware_total_cycles": 55,
+        "engine_session_cycles": 0
+      },
+      {
+        "case": 1,
+        "bytes": 9,
+        "reference_crc": "cbf43926",
+        "software_crc": "cbf43926",
+        "hardware_crc": "cbf43926",
+        "software_cycles": 174,
+        "hardware_total_cycles": 79,
+        "engine_session_cycles": 39
+      },
+      {
+        "case": 2,
+        "bytes": 1,
+        "reference_crc": "0bd4b551",
+        "software_crc": "0bd4b551",
+        "hardware_crc": "0bd4b551",
+        "software_cycles": 38,
+        "hardware_total_cycles": 59,
+        "engine_session_cycles": 19
+      },
+      {
+        "case": 3,
+        "bytes": 2,
+        "reference_crc": "9fbb5a60",
+        "software_crc": "9fbb5a60",
+        "hardware_crc": "9fbb5a60",
+        "software_cycles": 55,
+        "hardware_total_cycles": 64,
+        "engine_session_cycles": 24
+      },
+      {
+        "case": 4,
+        "bytes": 3,
+        "reference_crc": "c747799e",
+        "software_crc": "c747799e",
+        "hardware_crc": "c747799e",
+        "software_cycles": 72,
+        "hardware_total_cycles": 74,
+        "engine_session_cycles": 34
+      },
+      {
+        "case": 5,
+        "bytes": 4,
+        "reference_crc": "cf72b890",
+        "software_crc": "cf72b890",
+        "hardware_crc": "cf72b890",
+        "software_cycles": 89,
+        "hardware_total_cycles": 65,
+        "engine_session_cycles": 20
+      },
+      {
+        "case": 6,
+        "bytes": 7,
+        "reference_crc": "b310bb4b",
+        "software_crc": "b310bb4b",
+        "hardware_crc": "b310bb4b",
+        "software_cycles": 140,
+        "hardware_total_cycles": 84,
+        "engine_session_cycles": 44
+      },
+      {
+        "case": 7,
+        "bytes": 16,
+        "reference_crc": "16d58768",
+        "software_crc": "16d58768",
+        "hardware_crc": "16d58768",
+        "software_cycles": 293,
+        "hardware_total_cycles": 95,
+        "engine_session_cycles": 50
+      },
+      {
+        "case": 8,
+        "bytes": 64,
+        "reference_crc": "3f9d3d2e",
+        "software_crc": "3f9d3d2e",
+        "hardware_crc": "3f9d3d2e",
+        "software_cycles": 1109,
+        "hardware_total_cycles": 215,
+        "engine_session_cycles": 170
+      },
+      {
+        "case": 9,
+        "bytes": 256,
+        "reference_crc": "21bf9c9a",
+        "software_crc": "21bf9c9a",
+        "hardware_crc": "21bf9c9a",
+        "software_cycles": 4373,
+        "hardware_total_cycles": 695,
+        "engine_session_cycles": 650
+      },
+      {
+        "case": 10,
+        "bytes": 1024,
+        "reference_crc": "a041c516",
+        "software_crc": "a041c516",
+        "hardware_crc": "a041c516",
+        "software_cycles": 17429,
+        "hardware_total_cycles": 2615,
+        "engine_session_cycles": 2570
+      },
+      {
+        "case": 11,
+        "bytes": 4096,
+        "reference_crc": "1528b2fa",
+        "software_crc": "1528b2fa",
+        "hardware_crc": "1528b2fa",
+        "software_cycles": 69653,
+        "hardware_total_cycles": 10295,
+        "engine_session_cycles": 10250
+      }
+    ],
+    [
+      {
+        "case": 0,
+        "bytes": 0,
+        "reference_crc": "00000000",
+        "software_crc": "00000000",
+        "hardware_crc": "00000000",
+        "software_cycles": 21,
+        "hardware_total_cycles": 55,
+        "engine_session_cycles": 0
+      },
+      {
+        "case": 1,
+        "bytes": 9,
+        "reference_crc": "cbf43926",
+        "software_crc": "cbf43926",
+        "hardware_crc": "cbf43926",
+        "software_cycles": 174,
+        "hardware_total_cycles": 79,
+        "engine_session_cycles": 39
+      },
+      {
+        "case": 2,
+        "bytes": 1,
+        "reference_crc": "0bd4b551",
+        "software_crc": "0bd4b551",
+        "hardware_crc": "0bd4b551",
+        "software_cycles": 38,
+        "hardware_total_cycles": 59,
+        "engine_session_cycles": 19
+      },
+      {
+        "case": 3,
+        "bytes": 2,
+        "reference_crc": "9fbb5a60",
+        "software_crc": "9fbb5a60",
+        "hardware_crc": "9fbb5a60",
+        "software_cycles": 55,
+        "hardware_total_cycles": 64,
+        "engine_session_cycles": 24
+      },
+      {
+        "case": 4,
+        "bytes": 3,
+        "reference_crc": "c747799e",
+        "software_crc": "c747799e",
+        "hardware_crc": "c747799e",
+        "software_cycles": 72,
+        "hardware_total_cycles": 74,
+        "engine_session_cycles": 34
+      },
+      {
+        "case": 5,
+        "bytes": 4,
+        "reference_crc": "cf72b890",
+        "software_crc": "cf72b890",
+        "hardware_crc": "cf72b890",
+        "software_cycles": 89,
+        "hardware_total_cycles": 65,
+        "engine_session_cycles": 20
+      },
+      {
+        "case": 6,
+        "bytes": 7,
+        "reference_crc": "b310bb4b",
+        "software_crc": "b310bb4b",
+        "hardware_crc": "b310bb4b",
+        "software_cycles": 140,
+        "hardware_total_cycles": 84,
+        "engine_session_cycles": 44
+      },
+      {
+        "case": 7,
+        "bytes": 16,
+        "reference_crc": "16d58768",
+        "software_crc": "16d58768",
+        "hardware_crc": "16d58768",
+        "software_cycles": 293,
+        "hardware_total_cycles": 95,
+        "engine_session_cycles": 50
+      },
+      {
+        "case": 8,
+        "bytes": 64,
+        "reference_crc": "3f9d3d2e",
+        "software_crc": "3f9d3d2e",
+        "hardware_crc": "3f9d3d2e",
+        "software_cycles": 1109,
+        "hardware_total_cycles": 215,
+        "engine_session_cycles": 170
+      },
+      {
+        "case": 9,
+        "bytes": 256,
+        "reference_crc": "21bf9c9a",
+        "software_crc": "21bf9c9a",
+        "hardware_crc": "21bf9c9a",
+        "software_cycles": 4373,
+        "hardware_total_cycles": 695,
+        "engine_session_cycles": 650
+      },
+      {
+        "case": 10,
+        "bytes": 1024,
+        "reference_crc": "a041c516",
+        "software_crc": "a041c516",
+        "hardware_crc": "a041c516",
+        "software_cycles": 17429,
+        "hardware_total_cycles": 2615,
+        "engine_session_cycles": 2570
+      },
+      {
+        "case": 11,
+        "bytes": 4096,
+        "reference_crc": "1528b2fa",
+        "software_crc": "1528b2fa",
+        "hardware_crc": "1528b2fa",
+        "software_cycles": 69653,
+        "hardware_total_cycles": 10295,
+        "engine_session_cycles": 10250
+      }
+    ],
+    [
+      {
+        "case": 0,
+        "bytes": 0,
+        "reference_crc": "00000000",
+        "software_crc": "00000000",
+        "hardware_crc": "00000000",
+        "software_cycles": 21,
+        "hardware_total_cycles": 55,
+        "engine_session_cycles": 0
+      },
+      {
+        "case": 1,
+        "bytes": 9,
+        "reference_crc": "cbf43926",
+        "software_crc": "cbf43926",
+        "hardware_crc": "cbf43926",
+        "software_cycles": 174,
+        "hardware_total_cycles": 79,
+        "engine_session_cycles": 39
+      },
+      {
+        "case": 2,
+        "bytes": 1,
+        "reference_crc": "0bd4b551",
+        "software_crc": "0bd4b551",
+        "hardware_crc": "0bd4b551",
+        "software_cycles": 38,
+        "hardware_total_cycles": 59,
+        "engine_session_cycles": 19
+      },
+      {
+        "case": 3,
+        "bytes": 2,
+        "reference_crc": "9fbb5a60",
+        "software_crc": "9fbb5a60",
+        "hardware_crc": "9fbb5a60",
+        "software_cycles": 55,
+        "hardware_total_cycles": 64,
+        "engine_session_cycles": 24
+      },
+      {
+        "case": 4,
+        "bytes": 3,
+        "reference_crc": "c747799e",
+        "software_crc": "c747799e",
+        "hardware_crc": "c747799e",
+        "software_cycles": 72,
+        "hardware_total_cycles": 74,
+        "engine_session_cycles": 34
+      },
+      {
+        "case": 5,
+        "bytes": 4,
+        "reference_crc": "cf72b890",
+        "software_crc": "cf72b890",
+        "hardware_crc": "cf72b890",
+        "software_cycles": 89,
+        "hardware_total_cycles": 65,
+        "engine_session_cycles": 20
+      },
+      {
+        "case": 6,
+        "bytes": 7,
+        "reference_crc": "b310bb4b",
+        "software_crc": "b310bb4b",
+        "hardware_crc": "b310bb4b",
+        "software_cycles": 140,
+        "hardware_total_cycles": 84,
+        "engine_session_cycles": 44
+      },
+      {
+        "case": 7,
+        "bytes": 16,
+        "reference_crc": "16d58768",
+        "software_crc": "16d58768",
+        "hardware_crc": "16d58768",
+        "software_cycles": 293,
+        "hardware_total_cycles": 95,
+        "engine_session_cycles": 50
+      },
+      {
+        "case": 8,
+        "bytes": 64,
+        "reference_crc": "3f9d3d2e",
+        "software_crc": "3f9d3d2e",
+        "hardware_crc": "3f9d3d2e",
+        "software_cycles": 1109,
+        "hardware_total_cycles": 215,
+        "engine_session_cycles": 170
+      },
+      {
+        "case": 9,
+        "bytes": 256,
+        "reference_crc": "21bf9c9a",
+        "software_crc": "21bf9c9a",
+        "hardware_crc": "21bf9c9a",
+        "software_cycles": 4373,
+        "hardware_total_cycles": 695,
+        "engine_session_cycles": 650
+      },
+      {
+        "case": 10,
+        "bytes": 1024,
+        "reference_crc": "a041c516",
+        "software_crc": "a041c516",
+        "hardware_crc": "a041c516",
+        "software_cycles": 17429,
+        "hardware_total_cycles": 2615,
+        "engine_session_cycles": 2570
+      },
+      {
+        "case": 11,
+        "bytes": 4096,
+        "reference_crc": "1528b2fa",
+        "software_crc": "1528b2fa",
+        "hardware_crc": "1528b2fa",
+        "software_cycles": 69653,
+        "hardware_total_cycles": 10295,
+        "engine_session_cycles": 10250
+      }
+    ]
+  ],
+  "cycle_comparison": [
+    {
+      "case": 0,
+      "field": "software_cycles",
+      "per_run": [
+        21,
+        21,
+        21
+      ],
+      "spread": 0
+    },
+    {
+      "case": 0,
+      "field": "hardware_total_cycles",
+      "per_run": [
+        55,
+        55,
+        55
+      ],
+      "spread": 0
+    },
+    {
+      "case": 0,
+      "field": "engine_session_cycles",
+      "per_run": [
+        0,
+        0,
+        0
+      ],
+      "spread": 0
+    },
+    {
+      "case": 1,
+      "field": "software_cycles",
+      "per_run": [
+        174,
+        174,
+        174
+      ],
+      "spread": 0
+    },
+    {
+      "case": 1,
+      "field": "hardware_total_cycles",
+      "per_run": [
+        79,
+        79,
+        79
+      ],
+      "spread": 0
+    },
+    {
+      "case": 1,
+      "field": "engine_session_cycles",
+      "per_run": [
+        39,
+        39,
+        39
+      ],
+      "spread": 0
+    },
+    {
+      "case": 2,
+      "field": "software_cycles",
+      "per_run": [
+        38,
+        38,
+        38
+      ],
+      "spread": 0
+    },
+    {
+      "case": 2,
+      "field": "hardware_total_cycles",
+      "per_run": [
+        59,
+        59,
+        59
+      ],
+      "spread": 0
+    },
+    {
+      "case": 2,
+      "field": "engine_session_cycles",
+      "per_run": [
+        19,
+        19,
+        19
+      ],
+      "spread": 0
+    },
+    {
+      "case": 3,
+      "field": "software_cycles",
+      "per_run": [
+        55,
+        55,
+        55
+      ],
+      "spread": 0
+    },
+    {
+      "case": 3,
+      "field": "hardware_total_cycles",
+      "per_run": [
+        64,
+        64,
+        64
+      ],
+      "spread": 0
+    },
+    {
+      "case": 3,
+      "field": "engine_session_cycles",
+      "per_run": [
+        24,
+        24,
+        24
+      ],
+      "spread": 0
+    },
+    {
+      "case": 4,
+      "field": "software_cycles",
+      "per_run": [
+        72,
+        72,
+        72
+      ],
+      "spread": 0
+    },
+    {
+      "case": 4,
+      "field": "hardware_total_cycles",
+      "per_run": [
+        74,
+        74,
+        74
+      ],
+      "spread": 0
+    },
+    {
+      "case": 4,
+      "field": "engine_session_cycles",
+      "per_run": [
+        34,
+        34,
+        34
+      ],
+      "spread": 0
+    },
+    {
+      "case": 5,
+      "field": "software_cycles",
+      "per_run": [
+        89,
+        89,
+        89
+      ],
+      "spread": 0
+    },
+    {
+      "case": 5,
+      "field": "hardware_total_cycles",
+      "per_run": [
+        65,
+        65,
+        65
+      ],
+      "spread": 0
+    },
+    {
+      "case": 5,
+      "field": "engine_session_cycles",
+      "per_run": [
+        20,
+        20,
+        20
+      ],
+      "spread": 0
+    },
+    {
+      "case": 6,
+      "field": "software_cycles",
+      "per_run": [
+        140,
+        140,
+        140
+      ],
+      "spread": 0
+    },
+    {
+      "case": 6,
+      "field": "hardware_total_cycles",
+      "per_run": [
+        84,
+        84,
+        84
+      ],
+      "spread": 0
+    },
+    {
+      "case": 6,
+      "field": "engine_session_cycles",
+      "per_run": [
+        44,
+        44,
+        44
+      ],
+      "spread": 0
+    },
+    {
+      "case": 7,
+      "field": "software_cycles",
+      "per_run": [
+        293,
+        293,
+        293
+      ],
+      "spread": 0
+    },
+    {
+      "case": 7,
+      "field": "hardware_total_cycles",
+      "per_run": [
+        95,
+        95,
+        95
+      ],
+      "spread": 0
+    },
+    {
+      "case": 7,
+      "field": "engine_session_cycles",
+      "per_run": [
+        50,
+        50,
+        50
+      ],
+      "spread": 0
+    },
+    {
+      "case": 8,
+      "field": "software_cycles",
+      "per_run": [
+        1109,
+        1109,
+        1109
+      ],
+      "spread": 0
+    },
+    {
+      "case": 8,
+      "field": "hardware_total_cycles",
+      "per_run": [
+        215,
+        215,
+        215
+      ],
+      "spread": 0
+    },
+    {
+      "case": 8,
+      "field": "engine_session_cycles",
+      "per_run": [
+        170,
+        170,
+        170
+      ],
+      "spread": 0
+    },
+    {
+      "case": 9,
+      "field": "software_cycles",
+      "per_run": [
+        4373,
+        4373,
+        4373
+      ],
+      "spread": 0
+    },
+    {
+      "case": 9,
+      "field": "hardware_total_cycles",
+      "per_run": [
+        695,
+        695,
+        695
+      ],
+      "spread": 0
+    },
+    {
+      "case": 9,
+      "field": "engine_session_cycles",
+      "per_run": [
+        650,
+        650,
+        650
+      ],
+      "spread": 0
+    },
+    {
+      "case": 10,
+      "field": "software_cycles",
+      "per_run": [
+        17429,
+        17429,
+        17429
+      ],
+      "spread": 0
+    },
+    {
+      "case": 10,
+      "field": "hardware_total_cycles",
+      "per_run": [
+        2615,
+        2615,
+        2615
+      ],
+      "spread": 0
+    },
+    {
+      "case": 10,
+      "field": "engine_session_cycles",
+      "per_run": [
+        2570,
+        2570,
+        2570
+      ],
+      "spread": 0
+    },
+    {
+      "case": 11,
+      "field": "software_cycles",
+      "per_run": [
+        69653,
+        69653,
+        69653
+      ],
+      "spread": 0
+    },
+    {
+      "case": 11,
+      "field": "hardware_total_cycles",
+      "per_run": [
+        10295,
+        10295,
+        10295
+      ],
+      "spread": 0
+    },
+    {
+      "case": 11,
+      "field": "engine_session_cycles",
+      "per_run": [
+        10250,
+        10250,
+        10250
+      ],
+      "spread": 0
+    }
+  ],
+  "cycles_identical": true,
+  "cycle_analysis_status": "IDENTICAL_ACROSS_THREE_RUNS",
+  "cycle_differences": []
+}

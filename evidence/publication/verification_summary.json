@@ -1,0 +1,96 @@
+{
+  "date": "2026-11-04T15:10:20.528909+08:00",
+  "pass": true,
+  "scope": "publication packaging, actual saved-data/reference checks, host scripts and fresh firmware compilation",
+  "rtl_firmware_constraints_changed": false,
+  "new_vivado_simulation_or_implementation": false,
+  "new_board_program_or_capture": false,
+  "previous_full_rebuild": "review2 standalone source rebuild (2026-11-03)",
+  "checks": [
+    {
+      "name": "functional_inputs_identical",
+      "files": 76,
+      "pass": true
+    },
+    {
+      "name": "public_scope_and_names",
+      "files": 326,
+      "pass": true
+    },
+    {
+      "name": "active_document_links",
+      "documents": 16,
+      "missing": [],
+      "pass": true
+    },
+    {
+      "name": "saved_evidence",
+      "exit_code": 0
+    },
+    {
+      "name": "skill_selftest",
+      "exit_code": 0
+    },
+    {
+      "name": "runtime_verify",
+      "exit_code": 0
+    },
+    {
+      "name": "runtime_help",
+      "exit_code": 0
+    },
+    {
+      "name": "demo_help",
+      "exit_code": 0
+    },
+    {
+      "name": "demo_saved_three_rounds",
+      "exit_code": 0
+    },
+    {
+      "name": "viewer_run",
+      "exit_code": 0
+    },
+    {
+      "name": "viewer_verify",
+      "exit_code": 0
+    },
+    {
+      "name": "viewer_negative_controls",
+      "exit_code": 0
+    },
+    {
+      "name": "python_parse",
+      "exit_code": 0
+    },
+    {
+      "name": "fresh_toolchain",
+      "exit_code": 0
+    },
+    {
+      "name": "fresh_firmware",
+      "exit_code": 0
+    },
+    {
+      "name": "fresh_firmware_nine_frozen_images",
+      "images": {
+        "rom.bin": true,
+        "ram.bin": true,
+        "rom.coe": true,
+        "ram.coe": true,
+        "rom.hex": true,
+        "ram.hex": true,
+        "expected.hex": true,
+        "lengths.hex": true,
+        "symbols.hex": true
+      },
+      "pass": true
+    },
+    {
+      "name": "viewer_rejects_bad_crc",
+      "expected_nonzero_exit": 1,
+      "pass": true,
+      "fixture_scope": "modified verification copy only; original golden and publication data untouched"
+    }
+  ]
+}

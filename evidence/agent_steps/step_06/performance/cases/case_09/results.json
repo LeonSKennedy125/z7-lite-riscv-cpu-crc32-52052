@@ -1,0 +1,156 @@
+{
+  "case": 9,
+  "bytes": 256,
+  "input_kind": "xorshift32",
+  "runs": [
+    {
+      "run": 1,
+      "case": 9,
+      "bytes": 256,
+      "input_kind": "xorshift32",
+      "data_sha256": "a6132e8e14616c7d58f2aa5466bdd44a09a6136aa8576dc97d48eced21687027",
+      "expected_crc": "21bf9c9a",
+      "software_crc": "21bf9c9a",
+      "hardware_crc": "21bf9c9a",
+      "software_cycles": 4373,
+      "hardware_total_cycles": 695,
+      "engine_session_cycles": 650,
+      "software_us": 87.46,
+      "hardware_total_us": 13.9,
+      "engine_session_us": 13.0,
+      "speedup": 6.292086330935252,
+      "software_minus_hardware_cycles": 3678
+    },
+    {
+      "run": 2,
+      "case": 9,
+      "bytes": 256,
+      "input_kind": "xorshift32",
+      "data_sha256": "a6132e8e14616c7d58f2aa5466bdd44a09a6136aa8576dc97d48eced21687027",
+      "expected_crc": "21bf9c9a",
+      "software_crc": "21bf9c9a",
+      "hardware_crc": "21bf9c9a",
+      "software_cycles": 4373,
+      "hardware_total_cycles": 695,
+      "engine_session_cycles": 650,
+      "software_us": 87.46,
+      "hardware_total_us": 13.9,
+      "engine_session_us": 13.0,
+      "speedup": 6.292086330935252,
+      "software_minus_hardware_cycles": 3678
+    },
+    {
+      "run": 3,
+      "case": 9,
+      "bytes": 256,
+      "input_kind": "xorshift32",
+      "data_sha256": "a6132e8e14616c7d58f2aa5466bdd44a09a6136aa8576dc97d48eced21687027",
+      "expected_crc": "21bf9c9a",
+      "software_crc": "21bf9c9a",
+      "hardware_crc": "21bf9c9a",
+      "software_cycles": 4373,
+      "hardware_total_cycles": 695,
+      "engine_session_cycles": 650,
+      "software_us": 87.46,
+      "hardware_total_us": 13.9,
+      "engine_session_us": 13.0,
+      "speedup": 6.292086330935252,
+      "software_minus_hardware_cycles": 3678
+    }
+  ],
+  "speedup_definition": "software_cycles / hardware_total_cycles",
+  "software_baseline": "256-entry table in the SAME S05 accelerated firmware",
+  "statistics": {
+    "software_cycles": {
+      "per_run": [
+        4373,
+        4373,
+        4373
+      ],
+      "min": 4373,
+      "max": 4373,
+      "mean": 4373.0,
+      "spread": 0,
+      "run2_minus_run1": 0,
+      "run3_minus_run1": 0
+    },
+    "hardware_total_cycles": {
+      "per_run": [
+        695,
+        695,
+        695
+      ],
+      "min": 695,
+      "max": 695,
+      "mean": 695.0,
+      "spread": 0,
+      "run2_minus_run1": 0,
+      "run3_minus_run1": 0
+    },
+    "engine_session_cycles": {
+      "per_run": [
+        650,
+        650,
+        650
+      ],
+      "min": 650,
+      "max": 650,
+      "mean": 650.0,
+      "spread": 0,
+      "run2_minus_run1": 0,
+      "run3_minus_run1": 0
+    },
+    "software_us": {
+      "per_run": [
+        87.46,
+        87.46,
+        87.46
+      ],
+      "min": 87.46,
+      "max": 87.46,
+      "mean": 87.46,
+      "spread": 0.0,
+      "run2_minus_run1": 0.0,
+      "run3_minus_run1": 0.0
+    },
+    "hardware_total_us": {
+      "per_run": [
+        13.9,
+        13.9,
+        13.9
+      ],
+      "min": 13.9,
+      "max": 13.9,
+      "mean": 13.9,
+      "spread": 0.0,
+      "run2_minus_run1": 0.0,
+      "run3_minus_run1": 0.0
+    },
+    "engine_session_us": {
+      "per_run": [
+        13.0,
+        13.0,
+        13.0
+      ],
+      "min": 13.0,
+      "max": 13.0,
+      "mean": 13.0,
+      "spread": 0.0,
+      "run2_minus_run1": 0.0,
+      "run3_minus_run1": 0.0
+    },
+    "speedup": {
+      "per_run": [
+        6.292086330935252,
+        6.292086330935252,
+        6.292086330935252
+      ],
+      "min": 6.292086330935252,
+      "max": 6.292086330935252,
+      "mean": 6.292086330935252,
+      "spread": 0.0,
+      "run2_minus_run1": 0.0,
+      "run3_minus_run1": 0.0
+    }
+  }
+}

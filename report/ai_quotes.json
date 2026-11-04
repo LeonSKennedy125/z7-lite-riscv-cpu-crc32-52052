@@ -1,0 +1,120 @@
+{
+  "schema": 1,
+  "purpose": "Visible prompt/answer/failure excerpts used by report/ai_collaboration.md; s07_verify.py checks each text appears in its source after whitespace normalization. Not a full chat export.",
+  "quotes": [
+    {
+      "id": "P1",
+      "kind": "user_prompt",
+      "source": "evidence/agent_steps/step_07/session_prompts.md",
+      "text": "请执行提交步骤S07：设计报告、AI协作记录、Skill与许可证整理，只执行本步。"
+    },
+    {
+      "id": "P2",
+      "kind": "user_prompt",
+      "source": "evidence/agent_steps/step_07/session_prompts.md",
+      "text": "设计报告你在\"D:\\vivado2026.1_project\\160MHZ CPURISCV\\RISCV_5pipeline.srcs\\sources_1\\CPU设计文档.docx\"的基础上修改，删除没有真正接入的部分，再增添新写的东西，比如crc"
+    },
+    {
+      "id": "P3",
+      "kind": "user_prompt",
+      "source": "evidence/agent_steps/step_07/session_prompts.md",
+      "text": "背景啥的改成本次嵌入式FPGA大赛 FPGA创新设计赛道amd平台，自选赛题初级组"
+    },
+    {
+      "id": "P4",
+      "kind": "user_prompt",
+      "source": "docs/agent_prompts/common.md",
+      "text": "当前只执行用户指定的提交步骤，不自动执行下一步，不调用其他agent，除非用户另行明确授权。"
+    },
+    {
+      "id": "P5",
+      "kind": "stage_prompt",
+      "source": "docs/agent_prompts/step_03_implementation.md",
+      "text": "不能用Kintex-7的160MHz结果替代。"
+    },
+    {
+      "id": "P6",
+      "kind": "stage_prompt",
+      "source": "docs/agent_prompts/step_05_hardware.md",
+      "text": "准确记录复位方法，不写成按键或断电。"
+    },
+    {
+      "id": "P7",
+      "kind": "stage_prompt",
+      "source": "docs/agent_prompts/step_06_measurement.md",
+      "text": "没有真实采集时只列前置缺口，不能以simulation生成实测结论。"
+    },
+    {
+      "id": "P8",
+      "kind": "stage_prompt",
+      "source": "docs/agent_prompts/step_07_materials.md",
+      "text": "许可证决策待用户时明确本项未完成，不悄悄选定。"
+    },
+    {
+      "id": "A1",
+      "kind": "assistant_answer",
+      "source": "evidence/agent_steps/step_06/report.md",
+      "text": "没有真实功耗测量，功耗及实测能效字段为 null，不使用工具估算冒充能效结论。"
+    },
+    {
+      "id": "A2",
+      "kind": "assistant_answer",
+      "source": "evidence/agent_steps/step_06/report.md",
+      "text": "报告 **全SoC净增430 LUT、198 FF**，不是把它宣称为纯CRC计算数据通路的面积；层次差值不归一化，也不隐藏那1个Hub LUT差异。"
+    },
+    {
+      "id": "A3",
+      "kind": "assistant_answer",
+      "source": "evidence/agent_steps/step_05/acceptance_20261102/report.md",
+      "text": "硬件 HEX 与仿真 HEX 完全相同：确定性固件下这是预期结果，也证明功能一致；但 HEX 本身不含硬件独有熵，不能单独证明来源。真实性依赖 Vivado2026.1 会话日志、约 18ms/字的真实事件时序、封存采集脚本与用户指示灯观察。"
+    },
+    {
+      "id": "A4",
+      "kind": "assistant_answer",
+      "source": "docs/agent_progress.md",
+      "text": "未运行 CPU 功能回归、综合、实现、干净重建或真实硬件测试。停在 S01，独立验收通过前不进入 S02。"
+    },
+    {
+      "id": "A5",
+      "kind": "original_document",
+      "source": "evidence/agent_steps/step_07/input_extract/cpu_design_text.txt",
+      "text": "本作品使用AI的情景仅限于代码排障与文档优化，没有使用AI进行设计和直接生成文档。文档AI优化占比大约10%左右。"
+    },
+    {
+      "id": "T01",
+      "kind": "tool_failure",
+      "source": "docs/agent_progress.md",
+      "text": "write_bitstream写出BIT并打印bitgen成功后未正常返回；输出重试仍失败，两次独立导出超时240秒。"
+    },
+    {
+      "id": "T02",
+      "kind": "tool_failure",
+      "source": "evidence/agent_steps/step_05/report.md",
+      "text": "该 7 位探针在 HEX 进制下要求 2 个字符，脚本写了单字符 `0`（Vivado `Designutils 20-1474`）。"
+    },
+    {
+      "id": "T03",
+      "kind": "tool_failure",
+      "source": "docs/ai_collaboration.md",
+      "text": "Chipscope16-302指出临时路径149字符超过146字符限制"
+    },
+    {
+      "id": "T04",
+      "kind": "tool_failure",
+      "source": "docs/s02_regression.md",
+      "text": "另一次USF-XSim-11发生于工具的预编译IP库重映射函数"
+    },
+    {
+      "id": "T09",
+      "kind": "tool_failure",
+      "source": "evidence/agent_steps/step_06/report.md",
+      "text": "新资源检查器误要求Hub LUT绝对相同。"
+    },
+    {
+      "id": "T10",
+      "kind": "tool_failure",
+      "source": "evidence/agent_steps/step_06/acceptance_20261102/report.md",
+      "text": "HTML资源区存在文字损坏。"
+    }
+  ]
+}

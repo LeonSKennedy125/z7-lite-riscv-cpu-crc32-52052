@@ -1,0 +1,4 @@
+run,case,bytes,input_kind,data_sha256,expected_crc,software_crc,hardware_crc,software_cycles,hardware_total_cycles,engine_session_cycles,software_us,hardware_total_us,engine_session_us,speedup,software_minus_hardware_cycles
+1,8,64,xorshift32,23de77bc2db8bdd257e00e705272297b07425893154d2713a333e904eb5c15ac,3f9d3d2e,3f9d3d2e,3f9d3d2e,1109,215,170,22.18,4.3,3.4,5.158139534883721,894
+2,8,64,xorshift32,23de77bc2db8bdd257e00e705272297b07425893154d2713a333e904eb5c15ac,3f9d3d2e,3f9d3d2e,3f9d3d2e,1109,215,170,22.18,4.3,3.4,5.158139534883721,894
+3,8,64,xorshift32,23de77bc2db8bdd257e00e705272297b07425893154d2713a333e904eb5c15ac,3f9d3d2e,3f9d3d2e,3f9d3d2e,1109,215,170,22.18,4.3,3.4,5.158139534883721,894

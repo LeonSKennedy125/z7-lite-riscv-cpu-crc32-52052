@@ -1,0 +1,62 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Mon Nov  2 20:59:27 2026
+| Host         : LeonS running 64-bit major release  (build 9200)
+| Command      : report_clocks -file W:/evidence/agent_steps/step_06/resources/baseline/clocks.rpt
+| Design       : demo_top
+| Device       : 7z010-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Clock Report
+
+
+Attributes
+  P: Propagated
+  G: Generated
+  A: Auto-derived
+  R: Renamed
+  V: Virtual
+  I: Inverted
+  S: Pin phase-shifted with Latency mode
+
+Clock                                                                                       Period(ns)  Waveform(ns)    Attributes  Sources
+dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK  33.000      {0.000 16.500}  P           {dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK}
+sys_clk_50                                                                                  20.000      {0.000 10.000}  P           {clock}
+clk_out1_clk50                                                                              20.000      {0.000 10.000}  P,G,A       {cpu/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0}
+clkfbout_clk50                                                                              20.000      {0.000 10.000}  P,G,A       {cpu/clk_wiz_0/inst/mmcm_adv_inst/CLKFBOUT}
+
+
+====================================================
+Generated Clocks
+====================================================
+
+Generated Clock     : clk_out1_clk50
+Master Source       : cpu/clk_wiz_0/inst/mmcm_adv_inst/CLKIN1
+Master Clock        : sys_clk_50
+Multiply By         : 1
+Generated Sources   : {cpu/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0}
+
+Generated Clock     : clkfbout_clk50
+Master Source       : cpu/clk_wiz_0/inst/mmcm_adv_inst/CLKIN1
+Master Clock        : sys_clk_50
+Multiply By         : 1
+Generated Sources   : {cpu/clk_wiz_0/inst/mmcm_adv_inst/CLKFBOUT}
+
+
+
+====================================================
+User Uncertainty
+====================================================
+
+
+
+====================================================
+User Jitter
+====================================================
+
+Clock       Jitter(ns)
+sys_clk_50  0.200
+

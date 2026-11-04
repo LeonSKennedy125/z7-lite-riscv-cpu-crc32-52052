@@ -1,0 +1,2209 @@
+{
+  "files": [
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/.gitignore",
+      "published": ".gitignore",
+      "source_sha256": "c101a9fe0d5655e2bf1f89dc06a5084f6f421d2db1890ba3d0d0110aa97dc6c4",
+      "published_sha256": "2a4d321be5017c333e7b2b3a6ad150ccc6977d5812357ec854e1952e59689bac",
+      "adapted_for_publication": true
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/README.md",
+      "published": "README.md",
+      "source_sha256": "4156e18ababc6b3ada02006441c2d668d11ded96ea6d400266dee2c0742996b2",
+      "published_sha256": "c9bf635b194a822ba0b763c2a1d42b3254e3582e4187b87b917c4263e4694bc3",
+      "adapted_for_publication": true
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/run.py",
+      "published": "run.py",
+      "source_sha256": "c1ec2f2d110900815fe624d3bfe32f86c922fcaead7c163bae53c662f571c884",
+      "published_sha256": "c1ec2f2d110900815fe624d3bfe32f86c922fcaead7c163bae53c662f571c884",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/standalone.json",
+      "published": "standalone.json",
+      "source_sha256": "d5919755876292c3438ca7d29b903d39ce550da24f67c81b575256292ac9da13",
+      "published_sha256": "d5919755876292c3438ca7d29b903d39ce550da24f67c81b575256292ac9da13",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/submission_checklist.md",
+      "published": "submission_checklist.md",
+      "source_sha256": "2d705e4800394360d08e186760ed31bdffcfae9736c5318449dfb00feb2baf4c",
+      "published_sha256": "79533f3d92cd7c6f21504b5cfed6159fa8fab9b47382e2c4affa72b8c1d74037",
+      "adapted_for_publication": true
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/third_party_notices.md",
+      "published": "third_party_notices.md",
+      "source_sha256": "002a2bf077b6fe82933714c8dcb1ef81ece058d9cbb7b62d751cf00cfe639c75",
+      "published_sha256": "51759906e9cd3faf5e4fbb1ea7fdeca6380302aed68af6110b0749ef7eaec3c4",
+      "adapted_for_publication": true
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/constraints/board_r11.xdc",
+      "published": "constraints/board_r11.xdc",
+      "source_sha256": "21c5e4704647c87d3fe2bca2a20db7c67b2cfbca607d2645985df47012f59c81",
+      "published_sha256": "21c5e4704647c87d3fe2bca2a20db7c67b2cfbca607d2645985df47012f59c81",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/docs/agent_progress.md",
+      "published": "docs/agent_progress.md",
+      "source_sha256": "2d21351423685a437081ac5c6d64dc9397b024e4aa3036e5a475e857f713638e",
+      "published_sha256": "2d21351423685a437081ac5c6d64dc9397b024e4aa3036e5a475e857f713638e",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/docs/ai_collaboration.md",
+      "published": "docs/ai_collaboration.md",
+      "source_sha256": "b88782204f05c66eab161f6f7ac87628451d3a65fa412eca0a7a095fd352010d",
+      "published_sha256": "b88782204f05c66eab161f6f7ac87628451d3a65fa412eca0a7a095fd352010d",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/docs/hardware_baseline_zh.md",
+      "published": "docs/hardware_baseline_zh.md",
+      "source_sha256": "0fb9488c11839b645b847264dee102ec3700d94e6b20fde1cc5b15fab7eba7f6",
+      "published_sha256": "0fb9488c11839b645b847264dee102ec3700d94e6b20fde1cc5b15fab7eba7f6",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/docs/interface.md",
+      "published": "docs/interface.md",
+      "source_sha256": "3dd521657096a061b0e16ea9aff0b61c38317ee0115b0745a04f13d18a671288",
+      "published_sha256": "3dd521657096a061b0e16ea9aff0b61c38317ee0115b0745a04f13d18a671288",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/docs/reference_resolution.md",
+      "published": "docs/reference_resolution.md",
+      "source_sha256": "dfb34ddb5d086ee3e61690fc190dee1f5e1784fe91cf2ad58b973aad3586720f",
+      "published_sha256": "9a5ac0d81b9bb962b0595ead72441d733ce48549a0d84ec70878063153fc89ac",
+      "adapted_for_publication": true
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/docs/release_notes.md",
+      "published": "docs/release_notes.md",
+      "source_sha256": "25fe5845f93d75f9345b74595e6f64b5a42ec566efe2b0eada476359433127e3",
+      "published_sha256": "84e84439817a6b209b617454790591ada148aa20f01a373b476f6714f6db8708",
+      "adapted_for_publication": true
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/docs/reproduction.md",
+      "published": "docs/reproduction.md",
+      "source_sha256": "34e2dde7b46ef59de5340535f175c32de4f7fcb24bd73d81ce062e7a373bbc20",
+      "published_sha256": "754cafb97d3cc6948d901ea0b98b7aa0ab49a1bbbfba5993ae11465526b2847e",
+      "adapted_for_publication": true
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/docs/s02_regression.md",
+      "published": "docs/s02_regression.md",
+      "source_sha256": "16ccc48bb341073b44dae53a7ff52238a0d36047624c9e432bb9f02b8af8dae2",
+      "published_sha256": "16ccc48bb341073b44dae53a7ff52238a0d36047624c9e432bb9f02b8af8dae2",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/docs/third_party.md",
+      "published": "docs/third_party.md",
+      "source_sha256": "7246a4479893da492796c2968173a52c8625809adf0262e0e7837d1a6e69779a",
+      "published_sha256": "1cf0130aae8a1ca718713a9c44fc361e9213d210ce8e0e79a0f7d961b7ba2423",
+      "adapted_for_publication": true
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/source_manifest.json",
+      "published": "evidence/source_manifest.json",
+      "source_sha256": "6c2f90bfd5f2b1f6abcffe3ef74ea4fbd22b4ba0b723c0b6c375a4a46dc10ab7",
+      "published_sha256": "6c2f90bfd5f2b1f6abcffe3ef74ea4fbd22b4ba0b723c0b6c375a4a46dc10ab7",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/toolchain.json",
+      "published": "evidence/toolchain.json",
+      "source_sha256": "2a0c905eeff6d6c8edbe1594b8c17dd7e970be459d80daf167218e275fb9fc8a",
+      "published_sha256": "2a0c905eeff6d6c8edbe1594b8c17dd7e970be459d80daf167218e275fb9fc8a",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/firmware/link.ld",
+      "published": "firmware/link.ld",
+      "source_sha256": "19d2c395da2b3715f08142a3a95a8b3f1efbade9169d2c26c015438fee491e76",
+      "published_sha256": "19d2c395da2b3715f08142a3a95a8b3f1efbade9169d2c26c015438fee491e76",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/firmware/main.c",
+      "published": "firmware/main.c",
+      "source_sha256": "28612ec6a7f0c7886f85c07a47cbf6f2b55718eede4f6e7b37324a2298a1312d",
+      "published_sha256": "28612ec6a7f0c7886f85c07a47cbf6f2b55718eede4f6e7b37324a2298a1312d",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/firmware/start.s",
+      "published": "firmware/start.s",
+      "source_sha256": "bbdcea08307e33f2364af8e2019b60d9298ededea494a05dab87df3326e99ccd",
+      "published_sha256": "bbdcea08307e33f2364af8e2019b60d9298ededea494a05dab87df3326e99ccd",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/license/license.md",
+      "published": "license/license.md",
+      "source_sha256": "28389d2b3484829a13b1c4cb83570da3028218159fb17fc749f0eb179c487d2b",
+      "published_sha256": "6732ce5e30be2f22387e7dcd39beea01ad77a4307b90b04d11a3f58eeba14779",
+      "adapted_for_publication": true
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/license/license.txt",
+      "published": "license/license.txt",
+      "source_sha256": "058fad727b5b7871801f3fb96ec430b1079ce9a341b9dc1edc37b890a6499283",
+      "published_sha256": "058fad727b5b7871801f3fb96ec430b1079ce9a341b9dc1edc37b890a6499283",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/license/scope.json",
+      "published": "license/scope.json",
+      "source_sha256": "bb88e13af9ffe6d75a27d6c36f80c2ea6d88b2d44b4b83e4935a6e621175f6d6",
+      "published_sha256": "bb88e13af9ffe6d75a27d6c36f80c2ea6d88b2d44b4b83e4935a6e621175f6d6",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/report/ai_collaboration.md",
+      "published": "report/ai_collaboration.md",
+      "source_sha256": "5957025b279b6767773f5e094d26b5be6ef6b6ab9843829338c32f2fe530f036",
+      "published_sha256": "d69ecd6fe59ee404247d6743bd3f8d9c4cbe4fb8a722c652456189cd1c67d5f0",
+      "adapted_for_publication": true
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/report/ai_quotes.json",
+      "published": "report/ai_quotes.json",
+      "source_sha256": "337da7709a0581b86b0a3fbd04e8013b59ab9e956bd0d41075dde14ea8011816",
+      "published_sha256": "337da7709a0581b86b0a3fbd04e8013b59ab9e956bd0d41075dde14ea8011816",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/report/README.md",
+      "published": "report/README.md",
+      "source_sha256": "edaf0f8981ed15721e490691d4c1ed11776faf6b1dce21a10f041f5023ff4aca",
+      "published_sha256": "3f562ca99272df1d51a07165d1328dcebc8fc7fa313705591d7368d5241e06ae",
+      "adapted_for_publication": true
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/scripts/audit_inputs.tcl",
+      "published": "scripts/audit_inputs.tcl",
+      "source_sha256": "98ad68393dcda50b218e81f7efdd4592e72e7e7c8429bca6151f8f8319097f6f",
+      "published_sha256": "98ad68393dcda50b218e81f7efdd4592e72e7e7c8429bca6151f8f8319097f6f",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/scripts/audit_routed.tcl",
+      "published": "scripts/audit_routed.tcl",
+      "source_sha256": "27fc35ae5d39d7161a8cc4a7e06bc09670853832b242b53c4ecde868df9753b1",
+      "published_sha256": "27fc35ae5d39d7161a8cc4a7e06bc09670853832b242b53c4ecde868df9753b1",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/scripts/build.tcl",
+      "published": "scripts/build.tcl",
+      "source_sha256": "5e259831505109cdca59979d734a799dc1109fbf0c6294021b3458afd74e59a3",
+      "published_sha256": "5e259831505109cdca59979d734a799dc1109fbf0c6294021b3458afd74e59a3",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/scripts/dependency_audit.py",
+      "published": "scripts/dependency_audit.py",
+      "source_sha256": "5ec5034094cebc398a861e9d98e5ebdb953e38ceb5797c53bc0b42c73d7c4963",
+      "published_sha256": "5ec5034094cebc398a861e9d98e5ebdb953e38ceb5797c53bc0b42c73d7c4963",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/scripts/evidence.py",
+      "published": "scripts/evidence.py",
+      "source_sha256": "f8e329ff7233294635cc51722ef7771174322c245659f694fabcd690a0f0d70e",
+      "published_sha256": "f8e329ff7233294635cc51722ef7771174322c245659f694fabcd690a0f0d70e",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/scripts/faults.py",
+      "published": "scripts/faults.py",
+      "source_sha256": "5bc820c33dad47a89e398aeb751e0cc692ad94aee1ef4b9876446ba0f849777d",
+      "published_sha256": "5bc820c33dad47a89e398aeb751e0cc692ad94aee1ef4b9876446ba0f849777d",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/scripts/firmware.py",
+      "published": "scripts/firmware.py",
+      "source_sha256": "f2711027ab96db74bce3cacaf416458cd1c1d655f16800693b42920d519e4232",
+      "published_sha256": "f2711027ab96db74bce3cacaf416458cd1c1d655f16800693b42920d519e4232",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/scripts/firmware_audit.py",
+      "published": "scripts/firmware_audit.py",
+      "source_sha256": "4bdd4af20191ba1558761814aa31f9b9af31bc2f1a2f0ee4b081ecc4abf8df01",
+      "published_sha256": "4bdd4af20191ba1558761814aa31f9b9af31bc2f1a2f0ee4b081ecc4abf8df01",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/scripts/hardware.tcl",
+      "published": "scripts/hardware.tcl",
+      "source_sha256": "a3fd51af2a20e3c6903c07d42dc9497f417e3b3d4fdf8946398b85b8fff64fd2",
+      "published_sha256": "a3fd51af2a20e3c6903c07d42dc9497f417e3b3d4fdf8946398b85b8fff64fd2",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/scripts/implementation.py",
+      "published": "scripts/implementation.py",
+      "source_sha256": "bda10a910751b2cae770bf7cb66eb751725b8319aadb4a76b0fe082f4b3c483d",
+      "published_sha256": "bda10a910751b2cae770bf7cb66eb751725b8319aadb4a76b0fe082f4b3c483d",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/scripts/preflight.tcl",
+      "published": "scripts/preflight.tcl",
+      "source_sha256": "2c1efcf922a0229f68bc9f8d4bb6bee4d867e2cd3ede27f713442dc5af1c4c17",
+      "published_sha256": "2c1efcf922a0229f68bc9f8d4bb6bee4d867e2cd3ede27f713442dc5af1c4c17",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/scripts/rebuild.py",
+      "published": "scripts/rebuild.py",
+      "source_sha256": "a7de3fe773472affbc9d8ff1f00bf38cba0f045f43a77599350fc51ad9415163",
+      "published_sha256": "a7de3fe773472affbc9d8ff1f00bf38cba0f045f43a77599350fc51ad9415163",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/scripts/release.py",
+      "published": "scripts/release.py",
+      "source_sha256": "e5cc52b711b0c3999e427d13e10ce4f95a04ad2ee1d8476304ecf5cda9cf6fb9",
+      "published_sha256": "e5cc52b711b0c3999e427d13e10ce4f95a04ad2ee1d8476304ecf5cda9cf6fb9",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/scripts/release_files.txt",
+      "published": "scripts/release_files.txt",
+      "source_sha256": "5ea3725a02bdb19294076379ab4ff212e5ba5666957c188e56d913cec8c8e3e2",
+      "published_sha256": "c11a7ea9225df4acbdd51f8009348a938f73902540f75a73ac954487e4c3c90a",
+      "adapted_for_publication": true
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/scripts/report.py",
+      "published": "scripts/report.py",
+      "source_sha256": "81d162c49fe809d0d180ed0d7e9d0be751ae38474478a56f7cb1bb44816e7668",
+      "published_sha256": "81d162c49fe809d0d180ed0d7e9d0be751ae38474478a56f7cb1bb44816e7668",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/scripts/rtl_files.txt",
+      "published": "scripts/rtl_files.txt",
+      "source_sha256": "b27523b0ad96567fed326068f0d6c2481f6f2b6776c83c9bd2fffe04ffbdc280",
+      "published_sha256": "b27523b0ad96567fed326068f0d6c2481f6f2b6776c83c9bd2fffe04ffbdc280",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/scripts/run_sim.tcl",
+      "published": "scripts/run_sim.tcl",
+      "source_sha256": "5adf60bde80e572666841cdfc8ca916af898579c0a47a7cc573efc4dda28a2ce",
+      "published_sha256": "5adf60bde80e572666841cdfc8ca916af898579c0a47a7cc573efc4dda28a2ce",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/scripts/session_setup.tcl",
+      "published": "scripts/session_setup.tcl",
+      "source_sha256": "30764d4fbf6c71dc8fac3d9633a7cfd5877de391fb8418885c6dbe61f71e5be5",
+      "published_sha256": "30764d4fbf6c71dc8fac3d9633a7cfd5877de391fb8418885c6dbe61f71e5be5",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/scripts/test_evidence.py",
+      "published": "scripts/test_evidence.py",
+      "source_sha256": "bb8321df1d443d6dc624cf8bee237bc9d83d852a12658e3caa54eda7337c2bcc",
+      "published_sha256": "bb8321df1d443d6dc624cf8bee237bc9d83d852a12658e3caa54eda7337c2bcc",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/scripts/test_report.py",
+      "published": "scripts/test_report.py",
+      "source_sha256": "b71e36b71a0d1f7e22f60de5c8a8b31db2ad56d4cf00badbf34268315b48e4fd",
+      "published_sha256": "b71e36b71a0d1f7e22f60de5c8a8b31db2ad56d4cf00badbf34268315b48e4fd",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/scripts/verify.py",
+      "published": "scripts/verify.py",
+      "source_sha256": "7152dd54d1c9391e5e6e673b35243e0f116b08e17824808e8146d84e7f55521a",
+      "published_sha256": "7152dd54d1c9391e5e6e673b35243e0f116b08e17824808e8146d84e7f55521a",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/sim/tb_cpu.sv",
+      "published": "sim/tb_cpu.sv",
+      "source_sha256": "da6bc8fd6f53b6c67fb49c38e122b4177e640eac69d3d457960cd78f80e6fffa",
+      "published_sha256": "da6bc8fd6f53b6c67fb49c38e122b4177e640eac69d3d457960cd78f80e6fffa",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/sim/tb_cpu_faults.sv",
+      "published": "sim/tb_cpu_faults.sv",
+      "source_sha256": "6c26d828bda7c3d4342d8306eea2383366d008cb2c71267bcb1650acae388835",
+      "published_sha256": "6c26d828bda7c3d4342d8306eea2383366d008cb2c71267bcb1650acae388835",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/sim/tb_crc.sv",
+      "published": "sim/tb_crc.sv",
+      "source_sha256": "2eacd87d96a49fed3b9df21a016218fd99e3eab7eb7b9a65c6e5e1bd696e061b",
+      "published_sha256": "2eacd87d96a49fed3b9df21a016218fd99e3eab7eb7b9a65c6e5e1bd696e061b",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/sim/tb_memory.sv",
+      "published": "sim/tb_memory.sv",
+      "source_sha256": "2956d1c9e20f4388ed3378ccf17cffc826b5193ffb482518364e45219b09c07f",
+      "published_sha256": "2956d1c9e20f4388ed3378ccf17cffc826b5193ffb482518364e45219b09c07f",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/skill/README.md",
+      "published": "skill/README.md",
+      "source_sha256": "598f9eea037168c412dd34562472c06c5323f6abdcbd6fa271a9f896e67ee76b",
+      "published_sha256": "598f9eea037168c412dd34562472c06c5323f6abdcbd6fa271a9f896e67ee76b",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/src/crc_mmio.sv",
+      "published": "src/crc_mmio.sv",
+      "source_sha256": "fb47b96b01e1affc1ce7a023b416ad2c62c34f7148b80d7af09d7367c613c7ea",
+      "published_sha256": "fb47b96b01e1affc1ce7a023b416ad2c62c34f7148b80d7af09d7367c613c7ea",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/src/demo_top.sv",
+      "published": "src/demo_top.sv",
+      "source_sha256": "067c9b11852c464a7cf2332ee651b342a0c5b078e95d98e7abf5d351d6c7a254",
+      "published_sha256": "067c9b11852c464a7cf2332ee651b342a0c5b078e95d98e7abf5d351d6c7a254",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/data/frozen/expected.hex",
+      "published": "data/frozen/expected.hex",
+      "source_sha256": "17d9dcb10659a4aec2e1c3ab06620ed0f1bba22d38ac3d36f53ea79ba46db060",
+      "published_sha256": "17d9dcb10659a4aec2e1c3ab06620ed0f1bba22d38ac3d36f53ea79ba46db060",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/data/frozen/lengths.hex",
+      "published": "data/frozen/lengths.hex",
+      "source_sha256": "025cdb0ae44229f897fc6b9cdf40c7940ff9b90e374a71d9d791914b0ce16823",
+      "published_sha256": "025cdb0ae44229f897fc6b9cdf40c7940ff9b90e374a71d9d791914b0ce16823",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/data/frozen/ram.bin",
+      "published": "data/frozen/ram.bin",
+      "source_sha256": "a476026afc932bc6fb48560f7aeb1bbf6fc5899e0bdd88e668d041c1eada1289",
+      "published_sha256": "a476026afc932bc6fb48560f7aeb1bbf6fc5899e0bdd88e668d041c1eada1289",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/data/frozen/ram.coe",
+      "published": "data/frozen/ram.coe",
+      "source_sha256": "9099f986e58163eaed8d77aad3f009f52fc8da574be4e1f3e7ca522ee3365955",
+      "published_sha256": "9099f986e58163eaed8d77aad3f009f52fc8da574be4e1f3e7ca522ee3365955",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/data/frozen/ram.hex",
+      "published": "data/frozen/ram.hex",
+      "source_sha256": "1465999ded9f56e07e208fdeca3b3caea7801be67c7b4d6b84e91f4dc2c304d0",
+      "published_sha256": "1465999ded9f56e07e208fdeca3b3caea7801be67c7b4d6b84e91f4dc2c304d0",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/data/frozen/rom.bin",
+      "published": "data/frozen/rom.bin",
+      "source_sha256": "76564bea72d13575743e99cf6f8c71300dbb8f54aec9a17fd6b40f40bbd10dda",
+      "published_sha256": "76564bea72d13575743e99cf6f8c71300dbb8f54aec9a17fd6b40f40bbd10dda",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/data/frozen/rom.coe",
+      "published": "data/frozen/rom.coe",
+      "source_sha256": "f10e279ad38d4848b031d9965a09d577e07e3342580c741667977ee17241717a",
+      "published_sha256": "f10e279ad38d4848b031d9965a09d577e07e3342580c741667977ee17241717a",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/data/frozen/rom.hex",
+      "published": "data/frozen/rom.hex",
+      "source_sha256": "d91c5b63b68ec8f7733bec341cab08669f7781853104ccbe64bc61a7f9157b6f",
+      "published_sha256": "d91c5b63b68ec8f7733bec341cab08669f7781853104ccbe64bc61a7f9157b6f",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/data/frozen/symbols.hex",
+      "published": "data/frozen/symbols.hex",
+      "source_sha256": "2eb233d775670b6bf4ab26c89f3aa42e9dc2054399e3f16c6983090c6a3203ee",
+      "published_sha256": "2eb233d775670b6bf4ab26c89f3aa42e9dc2054399e3f16c6983090c6a3203ee",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/docs/agent_prompts/common.md",
+      "published": "docs/agent_prompts/common.md",
+      "source_sha256": "b1b2fe544cf066085f72e9170ec05ee6bfdffec975d6b37db9c15ed28df23d7a",
+      "published_sha256": "b1b2fe544cf066085f72e9170ec05ee6bfdffec975d6b37db9c15ed28df23d7a",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/docs/agent_prompts/step_03_implementation.md",
+      "published": "docs/agent_prompts/step_03_implementation.md",
+      "source_sha256": "0b1290678037f0bca17c9e484467e15177207a2b41f638218ae5ddf2587cc64d",
+      "published_sha256": "0b1290678037f0bca17c9e484467e15177207a2b41f638218ae5ddf2587cc64d",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/docs/agent_prompts/step_05_hardware.md",
+      "published": "docs/agent_prompts/step_05_hardware.md",
+      "source_sha256": "becafd2206c6d3a6743dd02585a59c4d7af10b9ce80bdc732c78663eb434690c",
+      "published_sha256": "becafd2206c6d3a6743dd02585a59c4d7af10b9ce80bdc732c78663eb434690c",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/docs/agent_prompts/step_06_measurement.md",
+      "published": "docs/agent_prompts/step_06_measurement.md",
+      "source_sha256": "bf584bc6ccaea405d2fb804f6c35b5fc8f704c23cf4ac10c88e7a7360149efaa",
+      "published_sha256": "bf584bc6ccaea405d2fb804f6c35b5fc8f704c23cf4ac10c88e7a7360149efaa",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/docs/agent_prompts/step_07_materials.md",
+      "published": "docs/agent_prompts/step_07_materials.md",
+      "source_sha256": "180acf8c1af273e3af10f756d75321dedd7f80100ee13ec87b375ef5049ba8e8",
+      "published_sha256": "180acf8c1af273e3af10f756d75321dedd7f80100ee13ec87b375ef5049ba8e8",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/provenance/excluded_sources.json",
+      "published": "evidence/provenance/excluded_sources.json",
+      "source_sha256": "2fb4037ffb829efdea46bdab7dd4460e0f6b9a4cb61ad7b39fdddcc818836a02",
+      "published_sha256": "2fb4037ffb829efdea46bdab7dd4460e0f6b9a4cb61ad7b39fdddcc818836a02",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/provenance/full_source_manifest.json",
+      "published": "evidence/provenance/full_source_manifest.json",
+      "source_sha256": "cba8b8abfb24d2dd05f82c6417605015501af0e9ce9ed028314b0d7fc5ac2d09",
+      "published_sha256": "cba8b8abfb24d2dd05f82c6417605015501af0e9ce9ed028314b0d7fc5ac2d09",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/provenance/source_changes.diff",
+      "published": "evidence/provenance/source_changes.diff",
+      "source_sha256": "e6fc990dbae64f3d4b212139ff1d4a1df053a0c17e3f52f29febda79f46396b4",
+      "published_sha256": "e6fc990dbae64f3d4b212139ff1d4a1df053a0c17e3f52f29febda79f46396b4",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/vendor/es1_board.json",
+      "published": "evidence/vendor/es1_board.json",
+      "source_sha256": "5968c2dab27f4fd93e267deca58c65d5eb5cc05b68b038ae370c44792056600d",
+      "published_sha256": "5968c2dab27f4fd93e267deca58c65d5eb5cc05b68b038ae370c44792056600d",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_05/report.md",
+      "published": "evidence/agent_steps/step_05/report.md",
+      "source_sha256": "13cc971901c8940fc18b8a883ef090f6c4545f17148e0286fb26ee5082dacaf7",
+      "published_sha256": "13cc971901c8940fc18b8a883ef090f6c4545f17148e0286fb26ee5082dacaf7",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/report.md",
+      "published": "evidence/agent_steps/step_06/report.md",
+      "source_sha256": "bb1eea0936dd5400ee0e55c0df947a4d2fd74e11976def8b9523995d888a0a26",
+      "published_sha256": "bb1eea0936dd5400ee0e55c0df947a4d2fd74e11976def8b9523995d888a0a26",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_07/session_prompts.md",
+      "published": "evidence/agent_steps/step_07/session_prompts.md",
+      "source_sha256": "db1cbca18f34160bf890c0455623b7c47af33426074528a0536a745e2f983966",
+      "published_sha256": "db1cbca18f34160bf890c0455623b7c47af33426074528a0536a745e2f983966",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_05/acceptance_20261102/acceptance.json",
+      "published": "evidence/agent_steps/step_05/acceptance_20261102/acceptance.json",
+      "source_sha256": "20cdec2701123d96c19d2c44e0a27d0669e3a812128c2881e5617d8222d05d65",
+      "published_sha256": "20cdec2701123d96c19d2c44e0a27d0669e3a812128c2881e5617d8222d05d65",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_05/acceptance_20261102/checks.json",
+      "published": "evidence/agent_steps/step_05/acceptance_20261102/checks.json",
+      "source_sha256": "562af30213a040787202add94d1d4373cd936883bd51b09c2da9763d71fc4e3c",
+      "published_sha256": "562af30213a040787202add94d1d4373cd936883bd51b09c2da9763d71fc4e3c",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_05/acceptance_20261102/progress_before.md",
+      "published": "evidence/agent_steps/step_05/acceptance_20261102/progress_before.md",
+      "source_sha256": "c99a58abece990ce72e544fc98a00059feb1d0e1967c6055820b7d23993bac57",
+      "published_sha256": "c99a58abece990ce72e544fc98a00059feb1d0e1967c6055820b7d23993bac57",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_05/acceptance_20261102/progress_update.json",
+      "published": "evidence/agent_steps/step_05/acceptance_20261102/progress_update.json",
+      "source_sha256": "48431934a55f4c571338dd80adc6feb10b296ceb19f35f4b92e5c8e7fda86dfb",
+      "published_sha256": "48431934a55f4c571338dd80adc6feb10b296ceb19f35f4b92e5c8e7fda86dfb",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_05/acceptance_20261102/report.md",
+      "published": "evidence/agent_steps/step_05/acceptance_20261102/report.md",
+      "source_sha256": "84140568584d7df6a17b9134ea21e9cc6ae61b8bd931bf463c352cebb3a29be9",
+      "published_sha256": "84140568584d7df6a17b9134ea21e9cc6ae61b8bd931bf463c352cebb3a29be9",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_05/acceptance_20261102/run_acceptance.py",
+      "published": "evidence/agent_steps/step_05/acceptance_20261102/run_acceptance.py",
+      "source_sha256": "60ff1a6d6165b60222f9b461523e0249e89ed862de9cf5c04745347e86160dff",
+      "published_sha256": "60ff1a6d6165b60222f9b461523e0249e89ed862de9cf5c04745347e86160dff",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_05/acceptance_20261102/supplemental_history.json",
+      "published": "evidence/agent_steps/step_05/acceptance_20261102/supplemental_history.json",
+      "source_sha256": "4f806f08775103bf71e4fcf5899255c18afca1f8722fc1d80a6315c7d183afd7",
+      "published_sha256": "4f806f08775103bf71e4fcf5899255c18afca1f8722fc1d80a6315c7d183afd7",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_05/acceptance_20261102/workflow_verdicts.json",
+      "published": "evidence/agent_steps/step_05/acceptance_20261102/workflow_verdicts.json",
+      "source_sha256": "46012bcb73136da6b3b866f8b8fac29bb0f1aefb72014c77256079bca912d8e9",
+      "published_sha256": "46012bcb73136da6b3b866f8b8fac29bb0f1aefb72014c77256079bca912d8e9",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_05/acceptance_20261102/attempt_01/command.json",
+      "published": "evidence/agent_steps/step_05/acceptance_20261102/attempt_01/command.json",
+      "source_sha256": "f74297fa65e7cd56d65ad23570e8359ea85719f8e8b7fa59293f1c5280c32a61",
+      "published_sha256": "f74297fa65e7cd56d65ad23570e8359ea85719f8e8b7fa59293f1c5280c32a61",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_05/acceptance_20261102/attempt_01/stderr.log",
+      "published": "evidence/agent_steps/step_05/acceptance_20261102/attempt_01/stderr.log",
+      "source_sha256": "8d3d348097eb1c19dad9ae752b1d4f3b1548207a468c2f60a576271c0182e2b8",
+      "published_sha256": "8d3d348097eb1c19dad9ae752b1d4f3b1548207a468c2f60a576271c0182e2b8",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_05/acceptance_20261102/attempt_01/stdout.log",
+      "published": "evidence/agent_steps/step_05/acceptance_20261102/attempt_01/stdout.log",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_05/acceptance_20261102/attempt_02/command.json",
+      "published": "evidence/agent_steps/step_05/acceptance_20261102/attempt_02/command.json",
+      "source_sha256": "0d3d158c01d76ceb8e5d5dbc216dcce48069136c0d7160488fbb0f46ff578f29",
+      "published_sha256": "0d3d158c01d76ceb8e5d5dbc216dcce48069136c0d7160488fbb0f46ff578f29",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_05/acceptance_20261102/attempt_02/stderr.log",
+      "published": "evidence/agent_steps/step_05/acceptance_20261102/attempt_02/stderr.log",
+      "source_sha256": "dc5b003f746012d0f6a51576d1995fc240d06498b9dd8779f60037674defa8f7",
+      "published_sha256": "dc5b003f746012d0f6a51576d1995fc240d06498b9dd8779f60037674defa8f7",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_05/acceptance_20261102/attempt_02/stdout.log",
+      "published": "evidence/agent_steps/step_05/acceptance_20261102/attempt_02/stdout.log",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_05/acceptance_20261102/attempt_03/command.json",
+      "published": "evidence/agent_steps/step_05/acceptance_20261102/attempt_03/command.json",
+      "source_sha256": "29d14f63a82974e5400ff19130c76fbd6fbf48d0f19c5bddb6e24d96f29bdf12",
+      "published_sha256": "29d14f63a82974e5400ff19130c76fbd6fbf48d0f19c5bddb6e24d96f29bdf12",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_05/acceptance_20261102/attempt_03/stderr.log",
+      "published": "evidence/agent_steps/step_05/acceptance_20261102/attempt_03/stderr.log",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_05/acceptance_20261102/attempt_03/stdout.log",
+      "published": "evidence/agent_steps/step_05/acceptance_20261102/attempt_03/stdout.log",
+      "source_sha256": "e19d6875e171e97ea5cac2b96f2f8b15f44f1699aab8ee1c91fec689d602789a",
+      "published_sha256": "e19d6875e171e97ea5cac2b96f2f8b15f44f1699aab8ee1c91fec689d602789a",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/acceptance_20261102/report.md",
+      "published": "evidence/agent_steps/step_06/acceptance_20261102/report.md",
+      "source_sha256": "0d4d653a5c0b7754e4d430c73c1fac4881a6d5809a64d4604a18c3614b3064f7",
+      "published_sha256": "0d4d653a5c0b7754e4d430c73c1fac4881a6d5809a64d4604a18c3614b3064f7",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cycles.png",
+      "published": "evidence/agent_steps/step_06/performance/cycles.png",
+      "source_sha256": "1c9e209d9b8e87f846b27c922a6ef35d0824f5bbc4330f275fb058f672081417",
+      "published_sha256": "1c9e209d9b8e87f846b27c922a6ef35d0824f5bbc4330f275fb058f672081417",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cycles.svg",
+      "published": "evidence/agent_steps/step_06/performance/cycles.svg",
+      "source_sha256": "2ef9e894b8a42d3fc126889c7ce4daf2993960f25fda6c9533701d22ddb6d0ca",
+      "published_sha256": "2ef9e894b8a42d3fc126889c7ce4daf2993960f25fda6c9533701d22ddb6d0ca",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/index.html",
+      "published": "evidence/agent_steps/step_06/performance/index.html",
+      "source_sha256": "6e03dabee6b1622011ea5a9072bcbacf55829832a66a3cf65379f84c245977cd",
+      "published_sha256": "6e03dabee6b1622011ea5a9072bcbacf55829832a66a3cf65379f84c245977cd",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/results.csv",
+      "published": "evidence/agent_steps/step_06/performance/results.csv",
+      "source_sha256": "22fa515947e76dfef59c754a2f609b35218dff5339bef92dcf752ffb0ea8a03d",
+      "published_sha256": "22fa515947e76dfef59c754a2f609b35218dff5339bef92dcf752ffb0ea8a03d",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/results.json",
+      "published": "evidence/agent_steps/step_06/performance/results.json",
+      "source_sha256": "8ecbe09c4430369606072e7f71252e16b00f747189aff4cbc8eeecd25ae6e88a",
+      "published_sha256": "8ecbe09c4430369606072e7f71252e16b00f747189aff4cbc8eeecd25ae6e88a",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/run_spread.png",
+      "published": "evidence/agent_steps/step_06/performance/run_spread.png",
+      "source_sha256": "ff8ee4254bc339efad361744cb72a474577afc9e9674ed9b8042ce4558c85675",
+      "published_sha256": "ff8ee4254bc339efad361744cb72a474577afc9e9674ed9b8042ce4558c85675",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/run_spread.svg",
+      "published": "evidence/agent_steps/step_06/performance/run_spread.svg",
+      "source_sha256": "338dec7326683bccf83c46c1f5a5af23f77a3d6a7de83d1025c8f88ad51ff26b",
+      "published_sha256": "338dec7326683bccf83c46c1f5a5af23f77a3d6a7de83d1025c8f88ad51ff26b",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/speedup.png",
+      "published": "evidence/agent_steps/step_06/performance/speedup.png",
+      "source_sha256": "1b18c9cdf88a57138c8627f178171d10111661bb92ed07a60415f6e8d8cca15f",
+      "published_sha256": "1b18c9cdf88a57138c8627f178171d10111661bb92ed07a60415f6e8d8cca15f",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/speedup.svg",
+      "published": "evidence/agent_steps/step_06/performance/speedup.svg",
+      "source_sha256": "b199d190f47eddc954225643006b624f066d477054c497b23a7cea7cef002b0b",
+      "published_sha256": "b199d190f47eddc954225643006b624f066d477054c497b23a7cea7cef002b0b",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/summary.csv",
+      "published": "evidence/agent_steps/step_06/performance/summary.csv",
+      "source_sha256": "af0b8907d25193ba6556f9e05ea30d57afa2e873e183ec137a9f58cbe506d42b",
+      "published_sha256": "af0b8907d25193ba6556f9e05ea30d57afa2e873e183ec137a9f58cbe506d42b",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/resources/baseline_inputs.json",
+      "published": "evidence/agent_steps/step_06/resources/baseline_inputs.json",
+      "source_sha256": "1e51f89e686faf51f577259ec3c8892cd0c2d433cf4abf19b54aa32cc122b6ce",
+      "published_sha256": "1e51f89e686faf51f577259ec3c8892cd0c2d433cf4abf19b54aa32cc122b6ce",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/resources/resources.png",
+      "published": "evidence/agent_steps/step_06/resources/resources.png",
+      "source_sha256": "d74274813648a9e8e84bb47f3e760e9fcf93823d2cb9ab9b1ef5122edea7206e",
+      "published_sha256": "d74274813648a9e8e84bb47f3e760e9fcf93823d2cb9ab9b1ef5122edea7206e",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/resources/resources.svg",
+      "published": "evidence/agent_steps/step_06/resources/resources.svg",
+      "source_sha256": "a05eef1b485805bc1e552d994c3f77b48ac3840ed1f483da2012c6fe597a3e48",
+      "published_sha256": "a05eef1b485805bc1e552d994c3f77b48ac3840ed1f483da2012c6fe597a3e48",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/resources/results.csv",
+      "published": "evidence/agent_steps/step_06/resources/results.csv",
+      "source_sha256": "467abab547d51dac5f32819c829c6674032253424704208cf4f15dd8ddc76d8f",
+      "published_sha256": "467abab547d51dac5f32819c829c6674032253424704208cf4f15dd8ddc76d8f",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/resources/results.json",
+      "published": "evidence/agent_steps/step_06/resources/results.json",
+      "source_sha256": "7fc8372a80cde91fc4cd338fa1cffeefb8165b9d39810e12e399122d0ebaf3b7",
+      "published_sha256": "7fc8372a80cde91fc4cd338fa1cffeefb8165b9d39810e12e399122d0ebaf3b7",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_00/cycles.png",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_00/cycles.png",
+      "source_sha256": "ee106c09380778256d3ebc44dcb07944c8365166784bc223af89dbcad54a2cc3",
+      "published_sha256": "ee106c09380778256d3ebc44dcb07944c8365166784bc223af89dbcad54a2cc3",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_00/cycles.svg",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_00/cycles.svg",
+      "source_sha256": "b36dea33f4e53121d3dc9d27d05b2f8c764c318b8f6afd33bc47dcc43d93e47b",
+      "published_sha256": "b36dea33f4e53121d3dc9d27d05b2f8c764c318b8f6afd33bc47dcc43d93e47b",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_00/index.html",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_00/index.html",
+      "source_sha256": "d1c03be39469104b71565c688e477169064d82e5c54cf8dcdf9d87ca8cb6e49d",
+      "published_sha256": "d1c03be39469104b71565c688e477169064d82e5c54cf8dcdf9d87ca8cb6e49d",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_00/results.csv",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_00/results.csv",
+      "source_sha256": "3444af1349644e26cd1790c242c99fed25020b70ff7900ccc9e50ac5c8a8424a",
+      "published_sha256": "3444af1349644e26cd1790c242c99fed25020b70ff7900ccc9e50ac5c8a8424a",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_00/results.json",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_00/results.json",
+      "source_sha256": "218c625d7c4d7a49f314154e0d3ed9f27ef951ef9390372b11b996b1acc04df7",
+      "published_sha256": "218c625d7c4d7a49f314154e0d3ed9f27ef951ef9390372b11b996b1acc04df7",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_01/cycles.png",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_01/cycles.png",
+      "source_sha256": "6dec78aa9716ed2bf0f612213cf7a6a79d0a50c9fec00166a9d0be5a16f78af0",
+      "published_sha256": "6dec78aa9716ed2bf0f612213cf7a6a79d0a50c9fec00166a9d0be5a16f78af0",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_01/cycles.svg",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_01/cycles.svg",
+      "source_sha256": "3825117d1e595994b4fda0303735894314829d58f4301026d4185fc3a698cf32",
+      "published_sha256": "3825117d1e595994b4fda0303735894314829d58f4301026d4185fc3a698cf32",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_01/index.html",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_01/index.html",
+      "source_sha256": "4d560efbbd8887a0ee4790f585a952f683673ccff9e1d5df81362ed50dbf5119",
+      "published_sha256": "4d560efbbd8887a0ee4790f585a952f683673ccff9e1d5df81362ed50dbf5119",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_01/results.csv",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_01/results.csv",
+      "source_sha256": "8e4ad4668e4d1f388e6e997d6ba14a352e63bacb129ed54ef2d78337eff27506",
+      "published_sha256": "8e4ad4668e4d1f388e6e997d6ba14a352e63bacb129ed54ef2d78337eff27506",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_01/results.json",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_01/results.json",
+      "source_sha256": "0760a8fbbae1884bae640eaf82b1f7138bffa1501ee899c0fedaddf6e26875b1",
+      "published_sha256": "0760a8fbbae1884bae640eaf82b1f7138bffa1501ee899c0fedaddf6e26875b1",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_02/cycles.png",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_02/cycles.png",
+      "source_sha256": "6d27f6bbf2ee1dfee78329e59386b0fcbfc38b1283dfad15a5ec766547ec55e4",
+      "published_sha256": "6d27f6bbf2ee1dfee78329e59386b0fcbfc38b1283dfad15a5ec766547ec55e4",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_02/cycles.svg",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_02/cycles.svg",
+      "source_sha256": "e667ca1045a59a20cc5a0baa534d3c3f1900cc10c8c6cf829ddb808d501bad97",
+      "published_sha256": "e667ca1045a59a20cc5a0baa534d3c3f1900cc10c8c6cf829ddb808d501bad97",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_02/index.html",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_02/index.html",
+      "source_sha256": "9a20d10cef30220075e37b8ebc0f58b935826d4bcc4e19b0e2fece16d90000b4",
+      "published_sha256": "9a20d10cef30220075e37b8ebc0f58b935826d4bcc4e19b0e2fece16d90000b4",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_02/results.csv",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_02/results.csv",
+      "source_sha256": "9b1b2fedbc36c87dd3166bcd78dea2acebb68ba93f98eed5dc3e39d9e34e8eb4",
+      "published_sha256": "9b1b2fedbc36c87dd3166bcd78dea2acebb68ba93f98eed5dc3e39d9e34e8eb4",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_02/results.json",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_02/results.json",
+      "source_sha256": "7b10a81d82fbd3c39561ee1db776daf027b41c31c3ef008ab28605c39be4b4d4",
+      "published_sha256": "7b10a81d82fbd3c39561ee1db776daf027b41c31c3ef008ab28605c39be4b4d4",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_03/cycles.png",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_03/cycles.png",
+      "source_sha256": "3fbe1d0b7f7fbcb62bc31ef61a4945c9ad03984651e575ddf7020877ad94863d",
+      "published_sha256": "3fbe1d0b7f7fbcb62bc31ef61a4945c9ad03984651e575ddf7020877ad94863d",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_03/cycles.svg",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_03/cycles.svg",
+      "source_sha256": "af23a38858fc636a23d58949ad213cb993a9dbd738dfee8f6e7a23d05314e0dc",
+      "published_sha256": "af23a38858fc636a23d58949ad213cb993a9dbd738dfee8f6e7a23d05314e0dc",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_03/index.html",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_03/index.html",
+      "source_sha256": "654d3238f72e4009ca3996c28992a9ede0be370baf69c9c61d79d252ac5a2a75",
+      "published_sha256": "654d3238f72e4009ca3996c28992a9ede0be370baf69c9c61d79d252ac5a2a75",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_03/results.csv",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_03/results.csv",
+      "source_sha256": "e2ca7f2a06a9a8cab2a1092a150fbc80c8bef4f48f55bf869332274b210fa7a0",
+      "published_sha256": "e2ca7f2a06a9a8cab2a1092a150fbc80c8bef4f48f55bf869332274b210fa7a0",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_03/results.json",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_03/results.json",
+      "source_sha256": "0d89df62afcea48746ba616b896ad53262d64a4570de233e20ba8d99857b2129",
+      "published_sha256": "0d89df62afcea48746ba616b896ad53262d64a4570de233e20ba8d99857b2129",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_04/cycles.png",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_04/cycles.png",
+      "source_sha256": "49a64e7e8ebf96e0b80bd089b96def3a9bf40b30cba1b96ac063785e03e1198c",
+      "published_sha256": "49a64e7e8ebf96e0b80bd089b96def3a9bf40b30cba1b96ac063785e03e1198c",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_04/cycles.svg",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_04/cycles.svg",
+      "source_sha256": "e0975c58302b2801cc1d968778c2b8709dece11f729120b086b58d683143b578",
+      "published_sha256": "e0975c58302b2801cc1d968778c2b8709dece11f729120b086b58d683143b578",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_04/index.html",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_04/index.html",
+      "source_sha256": "b2f3d15550a3216395496f348f1210c859fb8f0b5df9c1c361aced297cb90909",
+      "published_sha256": "b2f3d15550a3216395496f348f1210c859fb8f0b5df9c1c361aced297cb90909",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_04/results.csv",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_04/results.csv",
+      "source_sha256": "8275b90ef8f1f3174ecb25c36888209b869a2260062d13e0783faf16aebf4559",
+      "published_sha256": "8275b90ef8f1f3174ecb25c36888209b869a2260062d13e0783faf16aebf4559",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_04/results.json",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_04/results.json",
+      "source_sha256": "d5422893da6334cc2a03f05c96aa49805a3c611f7e0741c9f9a8b5b9f14503b8",
+      "published_sha256": "d5422893da6334cc2a03f05c96aa49805a3c611f7e0741c9f9a8b5b9f14503b8",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_05/cycles.png",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_05/cycles.png",
+      "source_sha256": "3a55444fe253970f6c8bb04adc18a63c7364eee08b8122a209f829f72ab614b6",
+      "published_sha256": "3a55444fe253970f6c8bb04adc18a63c7364eee08b8122a209f829f72ab614b6",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_05/cycles.svg",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_05/cycles.svg",
+      "source_sha256": "0408427d54080e42fec285cb09093995f2c6030dad1988fd8798f0384bebd86d",
+      "published_sha256": "0408427d54080e42fec285cb09093995f2c6030dad1988fd8798f0384bebd86d",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_05/index.html",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_05/index.html",
+      "source_sha256": "a04e1448fb9747b6ebfab551d6b3a0e60b69af8d91987581e0c1507135ce41d9",
+      "published_sha256": "a04e1448fb9747b6ebfab551d6b3a0e60b69af8d91987581e0c1507135ce41d9",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_05/results.csv",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_05/results.csv",
+      "source_sha256": "02b73fa8fdcd282085e4531835eae9261d710bd98589f1251f502cd3add16dff",
+      "published_sha256": "02b73fa8fdcd282085e4531835eae9261d710bd98589f1251f502cd3add16dff",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_05/results.json",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_05/results.json",
+      "source_sha256": "fa64db8b318ca0a097d70ee47d440f7877ad646098bb0769787605ee4f5aa930",
+      "published_sha256": "fa64db8b318ca0a097d70ee47d440f7877ad646098bb0769787605ee4f5aa930",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_06/cycles.png",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_06/cycles.png",
+      "source_sha256": "1a03e2083cbb60e093ac1627ff6a34f8f0855128d8fde86d2b578d0ebe3b67dd",
+      "published_sha256": "1a03e2083cbb60e093ac1627ff6a34f8f0855128d8fde86d2b578d0ebe3b67dd",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_06/cycles.svg",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_06/cycles.svg",
+      "source_sha256": "06308dc2ae98105ff18599a1523dced59bfbd5c899f6af5cd3ea7c5ec298bf77",
+      "published_sha256": "06308dc2ae98105ff18599a1523dced59bfbd5c899f6af5cd3ea7c5ec298bf77",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_06/index.html",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_06/index.html",
+      "source_sha256": "63f275e1cb8ad70dd08b107d4a122538cf3fca3ccc69fae6ca87b0d96476f748",
+      "published_sha256": "63f275e1cb8ad70dd08b107d4a122538cf3fca3ccc69fae6ca87b0d96476f748",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_06/results.csv",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_06/results.csv",
+      "source_sha256": "90ef7ad513b3a18df71e128b88a655d3ca47517e07004678bd49e91e2c6b28c5",
+      "published_sha256": "90ef7ad513b3a18df71e128b88a655d3ca47517e07004678bd49e91e2c6b28c5",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_06/results.json",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_06/results.json",
+      "source_sha256": "dc450e4c0e9226d3091da87ec93d530ee7f9b6462d92d44913f9c3fab5dbc137",
+      "published_sha256": "dc450e4c0e9226d3091da87ec93d530ee7f9b6462d92d44913f9c3fab5dbc137",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_07/cycles.png",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_07/cycles.png",
+      "source_sha256": "efd06cbb1972c896c9070cb2801a974fddf1a11934f9de48ff259c20b59c87da",
+      "published_sha256": "efd06cbb1972c896c9070cb2801a974fddf1a11934f9de48ff259c20b59c87da",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_07/cycles.svg",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_07/cycles.svg",
+      "source_sha256": "a568f70c6c172a11207f4f022b4a61def8169f0bd7dd746e91b812091158751e",
+      "published_sha256": "a568f70c6c172a11207f4f022b4a61def8169f0bd7dd746e91b812091158751e",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_07/index.html",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_07/index.html",
+      "source_sha256": "20bea0edc473c76423d345aee76b2abf68e47b1b7f4f0ee2bba56ff1c9d8ee79",
+      "published_sha256": "20bea0edc473c76423d345aee76b2abf68e47b1b7f4f0ee2bba56ff1c9d8ee79",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_07/results.csv",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_07/results.csv",
+      "source_sha256": "dead0b3b8a3aa6e195e7b32008db7188dbe12b982267c56465d43f615250ec49",
+      "published_sha256": "dead0b3b8a3aa6e195e7b32008db7188dbe12b982267c56465d43f615250ec49",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_07/results.json",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_07/results.json",
+      "source_sha256": "d67f61e639902fca856b11639b860ed6b4bb6d7afa8d015012cc64e4c15ae391",
+      "published_sha256": "d67f61e639902fca856b11639b860ed6b4bb6d7afa8d015012cc64e4c15ae391",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_08/cycles.png",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_08/cycles.png",
+      "source_sha256": "78eb90dd0847aead3acdc18b2e2e6421aaf2123a1e3fa325868cd756f37c550c",
+      "published_sha256": "78eb90dd0847aead3acdc18b2e2e6421aaf2123a1e3fa325868cd756f37c550c",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_08/cycles.svg",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_08/cycles.svg",
+      "source_sha256": "8281f398a23c32b11877cc0f02d2b06fe24274e6206582cc916e127b208318de",
+      "published_sha256": "8281f398a23c32b11877cc0f02d2b06fe24274e6206582cc916e127b208318de",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_08/index.html",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_08/index.html",
+      "source_sha256": "ea44e49b7fff652fd76c81be43c70b84bdcd8c6d178b88d75dfabbea37dfb04e",
+      "published_sha256": "ea44e49b7fff652fd76c81be43c70b84bdcd8c6d178b88d75dfabbea37dfb04e",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_08/results.csv",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_08/results.csv",
+      "source_sha256": "c30bca7477ce189cf27f9546972364f8cdfcefa522c75ee9026484e67f1bd195",
+      "published_sha256": "c30bca7477ce189cf27f9546972364f8cdfcefa522c75ee9026484e67f1bd195",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_08/results.json",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_08/results.json",
+      "source_sha256": "6c75edd3db56a3489647ab2ce44123d90740321b8fb435d5e024fb2e677fc219",
+      "published_sha256": "6c75edd3db56a3489647ab2ce44123d90740321b8fb435d5e024fb2e677fc219",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_09/cycles.png",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_09/cycles.png",
+      "source_sha256": "e347c40e8e65b764729c85a33983e6d59a4b0dbd5dbd961386ef3f5bf6490fa6",
+      "published_sha256": "e347c40e8e65b764729c85a33983e6d59a4b0dbd5dbd961386ef3f5bf6490fa6",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_09/cycles.svg",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_09/cycles.svg",
+      "source_sha256": "c37f32ed6cc326c955dd4add88166b188f1958e9eb4eeca5ce6e67f5b0a38434",
+      "published_sha256": "c37f32ed6cc326c955dd4add88166b188f1958e9eb4eeca5ce6e67f5b0a38434",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_09/index.html",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_09/index.html",
+      "source_sha256": "7e4193859401c022271824a26c45bef774c87001efc5ffb8358dde0019b4ccde",
+      "published_sha256": "7e4193859401c022271824a26c45bef774c87001efc5ffb8358dde0019b4ccde",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_09/results.csv",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_09/results.csv",
+      "source_sha256": "a4fb7e60a9027e314e96884a7db472f48f01af87e131dbac6436a0b530602011",
+      "published_sha256": "a4fb7e60a9027e314e96884a7db472f48f01af87e131dbac6436a0b530602011",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_09/results.json",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_09/results.json",
+      "source_sha256": "eb1de16bb8b402744aea7765f5af7daaba001cb4e6b8de9b7b9a71e5d1a3e865",
+      "published_sha256": "eb1de16bb8b402744aea7765f5af7daaba001cb4e6b8de9b7b9a71e5d1a3e865",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_10/cycles.png",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_10/cycles.png",
+      "source_sha256": "eec21f1b5cdaf21c39573b7c3e527f468316b94a259d6000821ebc24308324b9",
+      "published_sha256": "eec21f1b5cdaf21c39573b7c3e527f468316b94a259d6000821ebc24308324b9",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_10/cycles.svg",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_10/cycles.svg",
+      "source_sha256": "4b463d387b853a0685cc39e287f75463246390837dfd5dbe282447994c02a2cd",
+      "published_sha256": "4b463d387b853a0685cc39e287f75463246390837dfd5dbe282447994c02a2cd",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_10/index.html",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_10/index.html",
+      "source_sha256": "7227a36637ee8802a653081b6ce134009d199b6a1b0ca76a2ec14b2e7425f42f",
+      "published_sha256": "7227a36637ee8802a653081b6ce134009d199b6a1b0ca76a2ec14b2e7425f42f",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_10/results.csv",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_10/results.csv",
+      "source_sha256": "e9aea1af6535a80b496f41e473e8a4a1bcec45e4a02f3b70f8ad43d9cefa07a0",
+      "published_sha256": "e9aea1af6535a80b496f41e473e8a4a1bcec45e4a02f3b70f8ad43d9cefa07a0",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_10/results.json",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_10/results.json",
+      "source_sha256": "10a4e3842af4832430499478c9e858b9a66b404fdfdf5bfcccece87e71979516",
+      "published_sha256": "10a4e3842af4832430499478c9e858b9a66b404fdfdf5bfcccece87e71979516",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_11/cycles.png",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_11/cycles.png",
+      "source_sha256": "c342b41af43a786ce0c9df0ccfab6db7835d3084b7c4367446d4eca3905d43bc",
+      "published_sha256": "c342b41af43a786ce0c9df0ccfab6db7835d3084b7c4367446d4eca3905d43bc",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_11/cycles.svg",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_11/cycles.svg",
+      "source_sha256": "46737646209fff19cf3af6a9c4d0442b085b733048bc2bfb7c2aa3269c077566",
+      "published_sha256": "46737646209fff19cf3af6a9c4d0442b085b733048bc2bfb7c2aa3269c077566",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_11/index.html",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_11/index.html",
+      "source_sha256": "571130b668f521c27e128116e9beb5ed3e73908498e6d5cfcbc90f7d75e4e0bf",
+      "published_sha256": "571130b668f521c27e128116e9beb5ed3e73908498e6d5cfcbc90f7d75e4e0bf",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_11/results.csv",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_11/results.csv",
+      "source_sha256": "c0da8bcef9e34c6424694c7a198d2d5fe9951460379eb987e3a481575afefdb7",
+      "published_sha256": "c0da8bcef9e34c6424694c7a198d2d5fe9951460379eb987e3a481575afefdb7",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/performance/cases/case_11/results.json",
+      "published": "evidence/agent_steps/step_06/performance/cases/case_11/results.json",
+      "source_sha256": "b93d5cc673ce6c950adf44ebbe57084c80c56f605d1777060ad65f49088ef6f7",
+      "published_sha256": "b93d5cc673ce6c950adf44ebbe57084c80c56f605d1777060ad65f49088ef6f7",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/resources/accelerated/check_timing.rpt",
+      "published": "evidence/agent_steps/step_06/resources/accelerated/check_timing.rpt",
+      "source_sha256": "febad01027281009f7f00d70a21644b235dabf7435422ee4a933be073500cd64",
+      "published_sha256": "febad01027281009f7f00d70a21644b235dabf7435422ee4a933be073500cd64",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/resources/accelerated/clocks.rpt",
+      "published": "evidence/agent_steps/step_06/resources/accelerated/clocks.rpt",
+      "source_sha256": "a058823827dc6144712cccb10a3715dcdd639e03a4721947c226c414902b4916",
+      "published_sha256": "a058823827dc6144712cccb10a3715dcdd639e03a4721947c226c414902b4916",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/resources/accelerated/clocks.tsv",
+      "published": "evidence/agent_steps/step_06/resources/accelerated/clocks.tsv",
+      "source_sha256": "cd2e302d2b49ef5b919687c87369686e243c297b1e8df0b5c99121bbad3f356e",
+      "published_sha256": "cd2e302d2b49ef5b919687c87369686e243c297b1e8df0b5c99121bbad3f356e",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/resources/accelerated/debug.rpt",
+      "published": "evidence/agent_steps/step_06/resources/accelerated/debug.rpt",
+      "source_sha256": "c65ff93d61df3189f7a9247ce8443bd1719b25d0dce7d1005f6db983a7924140",
+      "published_sha256": "c65ff93d61df3189f7a9247ce8443bd1719b25d0dce7d1005f6db983a7924140",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/resources/accelerated/drc.rpt",
+      "published": "evidence/agent_steps/step_06/resources/accelerated/drc.rpt",
+      "source_sha256": "7cc05c05eab3066fad078046d0a31d0f491127601388bff4cb3d0072018a690c",
+      "published_sha256": "7cc05c05eab3066fad078046d0a31d0f491127601388bff4cb3d0072018a690c",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/resources/accelerated/hierarchy.rpt",
+      "published": "evidence/agent_steps/step_06/resources/accelerated/hierarchy.rpt",
+      "source_sha256": "cccd77fcfaf327d1b5403dc07820e355815d8135a6a900f1b0f035d515fbd72d",
+      "published_sha256": "cccd77fcfaf327d1b5403dc07820e355815d8135a6a900f1b0f035d515fbd72d",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/resources/accelerated/metrics.tsv",
+      "published": "evidence/agent_steps/step_06/resources/accelerated/metrics.tsv",
+      "source_sha256": "895fb7a16acc43942e10e731c32a50659e7ea2294e652f2dac053d548ce460d9",
+      "published_sha256": "895fb7a16acc43942e10e731c32a50659e7ea2294e652f2dac053d548ce460d9",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/resources/accelerated/primitives.tsv",
+      "published": "evidence/agent_steps/step_06/resources/accelerated/primitives.tsv",
+      "source_sha256": "1c70c33654deb0e482f7b512659156897cf9d8b59353476aabc9298e84d9e2b4",
+      "published_sha256": "1c70c33654deb0e482f7b512659156897cf9d8b59353476aabc9298e84d9e2b4",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/resources/accelerated/ram.rpt",
+      "published": "evidence/agent_steps/step_06/resources/accelerated/ram.rpt",
+      "source_sha256": "80df25ae311a78989820e2170f8e0055a82af7db4278de3a9e545cf7991db205",
+      "published_sha256": "80df25ae311a78989820e2170f8e0055a82af7db4278de3a9e545cf7991db205",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/resources/accelerated/route.rpt",
+      "published": "evidence/agent_steps/step_06/resources/accelerated/route.rpt",
+      "source_sha256": "5e05601876307d057a53678f9a18b2b369539de28e9ca083efebfb56e54f5728",
+      "published_sha256": "5e05601876307d057a53678f9a18b2b369539de28e9ca083efebfb56e54f5728",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/resources/accelerated/timing.rpt",
+      "published": "evidence/agent_steps/step_06/resources/accelerated/timing.rpt",
+      "source_sha256": "8b541177d6ea9651a40d4a20bfb08e2c82c04aec336cf2a3de41f744570f910a",
+      "published_sha256": "8b541177d6ea9651a40d4a20bfb08e2c82c04aec336cf2a3de41f744570f910a",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/resources/accelerated/utilization.rpt",
+      "published": "evidence/agent_steps/step_06/resources/accelerated/utilization.rpt",
+      "source_sha256": "0a5aaf8934e959dabf4a922a6824ac8bc91e4e1099e7bdd14b1e11336006e0d7",
+      "published_sha256": "0a5aaf8934e959dabf4a922a6824ac8bc91e4e1099e7bdd14b1e11336006e0d7",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/resources/accelerated/vivado.log",
+      "published": "evidence/agent_steps/step_06/resources/accelerated/vivado.log",
+      "source_sha256": "ec865914b6c5c24232a126feb4bada8d0b26ba01f0cabc2ec667ecfaea0288b1",
+      "published_sha256": "ec865914b6c5c24232a126feb4bada8d0b26ba01f0cabc2ec667ecfaea0288b1",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/resources/accelerated/vivado_final.log",
+      "published": "evidence/agent_steps/step_06/resources/accelerated/vivado_final.log",
+      "source_sha256": "b1d8dd256286ea2a38bb670a6cf9804cddcdb5fb261e64e5823fc288bda43009",
+      "published_sha256": "b1d8dd256286ea2a38bb670a6cf9804cddcdb5fb261e64e5823fc288bda43009",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/resources/baseline/check_timing.rpt",
+      "published": "evidence/agent_steps/step_06/resources/baseline/check_timing.rpt",
+      "source_sha256": "357f44d1283a6b6ddc9407b134575af46944150924e39c18275bb8d37cda3fd4",
+      "published_sha256": "357f44d1283a6b6ddc9407b134575af46944150924e39c18275bb8d37cda3fd4",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/resources/baseline/clocks.rpt",
+      "published": "evidence/agent_steps/step_06/resources/baseline/clocks.rpt",
+      "source_sha256": "64fe8c934ed0eed02e9bf1335fd39c94b42ef4dc1b68a1cf22f9ce5711db2820",
+      "published_sha256": "64fe8c934ed0eed02e9bf1335fd39c94b42ef4dc1b68a1cf22f9ce5711db2820",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/resources/baseline/clocks.tsv",
+      "published": "evidence/agent_steps/step_06/resources/baseline/clocks.tsv",
+      "source_sha256": "cd2e302d2b49ef5b919687c87369686e243c297b1e8df0b5c99121bbad3f356e",
+      "published_sha256": "cd2e302d2b49ef5b919687c87369686e243c297b1e8df0b5c99121bbad3f356e",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/resources/baseline/debug.rpt",
+      "published": "evidence/agent_steps/step_06/resources/baseline/debug.rpt",
+      "source_sha256": "d61dc7f5e4965ce424cb87cbb4455381c02b25852429329885a7832b40882527",
+      "published_sha256": "d61dc7f5e4965ce424cb87cbb4455381c02b25852429329885a7832b40882527",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/resources/baseline/drc.rpt",
+      "published": "evidence/agent_steps/step_06/resources/baseline/drc.rpt",
+      "source_sha256": "fcda986aa61a918437a78dd538efca16d39645861c3a107d2cb068cfecb10fb6",
+      "published_sha256": "fcda986aa61a918437a78dd538efca16d39645861c3a107d2cb068cfecb10fb6",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/resources/baseline/hierarchy.rpt",
+      "published": "evidence/agent_steps/step_06/resources/baseline/hierarchy.rpt",
+      "source_sha256": "e2aae332915d8cb44a951e6f90e98bdde42d4e9200de10bf934581ab0f2e53cb",
+      "published_sha256": "e2aae332915d8cb44a951e6f90e98bdde42d4e9200de10bf934581ab0f2e53cb",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/resources/baseline/metrics.tsv",
+      "published": "evidence/agent_steps/step_06/resources/baseline/metrics.tsv",
+      "source_sha256": "ebfbeee55e9d7bdd032b2e57c56a6e741a2392e2e9fff8db243307cafe6eb4b8",
+      "published_sha256": "ebfbeee55e9d7bdd032b2e57c56a6e741a2392e2e9fff8db243307cafe6eb4b8",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/resources/baseline/primitives.tsv",
+      "published": "evidence/agent_steps/step_06/resources/baseline/primitives.tsv",
+      "source_sha256": "1c70c33654deb0e482f7b512659156897cf9d8b59353476aabc9298e84d9e2b4",
+      "published_sha256": "1c70c33654deb0e482f7b512659156897cf9d8b59353476aabc9298e84d9e2b4",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/resources/baseline/ram.rpt",
+      "published": "evidence/agent_steps/step_06/resources/baseline/ram.rpt",
+      "source_sha256": "22ac8b840a735df19e3e89fffac2774929872d1b865c71744bb698133470b531",
+      "published_sha256": "22ac8b840a735df19e3e89fffac2774929872d1b865c71744bb698133470b531",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/resources/baseline/route.rpt",
+      "published": "evidence/agent_steps/step_06/resources/baseline/route.rpt",
+      "source_sha256": "e4aa1c779a860de8c0a7fe175bb13b2eb3f547db73ec31f23915bdd9ba610eaa",
+      "published_sha256": "e4aa1c779a860de8c0a7fe175bb13b2eb3f547db73ec31f23915bdd9ba610eaa",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/resources/baseline/timing.rpt",
+      "published": "evidence/agent_steps/step_06/resources/baseline/timing.rpt",
+      "source_sha256": "15eb17a6eb2079e2cd8c06c8c13a598cd70bcea1d2b794115beff9ea31b626eb",
+      "published_sha256": "15eb17a6eb2079e2cd8c06c8c13a598cd70bcea1d2b794115beff9ea31b626eb",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/resources/baseline/utilization.rpt",
+      "published": "evidence/agent_steps/step_06/resources/baseline/utilization.rpt",
+      "source_sha256": "08af178bcd6966e3cbc13f77bc3023cce2de9ec448c28a15ad6c9eb80a7c32dd",
+      "published_sha256": "08af178bcd6966e3cbc13f77bc3023cce2de9ec448c28a15ad6c9eb80a7c32dd",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_06/resources/baseline/vivado.log",
+      "published": "evidence/agent_steps/step_06/resources/baseline/vivado.log",
+      "source_sha256": "1d48685b993ce5d9761f829f4d39929353ac5a3ea5451b5061a0d31143b38bde",
+      "published_sha256": "1d48685b993ce5d9761f829f4d39929353ac5a3ea5451b5061a0d31143b38bde",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_07/acceptance_20261103/acceptance.json",
+      "published": "evidence/agent_steps/step_07/acceptance_20261103/acceptance.json",
+      "source_sha256": "4663be5ee667ac8cbaa74c07387f588e4e3332f5e732c9b0b7772f52f7f814e2",
+      "published_sha256": "4663be5ee667ac8cbaa74c07387f588e4e3332f5e732c9b0b7772f52f7f814e2",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_07/acceptance_20261103/checks.json",
+      "published": "evidence/agent_steps/step_07/acceptance_20261103/checks.json",
+      "source_sha256": "9349f8e04d0ef653889c425c0eb2eb564bc568b7bef63ff2bcfb31a8858eb622",
+      "published_sha256": "9349f8e04d0ef653889c425c0eb2eb564bc568b7bef63ff2bcfb31a8858eb622",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_07/acceptance_20261103/mailbox_verify.json",
+      "published": "evidence/agent_steps/step_07/acceptance_20261103/mailbox_verify.json",
+      "source_sha256": "74af5edcbfbb2abca17c7daae23be6ddb4439dde9e1de54e61275a4ff7fb7336",
+      "published_sha256": "74af5edcbfbb2abca17c7daae23be6ddb4439dde9e1de54e61275a4ff7fb7336",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_07/acceptance_20261103/manifest_verify.json",
+      "published": "evidence/agent_steps/step_07/acceptance_20261103/manifest_verify.json",
+      "source_sha256": "d0d0e6afddbb16dc44c3be935ab8dd60ffaeba405c34f5d361dd9986f3c82618",
+      "published_sha256": "d0d0e6afddbb16dc44c3be935ab8dd60ffaeba405c34f5d361dd9986f3c82618",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_07/acceptance_20261103/progress_before.md",
+      "published": "evidence/agent_steps/step_07/acceptance_20261103/progress_before.md",
+      "source_sha256": "2d21351423685a437081ac5c6d64dc9397b024e4aa3036e5a475e857f713638e",
+      "published_sha256": "2d21351423685a437081ac5c6d64dc9397b024e4aa3036e5a475e857f713638e",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_07/acceptance_20261103/progress_update.json",
+      "published": "evidence/agent_steps/step_07/acceptance_20261103/progress_update.json",
+      "source_sha256": "8d6d41aae3df5d231e941f6f8b9be0cd6ad1e68d3022a08ecdaca655f18b83e0",
+      "published_sha256": "8d6d41aae3df5d231e941f6f8b9be0cd6ad1e68d3022a08ecdaca655f18b83e0",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_07/acceptance_20261103/report.md",
+      "published": "evidence/agent_steps/step_07/acceptance_20261103/report.md",
+      "source_sha256": "b8bd7b60c731482a263ba3f4c2daa474575bfd8b6094dfbdff9a1187a4e3df8e",
+      "published_sha256": "b8bd7b60c731482a263ba3f4c2daa474575bfd8b6094dfbdff9a1187a4e3df8e",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_07/acceptance_20261103/run_acceptance.py",
+      "published": "evidence/agent_steps/step_07/acceptance_20261103/run_acceptance.py",
+      "source_sha256": "9d34b05fc956695d033ae844d1e1406591b1b905e2d68e669d4c6dcabe26bba3",
+      "published_sha256": "9d34b05fc956695d033ae844d1e1406591b1b905e2d68e669d4c6dcabe26bba3",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_07/acceptance_20261103/attempt_01/acceptance.json",
+      "published": "evidence/agent_steps/step_07/acceptance_20261103/attempt_01/acceptance.json",
+      "source_sha256": "0153de21c01726ba3a5445d0410c6d13a96a484ac000d749f3b3dbcd83410a9a",
+      "published_sha256": "0153de21c01726ba3a5445d0410c6d13a96a484ac000d749f3b3dbcd83410a9a",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_07/acceptance_20261103/attempt_01/checks.json",
+      "published": "evidence/agent_steps/step_07/acceptance_20261103/attempt_01/checks.json",
+      "source_sha256": "cb4ba4a1863f457b9248e9fb24929a7ed40b4ce03b9efbfdfa2f90d75120474e",
+      "published_sha256": "cb4ba4a1863f457b9248e9fb24929a7ed40b4ce03b9efbfdfa2f90d75120474e",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_07/acceptance_20261103/logs/s07_verify.log",
+      "published": "evidence/agent_steps/step_07/acceptance_20261103/logs/s07_verify.log",
+      "source_sha256": "f5cb28f0e8b95c920f62d82919d6c06ec53cee74cbea252a10031dce0cc031b6",
+      "published_sha256": "f5cb28f0e8b95c920f62d82919d6c06ec53cee74cbea252a10031dce0cc031b6",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_07/acceptance_20261103/logs/skill_real_dumps.log",
+      "published": "evidence/agent_steps/step_07/acceptance_20261103/logs/skill_real_dumps.log",
+      "source_sha256": "dcdc31d5f044f10b81775145d36b4ee2962bddf6259d76e3434ebc701971fe83",
+      "published_sha256": "dcdc31d5f044f10b81775145d36b4ee2962bddf6259d76e3434ebc701971fe83",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_07/acceptance_20261103/logs/skill_self_test.log",
+      "published": "evidence/agent_steps/step_07/acceptance_20261103/logs/skill_self_test.log",
+      "source_sha256": "8cb2ccc5ed029cdebc051bf4276638dceb6a71d0ba8f22021a6960568383567a",
+      "published_sha256": "8cb2ccc5ed029cdebc051bf4276638dceb6a71d0ba8f22021a6960568383567a",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_07/acceptance_20261103/logs/skill_staged_manifest.log",
+      "published": "evidence/agent_steps/step_07/acceptance_20261103/logs/skill_staged_manifest.log",
+      "source_sha256": "a7a26c3f3494030e5a8d2a01a0b5e3e4aed8effaea0a9f217634d2526ebaedc4",
+      "published_sha256": "a7a26c3f3494030e5a8d2a01a0b5e3e4aed8effaea0a9f217634d2526ebaedc4",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_07/acceptance_20261103/attempt_01/logs/s07_verify.log",
+      "published": "evidence/agent_steps/step_07/acceptance_20261103/attempt_01/logs/s07_verify.log",
+      "source_sha256": "f5cb28f0e8b95c920f62d82919d6c06ec53cee74cbea252a10031dce0cc031b6",
+      "published_sha256": "f5cb28f0e8b95c920f62d82919d6c06ec53cee74cbea252a10031dce0cc031b6",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_07/acceptance_20261103/attempt_01/logs/skill_real_dumps.log",
+      "published": "evidence/agent_steps/step_07/acceptance_20261103/attempt_01/logs/skill_real_dumps.log",
+      "source_sha256": "dcdc31d5f044f10b81775145d36b4ee2962bddf6259d76e3434ebc701971fe83",
+      "published_sha256": "dcdc31d5f044f10b81775145d36b4ee2962bddf6259d76e3434ebc701971fe83",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_07/acceptance_20261103/attempt_01/logs/skill_self_test.log",
+      "published": "evidence/agent_steps/step_07/acceptance_20261103/attempt_01/logs/skill_self_test.log",
+      "source_sha256": "8cb2ccc5ed029cdebc051bf4276638dceb6a71d0ba8f22021a6960568383567a",
+      "published_sha256": "8cb2ccc5ed029cdebc051bf4276638dceb6a71d0ba8f22021a6960568383567a",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/agent_steps/step_07/acceptance_20261103/attempt_01/logs/skill_staged_manifest.log",
+      "published": "evidence/agent_steps/step_07/acceptance_20261103/attempt_01/logs/skill_staged_manifest.log",
+      "source_sha256": "a7a26c3f3494030e5a8d2a01a0b5e3e4aed8effaea0a9f217634d2526ebaedc4",
+      "published_sha256": "a7a26c3f3494030e5a8d2a01a0b5e3e4aed8effaea0a9f217634d2526ebaedc4",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/provenance/s03/acceptance.json",
+      "published": "evidence/provenance/s03/acceptance.json",
+      "source_sha256": "97b0cd3dfee0fbd8f4caf01c038875cdb27d0b30759bbd448820e52983a42b1e",
+      "published_sha256": "97b0cd3dfee0fbd8f4caf01c038875cdb27d0b30759bbd448820e52983a42b1e",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/provenance/s03/report.md",
+      "published": "evidence/provenance/s03/report.md",
+      "source_sha256": "2d61adb594ddab245562f01564029daab3690e8fa9e21243d7b2895e5013d4d4",
+      "published_sha256": "2d61adb594ddab245562f01564029daab3690e8fa9e21243d7b2895e5013d4d4",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/provenance/s03/timing_summary.rpt",
+      "published": "evidence/provenance/s03/timing_summary.rpt",
+      "source_sha256": "442ee05e9f18796d8db533df90efcd469c1261721e1c75fdca1b66e4dfee52cd",
+      "published_sha256": "442ee05e9f18796d8db533df90efcd469c1261721e1c75fdca1b66e4dfee52cd",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/evidence/provenance/s03/utilization.rpt",
+      "published": "evidence/provenance/s03/utilization.rpt",
+      "source_sha256": "d6283d823606d3a1acc934802bf078d64791aa7b8700aebaa0814cb6b941ff58",
+      "published_sha256": "d6283d823606d3a1acc934802bf078d64791aa7b8700aebaa0814cb6b941ff58",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/report/figures/pipeline_stages.png",
+      "published": "report/figures/pipeline_stages.png",
+      "source_sha256": "b192a2d9dc1684d3dad6b1356c58cc6407dd1fcf4d0a096587ffaa89adda0268",
+      "published_sha256": "b192a2d9dc1684d3dad6b1356c58cc6407dd1fcf4d0a096587ffaa89adda0268",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/report/figures/pipeline_stages.svg",
+      "published": "report/figures/pipeline_stages.svg",
+      "source_sha256": "1a90e122474f76a43079ed13e7dde6dc3f1c6d8112444ae84365034e4964402a",
+      "published_sha256": "1a90e122474f76a43079ed13e7dde6dc3f1c6d8112444ae84365034e4964402a",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "report/figures/system_block.png",
+      "published": "report/figures/system_block.png",
+      "source_sha256": "1df8241a3f43fc8cae45cc59e1a85b2b203d8bb11246593bc6c085a7f2a0e6b5",
+      "published_sha256": "1df8241a3f43fc8cae45cc59e1a85b2b203d8bb11246593bc6c085a7f2a0e6b5",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "report/figures/system_block.svg",
+      "published": "report/figures/system_block.svg",
+      "source_sha256": "9353fa4ed7d27b8fcf2e2e90864e997a77652d3259f8e10c9131ae957abba474",
+      "published_sha256": "9353fa4ed7d27b8fcf2e2e90864e997a77652d3259f8e10c9131ae957abba474",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/skill/examples/README.md",
+      "published": "skill/examples/README.md",
+      "source_sha256": "88319189ca90292458d5662f84cbd8d4d32c9bc645b2f9d9c7709c50a1c280f4",
+      "published_sha256": "88319189ca90292458d5662f84cbd8d4d32c9bc645b2f9d9c7709c50a1c280f4",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/skill/examples/z7_crc_cases.json",
+      "published": "skill/examples/z7_crc_cases.json",
+      "source_sha256": "2468accb86bc6344e0af03f866af0af48f420059cc3b3c144036cede5f06ca60",
+      "published_sha256": "2468accb86bc6344e0af03f866af0af48f420059cc3b3c144036cede5f06ca60",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/skill/scripts/check_manifest.py",
+      "published": "skill/scripts/check_manifest.py",
+      "source_sha256": "c50f3a554431bab190cc79a9c65aa568a6317c5a1a3f875b554d7194d948967b",
+      "published_sha256": "2e5b62d095bd0caf425da7aee69150cf1a8a6a965e2a8960159e61c0dba1863e",
+      "adapted_for_publication": true
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/skill/scripts/verify_mailbox.py",
+      "published": "skill/scripts/verify_mailbox.py",
+      "source_sha256": "7fbe2534947aa302fe1740a8d11ff154a250b78e81401feec61449ba4b3ee0f6",
+      "published_sha256": "7fbe2534947aa302fe1740a8d11ff154a250b78e81401feec61449ba4b3ee0f6",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/skill/templates/evidence_gate_checklist.md",
+      "published": "skill/templates/evidence_gate_checklist.md",
+      "source_sha256": "3960fdd0a4905966617db79fcbf0438106e087fa9a90d34989c7def49b53a5f5",
+      "published_sha256": "3960fdd0a4905966617db79fcbf0438106e087fa9a90d34989c7def49b53a5f5",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/skill/templates/interface_contract_prompt.md",
+      "published": "skill/templates/interface_contract_prompt.md",
+      "source_sha256": "8102f7f0f736b8f82d7ea96d39620de6134ed371cd80d5e77d03fea9b3063251",
+      "published_sha256": "8102f7f0f736b8f82d7ea96d39620de6134ed371cd80d5e77d03fea9b3063251",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/src/core/alu.v",
+      "published": "src/core/alu.v",
+      "source_sha256": "6963cf941747ec9bfe7d0457a048c149da34dc69b86c8b53647da68e8bb72b6f",
+      "published_sha256": "6963cf941747ec9bfe7d0457a048c149da34dc69b86c8b53647da68e8bb72b6f",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/src/core/branch_ctrl.v",
+      "published": "src/core/branch_ctrl.v",
+      "source_sha256": "03bb006c44bbc5e7d4009472de98d635eaf60ddba3e891c5966d9017c26cd2ae",
+      "published_sha256": "03bb006c44bbc5e7d4009472de98d635eaf60ddba3e891c5966d9017c26cd2ae",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/src/core/comp.v",
+      "published": "src/core/comp.v",
+      "source_sha256": "18e512ea8cede4317324c6d28ee1d9d652d5525c7441650e3919c5f2b4412205",
+      "published_sha256": "18e512ea8cede4317324c6d28ee1d9d652d5525c7441650e3919c5f2b4412205",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/src/core/cpu_memory_map.vh",
+      "published": "src/core/cpu_memory_map.vh",
+      "source_sha256": "c6d8804d89f862630d3cddd44548aa5d668a981d14fc75fed97c41b931dd8936",
+      "published_sha256": "c6d8804d89f862630d3cddd44548aa5d668a981d14fc75fed97c41b931dd8936",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/src/core/cpu_reset_control.v",
+      "published": "src/core/cpu_reset_control.v",
+      "source_sha256": "65512d822fc7c600798be612e9f67488c2f061f5c5e943ba78d2b95837ad3406",
+      "published_sha256": "65512d822fc7c600798be612e9f67488c2f061f5c5e943ba78d2b95837ad3406",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/src/core/cpu_reset_sync.v",
+      "published": "src/core/cpu_reset_sync.v",
+      "source_sha256": "a759cfd099c4cede4c500f573ed2f31b116c1f97901878a637cbfa17ca46fc2c",
+      "published_sha256": "a759cfd099c4cede4c500f573ed2f31b116c1f97901878a637cbfa17ca46fc2c",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/src/core/csr_decode.sv",
+      "published": "src/core/csr_decode.sv",
+      "source_sha256": "b29c64e2f956c4a6c40284c83c9adf05496017d1d90f6beb2fa2a6addd1a5876",
+      "published_sha256": "b29c64e2f956c4a6c40284c83c9adf05496017d1d90f6beb2fa2a6addd1a5876",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/src/core/csr_pkg.sv",
+      "published": "src/core/csr_pkg.sv",
+      "source_sha256": "f67d94647927e9df4c9215688e7904fb6347ca6d22e3cc1ab1d40bd7dce64fb7",
+      "published_sha256": "f67d94647927e9df4c9215688e7904fb6347ca6d22e3cc1ab1d40bd7dce64fb7",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/src/core/csr_regfile.sv",
+      "published": "src/core/csr_regfile.sv",
+      "source_sha256": "848feb9d12b4a5dd03806da04f92b8900a69fbc38a07080eee98315170d66ad9",
+      "published_sha256": "848feb9d12b4a5dd03806da04f92b8900a69fbc38a07080eee98315170d66ad9",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/src/core/csr_top.v",
+      "published": "src/core/csr_top.v",
+      "source_sha256": "0a1db8d7468ef616acaa235212dd7c794d2e6434f018f9171fa52b641d352448",
+      "published_sha256": "0a1db8d7468ef616acaa235212dd7c794d2e6434f018f9171fa52b641d352448",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/src/core/ctrl.v",
+      "published": "src/core/ctrl.v",
+      "source_sha256": "e4525fe427c1987dfd426f1a00ff083f27c412de61f904ea1a44d7686344f2e0",
+      "published_sha256": "e4525fe427c1987dfd426f1a00ff083f27c412de61f904ea1a44d7686344f2e0",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/src/core/decoder.v",
+      "published": "src/core/decoder.v",
+      "source_sha256": "c8c4b598e0968d679369b15f1f22d883569d1caeef28d557b48ac453d64fbff8",
+      "published_sha256": "c8c4b598e0968d679369b15f1f22d883569d1caeef28d557b48ac453d64fbff8",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/src/core/demo_cpu.v",
+      "published": "src/core/demo_cpu.v",
+      "source_sha256": "23da4cc1cb460fe4c485f54d5c88ceaf9367ed84156a418d97f034e6ad2983d2",
+      "published_sha256": "23da4cc1cb460fe4c485f54d5c88ceaf9367ed84156a418d97f034e6ad2983d2",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/src/core/ex_mem.v",
+      "published": "src/core/ex_mem.v",
+      "source_sha256": "309805a68e4a29b66273e358bb32946e72e1a461f8eb990c2f01953fad00fed4",
+      "published_sha256": "309805a68e4a29b66273e358bb32946e72e1a461f8eb990c2f01953fad00fed4",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/src/core/ex_mux.v",
+      "published": "src/core/ex_mux.v",
+      "source_sha256": "4b58d8b7aace5bb282c1e2c18c9bc1ab1a5354cfa86c18ca24a7682fcda715fb",
+      "published_sha256": "4b58d8b7aace5bb282c1e2c18c9bc1ab1a5354cfa86c18ca24a7682fcda715fb",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/src/core/ex_pipe.v",
+      "published": "src/core/ex_pipe.v",
+      "source_sha256": "e03a91da3eac5f933999a29c3acd0e5e46e870faa116a18d60a56f8cb4d81863",
+      "published_sha256": "e03a91da3eac5f933999a29c3acd0e5e46e870faa116a18d60a56f8cb4d81863",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/src/core/forward.v",
+      "published": "src/core/forward.v",
+      "source_sha256": "59dca4c685987d5b984dc49e1360b0f4028676d822ab4505087404257ae08f9c",
+      "published_sha256": "59dca4c685987d5b984dc49e1360b0f4028676d822ab4505087404257ae08f9c",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/src/core/forward_ctrl.v",
+      "published": "src/core/forward_ctrl.v",
+      "source_sha256": "3b63df4cb785ae66ce56653d1f744c6d3e337857fa3cf2eb1b004fe6e27ef098",
+      "published_sha256": "3b63df4cb785ae66ce56653d1f744c6d3e337857fa3cf2eb1b004fe6e27ef098",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/src/core/ibrom.v",
+      "published": "src/core/ibrom.v",
+      "source_sha256": "d692ac398c84889d3443e891a2341577e88f37e00426a6882432235307997161",
+      "published_sha256": "d692ac398c84889d3443e891a2341577e88f37e00426a6882432235307997161",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/src/core/id_ex.v",
+      "published": "src/core/id_ex.v",
+      "source_sha256": "6d59f312833d6699b0a4b035e2a2e9aa230f57c1360db1deb60253b4feb12b49",
+      "published_sha256": "6d59f312833d6699b0a4b035e2a2e9aa230f57c1360db1deb60253b4feb12b49",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/src/core/if_id.v",
+      "published": "src/core/if_id.v",
+      "source_sha256": "3839b9e9a0fc3b31e8ef32eb50b368406a8257f22b81f4e45f59585aefb39524",
+      "published_sha256": "3839b9e9a0fc3b31e8ef32eb50b368406a8257f22b81f4e45f59585aefb39524",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/src/core/imm_gen.v",
+      "published": "src/core/imm_gen.v",
+      "source_sha256": "6d4c1ec73bb2dc8b604699f5a33a7197d1fec922ad3a08fe5ec1ebff989cace8",
+      "published_sha256": "6d4c1ec73bb2dc8b604699f5a33a7197d1fec922ad3a08fe5ec1ebff989cace8",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/src/core/instr_minidecoder.v",
+      "published": "src/core/instr_minidecoder.v",
+      "source_sha256": "7a6627d75ef33d9cf850a88048809dca26dc939ee85ad166f9d6a9e6a07754b7",
+      "published_sha256": "7a6627d75ef33d9cf850a88048809dca26dc939ee85ad166f9d6a9e6a07754b7",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/src/core/led_ctrl.v",
+      "published": "src/core/led_ctrl.v",
+      "source_sha256": "d2c0a14f17e6438a3eb8999fba5147c21ac6598bb40768022a1013bf464a82f7",
+      "published_sha256": "d2c0a14f17e6438a3eb8999fba5147c21ac6598bb40768022a1013bf464a82f7",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/src/core/mem_dtcm.v",
+      "published": "src/core/mem_dtcm.v",
+      "source_sha256": "9f98ce7931f8a6b33b6c4956b92bd5b8657ae06a71b3ad2ab851a514f6b7aeef",
+      "published_sha256": "9f98ce7931f8a6b33b6c4956b92bd5b8657ae06a71b3ad2ab851a514f6b7aeef",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/src/core/mem_forward.v",
+      "published": "src/core/mem_forward.v",
+      "source_sha256": "67220f2b2f60196a4f82dbd6cb57208bbaa86b2bb620ae605becd55323464ab3",
+      "published_sha256": "67220f2b2f60196a4f82dbd6cb57208bbaa86b2bb620ae605becd55323464ab3",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/src/core/mem_wb.v",
+      "published": "src/core/mem_wb.v",
+      "source_sha256": "df820e746e5b893538968bc7b5ce57340d292f1ba94d710d8689e996e78902a4",
+      "published_sha256": "df820e746e5b893538968bc7b5ce57340d292f1ba94d710d8689e996e78902a4",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/src/core/npc.v",
+      "published": "src/core/npc.v",
+      "source_sha256": "b32c7eeeaa50930daa0391f4fb32318d7316535f09eb5bf7fc59803fb722a1b9",
+      "published_sha256": "b32c7eeeaa50930daa0391f4fb32318d7316535f09eb5bf7fc59803fb722a1b9",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/src/core/pc_judge.v",
+      "published": "src/core/pc_judge.v",
+      "source_sha256": "f02f39d08b7d37c1a735fd96f77b5c0a72f2d0654697d5988eaab2a2ed2ffd32",
+      "published_sha256": "f02f39d08b7d37c1a735fd96f77b5c0a72f2d0654697d5988eaab2a2ed2ffd32",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/src/core/regfile.v",
+      "published": "src/core/regfile.v",
+      "source_sha256": "f6c5e7cb68f9eeaa05aed713a32bb8c7d0bf832a8d1b799b8a6dac60bc30f2fb",
+      "published_sha256": "f6c5e7cb68f9eeaa05aed713a32bb8c7d0bf832a8d1b799b8a6dac60bc30f2fb",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/src/core/riscv_define.vh",
+      "published": "src/core/riscv_define.vh",
+      "source_sha256": "f82ffc0b34bc35af7c4a79dcade057d16ca88f2196b155d06ed78fb55038d0d4",
+      "published_sha256": "f82ffc0b34bc35af7c4a79dcade057d16ca88f2196b155d06ed78fb55038d0d4",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/src/core/save_load_use.v",
+      "published": "src/core/save_load_use.v",
+      "source_sha256": "ecc9ceebcf4f72eb8f5c56ab12d4fa733ecbe6b14f0e9b5649185ba323d2564d",
+      "published_sha256": "ecc9ceebcf4f72eb8f5c56ab12d4fa733ecbe6b14f0e9b5649185ba323d2564d",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/src/core/stall.v",
+      "published": "src/core/stall.v",
+      "source_sha256": "d0b3563c525e140ec41b441c6c80cce6034f19ca97f2b564a6854f8e2ad4d0f5",
+      "published_sha256": "d0b3563c525e140ec41b441c6c80cce6034f19ca97f2b564a6854f8e2ad4d0f5",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/src/core/store.v",
+      "published": "src/core/store.v",
+      "source_sha256": "a473405c184ce0e0b89a8d1c24bdcc1f008d463fab512f831ea077a6f9eef037",
+      "published_sha256": "a473405c184ce0e0b89a8d1c24bdcc1f008d463fab512f831ea077a6f9eef037",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/src/core/wb_forward.v",
+      "published": "src/core/wb_forward.v",
+      "source_sha256": "68422f63791181c303e5eed47c77e4ae1fdf26887d056a2411bb0561aa7e66fc",
+      "published_sha256": "68422f63791181c303e5eed47c77e4ae1fdf26887d056a2411bb0561aa7e66fc",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/github_gitee/src/core/wb_mux.v",
+      "published": "src/core/wb_mux.v",
+      "source_sha256": "ac197420b9e672fa4b6216c2a2d9973e7cab777609863509fa108936f33bd21b",
+      "published_sha256": "ac197420b9e672fa4b6216c2a2d9973e7cab777609863509fa108936f33bd21b",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "report/design_report_official_template.pdf",
+      "published": "report/design_report_official_template.pdf",
+      "source_sha256": "7fb60827a552ac2a32ff7246f7ad7ff325b59efa054215d3f1ebb349da1fc303",
+      "published_sha256": "7fb60827a552ac2a32ff7246f7ad7ff325b59efa054215d3f1ebb349da1fc303",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "license/license.txt",
+      "published": "license.txt",
+      "source_sha256": "058fad727b5b7871801f3fb96ec430b1079ce9a341b9dc1edc37b890a6499283",
+      "published_sha256": "058fad727b5b7871801f3fb96ec430b1079ce9a341b9dc1edc37b890a6499283",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/runtime/capture.tcl",
+      "published": "board/runtime/capture.tcl",
+      "source_sha256": "3caf799dd555c213cdaa5d65146cb626452ff9d4b5371b6cd4712b35dde70198",
+      "published_sha256": "3caf799dd555c213cdaa5d65146cb626452ff9d4b5371b6cd4712b35dde70198",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/runtime/demo.bit",
+      "published": "board/runtime/demo.bit",
+      "source_sha256": "717bd8cfddeecf7753c8adcff68e0ec0072c0b9ca283c28613c2ac0dd3788d5b",
+      "published_sha256": "717bd8cfddeecf7753c8adcff68e0ec0072c0b9ca283c28613c2ac0dd3788d5b",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/runtime/demo.ltx",
+      "published": "board/runtime/demo.ltx",
+      "source_sha256": "facc5a5a95599c155598321dcd21d34b5d32f14b810fd7b6ef086fb8416ce6ba",
+      "published_sha256": "facc5a5a95599c155598321dcd21d34b5d32f14b810fd7b6ef086fb8416ce6ba",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/runtime/README.md",
+      "published": "board/runtime/README.md",
+      "source_sha256": "e32c7504349569f181723d3e0c71d77b52fabf24da75baf24e2373705b72dc79",
+      "published_sha256": "91bb90c7c519cd04a9d6201288ba05479182fde2734c18a5fd080f62061bcd57",
+      "adapted_for_publication": true
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/runtime/release_manifest.json",
+      "published": "board/runtime/release_manifest.json",
+      "source_sha256": "b25892835448f698e796a6bc2004380ad202ef8d5c965b2239f1ce8d42bf053d",
+      "published_sha256": "2a543fbb24e16bd2133479f4fec4347a58d632de017f486ec7a2e5886c31aa4c",
+      "adapted_for_publication": true
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/runtime/run_board.py",
+      "published": "board/runtime/run_board.py",
+      "source_sha256": "77943bb727c283a2772848e55ff9c4b9b736552fe3c5dfaeae05a35b4f130907",
+      "published_sha256": "7b67b6b94bd28d0a3b4534c6e4783f4543860099890afa9a7e05c2e828b99605",
+      "adapted_for_publication": true
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/runtime/skill/examples/z7_crc_cases.json",
+      "published": "board/runtime/skill/examples/z7_crc_cases.json",
+      "source_sha256": "2468accb86bc6344e0af03f866af0af48f420059cc3b3c144036cede5f06ca60",
+      "published_sha256": "2468accb86bc6344e0af03f866af0af48f420059cc3b3c144036cede5f06ca60",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/crc50_s08_20261103_review2/runtime/skill/scripts/verify_mailbox.py",
+      "published": "board/runtime/skill/scripts/verify_mailbox.py",
+      "source_sha256": "7fbe2534947aa302fe1740a8d11ff154a250b78e81401feec61449ba4b3ee0f6",
+      "published_sha256": "7fbe2534947aa302fe1740a8d11ff154a250b78e81401feec61449ba4b3ee0f6",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "evidence/agent_steps/step_05/rework_r4/attempts/capture_20261102_183416_de2cae60/run_0_scan_0.hex",
+      "published": "data/hardware/s05/run_0_scan_0.hex",
+      "source_sha256": "c5d1ec8fb84080a3f95abf2b90a76b0e31dae791343fb7e0827ee4a4adabd988",
+      "published_sha256": "c5d1ec8fb84080a3f95abf2b90a76b0e31dae791343fb7e0827ee4a4adabd988",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "evidence/agent_steps/step_05/rework_r4/attempts/capture_20261102_183416_de2cae60/run_0_scan_1.hex",
+      "published": "data/hardware/s05/run_0_scan_1.hex",
+      "source_sha256": "c5d1ec8fb84080a3f95abf2b90a76b0e31dae791343fb7e0827ee4a4adabd988",
+      "published_sha256": "c5d1ec8fb84080a3f95abf2b90a76b0e31dae791343fb7e0827ee4a4adabd988",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "evidence/agent_steps/step_05/rework_r4/attempts/capture_20261102_183416_de2cae60/run_1_scan_0.hex",
+      "published": "data/hardware/s05/run_1_scan_0.hex",
+      "source_sha256": "c5d1ec8fb84080a3f95abf2b90a76b0e31dae791343fb7e0827ee4a4adabd988",
+      "published_sha256": "c5d1ec8fb84080a3f95abf2b90a76b0e31dae791343fb7e0827ee4a4adabd988",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "evidence/agent_steps/step_05/rework_r4/attempts/capture_20261102_183416_de2cae60/run_1_scan_1.hex",
+      "published": "data/hardware/s05/run_1_scan_1.hex",
+      "source_sha256": "c5d1ec8fb84080a3f95abf2b90a76b0e31dae791343fb7e0827ee4a4adabd988",
+      "published_sha256": "c5d1ec8fb84080a3f95abf2b90a76b0e31dae791343fb7e0827ee4a4adabd988",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "evidence/agent_steps/step_05/rework_r4/attempts/capture_20261102_183416_de2cae60/run_2_scan_0.hex",
+      "published": "data/hardware/s05/run_2_scan_0.hex",
+      "source_sha256": "c5d1ec8fb84080a3f95abf2b90a76b0e31dae791343fb7e0827ee4a4adabd988",
+      "published_sha256": "c5d1ec8fb84080a3f95abf2b90a76b0e31dae791343fb7e0827ee4a4adabd988",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "evidence/agent_steps/step_05/rework_r4/attempts/capture_20261102_183416_de2cae60/run_2_scan_1.hex",
+      "published": "data/hardware/s05/run_2_scan_1.hex",
+      "source_sha256": "c5d1ec8fb84080a3f95abf2b90a76b0e31dae791343fb7e0827ee4a4adabd988",
+      "published_sha256": "c5d1ec8fb84080a3f95abf2b90a76b0e31dae791343fb7e0827ee4a4adabd988",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "evidence/agent_steps/step_05/rework_r4/attempts/capture_20261102_183416_de2cae60/events.jsonl",
+      "published": "data/hardware/s05/events.jsonl",
+      "source_sha256": "ca2c64c8cff0bd5ce424c0426359dc8b35364f4e02d462b74b1bf65243a50404",
+      "published_sha256": "ca2c64c8cff0bd5ce424c0426359dc8b35364f4e02d462b74b1bf65243a50404",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "evidence/agent_steps/step_05/rework_r4/attempts/capture_20261102_183416_de2cae60/stdout.log",
+      "published": "data/hardware/s05/stdout.log",
+      "source_sha256": "4a1c48486c9f7dd76611800cfdefabb190791c08707ace5f385da02b8e854374",
+      "published_sha256": "4a1c48486c9f7dd76611800cfdefabb190791c08707ace5f385da02b8e854374",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "evidence/agent_steps/step_05/rework_r4/attempts/capture_20261102_183416_de2cae60/stderr.log",
+      "published": "data/hardware/s05/stderr.log",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "evidence/agent_steps/step_05/rework_r4/attempts/capture_20261102_183416_de2cae60/vivado.log",
+      "published": "data/hardware/s05/vivado.log",
+      "source_sha256": "96e2031268d920e0d4569d6db87ecc8a3d7d63f6f5a2a3bdd07eb8b9d580565c",
+      "published_sha256": "96e2031268d920e0d4569d6db87ecc8a3d7d63f6f5a2a3bdd07eb8b9d580565c",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "evidence/agent_steps/step_05/rework_r4/attempts/capture_20261102_183416_de2cae60/tool_run.json",
+      "published": "data/hardware/s05/tool_run.json",
+      "source_sha256": "3dd180f612ccc2d34b21c0d881d10c282d051a58e8a1596b08a25b8c1d3997d5",
+      "published_sha256": "3dd180f612ccc2d34b21c0d881d10c282d051a58e8a1596b08a25b8c1d3997d5",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "evidence/agent_steps/step_05/rework_r4/attempts/capture_20261102_183416_de2cae60/physical_identity.json",
+      "published": "data/hardware/s05/physical_identity.json",
+      "source_sha256": "4bcdbfff97e49389b15d012bace0e36a2c13c97f0a8d401deeb3329a91a91edd",
+      "published_sha256": "4bcdbfff97e49389b15d012bace0e36a2c13c97f0a8d401deeb3329a91a91edd",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "report/hardware/capture_20261102_183416_de2cae60/report_387fc78b/results.json",
+      "published": "data/hardware/s05/results.json",
+      "source_sha256": "9342136b78b44e019ae80e36b571d1ef36100212b087b4ceae9874635686b707",
+      "published_sha256": "9342136b78b44e019ae80e36b571d1ef36100212b087b4ceae9874635686b707",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "report/hardware/capture_20261102_183416_de2cae60/report_387fc78b/results.csv",
+      "published": "data/hardware/s05/results.csv",
+      "source_sha256": "4b518989573dc3c4859da44f856fe027d45fcfe57f75f27a4fe04e16807a838d",
+      "published_sha256": "4b518989573dc3c4859da44f856fe027d45fcfe57f75f27a4fe04e16807a838d",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "report/hardware/capture_20261102_183416_de2cae60/report_387fc78b/capture_receipt.json",
+      "published": "data/hardware/s05/capture_receipt.json",
+      "source_sha256": "5278450b7aaa129b4ec27498064406b3574d0f574b19f473c694bc7329a80701",
+      "published_sha256": "5278450b7aaa129b4ec27498064406b3574d0f574b19f473c694bc7329a80701",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "evidence/agent_steps/step_05/rework_r4/observations_20261102.json",
+      "published": "data/hardware/s05/observations.json",
+      "source_sha256": "009473fd84379dd94bf84ee2686fa95bae1140ddf2b242b10910830a85e17619",
+      "published_sha256": "009473fd84379dd94bf84ee2686fa95bae1140ddf2b242b10910830a85e17619",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "report/demo/runs_20261104_120839/run_0_scan_0.hex",
+      "published": "report/demo/runs_20261104_120839/run_0_scan_0.hex",
+      "source_sha256": "c5d1ec8fb84080a3f95abf2b90a76b0e31dae791343fb7e0827ee4a4adabd988",
+      "published_sha256": "c5d1ec8fb84080a3f95abf2b90a76b0e31dae791343fb7e0827ee4a4adabd988",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "report/demo/runs_20261104_120839/run_0_scan_1.hex",
+      "published": "report/demo/runs_20261104_120839/run_0_scan_1.hex",
+      "source_sha256": "c5d1ec8fb84080a3f95abf2b90a76b0e31dae791343fb7e0827ee4a4adabd988",
+      "published_sha256": "c5d1ec8fb84080a3f95abf2b90a76b0e31dae791343fb7e0827ee4a4adabd988",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "report/demo/runs_20261104_120839/run_1_scan_0.hex",
+      "published": "report/demo/runs_20261104_120839/run_1_scan_0.hex",
+      "source_sha256": "c5d1ec8fb84080a3f95abf2b90a76b0e31dae791343fb7e0827ee4a4adabd988",
+      "published_sha256": "c5d1ec8fb84080a3f95abf2b90a76b0e31dae791343fb7e0827ee4a4adabd988",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "report/demo/runs_20261104_120839/run_1_scan_1.hex",
+      "published": "report/demo/runs_20261104_120839/run_1_scan_1.hex",
+      "source_sha256": "c5d1ec8fb84080a3f95abf2b90a76b0e31dae791343fb7e0827ee4a4adabd988",
+      "published_sha256": "c5d1ec8fb84080a3f95abf2b90a76b0e31dae791343fb7e0827ee4a4adabd988",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "report/demo/runs_20261104_120839/run_2_scan_0.hex",
+      "published": "report/demo/runs_20261104_120839/run_2_scan_0.hex",
+      "source_sha256": "c5d1ec8fb84080a3f95abf2b90a76b0e31dae791343fb7e0827ee4a4adabd988",
+      "published_sha256": "c5d1ec8fb84080a3f95abf2b90a76b0e31dae791343fb7e0827ee4a4adabd988",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "report/demo/runs_20261104_120839/run_2_scan_1.hex",
+      "published": "report/demo/runs_20261104_120839/run_2_scan_1.hex",
+      "source_sha256": "c5d1ec8fb84080a3f95abf2b90a76b0e31dae791343fb7e0827ee4a4adabd988",
+      "published_sha256": "c5d1ec8fb84080a3f95abf2b90a76b0e31dae791343fb7e0827ee4a4adabd988",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "report/demo/runs_20261104_120839/vivado.log",
+      "published": "report/demo/runs_20261104_120839/vivado.log",
+      "source_sha256": "96b2c5e8b8a8398224139c6121df8a8a6bc3a5ac48603810aadb19b4d4b37e01",
+      "published_sha256": "96b2c5e8b8a8398224139c6121df8a8a6bc3a5ac48603810aadb19b4d4b37e01",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "report/demo/demo_console.py",
+      "published": "report/demo/demo_console.py",
+      "source_sha256": "4e54746aef1ff45026d9c0129a575a83e7936213d921059243e3c6fc740f5a2f",
+      "published_sha256": "ad3a0510adaaceb4bcd63a1936f37ce2013170b6c7344e57ca0806f60338c5b8",
+      "adapted_for_publication": true
+    },
+    {
+      "source": "report/demo/demo_capture.tcl",
+      "published": "report/demo/demo_capture.tcl",
+      "source_sha256": "780782565028db4ac9bc91324a0fe8fe54c722030ce348ebde648a6a2d536f34",
+      "published_sha256": "780782565028db4ac9bc91324a0fe8fe54c722030ce348ebde648a6a2d536f34",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "report/demo/demo_stream.tcl",
+      "published": "report/demo/demo_stream.tcl",
+      "source_sha256": "6e022835ce8ec8706978d393ec8841a93c96cd8bc9f6c72e0e629b870b3898af",
+      "published_sha256": "6e022835ce8ec8706978d393ec8841a93c96cd8bc9f6c72e0e629b870b3898af",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "report/demo/show_evidence.py",
+      "published": "report/demo/show_evidence.py",
+      "source_sha256": "9f291a598f950aede8ad35977cdacdf2cd09ad8400258e515a5055cc7ddc6d15",
+      "published_sha256": "18476560d4a4d111e1f1b38cd0bd37c07ab942a269cbc626062699474a282a0a",
+      "adapted_for_publication": true
+    },
+    {
+      "source": "report/demo/show_evidence.cmd",
+      "published": "report/demo/show_evidence.cmd",
+      "source_sha256": "971d070fbb99cc679ddee1db3187209048e805cabdddfb5c37920fb677b6ff3e",
+      "published_sha256": "971d070fbb99cc679ddee1db3187209048e805cabdddfb5c37920fb677b6ff3e",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/verify_s08_review2/source/evidence/unit_result.json",
+      "published": "sim/results/unit_result.json",
+      "source_sha256": "90cd07001dd10f869b3aa74e4350519eee5cb3979db086296aec39ebb6c1db6f",
+      "published_sha256": "90cd07001dd10f869b3aa74e4350519eee5cb3979db086296aec39ebb6c1db6f",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/verify_s08_review2/source/evidence/memory_result.json",
+      "published": "sim/results/memory_result.json",
+      "source_sha256": "e836b448812c62b9081b03342a0136affa81ac70ad82daf5faff318d23d10815",
+      "published_sha256": "e836b448812c62b9081b03342a0136affa81ac70ad82daf5faff318d23d10815",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/verify_s08_review2/source/evidence/simulate_result.json",
+      "published": "sim/results/simulate_result.json",
+      "source_sha256": "b6144dc2d2660938499c8bbcea872a08e45f0d722d08caa36fbf8b4380c671da",
+      "published_sha256": "b6144dc2d2660938499c8bbcea872a08e45f0d722d08caa36fbf8b4380c671da",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/verify_s08_review2/source/evidence/faults_result.json",
+      "published": "sim/results/faults_result.json",
+      "source_sha256": "a09ec7f558478d8c814dd930ac6abc61e54806491526eae0b06179ef8f8ccf54",
+      "published_sha256": "a09ec7f558478d8c814dd930ac6abc61e54806491526eae0b06179ef8f8ccf54",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/verify_s08_review2/source/evidence/controls_result.json",
+      "published": "sim/results/controls_result.json",
+      "source_sha256": "5e6df03dee2d249ae13d06344d7d5ab0dd0afb7f8a1a816c4e7dba3a7f5cdafe",
+      "published_sha256": "5e6df03dee2d249ae13d06344d7d5ab0dd0afb7f8a1a816c4e7dba3a7f5cdafe",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/verify_s08_review2/source/evidence/implement_result.json",
+      "published": "sim/results/implement_result.json",
+      "source_sha256": "d64b3e9da3a9cc168a5c3b261e9fefa6e9e1c1b8af45264e34a4538a38afcfdc",
+      "published_sha256": "d64b3e9da3a9cc168a5c3b261e9fefa6e9e1c1b8af45264e34a4538a38afcfdc",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/verify_s08_review2/source/report/simulation/cycles.svg",
+      "published": "sim/results/cycles.svg",
+      "source_sha256": "3a5246b0ccc3fd70bcd7d92f3c076113b7fac5db28af56c62410ee0671597d9f",
+      "published_sha256": "3a5246b0ccc3fd70bcd7d92f3c076113b7fac5db28af56c62410ee0671597d9f",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/verify_s08_review2/source/report/simulation/index.html",
+      "published": "sim/results/index.html",
+      "source_sha256": "4221e146852e16c37295510b176c9c79622fa7c016fd59bdf6283511327b507a",
+      "published_sha256": "4221e146852e16c37295510b176c9c79622fa7c016fd59bdf6283511327b507a",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/verify_s08_review2/source/report/simulation/results.csv",
+      "published": "sim/results/results.csv",
+      "source_sha256": "6490f34fd89b7e9f80d3e900abfff1e937647fe713bcfb048cfd95e31700d6f9",
+      "published_sha256": "6490f34fd89b7e9f80d3e900abfff1e937647fe713bcfb048cfd95e31700d6f9",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/verify_s08_review2/source/report/simulation/results.json",
+      "published": "sim/results/results.json",
+      "source_sha256": "c560421942b570d421578e6c2533dce3e28d81f81b97a145ee9ff251cb56d5ee",
+      "published_sha256": "c560421942b570d421578e6c2533dce3e28d81f81b97a145ee9ff251cb56d5ee",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/verify_s08_review2/source/b/p/demo.sim/sim_1/behav/xsim/mailbox_sim_run_0.hex",
+      "published": "sim/results/mailbox_sim_run_0.hex",
+      "source_sha256": "c5d1ec8fb84080a3f95abf2b90a76b0e31dae791343fb7e0827ee4a4adabd988",
+      "published_sha256": "c5d1ec8fb84080a3f95abf2b90a76b0e31dae791343fb7e0827ee4a4adabd988",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/verify_s08_review2/source/b/p/demo.sim/sim_1/behav/xsim/mailbox_sim_run_1.hex",
+      "published": "sim/results/mailbox_sim_run_1.hex",
+      "source_sha256": "c5d1ec8fb84080a3f95abf2b90a76b0e31dae791343fb7e0827ee4a4adabd988",
+      "published_sha256": "c5d1ec8fb84080a3f95abf2b90a76b0e31dae791343fb7e0827ee4a4adabd988",
+      "adapted_for_publication": false
+    },
+    {
+      "source": "release/verify_s08_review2/source/b/p/demo.sim/sim_1/behav/xsim/mailbox_sim_run_2.hex",
+      "published": "sim/results/mailbox_sim_run_2.hex",
+      "source_sha256": "c5d1ec8fb84080a3f95abf2b90a76b0e31dae791343fb7e0827ee4a4adabd988",
+      "published_sha256": "c5d1ec8fb84080a3f95abf2b90a76b0e31dae791343fb7e0827ee4a4adabd988",
+      "adapted_for_publication": false
+    }
+  ]
+}

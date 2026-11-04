@@ -1,0 +1,11 @@
+{
+  "root": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\delivery\\source_candidate_s07_20261102",
+  "manifest": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\delivery\\source_candidate_s07_20261102\\release_manifest.json",
+  "expected_files": 127,
+  "actual_files": 128,
+  "missing": [],
+  "mismatch": [],
+  "extra": [],
+  "allow_extra": false,
+  "pass": true
+}

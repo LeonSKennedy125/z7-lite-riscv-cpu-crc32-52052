@@ -1,0 +1,119 @@
+{
+  "schema": 1,
+  "date": "2026-11-02",
+  "authority": "User-confirmed hardware baseline and the paired MicroPhase customer-service archive",
+  "board": {
+    "manufacturer": "MicroPhase",
+    "pcb_marking": "Z7-LITE_ES1",
+    "sticker": "H251800347",
+    "FPGA": "XC7Z010",
+    "package": "CLG400",
+    "speed_grade": "-1",
+    "vivado_part": "xc7z010clg400-1",
+    "visible_marking": [
+      "XC7Z010",
+      "CLG400ABX2229"
+    ],
+    "identity_source": "User statement on 2026-11-02; package applicability confirmed by user",
+    "grade_read_from_JTAG": false,
+    "matching_documentation_confirmed_by_user": true,
+    "whole_board_ES1_R11_equivalence_asserted": false
+  },
+  "clocks": {
+    "PL": {
+      "reference": "U3",
+      "signal": "PL_CLK_50M",
+      "pin": "N18",
+      "frequency_hz": 50000000,
+      "period_ns": 20.0,
+      "IOSTANDARD": "LVCMOS33",
+      "schematic_page": 5
+    },
+    "PS": {
+      "reference": "Y1",
+      "pin": "E7",
+      "frequency_mhz": "33.3333",
+      "schematic_page": 2
+    }
+  },
+  "PL_pins": {
+    "PL_KEY1": {
+      "reference": "K3",
+      "pin": "P16",
+      "active_low": true
+    },
+    "PL_KEY2": {
+      "reference": "K4",
+      "pin": "T12",
+      "alias": "GPIO1_17P",
+      "active_low": true
+    },
+    "PL_LED1": {
+      "reference": "D4",
+      "pin": "P15",
+      "active_low": true
+    },
+    "PL_LED2": {
+      "reference": "D5",
+      "pin": "U12",
+      "alias": "GPIO1_17N",
+      "active_low": true
+    }
+  },
+  "CRC_ports": {
+    "clock": "PL_CLK_50M",
+    "resetn": "PL_KEY1",
+    "led_ok": "PL_LED1",
+    "led_heartbeat": "PL_LED2"
+  },
+  "configuration_bank": {
+    "schematic_page": 4,
+    "VCCO_0": {
+      "pin": "K6",
+      "net": "VCC_3V3",
+      "volts": 3.3
+    },
+    "VCCBATT_0": {
+      "pin": "F11",
+      "net": "VCC_1V8",
+      "volts": 1.8
+    },
+    "CFGBVS_0": {
+      "pin": "M6",
+      "net": "VCC_3V3",
+      "connection": "direct"
+    },
+    "R47": {
+      "ohms": 4700,
+      "pullup_for": "PROGRAM_B_0",
+      "pin": "L6",
+      "net": "VCC_3V3"
+    },
+    "R46": {
+      "ohms": 4700,
+      "pullup_for": "INIT_B_0",
+      "pin": "R10",
+      "net": "VCC_3V3"
+    },
+    "expected_design_properties": {
+      "CFGBVS": "VCCO",
+      "CONFIG_VOLTAGE": "3.3"
+    },
+    "previous_GND_1V8_interpretation_superseded": true
+  },
+  "power": {
+    "USB_supply_volts": 5.0,
+    "core_volts": 1.0,
+    "DDR3_volts": 1.5,
+    "Bank34_VCCO_volts": 3.3,
+    "Bank35_VCCO_volts": 3.3,
+    "PL_IOSTANDARD": "LVCMOS33",
+    "rails_measured_this_round": false
+  },
+  "archive": "evidence/vendor/es1_hardware.zip",
+  "archive_sha256": "cd1611dd4299dff40965edf87c3ab441481701ae405264aa0664ed0e9d722f8b",
+  "schematic_member": "Z7-LITE_Rev1_1.pdf",
+  "schematic_sha256": "7e6c992efc270e7884f4c9517f0966b43084a5621b0695bb6c37710de6d6e5ea",
+  "XDC_member": "Z7_LITE.xdc",
+  "XDC_sha256": "a47f722805cf25ab8aaa2749909ac7b0ff071a9f4ebcb8f59a0d1b15a234b183"
+}

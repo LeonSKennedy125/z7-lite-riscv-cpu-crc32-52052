@@ -1,0 +1,29 @@
+{
+  "argv": [
+    "C:\\Users\\21606\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "skill/scripts/verify_mailbox.py",
+    "--dump",
+    "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\evidence\\agent_steps\\step_05\\rework_r4\\attempts\\capture_20261102_183416_de2cae60\\run_0_scan_0.hex",
+    "--dump",
+    "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\evidence\\agent_steps\\step_05\\rework_r4\\attempts\\capture_20261102_183416_de2cae60\\run_0_scan_1.hex",
+    "--dump",
+    "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\evidence\\agent_steps\\step_05\\rework_r4\\attempts\\capture_20261102_183416_de2cae60\\run_1_scan_0.hex",
+    "--dump",
+    "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\evidence\\agent_steps\\step_05\\rework_r4\\attempts\\capture_20261102_183416_de2cae60\\run_1_scan_1.hex",
+    "--dump",
+    "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\evidence\\agent_steps\\step_05\\rework_r4\\attempts\\capture_20261102_183416_de2cae60\\run_2_scan_0.hex",
+    "--dump",
+    "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\evidence\\agent_steps\\step_05\\rework_r4\\attempts\\capture_20261102_183416_de2cae60\\run_2_scan_1.hex",
+    "--cases",
+    "skill/examples/z7_crc_cases.json",
+    "--json",
+    "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\evidence\\agent_steps\\step_07\\acceptance_20261103\\mailbox_verify.json"
+  ],
+  "cwd": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc",
+  "exit_code": 0,
+  "stdout": "VERIFY_PASS D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\evidence\\agent_steps\\step_05\\rework_r4\\attempts\\capture_20261102_183416_de2cae60\\run_0_scan_0.hex: 12 cases, 104 words, CRC equality checked\nVERIFY_PASS D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\evidence\\agent_steps\\step_05\\rework_r4\\attempts\\capture_20261102_183416_de2cae60\\run_0_scan_1.hex: 12 cases, 104 words, CRC equality checked\nVERIFY_PASS D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\evidence\\agent_steps\\step_05\\rework_r4\\attempts\\capture_20261102_183416_de2cae60\\run_1_scan_0.hex: 12 cases, 104 words, CRC equality checked\nVERIFY_PASS D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\evidence\\agent_steps\\step_05\\rework_r4\\attempts\\capture_20261102_183416_de2cae60\\run_1_scan_1.hex: 12 cases, 104 words, CRC equality checked\nVERIFY_PASS D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\evidence\\agent_steps\\step_05\\rework_r4\\attempts\\capture_20261102_183416_de2cae60\\run_2_scan_0.hex: 12 cases, 104 words, CRC equality checked\nVERIFY_PASS D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc\\evidence\\agent_steps\\step_05\\rework_r4\\attempts\\capture_20261102_183416_de2cae60\\run_2_scan_1.hex: 12 cases, 104 words, CRC equality checked\n",
+  "stderr": ""
+}

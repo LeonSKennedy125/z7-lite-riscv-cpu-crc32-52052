@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="330" viewBox="0 0 1180 330" role="img" aria-labelledby="title desc">
+  <title id="title">Six-stage RV32I plus Zicsr pipeline</title>
+  <desc id="desc">Six stages IF, ID, EX0, EX1, MEM, WB separated by the IF_ID, ID_EX, EX_pipe, EX_MEM and MEM_WB registers. Static prediction is in IF; forwarding and load-use handling cross EX0 and EX1; BRAM output registers provide a two-edge load.</desc>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#1e293b"/>
+    </marker>
+    <style>
+      .stage { stroke:#1e293b; stroke-width:1.6; rx:8; }
+      .reg { fill:#f8fafc; stroke:#475569; stroke-width:1.2; }
+      .t { font-family:"Segoe UI","Microsoft YaHei",sans-serif; fill:#0f172a; }
+      .s { font-family:"Segoe UI","Microsoft YaHei",sans-serif; fill:#334155; font-size:12px; }
+      .h { font-family:"Segoe UI","Microsoft YaHei",sans-serif; fill:#0f172a; font-size:22px; font-weight:700; }
+      .line { stroke:#1e293b; stroke-width:2; fill:none; marker-end:url(#a); }
+    </style>
+  </defs>
+  <text class="h" x="24" y="36">六级顺序单发射流水线（实际接入）</text>
+  <text class="s" x="24" y="58">IF → ID → EX0 → EX1 → MEM → WB；级间寄存器 IF_ID、ID_EX、EX_pipe、EX_MEM、MEM_WB</text>
+
+  <g>
+    <rect class="stage" x="40" y="96" width="120" height="70" fill="#bfdbfe"/>
+    <text class="t" x="82" y="126" font-size="18" font-weight="700">IF</text>
+    <text class="s" x="56" y="148">PC / IBROM 取指</text>
+
+    <rect class="stage" x="220" y="96" width="120" height="70" fill="#bfdbfe"/>
+    <text class="t" x="262" y="126" font-size="18" font-weight="700">ID</text>
+    <text class="s" x="236" y="148">译码 / 立即数 / Regfile</text>
+
+    <rect class="stage" x="400" y="96" width="120" height="70" fill="#bfdbfe"/>
+    <text class="t" x="438" y="126" font-size="18" font-weight="700">EX0</text>
+    <text class="s" x="416" y="148">前递 / 操作数筛选</text>
+
+    <rect class="stage" x="580" y="96" width="120" height="70" fill="#bfdbfe"/>
+    <text class="t" x="618" y="126" font-size="18" font-weight="700">EX1</text>
+    <text class="s" x="596" y="148">ALU / 比较 / 分支校验</text>
+
+    <rect class="stage" x="760" y="96" width="120" height="70" fill="#bfdbfe"/>
+    <text class="t" x="798" y="126" font-size="18" font-weight="700">MEM</text>
+    <text class="s" x="776" y="148">DTCM / MMIO 访存</text>
+
+    <rect class="stage" x="940" y="96" width="120" height="70" fill="#bfdbfe"/>
+    <text class="t" x="978" y="126" font-size="18" font-weight="700">WB</text>
+    <text class="s" x="956" y="148">回写选择 / Regfile</text>
+  </g>
+
+  <g>
+    <rect class="reg" x="166" y="112" width="48" height="38" rx="5"/>
+    <text class="s" x="172" y="136">IF_ID</text>
+    <rect class="reg" x="346" y="112" width="48" height="38" rx="5"/>
+    <text class="s" x="352" y="136">ID_EX</text>
+    <rect class="reg" x="526" y="112" width="48" height="38" rx="5"/>
+    <text class="s" x="526" y="136">EX_pipe</text>
+    <rect class="reg" x="706" y="112" width="48" height="38" rx="5"/>
+    <text class="s" x="708" y="136">EX_MEM</text>
+    <rect class="reg" x="886" y="112" width="48" height="38" rx="5"/>
+    <text class="s" x="888" y="136">MEM_WB</text>
+  </g>
+
+  <line class="line" x1="160" y1="131" x2="220" y2="131"/>
+  <line class="line" x1="340" y1="131" x2="400" y2="131"/>
+  <line class="line" x1="520" y1="131" x2="580" y2="131"/>
+  <line class="line" x1="700" y1="131" x2="760" y2="131"/>
+  <line class="line" x1="880" y1="131" x2="940" y2="131"/>
+
+  <g>
+    <rect x="40" y="204" width="250" height="44" rx="6" fill="#f1f5f9" stroke="#94a3b8"/>
+    <text class="s" x="52" y="222">静态预判：JAL 跳转 / JALR 顺序</text>
+    <text class="s" x="52" y="240">向后分支跳转，向前分支不跳转</text>
+
+    <rect x="310" y="204" width="270" height="44" rx="6" fill="#f1f5f9" stroke="#94a3b8"/>
+    <text class="s" x="322" y="222">三级前递 EX1 &gt; MEM &gt; WB</text>
+    <text class="s" x="322" y="240">Load-use：停顿一周期 + save 保持</text>
+
+    <rect x="600" y="204" width="250" height="44" rx="6" fill="#f1f5f9" stroke="#94a3b8"/>
+    <text class="s" x="612" y="222">BRAM 输出寄存器 + 两拍读</text>
+    <text class="s" x="612" y="240">DTCM 64 KiB；IROM 16 KiB</text>
+
+    <rect x="870" y="204" width="250" height="44" rx="6" fill="#f1f5f9" stroke="#94a3b8"/>
+    <text class="s" x="882" y="222">CSR：机器模式子集</text>
+    <text class="s" x="882" y="240">异常 / 中断 / mret / ecall / ebreak</text>
+  </g>
+
+  <text class="s" x="40" y="300">未接入：RV32M、TAGE/ITTAGE、缓存/MMU、多核、操作系统。FENCE 未实现；不支持非对齐访存。</text>
+</svg>

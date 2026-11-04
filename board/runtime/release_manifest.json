@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "manifest_self_excluded": true,
+  "scope": "Exact measured BIT/LTX and public portable runtime files",
+  "files": {
+    "capture.tcl": "3caf799dd555c213cdaa5d65146cb626452ff9d4b5371b6cd4712b35dde70198",
+    "demo.bit": "717bd8cfddeecf7753c8adcff68e0ec0072c0b9ca283c28613c2ac0dd3788d5b",
+    "demo.ltx": "facc5a5a95599c155598321dcd21d34b5d32f14b810fd7b6ef086fb8416ce6ba",
+    "README.md": "91bb90c7c519cd04a9d6201288ba05479182fde2734c18a5fd080f62061bcd57",
+    "run_board.py": "7b67b6b94bd28d0a3b4534c6e4783f4543860099890afa9a7e05c2e828b99605",
+    "skill/examples/z7_crc_cases.json": "2468accb86bc6344e0af03f866af0af48f420059cc3b3c144036cede5f06ca60",
+    "skill/scripts/verify_mailbox.py": "7fbe2534947aa302fe1740a8d11ff154a250b78e81401feec61449ba4b3ee0f6"
+  }
+}

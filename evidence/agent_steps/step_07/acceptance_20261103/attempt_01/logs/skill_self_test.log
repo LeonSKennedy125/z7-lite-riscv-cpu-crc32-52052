@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "C:\\Users\\21606\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "skill/scripts/verify_mailbox.py",
+    "--self-test"
+  ],
+  "cwd": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc",
+  "exit_code": 0,
+  "stdout": "SELFTEST base PASS: 12 cases, 104 words\nSELFTEST negative truncated: PASS (mailbox must contain exactly 104 words; got 103)\nSELFTEST negative bad_magic: PASS (invalid mailbox header: expected 43524331 00000001 02faf080 00010000 0000000c 00000000 00000068 00000007 got 43524330 00000001 02faf080 00010000 0000000c 00000000 00000068 00000007)\nSELFTEST negative bad_hardware_crc: PASS (case 2: hardware_crc mismatch: got 0bd4b550, want 0bd4b551)\nSELFTEST negative zero_cycles: PASS (case 2: invalid hardware_total_cycles 0)\nSELFTEST PASS: base + 4 negative controls\n",
+  "stderr": ""
+}

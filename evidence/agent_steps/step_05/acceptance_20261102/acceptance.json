@@ -1,0 +1,91 @@
+{
+  "step": "S05",
+  "independent_acceptance": "PASS",
+  "date": "2026-11-02",
+  "timezone": "Asia/Shanghai",
+  "scope": "Actual ES1 hardware capture after authorized configuration repair: build provenance, LTX/VIO mapping, three VIO auxiliary resets, six 104-word scans, independent zlib CRC, receipt and record/scope review. No hardware re-access; no S06-S08.",
+  "acceptance_object": {
+    "migration/current.json": "d7dba293dc1b088890c194c84bd745c69b85684a10ad420f44e9be65b4038a9c",
+    "evidence/agent_steps/step_05/rework_r4/seal.json": "a9ba2f5f7dfbf09a74dffe1d77919c1332b215b47e3cfba9e5cedf4fe1aa7a91",
+    "evidence/agent_steps/step_05/rework_r3/build_current.json": "550503522e2935f232f15c5abced4c905da4422b8098c15e60499268927e3771",
+    "evidence/agent_steps/step_05/result.json": "107b02c6ca62d6d6aabba8e530fa70e117b9faef1ea3a328ecda5edf16f2ad80",
+    "evidence/agent_steps/step_05/report.md": "13cc971901c8940fc18b8a883ef090f6c4545f17148e0286fb26ee5082dacaf7",
+    "evidence/agent_steps/step_05/inputs.json": "4c230957bf048f372174cc9008b14c076946ea2d7a489e7dad355e10037f61f2",
+    "evidence/agent_steps/step_05/logs_index.json": "9cf09595206374167b5af1fec05ed656b0122a1efb4af3a9361ac8e6874f38c7",
+    "evidence/agent_steps/step_05/progress_update.json": "028ea5373c081008e62cbe0eb51ed45b7ce924b230590980fb8c667be3444a37",
+    "report/hardware/capture_20261102_183416_de2cae60/report_387fc78b/results.json": "9342136b78b44e019ae80e36b571d1ef36100212b087b4ceae9874635686b707",
+    "report/hardware/capture_20261102_183416_de2cae60/report_387fc78b/capture_receipt.json": "5278450b7aaa129b4ec27498064406b3574d0f574b19f473c694bc7329a80701",
+    "evidence/agent_steps/step_05/acceptance_20261102/checks.json": "562af30213a040787202add94d1d4373cd936883bd51b09c2da9763d71fc4e3c",
+    "evidence/agent_steps/step_05/acceptance_20261102/run_acceptance.py": "60ff1a6d6165b60222f9b461523e0249e89ed862de9cf5c04745347e86160dff"
+  },
+  "checks": {
+    "total": 833,
+    "failed": 0,
+    "file": "evidence/agent_steps/step_05/acceptance_20261102/checks.json",
+    "sha256": "562af30213a040787202add94d1d4373cd936883bd51b09c2da9763d71fc4e3c"
+  },
+  "review_verdicts": {
+    "build_provenance": "PASS",
+    "hardware_forensics": "PASS",
+    "records_scope": "PASS",
+    "adversarial_critic": "PASS"
+  },
+  "criteria": {
+    "pcb_basis_and_unique_device": true,
+    "real_capture_source_and_three_reruns": true,
+    "crc_all_match_zero_failures": true,
+    "capture_files_and_report_recomputable": true,
+    "no_simulation_hex_substitution": true,
+    "no_pass_without_board_or_documents": true,
+    "independent_acceptance": "PASS"
+  },
+  "counts": {
+    "runs": 3,
+    "scans": 6,
+    "words_per_scan": 104,
+    "mailbox_words": 624,
+    "CRC_cases": 36,
+    "failure_counts": [
+      0,
+      0,
+      0
+    ],
+    "mailbox_frozen": true,
+    "cycles_identical": true,
+    "simulation_hex_equal": true,
+    "hardware_resets": 3,
+    "reset_method": "VIO auxiliary hardware reset request; no button or power-cycle claim"
+  },
+  "limitations": [
+    "Board identity, speed grade, power and LED states are user-attested plus vendor archive plus JTAG identification; no board photograph and no rail voltage measurement.",
+    "The six hardware HEX files are byte-identical to the deterministic simulation mailbox; hardware origin rests on the Vivado session log, event timing, sealed capture script and user LED observation, not on HEX entropy.",
+    "The r3 failed capture is retained outside results.json all_capture_attempts (r4 scope); it is bound at stage level and in the receipt observations.",
+    "physical_identity.json connection_evidence text names the r3 preflight; the capture actually used the r4 preflight 20261102_183328_87bceaaa. Bytes are preserved because the receipt binds the attempt copy.",
+    "board_identity.json is a pre-authorization historical snapshot (GND/1.8, blocked) and not current build status.",
+    "validated_binding/accepted_inputs hardware_live_verified=false is a pre-capture source-binding field, not the capture result.",
+    "r4 seal predates the capture and binds build/scripts; capture receipt and report/hardware/status.json bind the actual capture.",
+    "latest_capture.json points to the pre-observation CLI exit 3; the final report CLI is cli_calls/20261102_184606_report_a269de with exit 0.",
+    "No S06-S08 was executed; no performance optimization, publication or contest submission."
+  ],
+  "corrections_applied": [
+    "docs/agent_progress.md header/step table updated to the final state and line endings normalized; original pre-acceptance text saved as progress_before.md.",
+    "Demo-root AGENTS.md stale pre-authorization/0-of-3/rework_r1 statements updated to the accepted rework_r4 state; historical paragraphs retained.",
+    "migration/report_zh.md received a dated 2026-11-02 supersession note; its 2026-11-01 history is unchanged.",
+    "report/hardware/status.json now records independent acceptance PASS and the BIT payload provenance note.",
+    "Execution evidence report.md, results.json, capture_receipt.json, six HEX files and the attempt directories were not rewritten."
+  ],
+  "artifacts": {
+    "report.md": "84140568584d7df6a17b9134ea21e9cc6ae61b8bd931bf463c352cebb3a29be9",
+    "checks.json": "562af30213a040787202add94d1d4373cd936883bd51b09c2da9763d71fc4e3c",
+    "run_acceptance.py": "60ff1a6d6165b60222f9b461523e0249e89ed862de9cf5c04745347e86160dff",
+    "supplemental_history.json": "4f806f08775103bf71e4fcf5899255c18afca1f8722fc1d80a6315c7d183afd7",
+    "workflow_verdicts.json": "46012bcb73136da6b3b866f8b8fac29bb0f1aefb72014c77256079bca912d8e9",
+    "progress_before.md": "c99a58abece990ce72e544fc98a00059feb1d0e1967c6055820b7d23993bac57",
+    "attempt_03/stdout.log": "e19d6875e171e97ea5cac2b96f2f8b15f44f1699aab8ee1c91fec689d602789a",
+    "attempt_03/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "attempt_03/command.json": "29d14f63a82974e5400ff19130c76fbd6fbf48d0f19c5bddb6e24d96f29bdf12",
+    "logs_index.json": "66ebbbdc21b9c9f0417fa3f43aa751c04fa28b05a1d3690477227b991103ea2e"
+  },
+  "original_execution_result": "evidence/agent_steps/step_05/result.json retains independent_acceptance=PENDING by convention; this acceptance record is authoritative.",
+  "S06_S08_executed": false
+}

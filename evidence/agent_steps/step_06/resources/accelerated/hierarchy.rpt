@@ -1,0 +1,67 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Mon Nov  2 20:57:11 2026
+| Host         : LeonS running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -file W:/evidence/agent_steps/step_06/resources/accelerated/hierarchy.rpt
+| Design       : demo_top
+| Device       : xc7z010clg400-1
+| Speed File   : -1
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++-------------------------------------------------------+------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+|                        Instance                       |                        Module                        | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP Blocks |
++-------------------------------------------------------+------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+| demo_top                                              |                                                (top) |       6560 |       6535 |      24 |    1 | 7892 |     20 |      0 |          0 |
+|   (demo_top)                                          |                                                (top) |          3 |          3 |       0 |    0 |   25 |      0 |      0 |          0 |
+|   cpu                                                 |                                             demo_cpu |       2842 |       2841 |       0 |    1 | 2287 |     20 |      0 |          0 |
+|     (IBROM_0)                                         |                                                IBROM |        100 |        100 |       0 |    0 |   64 |      0 |      0 |          0 |
+|     EX_MEM_0                                          |                                               EX_MEM |        179 |        179 |       0 |    0 |  164 |      0 |      0 |          0 |
+|     EX_pipe_0                                         |                                              EX_pipe |       1422 |       1422 |       0 |    0 |  270 |      0 |      0 |          0 |
+|     ID_EX_0                                           |                                                ID_EX |        230 |        230 |       0 |    0 |  217 |      0 |      0 |          0 |
+|     IF_ID_0                                           |                                                IF_ID |        120 |        120 |       0 |    0 |   95 |      0 |      0 |          0 |
+|     MEM_WB_0                                          |                                               MEM_WB |        156 |        156 |       0 |    0 |  174 |      0 |      0 |          0 |
+|     Regfile_0                                         |                                              Regfile |        512 |        512 |       0 |    0 |  992 |      0 |      0 |          0 |
+|     WB_MUX_0                                          |                                               WB_MUX |         65 |         65 |       0 |    0 |    0 |      0 |      0 |          0 |
+|     csr_top_0                                         |                                              csr_top |          7 |          7 |       0 |    0 |  232 |      0 |      0 |          0 |
+|       csr_regfile                                     |                                          csr_regfile |          7 |          7 |       0 |    0 |  232 |      0 |      0 |          0 |
+|   dbg_hub                                             |                                              dbg_hub |        449 |        425 |      24 |    0 |  741 |      0 |      0 |          0 |
+|     inst                                              |                           dbg_hub_xsdbm_v3_0_6_xsdbm |        449 |        425 |      24 |    0 |  741 |      0 |      0 |          0 |
+|       BSCANID.u_xsdbm_id                              |                        dbg_hub_xsdbm_v3_0_6_xsdbm_id |        449 |        425 |      24 |    0 |  741 |      0 |      0 |          0 |
+|         SWITCH_N_EXT_BSCAN.bscan_switch               |                    dbg_hub_xsdbm_v3_0_6_bscan_switch |        124 |        124 |       0 |    0 |  125 |      0 |      0 |          0 |
+|         CORE_XSDB.UUT_MASTER                          |                       dbg_hub_xsdbm_v3_0_6_icon2xsdb |        273 |        249 |      24 |    0 |  554 |      0 |      0 |          0 |
+|           U_ICON_INTERFACE                            |                              dbg_hub_xsdbm_v3_0_6_if |        163 |        139 |      24 |    0 |  450 |      0 |      0 |          0 |
+|             U_CMD6_WR                                 |                           dbg_hub_xsdbm_v3_0_6_wrreg |         46 |         34 |      12 |    0 |  110 |      0 |      0 |          0 |
+|               U_WR_FIFO                               |                          dbg_hub_xsdbm_v3_0_6_wrfifo |         44 |         32 |      12 |    0 |   90 |      0 |      0 |          0 |
+|                 SUBCORE_FIFO.xsdbm_v3_0_6_wrfifo_inst |                       dbg_hub_fifo_generator_v13_1_6 |         42 |         30 |      12 |    0 |   90 |      0 |      0 |          0 |
+|                   inst_fifo_gen                       |                 dbg_hub_fifo_generator_v13_1_6_synth |         42 |         30 |      12 |    0 |   90 |      0 |      0 |          0 |
+|                     gconvfifo.rf                      |                           dbg_hub_fifo_generator_top |         42 |         30 |      12 |    0 |   90 |      0 |      0 |          0 |
+|                       grf.rf                          |                       dbg_hub_fifo_generator_ramfifo |         42 |         30 |      12 |    0 |   90 |      0 |      0 |          0 |
+|             U_CMD4                                    |         dbg_hub_xsdbm_v3_0_6_ctl_reg__parameterized0 |          9 |          9 |       0 |    0 |   62 |      0 |      0 |          0 |
+|             U_CMD6_RD                                 |                           dbg_hub_xsdbm_v3_0_6_rdreg |         67 |         55 |      12 |    0 |  134 |      0 |      0 |          0 |
+|               U_RD_FIFO                               |                          dbg_hub_xsdbm_v3_0_6_rdfifo |         65 |         53 |      12 |    0 |  114 |      0 |      0 |          0 |
+|                 SUBCORE_FIFO.xsdbm_v3_0_6_rdfifo_inst |       dbg_hub_fifo_generator_v13_1_6__parameterized0 |         47 |         35 |      12 |    0 |  114 |      0 |      0 |          0 |
+|                   inst_fifo_gen                       | dbg_hub_fifo_generator_v13_1_6_synth__parameterized0 |         47 |         35 |      12 |    0 |  114 |      0 |      0 |          0 |
+|                     gconvfifo.rf                      |           dbg_hub_fifo_generator_top__parameterized0 |         47 |         35 |      12 |    0 |  114 |      0 |      0 |          0 |
+|                       grf.rf                          |       dbg_hub_fifo_generator_ramfifo__parameterized0 |         47 |         35 |      12 |    0 |  114 |      0 |      0 |          0 |
+|           U_XSDB_BUS_CONTROLLER                       |                         dbg_hub_xsdbm_v3_0_6_bus_ctl |         70 |         70 |       0 |    0 |   48 |      0 |      0 |          0 |
+|   peripheral                                          |                                             crc_mmio |       3045 |       3045 |       0 |    0 | 4391 |      0 |      0 |          0 |
+|   vio                                                 |                                           vio_result |        221 |        221 |       0 |    0 |  448 |      0 |      0 |          0 |
+|     inst                                              |                                      vio_v3_0_28_vio |        221 |        221 |       0 |    0 |  448 |      0 |      0 |          0 |
+|       U_XSDB_SLAVE                                    |                                   xsdbs_v1_0_6_xsdbs |         77 |         77 |       0 |    0 |  161 |      0 |      0 |          0 |
+|       DECODER_INST                                    |                                  vio_v3_0_28_decoder |         33 |         33 |       0 |    0 |   50 |      0 |      0 |          0 |
+|       PROBE_IN_INST                                   |                             vio_v3_0_28_probe_in_one |        105 |        105 |       0 |    0 |  192 |      0 |      0 |          0 |
++-------------------------------------------------------+------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+

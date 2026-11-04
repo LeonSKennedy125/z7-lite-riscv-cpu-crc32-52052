@@ -1,0 +1,4 @@
+run,case,bytes,input_kind,data_sha256,expected_crc,software_crc,hardware_crc,software_cycles,hardware_total_cycles,engine_session_cycles,software_us,hardware_total_us,engine_session_us,speedup,software_minus_hardware_cycles
+1,1,9,ASCII 123456789,15e2b0d3c33891ebb0f1ef609ec419420c20e320ce94c65fbc8c3312448eb225,cbf43926,cbf43926,cbf43926,174,79,39,3.48,1.58,0.78,2.2025316455696204,95
+2,1,9,ASCII 123456789,15e2b0d3c33891ebb0f1ef609ec419420c20e320ce94c65fbc8c3312448eb225,cbf43926,cbf43926,cbf43926,174,79,39,3.48,1.58,0.78,2.2025316455696204,95
+3,1,9,ASCII 123456789,15e2b0d3c33891ebb0f1ef609ec419420c20e320ce94c65fbc8c3312448eb225,cbf43926,cbf43926,cbf43926,174,79,39,3.48,1.58,0.78,2.2025316455696204,95

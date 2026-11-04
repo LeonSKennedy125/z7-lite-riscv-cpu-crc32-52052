@@ -1,0 +1,610 @@
+--- cpu_repair_work_2026_1\RISCV_5pipeline.srcs\sources_1\new\ALU.v
++++ src/core/alu.v
+@@ -1,5 +1,5 @@
+ `timescale 1ns / 1ps
+-`include "RISCV_DEFINE.vh"
++`include "riscv_define.vh"
+ 
+ module ALU(
+     input [31:0]A,
+--- cpu_repair_work_2026_1\RISCV_5pipeline.srcs\sources_1\new\Branch_Ctrl.v
++++ src/core/branch_ctrl.v
+@@ -1,5 +1,5 @@
+ `timescale 1ns / 1ps
+-`include "RISCV_DEFINE.vh"
++`include "riscv_define.vh"
+ 
+ 
+ module Branch_Ctrl(
+--- cpu_repair_work_2026_1\RISCV_5pipeline.srcs\sources_1\new\Comp.v
++++ src/core/comp.v
+@@ -1,5 +1,5 @@
+ `timescale 1ns / 1ps
+-`include "RISCV_DEFINE.vh"
++`include "riscv_define.vh"
+ 
+ module Comp(
+ 	input [31:0]A,
+--- cpu_repair_work_2026_1\RISCV_5pipeline.srcs\sources_1\new\CPU_MEMORY_MAP.vh
++++ src/core/cpu_memory_map.vh
+@@ -2,7 +2,7 @@
+ `define CPU_MEMORY_MAP_VH
+ // Provided CPU design document, section 2.3.4; byte addresses, no aliases.
+ `define CPU_RAM_BASE     32'h80100000
+-`define CPU_RAM_LAST     32'h8013ffff
++`define CPU_RAM_LAST     32'h8010ffff
+ `define CPU_MMIO_DIGITS  32'h80200020
+ `define CPU_MMIO_LED     32'h80200040
+ `define CPU_MMIO_COUNTER 32'h80200050
+--- cpu_repair_work_2026_1\RISCV_5pipeline.srcs\sources_1\new\Ctrl.v
++++ src/core/ctrl.v
+@@ -1,5 +1,5 @@
+ `timescale 1ns / 1ps
+-`include "RISCV_DEFINE.vh"
++`include "riscv_define.vh"
+ 
+ 
+ module Ctrl(
+--- cpu_repair_work_2026_1\RISCV_5pipeline.srcs\sources_1\new\Decoder.v
++++ src/core/decoder.v
+@@ -1,5 +1,5 @@
+ `timescale 1ns / 1ps
+-`include "RISCV_DEFINE.vh"
++`include "riscv_define.vh"
+ 
+ 
+ module Decoder (
+--- cpu_repair_work_2026_1\RISCV_5pipeline.srcs\sources_1\new\EX_MEM.v
++++ src/core/ex_mem.v
+@@ -1,5 +1,5 @@
+ `timescale 1ns / 1ps
+-`include "RISCV_DEFINE.vh"
++`include "riscv_define.vh"
+ 
+ 
+ module EX_MEM(
+--- cpu_repair_work_2026_1\RISCV_5pipeline.srcs\sources_1\new\EX_MUX.v
++++ src/core/ex_mux.v
+@@ -1,5 +1,5 @@
+ `timescale 1ns / 1ps
+-`include "RISCV_DEFINE.vh"
++`include "riscv_define.vh"
+ 
+ module EX_MUX(
+ 	input [31:0]DATA1,
+--- cpu_repair_work_2026_1\RISCV_5pipeline.srcs\sources_1\new\Forward.v
++++ src/core/forward.v
+@@ -1,5 +1,5 @@
+ `timescale 1ns / 1ps
+-`include "RISCV_DEFINE.vh"
++`include "riscv_define.vh"
+ 
+ module EX_Forward(
+ 	input [4:0]id_rs1,
+--- cpu_repair_work_2026_1\RISCV_5pipeline.srcs\sources_1\new\Forward_Ctrl.v
++++ src/core/forward_ctrl.v
+@@ -1,5 +1,5 @@
+ `timescale 1ns / 1ps
+-`include "RISCV_DEFINE.vh"
++`include "riscv_define.vh"
+ 
+ module Forward_Ctrl(
+ 	input ex_Forward_en1,
+--- cpu_repair_work_2026_1\RISCV_5pipeline.srcs\sources_1\new\IBROM.v
++++ src/core/ibrom.v
+@@ -1,5 +1,5 @@
+ `timescale 1ns / 1ps
+-`include "RISCV_DEFINE.vh"
++`include "riscv_define.vh"
+ 
+ module IBROM(
+ 	input clk,
+--- cpu_repair_work_2026_1\RISCV_5pipeline.srcs\sources_1\new\ID_EX.v
++++ src/core/id_ex.v
+@@ -1,5 +1,5 @@
+ `timescale 1ns / 1ps
+-`include "RISCV_DEFINE.vh"
++`include "riscv_define.vh"
+ 
+ module ID_EX(
+     input clk,          //时钟
+--- cpu_repair_work_2026_1\RISCV_5pipeline.srcs\sources_1\new\IF_ID.v
++++ src/core/if_id.v
+@@ -1,5 +1,5 @@
+ `timescale 1ns / 1ps
+-`include "RISCV_DEFINE.vh"
++`include "riscv_define.vh"
+ 
+ module IF_ID(
+ 	input clk,		//时钟
+--- cpu_repair_work_2026_1\RISCV_5pipeline.srcs\sources_1\new\imm_gen.v
++++ src/core/imm_gen.v
+@@ -1,5 +1,5 @@
+ `timescale 1ns / 1ps
+-`include "RISCV_DEFINE.vh"
++`include "riscv_define.vh"
+ 
+ 
+ module imm_gen(
+--- cpu_repair_work_2026_1\RISCV_5pipeline.srcs\sources_1\new\instr_minidecoder.v
++++ src/core/instr_minidecoder.v
+@@ -1,5 +1,5 @@
+ `timescale 1ns / 1ps
+-`include "RISCV_DEFINE.vh"
++`include "riscv_define.vh"
+ 
+ module instr_minidecoder(
+ 	input [31:0]instr,
+--- cpu_repair_work_2026_1\RISCV_5pipeline.srcs\sources_1\new\IROM.v
++++ src/core/irom.v
+@@ -1,5 +1,5 @@
+ `timescale 1ns / 1ps
+-`include "RISCV_DEFINE.vh"
++`include "riscv_define.vh"
+ 
+ module IROM(
+     input [31:0]npc,
+--- cpu_repair_work_2026_1\RISCV_5pipeline.srcs\sources_1\new\MEM_DTCM.v
++++ src/core/mem_dtcm.v
+@@ -1,6 +1,6 @@
+ `timescale 1ns / 1ps
+-`include "RISCV_DEFINE.vh"
+-`include "CPU_MEMORY_MAP.vh"
++`include "riscv_define.vh"
++`include "cpu_memory_map.vh"
+ 
+ module MEM_DTCM(
+ 	input clk,
+@@ -18,13 +18,13 @@
+ 
+ 	wire [31:0]data_out;
+ 	reg [31:0]data;
+-	wire [15:0]addr;
++	wire [13:0]addr;
+ 	
+ 	wire ex_ram_hit = (ex_addr >= `CPU_RAM_BASE && ex_addr <= `CPU_RAM_LAST);
+     wire mem_ram_hit = (mem_addr >= `CPU_RAM_BASE && mem_addr <= `CPU_RAM_LAST);
+     wire ram_access = reset && dtcm_en && ex_ram_hit;
+     wire [31:0] ram_offset = ex_addr - `CPU_RAM_BASE;
+-    assign addr = ex_ram_hit ? ram_offset[17:2] : 16'b0;
++    assign addr = ex_ram_hit ? ram_offset[15:2] : 14'b0;
+ 	
+     // Preserve the specified primitive output registers and two-edge read.
+     (* DONT_TOUCH = "TRUE" *) DTCM u_DTCM (
+--- cpu_repair_work_2026_1\RISCV_5pipeline.srcs\sources_1\new\MEM_Forward.v
++++ src/core/mem_forward.v
+@@ -1,5 +1,5 @@
+ `timescale 1ns / 1ps
+-`include "RISCV_DEFINE.vh"
++`include "riscv_define.vh"
+ 
+ 
+ module MEM_Forward(
+--- cpu_repair_work_2026_1\RISCV_5pipeline.srcs\sources_1\new\MEM_WB.v
++++ src/core/mem_wb.v
+@@ -1,5 +1,5 @@
+ `timescale 1ns / 1ps
+-`include "RISCV_DEFINE.vh"
++`include "riscv_define.vh"
+ 
+ module MEM_WB(
+ 	input clk,
+--- cpu_repair_work_2026_1\RISCV_5pipeline.srcs\sources_1\new\npc.v
++++ src/core/npc.v
+@@ -1,5 +1,5 @@
+ `timescale 1ns / 1ps
+-`include "RISCV_DEFINE.vh"
++`include "riscv_define.vh"
+ 
+ 
+ 
+--- cpu_repair_work_2026_1\RISCV_5pipeline.srcs\sources_1\new\pc_judge.v
++++ src/core/pc_judge.v
+@@ -1,5 +1,5 @@
+ `timescale 1ns / 1ps
+-`include "RISCV_DEFINE.vh"
++`include "riscv_define.vh"
+ 
+ module pc_judge(
+ 	input [31:0] pc_npc,
+--- cpu_repair_work_2026_1\RISCV_5pipeline.srcs\sources_1\new\Regfile.v
++++ src/core/regfile.v
+@@ -1,5 +1,5 @@
+ `timescale 1ns / 1ps
+-`include "RISCV_DEFINE.vh"
++`include "riscv_define.vh"
+ 
+ 
+ 
+--- cpu_repair_work_2026_1\RISCV_5pipeline.srcs\sources_1\new\rv32M_inport.v
++++ src/core/rv32m_inport.v
+@@ -1,5 +1,5 @@
+ `timescale 1ns / 1ps
+-`include "RISCV_DEFINE.vh"
++`include "riscv_define.vh"
+ //////////////////////////////////////////////////////////////////////////////////
+ // Company: 
+ // Engineer: 
+--- cpu_repair_work_2026_1\RISCV_5pipeline.srcs\sources_1\new\rv32M_outport.v
++++ src/core/rv32m_outport.v
+@@ -1,5 +1,5 @@
+ `timescale 1ns / 1ps
+-`include "RISCV_DEFINE.vh"
++`include "riscv_define.vh"
+ //////////////////////////////////////////////////////////////////////////////////
+ // Company: 
+ // Engineer: 
+--- cpu_repair_work_2026_1\RISCV_5pipeline.srcs\sources_1\new\Store.v
++++ src/core/store.v
+@@ -1,6 +1,6 @@
+ `timescale 1ns / 1ps
+-`include "RISCV_DEFINE.vh"
+-`include "CPU_MEMORY_MAP.vh"
++`include "riscv_define.vh"
++`include "cpu_memory_map.vh"
+ 
+ 
+ module Store_Load(
+@@ -110,7 +110,8 @@
+     assign ram_hit = (MEM_Addr >= `CPU_RAM_BASE && MEM_Addr <= `CPU_RAM_LAST);
+     assign mmio_hit = (MEM_Addr == `CPU_MMIO_DIGITS ||
+                        MEM_Addr == `CPU_MMIO_LED ||
+-                       MEM_Addr == `CPU_MMIO_COUNTER);
++                       MEM_Addr == `CPU_MMIO_COUNTER ||
++                       (MEM_Addr >= 32'h80200100 && MEM_Addr <= 32'h802003ff));
+     wire load_kind = (Load_Ctrl == `LOAD_LB || Load_Ctrl == `LOAD_LH ||
+                       Load_Ctrl == `LOAD_LW || Load_Ctrl == `LOAD_LBU ||
+                       Load_Ctrl == `LOAD_LHU);
+--- cpu_repair_work_2026_1\RISCV_5pipeline.srcs\sources_1\new\WB_Forward.v
++++ src/core/wb_forward.v
+@@ -1,5 +1,5 @@
+ `timescale 1ns / 1ps
+-`include "RISCV_DEFINE.vh"
++`include "riscv_define.vh"
+ 
+ module WB_Forward(
+ 	input [4:0]id_rs1,
+--- cpu_repair_work_2026_1\RISCV_5pipeline.srcs\sources_1\new\WB_MUX.v
++++ src/core/wb_mux.v
+@@ -1,5 +1,5 @@
+ `timescale 1ns / 1ps
+-`include "RISCV_DEFINE.vh"
++`include "riscv_define.vh"
+ 
+ module WB_MUX(
+ 	input [2:0]WB_CTRL,
+--- cpu_repair_work_2026_1\RISCV_5pipeline.gen\sources_1\bd\design_1\synth\design_1.v
++++ src/core/demo_cpu.v
+@@ -10,8 +10,8 @@
+ //--------------------------------------------------------------------------------
+ `timescale 1 ps / 1 ps
+ 
+-(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
+-module design_1
++  
++module demo_cpu
+    (LED,
+     clock,
+     io_addr,
+@@ -24,9 +24,10 @@
+     io_wdata,
+     io_write,
+     reset,
+-    zero);
+-  (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 DATA.LED DATA" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DATA.LED, LAYERED_METADATA undef" *) output [4:0]LED;
+-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.CLOCK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.CLOCK, CLK_DOMAIN design_1_clock, FREQ_HZ 50000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0" *) input clock;
++    zero,
++    demo_restart);
++    output [4:0]LED;
++    input clock;
+   output [31:0]io_addr;
+   output [3:0]io_be;
+   output io_clk;
+@@ -36,8 +37,9 @@
+   output io_valid;
+   output [31:0]io_wdata;
+   output io_write;
+-  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.RESET RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.RESET, INSERT_VIP 0, POLARITY ACTIVE_LOW" *) input reset;
+-  (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 DATA.ZERO DATA" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DATA.ZERO, LAYERED_METADATA undef" *) input zero;
++    input reset;
++    input zero;
++  input demo_restart;
+ 
+   wire [31:0]ALU_0_Alu_out;
+   wire [31:0]ALU_0_MEM_Addr;
+@@ -234,7 +236,7 @@
+   wire zero;
+ 
+   assign io_resetn[0] = \^io_resetn ;
+-  design_1_ALU_0_0 ALU_0
++  ALU ALU_0
+        (.A(EX_pipe_0_ALU_A_O),
+         .ALU_Ctrl(EX_pipe_0_ALU_Ctrl_O),
+         .Alu_out(ALU_0_Alu_out),
+@@ -243,7 +245,7 @@
+         .MEM_Addr(ALU_0_MEM_Addr),
+         .branch_pc(ALU_0_branch_pc),
+         .comp_out(Comp_0_Comp_out));
+-  design_1_Branch_Ctrl_0_0 Branch_Ctrl_0
++  Branch_Ctrl Branch_Ctrl_0
+        (.Alu_out(ALU_0_branch_pc),
+         .Exception(csr_top_0_pc_o_en),
+         .branch_target(Branch_Ctrl_0_branch_target),
+@@ -252,13 +254,13 @@
+         .ex_pc4(EX_pipe_0_pc4_O),
+         .flush(Branch_Ctrl_0_flush),
+         .instr_TYPE(EX_pipe_0_Instr_TYPE_O));
+-  design_1_Comp_0_0 Comp_0
++  Comp Comp_0
+        (.A(EX_pipe_0_Comp_A_O),
+         .B(EX_pipe_0_Comp_B_O),
+         .Comp_Ctrl(EX_pipe_0_Comp_Ctrl_O),
+         .Comp_en(EX_pipe_0_comp_en_O),
+         .Comp_out(Comp_0_Comp_out));
+-  design_1_Ctrl_0_0 Ctrl_0
++  Ctrl Ctrl_0
+        (.ALU_Ctrl(Ctrl_0_ALU_Ctrl),
+         .Comp_Ctrl(Ctrl_0_Comp_Ctrl),
+         .Comp_en(Ctrl_0_Comp_en),
+@@ -273,7 +275,7 @@
+         .opcode(Decoder_0_opcode),
+         .reuse(Ctrl_0_reuse),
+         .wb_en(Ctrl_0_wb_en));
+-  design_1_Decoder_0_0 Decoder_0
++  Decoder Decoder_0
+        (.csr_addr(Decoder_0_csr_addr),
+         .csr_imm(Decoder_0_csr_imm),
+         .func12(Decoder_0_func12),
+@@ -286,7 +288,7 @@
+         .r1_addr(Decoder_0_r1_addr),
+         .r2_addr(Decoder_0_r2_addr),
+         .w_addr(Decoder_0_w_addr));
+-  design_1_EX_Forward_0_0 EX_Forward_0
++  EX_Forward EX_Forward_0
+        (.ex_Forward_SEL1(EX_Forward_0_ex_Forward_SEL1),
+         .ex_Forward_en1(EX_MEM_0_ex_Forward_en1_out),
+         .ex_Forward_en2(EX_MEM_0_ex_Forward_en2_out),
+@@ -297,7 +299,7 @@
+         .instr_type(EX_pipe_0_Instr_TYPE_O),
+         .stall(EX_Forward_0_stall),
+         .wb_en(EX_pipe_0_wb_en_O));
+-  design_1_EX_MEM_0_1 EX_MEM_0
++  EX_MEM EX_MEM_0
+        (.CSR_DATA(csr_top_0_csr_rdata),
+         .CSR_DATA_o(EX_MEM_0_CSR_DATA_o),
+         .EX_ALUout(ALU_0_Alu_out),
+@@ -334,7 +336,7 @@
+         .wb_Ctrl(EX_pipe_0_WB_Ctrl_O),
+         .wb_addr(EX_pipe_0_WB_Addr_O),
+         .wb_en(EX_pipe_0_wb_en_O));
+-  design_1_EX_MUX_0_0 EX_MUX_0
++  EX_MUX EX_MUX_0
+        (.ALU_A(EX_MUX_0_ALU_A),
+         .ALU_B(EX_MUX_0_ALU_B),
+         .CTRL(zero),
+@@ -351,7 +353,7 @@
+         .instr_TYPE(ID_EX_0_instr_TYPE_out),
+         .pc(ID_EX_0_ex_pc_out),
+         .reuse(ID_EX_0_reuse_out));
+-  design_1_EX_pipe_0_0 EX_pipe_0
++  EX_pipe EX_pipe_0
+        (.ALU_A(EX_MUX_0_ALU_A),
+         .ALU_A_O(EX_pipe_0_ALU_A_O),
+         .ALU_B(EX_MUX_0_ALU_B),
+@@ -404,7 +406,7 @@
+         .stall_Load(Store_Load_0_stall_Load),
+         .wb_en(ID_EX_0_wb_en_out),
+         .wb_en_O(EX_pipe_0_wb_en_O));
+-  design_1_Forward_Ctrl_0_0 Forward_Ctrl_0
++  Forward_Ctrl Forward_Ctrl_0
+        (.Forward_Data1(Forward_Ctrl_0_Forward_Data1),
+         .Forward_Data2(Forward_Ctrl_0_Forward_Data2),
+         .Forward_en1(Forward_Ctrl_0_Forward_en1),
+@@ -441,7 +443,7 @@
+         .wb_io_source(MEM_WB_0_IO_source_o),
+         .wb_loadout(MEM_WB_0_Load_Out_out),
+         .wb_pc4(MEM_WB_0_WB_pc4_out));
+-  design_1_IBROM_0_0 IBROM_0
++  IBROM IBROM_0
+        (.clk(io_clk),
+         .csr_flush(csr_top_0_pc_o_en),
+         .flush(Branch_Ctrl_0_flush),
+@@ -452,7 +454,7 @@
+         .pc_o(IBROM_0_pc_o),
+         .rst(reset_1),
+         .stall(util_vector_logic_1_Res));
+-  design_1_ID_EX_0_0 ID_EX_0
++  ID_EX ID_EX_0
+        (.ALU_Ctrl(Ctrl_0_ALU_Ctrl),
+         .ALU_Ctrl_out(ID_EX_0_ALU_Ctrl_out),
+         .Comp_Ctrl(Ctrl_0_Comp_Ctrl),
+@@ -509,7 +511,7 @@
+         .w_addr(Decoder_0_w_addr),
+         .wb_en(Ctrl_0_wb_en),
+         .wb_en_out(ID_EX_0_wb_en_out));
+-  design_1_IF_ID_0_0 IF_ID_0
++  IF_ID IF_ID_0
+        (.clk(io_clk),
+         .csr_fluah(csr_top_0_pc_o_en),
+         .flush(Branch_Ctrl_0_flush),
+@@ -522,13 +524,13 @@
+         .reset(reset_1),
+         .stall(Stall_0_Stall2),
+         .stall_Load(Store_Load_0_stall_Load));
+-  design_1_LED_CTRL_0_0 LED_CTRL_0
++  LED_CTRL LED_CTRL_0
+        (.LED_CTRL_o(LED),
+         .LED_Ctrl(Store_Load_0_dtcm_data),
+         .clk(io_clk),
+         .led(Store_Load_0_led),
+         .reset(reset_1));
+-  design_1_MEM_DTCM_0_0 MEM_DTCM_0
++  MEM_DTCM MEM_DTCM_0
+        (.Load_Ctrl(EX_MEM_0_load_ctrl_out),
+         .Load_en(EX_MEM_0_loaden_out),
+         .clk(io_clk),
+@@ -539,7 +541,7 @@
+         .mem_addr(EX_MEM_0_load_addr_o),
+         .reset(reset_1),
+         .wen(Store_Load_0_wen));
+-  design_1_MEM_Forward_0_0 MEM_Forward_0
++  MEM_Forward MEM_Forward_0
+        (.id_rs1(ID_EX_0_R1_addr_out),
+         .id_rs2(ID_EX_0_R2_addr_out),
+         .instr_type(EX_MEM_0_Instr_TYPE_out),
+@@ -548,7 +550,7 @@
+         .mem_Forward_en2(MEM_Forward_0_mem_Forward_en2),
+         .mem_wb_addr(EX_MEM_0_MEM_wb_addr_out),
+         .wb_en(EX_MEM_0_WB_en_out));
+-  design_1_MEM_WB_0_1 MEM_WB_0
++  MEM_WB MEM_WB_0
+        (.ALU_Out_out(MEM_WB_0_ALU_Out_out),
+         .ALU_out(EX_MEM_0_MEM_ALUout_out),
+         .CSR_DATA(EX_MEM_0_CSR_DATA_o),
+@@ -575,7 +577,7 @@
+         .save(save_Load_use_0_save),
+         .stall(zero),
+         .wb_addr(EX_MEM_0_MEM_wb_addr_out));
+-  design_1_Regfile_0_0 Regfile_0
++  Regfile Regfile_0
+        (.clk(io_clk),
+         .final_data1(Regfile_0_data1),
+         .final_data2(Regfile_0_data2),
+@@ -609,11 +611,11 @@
+         .x29(Regfile_0_x29),
+         .x30(Regfile_0_x30),
+         .x31(Regfile_0_x31));
+-  design_1_Stall_0_0 Stall_0
++  Stall Stall_0
+        (.Stall2(Stall_0_Stall2),
+         .Stall_Ctrl2(EX_Forward_0_stall),
+         .Stall_Ctrl3(zero));
+-  design_1_Store_Load_0_0 Store_Load_0
++  Store_Load Store_Load_0
+        (.D2(EX_pipe_0_D2_O),
+         .IO_WB(Store_Load_0_IO_WB),
+         .IO_Wen(io_valid),
+@@ -641,7 +643,7 @@
+         .stall(zero),
+         .stall_Load(Store_Load_0_stall_Load),
+         .wen(Store_Load_0_wen));
+-  design_1_WB_Forward_0_0 WB_Forward_0
++  WB_Forward WB_Forward_0
+        (.id_rs1(ID_EX_0_R1_addr_out),
+         .id_rs2(ID_EX_0_R2_addr_out),
+         .instr_type(MEM_WB_0_Instr_TYPE_out),
+@@ -650,7 +652,7 @@
+         .wb_Forward_en2(WB_Forward_0_wb_Forward_en2),
+         .wb_en(MEM_WB_0_Forward_valid),
+         .wb_wb_addr(MEM_WB_0_WB_addr_out));
+-  design_1_WB_MUX_0_0 WB_MUX_0
++  WB_MUX WB_MUX_0
+        (.ALU_Out(MEM_WB_0_ALU_Out_out),
+         .Data(WB_MUX_0_Data),
+         .Load_Out(MEM_WB_0_Load_Out_out),
+@@ -660,19 +662,19 @@
+         .WB_IO(MEM_WB_0_IO_data_o),
+         .WB_pc4(MEM_WB_0_WB_pc4_out),
+         .rd_addr(MEM_WB_0_WB_addr_out));
+-  design_1_clk_wiz_0_0 clk_wiz_0
++  clk50 clk_wiz_0
+        (.clk_in1(clock),
+         .clk_out1(io_clk),
+         .locked(clk_wiz_0_locked),
+         .resetn(reset));
+-  design_1_cpu_reset_sync_0_1 cpu_reset_sync_0
++  cpu_reset_control cpu_reset_sync_0
+        (.clk(io_clk),
+         .controller_reset(proc_sys_reset_0_mb_reset),
+         .ext_resetn(reset),
+         .io_resetn(\^io_resetn ),
+         .locked(clk_wiz_0_locked),
+         .reset(cpu_reset_sync_0_reset));
+-  design_1_csr_top_0_0 csr_top_0
++  csr_top csr_top_0
+        (.alu_result(ALU_0_Alu_out),
+         .branch_taken(Comp_0_Comp_out),
+         .cancel_current(csr_top_0_cancel_current),
+@@ -692,40 +694,17 @@
+         .rst(reset_1),
+         .sys_exception({1'b0,1'b0,1'b0}),
+         .sys_stall(Store_Load_0_stall_Load));
+-  design_1_ila_0_0 ila_0
+-       (.clk(io_clk),
+-        .probe0(Regfile_0_x10),
+-        .probe1(Regfile_0_x11),
+-        .probe10(Regfile_0_x20),
+-        .probe11(Regfile_0_x21),
+-        .probe12(Regfile_0_x22),
+-        .probe13(Regfile_0_x23),
+-        .probe14(Regfile_0_x24),
+-        .probe15(Regfile_0_x25),
+-        .probe16(Regfile_0_x26),
+-        .probe17(Regfile_0_x27),
+-        .probe18(Regfile_0_x28),
+-        .probe19(Regfile_0_x29),
+-        .probe2(Regfile_0_x12),
+-        .probe20(Regfile_0_x30),
+-        .probe21(Regfile_0_x31),
+-        .probe3(Regfile_0_x13),
+-        .probe4(Regfile_0_x14),
+-        .probe5(Regfile_0_x15),
+-        .probe6(Regfile_0_x16),
+-        .probe7(Regfile_0_x17),
+-        .probe8(Regfile_0_x18),
+-        .probe9(Regfile_0_x19));
+-  design_1_imm_gen_0_0 imm_gen_0
++
++  imm_gen imm_gen_0
+        (.Imm(imm_gen_0_Imm),
+         .id_instr(IF_ID_0_id_instr),
+         .instr_TYPE(Decoder_0_instr_TYPE));
+-  design_1_instr_minidecoder_0_0 instr_minidecoder_0
++  instr_minidecoder instr_minidecoder_0
+        (.Pre(instr_minidecoder_0_Pre),
+         .instr(IBROM_0_instr_o),
+         .pc(IBROM_0_pc_o),
+         .pc_o(instr_minidecoder_0_pc_o));
+-  design_1_npc_0_0 npc_0
++  npc npc_0
+        (.Pre(instr_minidecoder_0_Pre),
+         .clk(io_clk),
+         .csr_pc_en(csr_top_0_pc_o_en),
+@@ -738,7 +717,7 @@
+         .right_pc(pc_judge_0_pc4_o),
+         .stall(Stall_0_Stall2),
+         .stall_Load(Store_Load_0_stall_Load));
+-  design_1_pc_judge_0_0 pc_judge_0
++  pc_judge pc_judge_0
+        (.EM(csr_top_0_pc_o_en),
+         .J_B(Branch_Ctrl_0_flush),
+         .Pre(instr_minidecoder_0_Pre),
+@@ -750,23 +729,23 @@
+         .pc_npc(npc_0_npc),
+         .pc_o(pc_judge_0_pc_o),
+         .replay_redirect(npc_0_replay_redirect));
+-  design_1_proc_sys_reset_0_0 proc_sys_reset_0
+-       (.aux_reset_in(1'b1),
++  rstip proc_sys_reset_0
++       (.aux_reset_in(~demo_restart),
+         .dcm_locked(clk_wiz_0_locked),
+         .ext_reset_in(reset),
+         .mb_debug_sys_rst(1'b0),
+         .mb_reset(proc_sys_reset_0_mb_reset),
+         .slowest_sync_clk(io_clk));
+-  design_1_save_Load_use_0_0 save_Load_use_0
++  save_Load_use save_Load_use_0
+        (.clk(io_clk),
+         .reset(reset_1),
+         .save(save_Load_use_0_save),
+         .stall1(Store_Load_0_stall_Load),
+         .stall2(EX_Forward_0_stall));
+-  design_1_util_vector_logic_0_0 util_vector_logic_0
++  invip util_vector_logic_0
+        (.Op1(cpu_reset_sync_0_reset),
+         .Res(reset_1));
+-  design_1_util_vector_logic_1_0 util_vector_logic_1
++  orip util_vector_logic_1
+        (.Op1(EX_Forward_0_stall),
+         .Op2(Store_Load_0_stall_Load),
+         .Res(util_vector_logic_1_Res));

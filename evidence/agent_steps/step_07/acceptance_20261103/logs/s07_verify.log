@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "C:\\Users\\21606\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "evidence/agent_steps/step_07/s07_verify.py"
+  ],
+  "cwd": "D:\\vivado2026.1_project\\160MHZ CPURISCV\\board\\z7_lite_7010_crc",
+  "exit_code": 0,
+  "stdout": "S07_SELF_CHECK_PASS 34 checks; 0 failures\n",
+  "stderr": ""
+}

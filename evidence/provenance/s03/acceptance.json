@@ -1,0 +1,38 @@
+{
+  "step": "S03",
+  "rework": "R1",
+  "independent_acceptance": "PASS",
+  "date": "2026-10-30",
+  "timezone": "Asia/Shanghai",
+  "inputs_sha256": "2b832231f306f5dcc6c1559ce2da224f6ce1e4867194f8814376a4ac5ef03625",
+  "independent_vivado_static_audit": true,
+  "timing": {
+    "WNS": 2.824,
+    "TNS": 0.0,
+    "WHS": 0.044,
+    "THS": 0.0,
+    "WPWS": 7.0,
+    "TPWS": 0.0
+  },
+  "BRAM_tiles": 20,
+  "DTCM_DOA_REG": {
+    "enabled": 16,
+    "total": 16
+  },
+  "bit_sha256": "cf66a03ac107090383b76defd0fa4a88a19b4614ca8334c09ac0ebb1ad0ea9d2",
+  "ltx_sha256": "facc5a5a95599c155598321dcd21d34b5d32f14b810fd7b6ef086fb8416ce6ba",
+  "remaining_vendor_LUTAR_1": 4,
+  "functional_inputs_changed": false,
+  "progress_document_update": {
+    "file": "docs/agent_progress.md",
+    "before_sha256": "34057119442011217a38df9c86a62215b3c5d233057518660fcda0e410452b7f",
+    "after_sha256": "0846f798bdf6f7c1213c63c4bf6c8041c2d7b0e0713a574db6628aed069b74a5",
+    "reason": "Independent S03 acceptance registration; sealed submission-time progress preserved and all functional inputs unchanged."
+  },
+  "report_sha256": "2d61adb594ddab245562f01564029daab3690e8fa9e21243d7b2895e5013d4d4",
+  "checks_sha256": "09f3bc7bf946482a7b66e159e6a00fbf033165c80954dc433098b03dcae6d9e0",
+  "artifact_manifest_sha256": "ed19e1babe1d7791354c7021c28da98ee1480233bbd1b19f72eefa3244c8931f",
+  "session_closed": true,
+  "board_programmed": false,
+  "S04_executed": false
+}
