@@ -1,0 +1,10 @@
+VIVADO=2026.1 PART=xc7z010clg400-1 TOP=demo_top
+DTCM depth=16384 primitive_output_register=true coe=S:/vivado_project/demo.srcs/sources_1/ip/DTCM/ram.coe
+I_ROM depth=4096 primitive_output_register=false coe=S:/vivado_project/demo.srcs/sources_1/ip/I_ROM/rom.coe
+IP=DTCM VLNV=xilinx.com:ip:blk_mem_gen:8.4 LOCKED=0
+IP=I_ROM VLNV=xilinx.com:ip:blk_mem_gen:8.4 LOCKED=0
+IP=clk50 VLNV=xilinx.com:ip:clk_wiz:6.0 LOCKED=0
+IP=invip VLNV=xilinx.com:ip:util_vector_logic:2.0 LOCKED=0
+IP=orip VLNV=xilinx.com:ip:util_vector_logic:2.0 LOCKED=0
+IP=rstip VLNV=xilinx.com:ip:proc_sys_reset:5.0 LOCKED=0
+IP=vio_result VLNV=xilinx.com:ip:vio:3.0 LOCKED=0

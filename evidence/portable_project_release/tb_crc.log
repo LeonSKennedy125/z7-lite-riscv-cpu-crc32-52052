@@ -1,0 +1,48 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Wed Nov  4 16:43:48 2026
+# Process ID         : 42712
+# Current directory  : S:/vivado_project/demo.sim/sim_1/behav/xsim
+# Command line       : xsim.exe -log simulate.log -mode tcl -source {xsim.dir/tb_crc_behav/xsim_script.tcl}
+# Log file           : S:/vivado_project/demo.sim/sim_1/behav/xsim/simulate.log
+# Journal file       : S:/vivado_project/demo.sim/sim_1/behav/xsim\xsim.jou
+# Running On         : LeonS
+# Platform           : Windows 11
+# Operating System   : 26300
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i9-13980HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 16937 MB
+# Swap memory        : 22556 MB
+# Total Virtual      : 39494 MB
+# Available Virtual  : 2254 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_crc_behav/xsim_script.tcl
+# xsim {tb_crc_behav} -autoloadwcfg -tclbatch {S:/scripts/run_sim.tcl}
+Time resolution is 1 ps
+source S:/scripts/run_sim.tcl
+## puts "SOURCE_CONTROLLED_SIMULATION_RUN begin"
+SOURCE_CONTROLLED_SIMULATION_RUN begin
+## run all
+CRC_VECTOR_PASS case=0 length=0 crc=00000000
+CRC_VECTOR_PASS case=1 length=9 crc=cbf43926
+CRC_VECTOR_PASS case=2 length=1 crc=0bd4b551
+CRC_VECTOR_PASS case=3 length=2 crc=9fbb5a60
+CRC_VECTOR_PASS case=4 length=3 crc=c747799e
+CRC_VECTOR_PASS case=5 length=4 crc=cf72b890
+CRC_VECTOR_PASS case=6 length=7 crc=b310bb4b
+CRC_VECTOR_PASS case=7 length=16 crc=16d58768
+CRC_VECTOR_PASS case=8 length=64 crc=3f9d3d2e
+CRC_VECTOR_PASS case=9 length=256 crc=21bf9c9a
+CRC_VECTOR_PASS case=10 length=1024 crc=a041c516
+CRC_VECTOR_PASS case=11 length=4096 crc=1528b2fa
+CRC_PAYLOAD_CONTROL modified=1 crc=239d9555 golden=1528b2fa
+CRC_PAYLOAD_CONTROL modified=0 crc=1528b2fa golden=1528b2fa
+TEST_PASS CRC_MMIO checks=39 vectors=12
+$finish called at time : 348901 ns : File "S:/sim/tb_crc.sv" Line 85
+## quit
+INFO: [Common 17-206] Exiting xsim at Wed Nov  4 16:43:50 2026...

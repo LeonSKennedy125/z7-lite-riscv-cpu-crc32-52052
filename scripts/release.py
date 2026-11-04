@@ -9,11 +9,16 @@ def listing():
     names=(ROOT/'scripts/release_files.txt').read_text(encoding='ascii').splitlines()
     if len(names)!=len(set(names)):raise RuntimeError('duplicate release entry')
     required={'sim/tb_cpu.sv','sim/tb_cpu_faults.sv','sim/tb_crc.sv','sim/tb_memory.sv','src/core/cpu_memory_map.vh','src/core/riscv_define.vh','firmware/main.c','firmware/start.s','firmware/link.ld','scripts/rtl_files.txt'}
+    required.update({'vivado_project/demo.xpr', 'vivado_project/README.md', 'scripts/portable_project.tcl'})
+    required.update('vivado_project/demo.srcs/sources_1/ip/'+name+'/'+name+'.xci' for name in ('DTCM','I_ROM','clk50','rstip','invip','orip','vio_result'))
+    required.update({'vivado_project/demo.srcs/sources_1/ip/DTCM/ram.coe', 'vivado_project/demo.srcs/sources_1/ip/I_ROM/rom.coe'})
+    required.update('skill/'+name+'/SKILL.md' for name in ('riscv-debug','riscv-verification','vivado-automation'))
     if not required.issubset(names):raise RuntimeError('mandatory release inputs omitted: '+str(sorted(required-set(names))))
     for n in names:
         p=Path(n)
         if not n or p.is_absolute() or '..' in p.parts:raise RuntimeError('unsafe release path '+n)
-        if any(not re.fullmatch(r'[a-z0-9_.-]+|README.md|SKILL.md',part) for part in p.parts):raise RuntimeError('release naming violation '+n)
+        native_ip_parts = {'DTCM', 'I_ROM', 'DTCM.xci', 'I_ROM.xci'} if n.startswith('vivado_project/demo.srcs/sources_1/ip/') else set()
+        if any(not re.fullmatch(r'[a-z0-9_.-]+|README.md|SKILL.md',part) and part not in native_ip_parts for part in p.parts):raise RuntimeError('release naming violation '+n)
         src=(ROOT/p).resolve()
         if not src.is_relative_to(ROOT) or not src.is_file():raise RuntimeError('missing or linked external input '+n)
     return names
@@ -32,9 +37,9 @@ def package():
     save(candidate/'evidence/source_manifest.json',provenance)
     save(candidate/'standalone.json',{'mode':'standalone','ancestor_discovery':False,'production_fallback':False,'schema':1})
     files={p.relative_to(candidate).as_posix():sha(p) for p in sorted(candidate.rglob('*')) if p.is_file()}
-    save(candidate/'release_manifest.json',{'schema':1,'scope':'S04 source candidate; no generated projects, DCPs, caches, tools or current PASS receipts',
+    save(candidate/'release_manifest.json',{'schema':1,'scope':'Public source candidate including portable XPR/XCI/COE; no generated IP outputs, DCPs, caches or tools',
          'files':files,'manifest_self_excluded':True,'source_selection':'scripts/release_files.txt',
-         'licensing_status':'PENDING_S07; no license grant inferred for AMD-generated connectivity or vendor documents'})
+         'licensing_status':'See license.txt and third_party_notices.md; AMD files retain applicable vendor terms'})
     archive=candidate.with_suffix('.zip')
     with zipfile.ZipFile(archive,'x',compression=zipfile.ZIP_DEFLATED) as z:
         for p in sorted(candidate.rglob('*')):

@@ -1,0 +1,37 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Wed Nov  4 16:44:01 2026
+# Process ID         : 2568
+# Current directory  : S:/vivado_project/demo.sim/sim_1/behav/xsim
+# Command line       : xsim.exe -log simulate.log -mode tcl -source {xsim.dir/tb_memory_behav/xsim_script.tcl}
+# Log file           : S:/vivado_project/demo.sim/sim_1/behav/xsim/simulate.log
+# Journal file       : S:/vivado_project/demo.sim/sim_1/behav/xsim\xsim.jou
+# Running On         : LeonS
+# Platform           : Windows 11
+# Operating System   : 26300
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i9-13980HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 16937 MB
+# Swap memory        : 22556 MB
+# Total Virtual      : 39494 MB
+# Available Virtual  : 2394 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_memory_behav/xsim_script.tcl
+# xsim {tb_memory_behav} -autoloadwcfg -tclbatch {S:/scripts/run_sim.tcl}
+Time resolution is 1 ps
+source S:/scripts/run_sim.tcl
+## puts "SOURCE_CONTROLLED_SIMULATION_RUN begin"
+SOURCE_CONTROLLED_SIMULATION_RUN begin
+## run all
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_memory.dut.u_DTCM.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+TEST_PASS MEMORY_64K boundaries widths misalignment reset
+$finish called at time : 2516 ns : File "S:/sim/tb_memory.sv" Line 72
+## quit
+INFO: [Common 17-206] Exiting xsim at Wed Nov  4 16:44:03 2026...

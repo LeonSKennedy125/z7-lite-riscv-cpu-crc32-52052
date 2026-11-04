@@ -5,7 +5,7 @@
 | 内容 | 来源及处理 |
 |---|---|
 | `src/core/demo_cpu.v` | Vivado 生成并经工程连接适配的结构化 HDL；保留 AMD/Xilinx 原版权头，作为 AMD 器件设计的连接文件提供，不改标为团队 MIT 原创 |
-| 七个 AMD IP | 由复现者的 Vivado 2026.1 安装及 `scripts/build.tcl` 重新生成；使用者需有适用工具/IP 许可 |
+| 七个 AMD IP | `vivado_project/demo.srcs/sources_1/ip/` 提供 XCI 配置，保留 AMD 生成格式及声明；IP 输出由复现者的 Vivado 2026.1 重新生成，也可由 `scripts/build.tcl` 重建配置；使用者需有适用工具/IP 许可 |
 | `board/runtime/demo.bit`、`demo.ltx` | 采用 AMD 工具/IP 的已测 FPGA 下载和调试产物；用于本说明指定的 AMD XC7Z010 设计，不作为本队开源 IP 重新授权 |
 | Vivado RPT/日志 | 工具产生的测量和验证记录，原声明保留 |
 

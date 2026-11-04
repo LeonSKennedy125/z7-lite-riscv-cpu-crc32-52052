@@ -18,7 +18,12 @@ python -B -X utf8 scripts/verify_saved.py
 
 清单校验面向尚未生成新构建文件的干净检出目录；Git 的 `.git/` 元数据不属于发布清单。`verify_saved.py` 独立核对正式实测、补充演示、仿真邮箱、BIT/LTX 及当前最终报告的哈希。
 
-## 3. 编译与构建
+## 3. 打开已提供的工程或从源码构建
+
+直接浏览和仿真现有固件：用 Vivado 2026.1 打开 `vivado_project/demo.xpr`，按 [工程使用说明](../vivado_project/README.md) 生成七个 IP。该入口使用已发布镜像，GCC 不是打开工程的前置条件；五项自检由 `scripts/portable_project.tcl -tclargs test` 运行。
+
+重新编译 C 并完整重建：继续执行以下 `run.py` 流程，输出为另一个工程 `b/p/demo.xpr`。两个入口共用 CPU/CRC RTL 与约束，分别管理本机生成文件。
+
 
 复制执行 README 的完整构建命令。先配置 `CRC_DEMO_VIVADO_BIN` 为本机 Vivado 的 `bin/` 目录。固定架构选项为 `-march=rv32i_zicsr -mabi=ilp32`，禁用链接松弛和小数据寻址，使用独立启动和链接脚本。
 

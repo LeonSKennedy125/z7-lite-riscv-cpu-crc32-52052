@@ -67,6 +67,12 @@ python -B -X utf8 skill/scripts/verify_mailbox.py --self-test
 
 预期依次得到 `MANIFEST_PASS`、`SAVED_EVIDENCE_PASS`、`SELFTEST PASS`。核对已保存数据无需连接板卡。
 
+## 直接打开 Vivado 工程
+
+已提供 [vivado_project/demo.xpr](vivado_project/demo.xpr)、七个 IP 的 XCI 配置及初始化文件。克隆整个仓库后，在 **Vivado 2026.1** 中打开该 XPR，选择 IP Sources → Generate Output Products，即可浏览完整设计并继续综合/实现。
+
+该入口对应本仓库的 **7010 / 50 MHz CPU+CRC 演示**，顶层为 `src/demo_top.sv`，CPU 内部结构连接为 `src/core/demo_cpu.v`。所有 RTL、头文件和约束均随仓库提供。详细的 GUI 操作、IP 清单与五项自检命令见 [工程使用说明](vivado_project/README.md)。
+
 ## 从源码构建
 
 安装 Vivado **2026.1**，包含 7-series 支持及有效许可。xPack RISC-V GCC 固定 **15.2.0-1**，GCC 15.2.0；工具包 SHA-256 已固定在脚本和工具记录中。
@@ -109,7 +115,7 @@ python -B -X utf8 report/demo/demo_console.py --demo --runs 3
 |---|---|
 | `src/` | `src/` RTL，`firmware/` 裸机 C、启动和链接 |
 | `sim/` | `sim/` 测试台与 `sim/results/` 已有验证结果 |
-| `build/` | `run.py`、`scripts/`、`build/README.md`；IP/实现结果由脚本生成 |
+| `build/` | `run.py`、`scripts/`、`build/README.md`；另附 `vivado_project/demo.xpr` 和七个 XCI，IP 输出可重新生成 |
 | `board/` | `board/runtime/` 下载产物和严格采集入口，`report/demo/` 演示控制台 |
 | `data/` | `data/frozen/` 镜像与参考，`data/hardware/s05/` 正式实测原始资料 |
 | `skill/` | 独立校验脚本、提示词模板、使用范围和示例 |
@@ -117,4 +123,4 @@ python -B -X utf8 report/demo/demo_console.py --demo --runs 3
 
 ## 许可证
 
-团队自研文件采用 [MIT](license.txt)，版权人：单枪匹马（范文轩、李元宏）。AMD 生成的结构化连接文件保留原版权头，AMD IP 由使用者的 Vivado 安装生成；对应条件及下载产物声明见 [第三方说明](third_party_notices.md)。
+团队自研文件采用 [MIT](license.txt)，版权人：单枪匹马（范文轩、李元宏）。AMD 生成的结构化连接文件保留原版权头，AMD IP 配置随工程提供，IP 输出由使用者的 Vivado 安装生成；对应条件及下载产物声明见 [第三方说明](third_party_notices.md)。

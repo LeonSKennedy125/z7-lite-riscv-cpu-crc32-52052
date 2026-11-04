@@ -1,0 +1,74 @@
+{
+  "status": "PASS",
+  "recorded_at": "2026-11-04T16:54:44.156309+08:00",
+  "scope": "Portable source-based 7010/50MHz XPR, IP regeneration and behavioral XSim; no new implementation or hardware measurement",
+  "vivado": "2026.1",
+  "part": "xc7z010clg400-1",
+  "top": "demo_top",
+  "ip_instances": 7,
+  "relocated_checkout": "release/portable_project_20261104/relocated_native_check",
+  "creation_drive_absent": [
+    "P:",
+    "R:"
+  ],
+  "tested_drive": "S:",
+  "registered_dependencies_checked": 141,
+  "external_design_dependencies": 0,
+  "xci_paths_native_relative": true,
+  "xci_checksums_edited": false,
+  "source_based_xpr": "vivado_project/demo.xpr",
+  "project_path_attribute": "Vivado last-save metadata; all design inputs resolve within relocated checkout",
+  "rom_bytes": 16384,
+  "ram_bytes": 65536,
+  "dtcm_primitive_output_register": true,
+  "simulations": [
+    {
+      "top": "tb_crc",
+      "pass": true,
+      "marker": "TEST_PASS CRC_MMIO checks=39 vectors=12",
+      "log_sha256": "f4c1ac1da2f9771142eedb550262d9df790859f8d4d8b6b83db2f209693c8772"
+    },
+    {
+      "top": "tb_memory",
+      "pass": true,
+      "marker": "TEST_PASS MEMORY_64K boundaries widths misalignment reset",
+      "log_sha256": "25d1cc070f87eb84b571cb38f8df2ff755417a54af4854baea68574eb282fa48"
+    },
+    {
+      "top": "tb_cpu",
+      "pass": true,
+      "marker": "TEST_PASS CPU_7010_CRC three reset runs; simulation only",
+      "log_sha256": "763c73bc6ee785083ce373ca3b236ec7066e924e7db329efebcdb2f9b2647075"
+    },
+    {
+      "top": "tb_cpu_fault_timeout",
+      "pass": true,
+      "marker": "TEST_PASS CPU_FIRMWARE_FAULT model=1 errors=2 aborts=1",
+      "log_sha256": "a1c1fa8c173a0148301e89ede9cfefd99a3198730954196f4524fd11276f2dcd"
+    },
+    {
+      "top": "tb_cpu_fault_error",
+      "pass": true,
+      "marker": "TEST_PASS CPU_FIRMWARE_FAULT model=2 errors=1 aborts=0",
+      "log_sha256": "0b96c535a5de8666d101405d3525fcca0a901a14a80b60d38ed911a9184b3338"
+    }
+  ],
+  "cpu_reset_runs": 3,
+  "cpu_crc_cases": 36,
+  "main_production_files_unchanged": 123,
+  "prior_public_files_preserved": 164,
+  "original_skill_files_unchanged": 57,
+  "skill_files": 67,
+  "new_hardware_measurement": false,
+  "new_place_and_route": false,
+  "existing_runtime_bit_sha256": "717bd8cfddeecf7753c8adcff68e0ec0072c0b9ca283c28613c2ac0dd3788d5b",
+  "existing_runtime_ltx_sha256": "facc5a5a95599c155598321dcd21d34b5d32f14b810fd7b6ef086fb8416ce6ba",
+  "final_report_sha256": "7fb60827a552ac2a32ff7246f7ad7ff325b59efa054215d3f1ebb349da1fc303",
+  "observed_tool_notices": [
+    "First open can report absent regenerated IP directories",
+    "Empty board_part metadata warning with explicit FPGA part selection",
+    "Existing util_vector_logic IPI-intended notice",
+    "Block Memory Generator behavioral collision model notice"
+  ],
+  "source_packaging": "XPR, seven native XCI configurations and two COE copies; generated IP outputs/caches excluded; entire repository required"
+}

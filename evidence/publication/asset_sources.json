@@ -4,14 +4,14 @@
       "source": "release/crc50_s08_20261103_review2/github_gitee/.gitignore",
       "published": ".gitignore",
       "source_sha256": "c101a9fe0d5655e2bf1f89dc06a5084f6f421d2db1890ba3d0d0110aa97dc6c4",
-      "published_sha256": "2a4d321be5017c333e7b2b3a6ad150ccc6977d5812357ec854e1952e59689bac",
+      "published_sha256": "8b692e46b011f6e24f97a82f49946a8967a967bbc74b180482883b2a2b135b73",
       "adapted_for_publication": true
     },
     {
       "source": "release/crc50_s08_20261103_review2/github_gitee/README.md",
       "published": "README.md",
       "source_sha256": "4156e18ababc6b3ada02006441c2d668d11ded96ea6d400266dee2c0742996b2",
-      "published_sha256": "9ae691670bf7a81da06a7e4fb372fa1817dc1af8897711199589d5869e76f795",
+      "published_sha256": "fc3f4dfd382b6339ea76ae0cb36e55e87c3f5e3077eb5e67901b29518894c5de",
       "adapted_for_publication": true
     },
     {
@@ -39,7 +39,7 @@
       "source": "release/crc50_s08_20261103_review2/github_gitee/third_party_notices.md",
       "published": "third_party_notices.md",
       "source_sha256": "002a2bf077b6fe82933714c8dcb1ef81ece058d9cbb7b62d751cf00cfe639c75",
-      "published_sha256": "2d4eef24bd26e37cd5bd213c2f4106bd86de85fde72aff6667347c47202d0c1d",
+      "published_sha256": "8288cb1cd071c14d0c11560b66c55392df23770f9e88d3408a75764b46b13788",
       "adapted_for_publication": true
     },
     {
@@ -95,7 +95,7 @@
       "source": "release/crc50_s08_20261103_review2/github_gitee/docs/reproduction.md",
       "published": "docs/reproduction.md",
       "source_sha256": "34e2dde7b46ef59de5340535f175c32de4f7fcb24bd73d81ce062e7a373bbc20",
-      "published_sha256": "754cafb97d3cc6948d901ea0b98b7aa0ab49a1bbbfba5993ae11465526b2847e",
+      "published_sha256": "76e3a142f823b2ec0541a88c10f42bbb62ad4b94de46dbf53d0696cf663427e8",
       "adapted_for_publication": true
     },
     {
@@ -277,7 +277,7 @@
       "source": "release/crc50_s08_20261103_review2/github_gitee/scripts/release.py",
       "published": "scripts/release.py",
       "source_sha256": "e5cc52b711b0c3999e427d13e10ce4f95a04ad2ee1d8476304ecf5cda9cf6fb9",
-      "published_sha256": "989132e427047208518b2f13db2927bb70050b03b25fcb71b92426a1d3d1db1f",
+      "published_sha256": "3929886511fe7752b989d5e4d62faa98ed072b78c3577e3e31c0fa1611b59496",
       "adapted_for_publication": true
     },
     {
@@ -2669,5 +2669,6 @@
       "published_sha256": "598f9eea037168c412dd34562472c06c5323f6abdcbd6fa271a9f896e67ee76b",
       "adapted_for_publication": false
     }
-  ]
+  ],
+  "portable_project_addition": "evidence/portable_project_release/summary.json"
 }

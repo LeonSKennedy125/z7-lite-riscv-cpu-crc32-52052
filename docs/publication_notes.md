@@ -15,3 +15,7 @@
 ## 2026-11-04 完整主工程 Skill 补齐
 
 首次公开版本只收录 CRC 子工程技能包，遗漏了主工程根目录的三个原生 Skill。本次从原 `skill/` 按原字节补入源码、工作流、案例和验证记录；原总说明保留为 `skill/cpu_skill_guide.md`，CRC 总说明保留为 `skill/crc_mmio_guide.md`，新的 `skill/README.md` 提供统一入口。原包自行忽略的 artifacts 缓存目录保持不进入源码仓库。CPU、固件、约束、PDF 及实测原始数据不变。
+
+## 2026-11-04 可直接打开的 Vivado 工程
+
+新增 `vivado_project/demo.xpr`、七个 XCI、同目录 COE 及 GUI/命令行操作说明，采用 7010 / 50 MHz 演示配置。原生成盘符不可用时，在另一目录重新打开、生成全部 IP；39 项 CRC 单元检查、64 KiB RAM 边界检查、三轮 CPU 固件和两类准确预期的故障注入均通过。依赖审计没有工程外部输入，原 CPU/固件/XDC、67 个 Skill 文件、最终 PDF 和已有上板记录保持原字节。新增验证记录见 `evidence/portable_project_release/summary.json`。本次未重新布局布线或上板，历史数值保留原构建时点。

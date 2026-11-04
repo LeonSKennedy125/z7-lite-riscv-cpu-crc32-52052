@@ -21,3 +21,17 @@ __pycache__/
 *.dcp
 *.jou
 ~$*
+
+# Portable GUI project: retain XPR/XCI/COE; regenerate local outputs.
+/vivado_project/*.cache/
+/vivado_project/*.gen/
+/vivado_project/*.hw/
+/vivado_project/*.ip_user_files/
+/vivado_project/*.runs/
+/vivado_project/*.sim/
+/vivado_project/.Xil/
+/vivado_project/*.xpr~
+/.Xil/
+/.vivado-ai/
+/vivado*.log
+/evidence/portable_project/

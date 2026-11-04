@@ -1,0 +1,46 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Wed Nov  4 16:48:15 2026
+# Process ID         : 41712
+# Current directory  : S:/vivado_project/demo.sim/sim_1/behav/xsim
+# Command line       : xsim.exe -log simulate.log -mode tcl -source {xsim.dir/tb_cpu_fault_timeout_behav/xsim_script.tcl}
+# Log file           : S:/vivado_project/demo.sim/sim_1/behav/xsim/simulate.log
+# Journal file       : S:/vivado_project/demo.sim/sim_1/behav/xsim\xsim.jou
+# Running On         : LeonS
+# Platform           : Windows 11
+# Operating System   : 26300
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i9-13980HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 16937 MB
+# Swap memory        : 22556 MB
+# Total Virtual      : 39494 MB
+# Available Virtual  : 2699 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_cpu_fault_timeout_behav/xsim_script.tcl
+# xsim {tb_cpu_fault_timeout_behav} -autoloadwcfg -tclbatch {S:/scripts/run_sim.tcl}
+Time resolution is 1 ps
+source S:/scripts/run_sim.tcl
+## puts "SOURCE_CONTROLLED_SIMULATION_RUN begin"
+SOURCE_CONTROLLED_SIMULATION_RUN begin
+## run all
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_cpu_fault_timeout.model.cpu.IBROM_0.u_I_ROM.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_cpu_fault_timeout.model.cpu.MEM_DTCM_0.u_DTCM.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+FAULT_INJECTION_ARMED model=1 target=123456789 unchanged_firmware=1 time=110430000
+FAULT_CPU_ERROR_STORE model=1 address=80100470 value=1 time=21082990000
+FAULT_TIMEOUT_ABORT elapsed=1048591 polls=95325 errors=1 time=21083050000
+FAULT_CPU_ERROR_STORE model=1 address=80100470 value=2 time=21083630000
+TEST_PASS CPU_FIRMWARE_FAULT model=1 errors=2 aborts=1 polls=95325; expected fault; simulation only
+$finish called at time : 36792275 ns : File "S:/sim/tb_cpu_faults.sv" Line 72
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:02:48 . Memory (MB): peak = 215.945 ; gain = 0.094
+## quit
+INFO: xsimkernel Simulation Memory Usage: 27696 KB (Peak: 27696 KB), Simulation CPU Usage: 161483 ms
+INFO: [Common 17-206] Exiting xsim at Wed Nov  4 16:51:05 2026...

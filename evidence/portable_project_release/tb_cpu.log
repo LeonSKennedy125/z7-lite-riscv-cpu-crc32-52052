@@ -1,0 +1,54 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Wed Nov  4 16:44:17 2026
+# Process ID         : 43796
+# Current directory  : S:/vivado_project/demo.sim/sim_1/behav/xsim
+# Command line       : xsim.exe -log simulate.log -mode tcl -source {xsim.dir/tb_cpu_behav/xsim_script.tcl}
+# Log file           : S:/vivado_project/demo.sim/sim_1/behav/xsim/simulate.log
+# Journal file       : S:/vivado_project/demo.sim/sim_1/behav/xsim\xsim.jou
+# Running On         : LeonS
+# Platform           : Windows 11
+# Operating System   : 26300
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i9-13980HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 16937 MB
+# Swap memory        : 22556 MB
+# Total Virtual      : 39494 MB
+# Available Virtual  : 2415 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_cpu_behav/xsim_script.tcl
+# xsim {tb_cpu_behav} -autoloadwcfg -tclbatch {S:/scripts/run_sim.tcl}
+Time resolution is 1 ps
+source S:/scripts/run_sim.tcl
+## puts "SOURCE_CONTROLLED_SIMULATION_RUN begin"
+SOURCE_CONTROLLED_SIMULATION_RUN begin
+## run all
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_cpu.cpu.IBROM_0.u_I_ROM.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_cpu.cpu.MEM_DTCM_0.u_DTCM.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+CPU_BSS_PASS run=0 words=1025
+CPU_MUTATION_DETECTED run=0 got=239d9555 reference=1528b2fa
+CPU_RESTORATION_PASS run=0 crc=1528b2fa
+CPU_RUN_PASS run=0 cases=12 errors=0
+CPU_BSS_PASS run=1 words=1025
+CPU_MUTATION_DETECTED run=1 got=239d9555 reference=1528b2fa
+CPU_RESTORATION_PASS run=1 crc=1528b2fa
+CPU_RUN_PASS run=1 cases=12 errors=0
+CPU_BSS_PASS run=2 words=1025
+CPU_MUTATION_DETECTED run=2 got=239d9555 reference=1528b2fa
+CPU_RESTORATION_PASS run=2 crc=1528b2fa
+CPU_RUN_PASS run=2 cases=12 errors=0
+TEST_PASS CPU_7010_CRC three reset runs; simulation only
+$finish called at time : 47459495 ns : File "S:/sim/tb_cpu.sv" Line 77
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:03:42 . Memory (MB): peak = 214.602 ; gain = 0.027
+## quit
+INFO: xsimkernel Simulation Memory Usage: 27648 KB (Peak: 27648 KB), Simulation CPU Usage: 212218 ms
+INFO: [Common 17-206] Exiting xsim at Wed Nov  4 16:48:00 2026...

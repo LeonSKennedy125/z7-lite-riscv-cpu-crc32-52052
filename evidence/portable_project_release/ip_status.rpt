@@ -1,0 +1,58 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Wed Nov  4 16:43:33 2026
+| Host         : LeonS running 64-bit major release  (build 9200)
+| Command      : report_ip_status
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+IP Status Summary
+
+1. Project IP Status
+--------------------
+Your project uses 7 IP. Some of these IP may have undergone changes in this release of the software. Please review the recommended actions.
+
+More information on the Xilinx versioning policy is available at www.xilinx.com.
+
+Project IP Instances
++---------------+---------------------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| Instance Name | Status                    | Recommendation      | Change    | IP Name            | IP      | New Version   | New        | Original Part        |
+|               |                           |                     | Log       |                    | Version |               | License    |                      |
++---------------+---------------------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| DTCM          | Up-to-date                | No changes required |  *(1)     | Block Memory       | 8.4     | 8.4 (Rev. 13) | Included   | xc7z010clg400-1      |
+|               |                           |                     |           | Generator          | (Rev.   |               |            |                      |
+|               |                           |                     |           |                    | 13)     |               |            |                      |
++---------------+---------------------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| I_ROM         | Up-to-date                | No changes required |  *(2)     | Block Memory       | 8.4     | 8.4 (Rev. 13) | Included   | xc7z010clg400-1      |
+|               |                           |                     |           | Generator          | (Rev.   |               |            |                      |
+|               |                           |                     |           |                    | 13)     |               |            |                      |
++---------------+---------------------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| clk50         | Up-to-date                | No changes required |  *(3)     | Clocking Wizard    | 6.0     | 6.0 (Rev. 19) | Included   | xc7z010clg400-1      |
+|               |                           |                     |           |                    | (Rev.   |               |            |                      |
+|               |                           |                     |           |                    | 19)     |               |            |                      |
++---------------+---------------------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| invip         | Up-to-date (discontinued) | No changes required |  *(4)     | Utility Vector     | 2.0     | 2.0 (Rev. 5)  | Included   | xc7z010clg400-1      |
+|               |                           |                     |           | Logic              | (Rev.   |               |            |                      |
+|               |                           |                     |           |                    | 5)      |               |            |                      |
++---------------+---------------------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| orip          | Up-to-date (discontinued) | No changes required |  *(5)     | Utility Vector     | 2.0     | 2.0 (Rev. 5)  | Included   | xc7z010clg400-1      |
+|               |                           |                     |           | Logic              | (Rev.   |               |            |                      |
+|               |                           |                     |           |                    | 5)      |               |            |                      |
++---------------+---------------------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| rstip         | Up-to-date                | No changes required |  *(6)     | Processor System   | 5.0     | 5.0 (Rev. 17) | Included   | xc7z010clg400-1      |
+|               |                           |                     |           | Reset              | (Rev.   |               |            |                      |
+|               |                           |                     |           |                    | 17)     |               |            |                      |
++---------------+---------------------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| vio_result    | Up-to-date                | No changes required |  *(7)     | VIO (Virtual       | 3.0     | 3.0 (Rev. 28) | Included   | xc7z010clg400-1      |
+|               |                           |                     |           | Input/Output)      | (Rev.   |               |            |                      |
+|               |                           |                     |           |                    | 28)     |               |            |                      |
++---------------+---------------------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+*(1) d:/XILINX/2026.1/Vivado/data/ip/xilinx/blk_mem_gen_v8_4/doc/blk_mem_gen_v8_4_changelog.txt
+*(2) d:/XILINX/2026.1/Vivado/data/ip/xilinx/blk_mem_gen_v8_4/doc/blk_mem_gen_v8_4_changelog.txt
+*(3) d:/XILINX/2026.1/Vivado/data/ip/xilinx/clk_wiz_v6_0/doc/clk_wiz_v6_0_changelog.txt
+*(4) d:/XILINX/2026.1/Vivado/data/ip/xilinx/util_vector_logic_v2_0/doc/util_vector_logic_v2_0_changelog.txt
+*(5) d:/XILINX/2026.1/Vivado/data/ip/xilinx/util_vector_logic_v2_0/doc/util_vector_logic_v2_0_changelog.txt
+*(6) d:/XILINX/2026.1/Vivado/data/ip/xilinx/proc_sys_reset_v5_0/doc/proc_sys_reset_v5_0_changelog.txt
+*(7) d:/XILINX/2026.1/Vivado/data/ip/xilinx/vio_v3_0/doc/vio_v3_0_changelog.txt
+
+

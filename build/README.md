@@ -8,4 +8,4 @@
 - `../constraints/board_r11.xdc`：已验收的 ES1 有效引脚、时钟及电气约束。
 - [已有资源/时序报告](../evidence/agent_steps/step_06/resources/)。
 
-新的 Vivado 工程由脚本生成在 `b/p/demo.xpr`；工具安装及缓存由复现者在本机准备。
+可直接打开的源码工程为 [vivado_project/demo.xpr](../vivado_project/demo.xpr)，附七个 XCI 和初始化文件；GUI 操作与自检见 [工程说明](../vivado_project/README.md)。原统一构建流程继续生成 `b/p/demo.xpr`。工具安装、IP 输出及缓存由复现者在本机准备。
